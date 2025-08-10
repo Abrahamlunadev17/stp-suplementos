@@ -1,0 +1,102 @@
+{% style %}
+
+  .wrapper-image-marquee {
+    padding: 16px 0;
+  }
+  .scrolling-text--{{ section.id }} {
+    --move-speed: {{ section.settings.speed }}s;
+    overflow: hidden;
+  }
+
+  .scrolling-text--{{ section.id }}
+  span {
+    font-size: {{ section.settings.text_size }}px;
+  }
+
+  {% if section.settings.color_scheme == 'button' %}
+    .scrolling-text--{{ section.id }} {
+      background: {{ settings.color_button }};
+      color: {{ settings.color_button_text }};
+    }
+  {% endif %}
+
+  .scrolling-text__inner img {
+    object-fit: contain;
+  }
+  .text-header-scrolling {
+    text-align: center;
+    padding-bottom: 16px
+  }
+
+  .scrolling-text__inner {
+    animation: scrolling-text var(--move-speed) linear infinite;
+    animation-play-state: running;
+    display: inline-flex;
+    margin: 0.15em 0;
+    visibility: visible;
+    white-space: nowrap;
+  }
+
+  .scrolling-text__inner--right {
+    animation: scrolling-text-right var(--move-speed) linear infinite;
+    transform: translateX(-50%);
+  }
+
+  .scrolling-text span {
+    white-space: nowrap;
+  }
+
+  .scrolling-text:focus .scrolling-text__inner,
+  .scrolling-text:hover .scrolling-text__inner {
+    animation-play-state: paused;
+  }
+
+  @keyframes scrolling-text {
+    0% {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+    }
+  }
+
+  @keyframes scrolling-text-right {
+    0% {
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+    }
+  }
+
+{% endstyle %}
+
+<div class="wrapper-image-marquee" style="background-color: {{ section.settings.colorBackground }};">
+  {% if text-head %}
+    <div class="text-header-scrolling">
+      {{ section.settings['text-head'] }}
+    </div>
+  {% endif %}
+  <div class="scrolling-text scrolling-text--{{ section.id }}">
+    <div
+      class="scrolling-text__inner scrolling-text__inner--{{ section.settings.direction }}"
+      aria-hidden="true"
+      tabindex="0"
+      style="gap: {% if section.settings.text_spacing %}40px{% else %}10px{% endif %};">
+      {% for i in (1..30) %}
+        {% for block in section.blocks %}
+          <img
+            src=" {{ block.settings.image | img_url: 'large' }}"
+            alt=""
+            width=" {{ section.settings.image-width }}"
+            height="auto"
+            loading="lazy">
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

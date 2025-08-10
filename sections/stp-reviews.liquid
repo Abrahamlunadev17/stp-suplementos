@@ -1,0 +1,356 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+<div class="stp-reviews-section">
+  <div>
+    <span class="stp-reviews-stars">★★★★★</span>
+    <span class="stp-reviews-count">{{ section.settings.reviews_count }}</span>
+  </div>
+  <div class="stp-reviews-title">
+    {{ section.settings.title | escape }}
+  </div>
+  <div class="swiper stp-swiper-reviews">
+    <div class="swiper-wrapper wrapper-reviews">
+      {% for block in section.blocks %}
+        <div class="swiper-slide stp-swiper-slide-review">
+          <div class="stp-review-content">
+            <div class="stp-review-stars">★★★★★</div>
+            <div class="stp-review-quote">“{{ block.settings.quote }}”</div>
+            <div class="stp-review-text">{{ block.settings.text }}</div>
+            <div class="stp-review-author">-{{ block.settings.author }}</div>
+          </div>
+          <div class="stp-review-product">
+            {% if block.settings.product_img != blank %}
+              <img
+                class="stp-review-product-img"
+                src="{{ block.settings.product_img | img_url: '100x' }}"
+                alt="{{ block.settings.product_title }}">
+            {% endif %}
+            <div class="stp-review-product-info">
+              <div class="stp-review-product-title">{{ block.settings.product_title }}</div>
+              {% if block.settings.product_url != blank %}
+                <a href="{{ block.settings.product_url }}" class="stp-review-product-link">
+                  VER MÁS
+                  <span class="arrow">&#8594;</span>
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination pagination-stp"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+<style>
+  .stp-reviews-section {
+    background: #151515;
+    padding: 32px 16px;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .stp-reviews-stars {
+    color: #e53935;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+  }
+  .wrapper-reviews {
+    padding-bottom: 54px;
+  }
+  .stp-reviews-count {
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 8px;
+    font-weight: 400;
+  }
+  .stp-reviews-title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+    margin-top: 8px;
+    letter-spacing: 1px;
+  }
+  .stp-swiper-reviews {
+    padding: 24px 0 0;
+  }
+  .stp-swiper-slide-review {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 410px;
+    max-width: 340px;
+  }
+  .stp-review-content {
+    padding: 32px 18px 0;
+    flex: 1 1 auto;
+  }
+  .stp-review-stars {
+    color: #151515;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  .stp-review-quote {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #151515;
+  }
+  .stp-review-text {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 18px;
+  }
+  .stp-review-author {
+    font-size: 0.98rem;
+    color: #151515;
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+  .stp-review-product {
+    background: #e53935;
+    color: #fff;
+    padding: 18px 12px 12px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    min-height: 90px;
+    justify-content: flex-start;
+  }
+  .stp-review-product-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #fff;
+    margin-right: 4px;
+  }
+  .stp-review-product-info {
+    text-align: left;
+  }
+  .stp-review-product-title {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 2px;
+  }
+  .stp-review-product-link {
+    color: #fff;
+    font-size: 0.98rem;
+
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 2px;
+  }
+
+  .stp-review-product-link .arrow {
+    margin-left: 8px;
+    font-size: 1.1em;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;
+    background: #e53935;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  @media (max-width: 900px) {
+    .stp-reviews-title {
+      font-size: 1.3rem;
+      margin-bottom: 18px;
+    }
+    .stp-swiper-slide-review {
+      min-height: 370px;
+      max-width: 95vw;
+    }
+    .stp-review-content {
+      padding: 18px 8px 0;
+    }
+    .stp-review-product {
+      min-height: 70px;
+      padding: 12px 8px 8px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .pagination-stp {
+    display: none;
+  }
+  .pagination-stp .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.5;
+    width: 4px;
+    height: 4px;
+    margin: 0 5px !important;
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
+    transform: scale(1);
+    box-shadow: 0 2px 8px rgba(229, 57, 53, 0.08);
+  }
+  .pagination-stp .swiper-pagination-bullet-active {
+    background: #ffffff;
+    opacity: 1;
+    width: 8px;
+    height: 8px;
+    transform: scale(1.2);
+    box-shadow: 0 0 0 4px rgb(211 211 211 / 15%);
+  }
+  @media (max-width: 749px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none !important;
+    }
+    .pagination-stp {
+      display: block !important;
+      margin-top: 18px;
+    }
+  }
+  @media (min-width: 750px) {
+    .pagination-stp {
+      display: none !important;
+    }
+  }
+
+
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.stp-swiper-reviews', {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.2,
+          spaceBetween: 16,
+          navigation: false,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          }
+        },
+        750: {
+          slidesPerView: 4,
+          spaceBetween: 24,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: false
+        }
+      }
+    });
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Slider de Reseñas",
+    "settings": [
+      {
+        "type": "text",
+        "id": "reviews_count",
+        "label": "Texto de reseñas",
+        "default": "+10,000 reseñas en plataformas digitales"
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "Título",
+        "default": "CONFIANZA COMPROBADA POR MILES DE USUARIOS"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "review",
+        "name": "Reseña",
+        "settings": [
+          {
+            "type": "text",
+            "id": "quote",
+            "label": "Frase destacada",
+            "default": "El mejor suplemento que he probado"
+          },
+          {
+            "type": "textarea",
+            "id": "text",
+            "label": "Texto de la reseña",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+          },
+          {
+            "type": "text",
+            "id": "author",
+            "label": "Autor",
+            "default": "Juan López"
+          },
+          {
+            "type": "image_picker",
+            "id": "product_img",
+            "label": "Imagen del producto"
+          }, {
+            "type": "text",
+            "id": "product_title",
+            "label": "Nombre del producto",
+            "default": "Whey Protein Powder"
+          }, {
+            "type": "url",
+            "id": "product_url",
+            "label": "Enlace del producto"
+          }
+        ]
+      }
+    ],
+    "max_blocks": 10,
+    "presets": [
+      {
+        "name": "Slider de Reseñas",
+        "blocks": [
+          {
+            "type": "review"
+          }, {
+            "type": "review"
+          }, {
+            "type": "review"
+          }, {
+            "type": "review"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,102 @@
+<div class="stp-atleta-section">
+  <div class="stp-atleta-content">
+    <div class="stp-atleta-title">
+      {{ section.settings.title | escape }}
+    </div>
+    <div class="stp-atleta-desc">
+      {{ section.settings.text | newline_to_br }}
+    </div>
+  </div>
+  {% if section.settings.bg_image != blank %}
+    <img
+      class="stp-atleta-bg"
+      src="{{ section.settings.bg_image | img_url: '900x' }}"
+      alt="Imagen atleta">
+  {% endif %}
+</div>
+
+<style>
+  .stp-atleta-section {
+    background: #151515;
+    color: #fff;
+    padding: 48px 0 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .stp-atleta-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-height: 340px;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 1;
+  }
+  .stp-atleta-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 16px 32px;
+  }
+  .stp-atleta-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    margin-top: 0;
+    letter-spacing: 1px;
+    border-top: 2px solid #e53935;
+    border-bottom: 2px solid #e53935;
+    padding: 24px 0 18px;
+  }
+  .stp-atleta-desc {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    margin-top: 24px;
+    line-height: 1.5;
+  }
+  @media (max-width: 749px) {
+    .stp-atleta-title {
+      font-size: 1.1rem;
+      padding: 16px 0 10px;
+    }
+    .stp-atleta-content {
+      padding: 0 8px 24px;
+    }
+    .stp-atleta-bg {
+      max-height: 180px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Sección Atleta",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Título",
+        "default": "IMPULSANDO EL RENDIMIENTO DE ATLETAS POR MÁS DE 30 AÑOS"
+      }, {
+        "type": "textarea",
+        "id": "text",
+        "label": "Texto",
+        "default": "Con más de tres décadas de trayectoria, en F&NT formulamos y producimos suplementos con base en la experiencia y la innovación, utilizando ingredientes certificados y procesos propios que cumplen con estándares de calidad.\n\nHoy ofrecemos más de 75 presentaciones, adaptadas a tus objetivos, con la calidad y confianza que nos distingue."
+      }, {
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Imagen de fondo (atleta)"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Sección Atleta"
+      }
+    ]
+  }
+
+{% endschema %}

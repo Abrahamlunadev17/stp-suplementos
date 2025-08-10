@@ -1,0 +1,189 @@
+<div class="stp-quiz-section">
+  {% if section.settings.bg_image != blank %}
+    <img
+      class="stp-quiz-bg"
+      src="{{ section.settings.bg_image | img_url: '1800x' }}"
+      alt="Quiz fondo">
+  {% endif %}
+  <div class="stp-quiz-content">
+    <div class="stp-quiz-title">
+      {{ section.settings.title | escape }}
+    </div>
+    {% if section.settings.subtitle != blank %}
+      <div class="stp-quiz-subtitle">
+        {{ section.settings.subtitle }}
+      </div>
+    {% endif %}
+    {% if section.settings.desc != blank %}
+      <div class="stp-quiz-desc">
+        {{ section.settings.desc }}
+      </div>
+    {% endif %}
+    {% if section.settings.cta_label != blank and section.settings.cta_url != blank %}
+      <a href="{{ section.settings.cta_url }}" class="stp-quiz-btn">
+        {{ section.settings.cta_label | escape }}
+        <span class="arrow">&#8594;</span>
+      </a>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .stp-quiz-section {
+    position: relative;
+    background: #151515;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .stp-quiz-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.45;
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  .stp-quiz-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 98px 16px;
+    color: #fff;
+  }
+  .stp-quiz-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+  }
+  .stp-quiz-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+    font-weight: 400;
+  }
+  .stp-quiz-desc {
+    font-size: 1rem;
+    margin-bottom: 28px;
+    font-weight: 400;
+  }
+  .stp-quiz-btn {
+    margin-top: 16px;
+    background: #e53935;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 68px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: background 0.2s;
+  }
+  .stp-quiz-btn .arrow {
+    margin-left: 12px;
+    font-size: 1.3em;
+  }
+  .stp-quiz-btn:hover {
+    background: #b71c1c;
+  }
+  @media (max-width: 749px) {
+    .stp-quiz-section {
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+    }
+    .stp-quiz-content {
+      padding: 64px 16px;
+      border-radius: 32px;
+      border: 1px solid #ffffff;
+      overflow: hidden;
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+
+    }
+
+
+    .stp-quiz-bg {
+
+      border-radius: 32px;
+
+    }
+    .stp-quiz-title {
+      font-size: 1.2rem;
+    }
+
+    .wrapper-quiz {
+      padding: 24px;
+    }
+    .stp-quiz-btn {
+
+      padding: 6px 54px;
+
+    }
+  }
+</style>
+
+
+{% schema %}
+  {
+    "name": "Quiz Banner",
+    "class": "wrapper-quiz",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Imagen de fondo"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Título",
+        "default": "ENCUENTRA TU SUPLEMENTO IDEAL"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subtítulo",
+        "default": "Todos entrenamos distinto: unos buscan resistencia, otros potencia, otros transformar su físico."
+      },
+      {
+        "type": "text",
+        "id": "desc",
+        "label": "Descripción",
+        "default": "Descubre qué productos F&NT® están hechos para ti."
+      }, {
+        "type": "text",
+        "id": "cta_label",
+        "label": "Texto del botón",
+        "default": "IR AL QUIZ"
+      }, {
+        "type": "url",
+        "id": "cta_url",
+        "label": "Enlace del botón"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Quiz Banner"
+      }
+    ]
+  }
+{% endschema %}

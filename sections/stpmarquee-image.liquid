@@ -1,0 +1,82 @@
+{% render 'marquee-image'
+  , section: section
+  , block: block %}
+
+
+{% schema %}
+  {
+    "name": "Marqueen Logo",
+    "class": "index-section--flush",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "text-head",
+        "label": "Text"
+      },
+      {
+        "type": "checkbox",
+        "id": "text_spacing",
+        "label": "Espacio",
+        "default": true
+      },
+      {
+        "type": "color",
+        "id": "colorBackground",
+        "label": "Fondo",
+        "default": "#CF2928"
+      },
+      {
+        "type": "select",
+        "id": "direction",
+        "label": "Direccion",
+        "default": "left",
+        "options": [
+          {
+            "label": "Izquierda",
+            "value": "left"
+          }, {
+            "label": "Derecha",
+            "value": "right"
+          }
+        ]
+      }, {
+        "type": "range",
+        "id": "speed",
+        "label": "Velocidad",
+        "default": 200,
+        "min": 20,
+        "max": 300,
+        "step": 10,
+        "unit": "s"
+      }, {
+        "type": "range",
+        "id": "image-width",
+        "label": "Tamaño",
+        "max": 200,
+        "min": 60,
+        "step": 10,
+        "unit": "px",
+        "default": 60
+      }
+    ],
+
+    "blocks": [
+      {
+        "name": "Image",
+        "type": "image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Selecciona una imagen "
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Scrolling Image"
+      }
+    ]
+  }
+{% endschema %}

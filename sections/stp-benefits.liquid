@@ -1,0 +1,142 @@
+<div class="stp-benefits-section">
+  <div class="wrapper-benefits">
+    <h4>{{ section.settings.text-wrapper | upcase }}</h4>
+  </div>
+  <div class="container-images-wrapper">
+    {% if section.settings.image_desktop != blank %}
+      <img
+        class="stp-benefits-img-desktop"
+        src="{{ section.settings.image_desktop | img_url: 'master' }}"
+        alt="Imagen desktop">
+    {% endif %}
+    {% if section.settings.image_mobile != blank %}
+      <img
+        class="stp-benefits-img-mobile"
+        src="{{ section.settings.image_mobile | img_url: 'master' }}"
+        alt="Imagen mobile">
+    {% endif %}
+    {% if section.settings.cta_label != blank and section.settings.cta_url != blank %}
+      <div class="stp-benefits-cta-container">
+        <a href="{{ section.settings.cta_url }}" class="stp-benefits-cta-btn">
+          {{ section.settings.cta_label | escape }}
+          <span class="arrow">&#8594;</span>
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+
+<style>
+  .stp-benefits-section {
+    background: #151515;
+    padding: 48px 0 0;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .wrapper-benefits {
+    padding-bottom: 54px;
+  }
+  .container-images-wrapper {
+    padding: 0 32px 32px;
+  }
+  .stp-benefits-img-desktop {
+    display: block;
+    margin: 0 auto 32px;
+    max-width: 100%;
+    height: 500px;
+    object-fit: contain;
+  }
+  .stp-benefits-img-mobile {
+    display: none;
+    margin: 0 auto 32px;
+    max-width: 100%;
+    height: auto;
+  }
+  .stp-benefits-cta-container {
+    padding: 0 32px;
+    margin-top: 54px;
+
+  }
+  .stp-benefits-cta-btn {
+    background: #e53935;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 16px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.2s;
+  }
+  .stp-benefits-cta-btn .arrow {
+    margin-left: 12px;
+    font-size: 1.3em;
+  }
+  .stp-benefits-cta-btn:hover {
+    background: #b71c1c;
+  }
+  @media (max-width: 749px) {
+    .stp-benefits-img-desktop {
+      display: none;
+    }
+    .stp-benefits-img-mobile {
+      display: block;
+    }
+    .stp-benefits-cta-btn {
+      display: block;
+    }
+  }
+
+  @media (min-width: 749px) {
+    .stp-benefits-cta-btn {
+      display: inline-block;
+      padding: 6px 68px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Beneficio",
+    "settings": [
+      {
+        "type": "text",
+        "id": "text-wrapper",
+        "default": "¿POR QUÉ ELEGIR F&NT?",
+        "label": "Texto Encabezado"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_desktop",
+        "label": "Imagen Desktop"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_mobile",
+        "label": "Imagen Mobile"
+      },
+      {
+        "type": "text",
+        "id": "cta_label",
+        "label": "Texto del botón CTA",
+        "default": "IR A COMPRAR"
+      }, {
+        "type": "url",
+        "id": "cta_url",
+        "label": "Enlace del botón CTA"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Beneficios"
+      }
+    ]
+  }
+{% endschema %}
