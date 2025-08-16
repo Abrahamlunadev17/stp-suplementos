@@ -1,0 +1,285 @@
+<div class="banner-hero banner-hero-{{ section.id }}">
+  {% comment %} MEDIA: Video tiene prioridad; si no hay, usa imágenes {% endcomment %}
+  {% if section.settings.video != blank or section.settings.video2 != blank %}
+    {{ section.settings.video
+ | video_tag:
+ autoplay: true,
+ loop: true,
+ muted: true,
+ controls: false,
+ preload: 'metadata',
+ loading: 'eager',
+ class: 'banner-media desktop-only' }}
+    {{ section.settings.video2
+ | video_tag:
+ autoplay: true,
+ loop: true,
+ muted: true,
+ controls: false,
+ preload: 'metadata',
+ loading: 'lazy',
+ class: 'banner-media mobile-only' }}
+  {% else %}
+    {{ section.settings.img
+ | image_url: width: 2000
+ | image_tag:
+ loading: 'eager',
+ class: 'banner-media desktop-only',
+ widths: '750,1000,1250,1500,1750,2000' }}
+    {{ section.settings.img2
+ | image_url: width: 1500
+ | image_tag:
+ loading: 'lazy',
+ class: 'banner-media mobile-only',
+ widths: '500,750,1000,1250,1500' }}
+  {% endif %}
+
+  {%- assign top_m = section.settings.top_mobile | default: 80 -%}
+  {%- assign left_m = section.settings.left_mobile | default: 50 -%}
+  {%- assign top_d = section.settings.top_desktop | default: 80 -%}
+  {%- assign left_d = section.settings.left_desktop | default: 27 -%}
+
+  <div class="banner-cta" style="
+      --top-m: {{ top_m }}%;
+      --left-m: {{ left_m }}%;
+      --top-d: {{ top_d }}%;
+      --left-d: {{ left_d }}%;
+    ">
+    {% if section.settings.url1 and section.settings.boton-name1 != blank %}
+      <a class="btn btn-primary" href="{{ section.settings.url1 }}">
+        {{ section.settings.boton-name1 }}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15"
+          height="15"
+          viewBox="0 0 15 15"
+          fill="none">
+          <path d="M12.127 8.25H0V6.75H12.127L6.43075 1.05375L7.5 0L15 7.5L7.5 15L6.43075 13.9462L12.127 8.25Z" fill="currentColor" />
+        </svg>
+      </a>
+    {% endif %}
+
+    {% if section.settings.url2 and section.settings.boton-name2 != blank %}
+      <a class="btn btn-secondary" href="{{ section.settings.url2 }}">
+        {{ section.settings.boton-name2 }}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15"
+          height="15"
+          viewBox="0 0 15 15"
+          fill="none">
+          <path d="M12.127 8.25H0V6.75H12.127L6.43075 1.05375L7.5 0L15 7.5L7.5 15L6.43075 13.9462L12.127 8.25Z" fill="currentColor" />
+        </svg>
+      </a>
+    {% endif %}
+  </div>
+</div>
+
+<style>
+  .banner-hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+  }
+
+  /* Media base */
+  .banner-media {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Toggle por breakpoint */
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+
+
+  @media (min-width: 768px) {
+    .desktop-only {
+      display: block;
+    }
+    .mobile-only {
+      display: none;
+    }
+  }
+
+  /* CTA posicionable */
+  .banner-cta {
+    position: absolute;
+    top: var(--top-m, 80%);
+    left: var(--left-m, 50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    pointer-events: none;
+    /* para no bloquear clics sobre el video/imagen */
+  }
+  .banner-cta .btn {
+    pointer-events: auto;
+  } /* botones sí clickeables */
+
+  @media (min-width: 768px) {
+    .banner-cta {
+      top: var(--top-d, 80%);
+      left: var(--left-d, 27%);
+      max-width: 640px;
+      gap: 16px;
+      flex-direction: row;
+    }
+  }
+
+  /* Botones */
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* si quieres texto+flecha juntos */
+    gap: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 14px 28px;
+    font-size: 18px;
+    line-height: 1;
+    text-decoration: none;
+    transition: transform 0.2s ease
+    , box-shadow 0.2s ease;
+    min-width: 350px;
+  }
+
+  .btn svg {
+    width: 18px;
+    height: auto;
+  }
+  @media (min-width: 768px) {
+    .btn {
+      font-size: 18px;
+      padding: 16px 64px;
+      width: auto;
+    }
+  }
+  .btn img {
+    height: 20px;
+    width: auto;
+  }
+
+  .btn-primary {
+    background: #CF2928;
+    /* rojo */
+    color: #fff;
+  }
+  .btn-primary:hover {
+    transform: scale(1.03);
+  }
+
+  .btn-secondary {
+    background: #D2B388;
+    color: #1E1E1E;
+  }
+  .btn-secondary:hover {
+    transform: scale(1.03);
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Banner general",
+    "class": "banner-general",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Imagen Desktop (recomendado 1900x750)"
+      },
+      {
+        "type": "image_picker",
+        "id": "img2",
+        "label": "Imagen Mobile (recomendado 1080x1400)"
+      },
+      {
+        "type": "video",
+        "id": "video",
+        "label": "Video Desktop (opcional)"
+      },
+      {
+        "type": "video",
+        "id": "video2",
+        "label": "Video Mobile (opcional)"
+      }, {
+        "type": "text",
+        "id": "boton-name1",
+        "label": "Texto Botón 1",
+        "default": "IR A COMPRAR"
+      }, {
+        "type": "url",
+        "id": "url1",
+        "label": "URL Botón 1"
+      }, {
+        "type": "text",
+        "id": "boton-name2",
+        "label": "Texto Botón 2",
+        "default": "IR AL QUIZ"
+      }, {
+        "type": "url",
+        "id": "url2",
+        "label": "URL Botón 2"
+      }, {
+        "type": "range",
+        "id": "top_mobile",
+        "label": "Posición vertical (Mobile)",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "default": 85
+      }, {
+        "type": "range",
+        "id": "left_mobile",
+        "label": "Posición horizontal (Mobile)",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "default": 50
+      }, {
+        "type": "range",
+        "id": "top_desktop",
+        "label": "Posición vertical (Desktop)",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "default": 80
+      }, {
+        "type": "range",
+        "id": "left_desktop",
+        "label": "Posición horizontal (Desktop)",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%",
+        "default": 27
+      }
+    ],
+    "presets": [
+      {
+        "name": "Banner general"
+      }
+    ]
+  }
+{% endschema %}

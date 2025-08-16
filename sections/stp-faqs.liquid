@@ -1,0 +1,210 @@
+<div class="stp-faqs-section">
+  <div class="stp-faqs-bg-circular"></div>
+  <div class="stp-faqs-container">
+    <h2 class="stp-faqs-title">{{ section.settings.title | escape }}</h2>
+    <div class="stp-faqs-list">
+      {% for block in section.blocks %}
+        <div class="stp-faq-item">
+          <button
+            class="stp-faq-question"
+            aria-expanded="false"
+            aria-controls="faq-{{ block.id }}">
+            {{ block.settings.question }}
+            <span class="stp-faq-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"><polyline
+                  points="6 9 12 15 18 9"
+                  fill="none"
+                  stroke="#fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" /></svg>
+            </span>
+          </button>
+          <div class="stp-faq-answer" id="faq-{{ block.id }}">
+            {{ block.settings.answer }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .stp-faqs-section {
+    position: relative;
+    background: linear-gradient(135deg, #151515 70%, #b71c1c 100%);
+    padding: 64px 0;
+    min-height: 500px;
+    overflow: hidden;
+  }
+  .stp-faqs-bg-circular {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    width: 400px;
+    height: 400px;
+    background: rgba(207, 41, 40, 0.28);
+    border-radius: 50%;
+    filter: blur(90px);
+    z-index: 1;
+    pointer-events: none;
+  }
+  .stp-faqs-container {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+  .stp-faqs-title {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 38px;
+    letter-spacing: 1px;
+  }
+  .stp-faqs-list {
+    width: 100%;
+  }
+  .stp-faq-item {
+    border-bottom: 1px solid #fff2;
+    margin-bottom: 0;
+  }
+  .stp-faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.08rem;
+    font-weight: bold;
+    text-align: left;
+    padding: 18px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color 0.2s;
+    outline: none;
+  }
+  .stp-faq-icon {
+    transition: transform 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
+    display: flex;
+    align-items: center;
+  }
+  .stp-faq-question[aria-expanded="true"] .stp-faq-icon {
+    transform: rotate(180deg);
+  }
+  .stp-faq-answer {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 0 18px;
+    display: none;
+    animation: fadeInFaq 0.3s;
+  }
+  .stp-faq-question[aria-expanded="true"] + .stp-faq-answer {
+    display: block;
+  }
+  @keyframes fadeInFaq {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media (min-width: 900px) {
+    .stp-faqs-bg-circular {
+      width: 600px;
+      height: 600px;
+      left: 70%;
+      top: 5%;
+      filter: blur(120px);
+    }
+    .stp-faqs-container {
+      max-width: 1200px;
+    }
+    .stp-faqs-title {
+      font-size: 2.3rem;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.stp-faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      // Close all
+      document.querySelectorAll('.stp-faq-question').forEach(function(b) {
+        b.setAttribute('aria-expanded', 'false');
+      });
+      // Open this one if it was closed
+      if (!expanded) {
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Preguntas Frecuentes",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Título",
+        "default": "PREGUNTAS FRECUENTES"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "faq",
+        "name": "Pregunta",
+        "settings": [
+          {
+            "type": "text",
+            "id": "question",
+            "label": "Pregunta",
+            "default": "¿LOREM IPSUM?"
+          }, {
+            "type": "textarea",
+            "id": "answer",
+            "label": "Respuesta",
+            "default": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        ]
+      }
+    ],
+    "max_blocks": 10,
+    "presets": [
+      {
+        "name": "Preguntas Frecuentes",
+        "blocks": [
+          {
+            "type": "faq"
+          },
+          {
+            "type": "faq"
+          },
+          {
+            "type": "faq"
+          },
+          {
+            "type": "faq"
+          }, {
+            "type": "faq"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

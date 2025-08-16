@@ -1,75 +1,179 @@
 <div class="stp-atleta-section">
+  <div class="stp-atleta-bg-circular"></div>
   <div class="stp-atleta-content">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="100%"
+      height="2"
+      viewBox="0 0 354 2"
+      fill="none">
+      <path
+        d="M0 1H354"
+        stroke="url(#paint0_linear_319_1910)"
+        stroke-width="0.7" />
+      <defs>
+        <linearGradient
+          id="paint0_linear_319_1910"
+          x1="0"
+          y1="1.5"
+          x2="354"
+          y2="1.5"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#E23332" />
+          <stop offset="0.500027" stop-color="white" />
+          <stop offset="1" stop-color="#E23332" />
+        </linearGradient>
+      </defs>
+    </svg>
     <div class="stp-atleta-title">
       {{ section.settings.title | escape }}
     </div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="100%"
+      height="2"
+      viewBox="0 0 354 2"
+      fill="none">
+      <path
+        d="M0 1H354"
+        stroke="url(#paint0_linear_319_1910)"
+        stroke-width="0.7" />
+      <defs>
+        <linearGradient
+          id="paint0_linear_319_1910"
+          x1="0"
+          y1="1.5"
+          x2="354"
+          y2="1.5"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#E23332" />
+          <stop offset="0.500027" stop-color="white" />
+          <stop offset="1" stop-color="#E23332" />
+        </linearGradient>
+      </defs>
+    </svg>
     <div class="stp-atleta-desc">
       {{ section.settings.text | newline_to_br }}
     </div>
   </div>
-  {% if section.settings.bg_image != blank %}
-    <img
-      class="stp-atleta-bg"
-      src="{{ section.settings.bg_image | img_url: '900x' }}"
-      alt="Imagen atleta">
-  {% endif %}
+  <div class="stp-atleta-bg-container">
+    {% if section.settings.bg_image != blank %}
+      <img
+        class="stp-atleta-bg"
+        src="{{ section.settings.bg_image | img_url: '900x' }}"
+        alt="Imagen atleta">
+    {% endif %}
+  </div>
 </div>
 
+
 <style>
+
+  .stp-atleta-bg-circular {
+    border-radius: 515px;
+    background: rgba(207, 41, 40, 0.35);
+    width: 515px;
+    height: 515px;
+    filter: blur(113.05000305175781px);
+    position: absolute;
+    top: 5%;
+    right: 40%;
+  }
   .stp-atleta-section {
     background: #151515;
     color: #fff;
     padding: 48px 0 0;
     text-align: center;
     position: relative;
-    overflow: hidden;
   }
-  .stp-atleta-bg {
+
+  .stp-atleta-bg-container {
+    background-image: url('https://cdn.shopify.com/s/files/1/0940/7037/4676/files/image-cover.png?v=1754810593');
+    position: relative;
+    padding: 4rem 0;
+    min-height: 400px;
+  }
+
+  img.stp-atleta-bg {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 10%;
     width: 100%;
-    max-height: 340px;
+    max-height: 700px;
     object-fit: cover;
     z-index: 1;
     opacity: 1;
   }
+
+
   .stp-atleta-content {
     position: relative;
     z-index: 2;
-    max-width: 700px;
+    max-width: initial;
     margin: 0 auto;
     padding: 0 16px 32px;
   }
   .stp-atleta-title {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 18px;
     margin-top: 0;
     letter-spacing: 1px;
-    border-top: 2px solid #e53935;
-    border-bottom: 2px solid #e53935;
-    padding: 24px 0 18px;
+    padding: 32px;
   }
   .stp-atleta-desc {
-    font-size: 1.1rem;
+    font-size: 16px;
     margin-bottom: 0;
-    margin-top: 24px;
     line-height: 1.5;
+    padding: 32px;
+    text-align: left;
   }
-  @media (max-width: 749px) {
-    .stp-atleta-title {
-      font-size: 1.1rem;
-      padding: 16px 0 10px;
-    }
-    .stp-atleta-content {
-      padding: 0 8px 24px;
-    }
-    .stp-atleta-bg {
-      max-height: 180px;
-    }
+
+  @media (min-width: 998px) {
+    .stp-atleta-bg-circular {}
+
+  .stp-atleta-section {
+    display: flex;
   }
+
+  img.stp-atleta-bg {
+    top: -35%;
+    height: auto;
+    object-fit: contain;
+    height: 600px;
+    left: 0;
+  }
+
+  .stp-atleta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+  }
+
+  .stp-atleta-bg-container {
+    min-width: 700px;
+    padding: 0;
+  }
+
+  .stp-atleta-bg-container {
+    order: -1;
+  }
+
+  .stp-atleta-section {
+    padding: 0;
+  }
+
+  .stp-atleta-bg-circular {
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 350px;
+  }
+
+}
+
 </style>
 
 {% schema %}
@@ -81,7 +185,8 @@
         "id": "title",
         "label": "Título",
         "default": "IMPULSANDO EL RENDIMIENTO DE ATLETAS POR MÁS DE 30 AÑOS"
-      }, {
+      },
+       {
         "type": "textarea",
         "id": "text",
         "label": "Texto",
