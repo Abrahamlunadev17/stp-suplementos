@@ -558,6 +558,33 @@
         "padding-block-end": 48
       }
     },
+    "pdp_slider_CQdCyj": {
+      "type": "pdp-slider",
+      "blocks": {
+        "slide_B3TNAa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/historia.png",
+            "title": "Diseñados para cada nivel y objetivo",
+            "text": "Tanto si estás empezando como si entrenas a nivel avanzado, tenemos opciones para cada etapa de tu progreso."
+          }
+        },
+        "slide_QWxM6x": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/historia.png",
+            "title": "Fórmulas de calidad con tablas nutrimentales completa",
+            "text": "Nuestras tablas superan el estándar del mercado: muestran información clara, detallada y respaldada por ingredientes certificados e importados."
+          }
+        }
+      },
+      "block_order": [
+        "slide_B3TNAa",
+        "slide_QWxM6x"
+      ],
+      "name": "Slider Fórmula",
+      "settings": {}
+    },
     "stp_experts_39rVHz": {
       "type": "stp-experts",
       "blocks": {
@@ -727,6 +754,7 @@
   "order": [
     "main",
     "product_recommendations_qggXJq",
+    "pdp_slider_CQdCyj",
     "stp_experts_39rVHz",
     "stp_reviews_enE4UU",
     "stp_faqs_6JTHEw"
