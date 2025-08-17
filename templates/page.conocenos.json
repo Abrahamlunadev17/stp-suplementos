@@ -93,11 +93,53 @@
         "title": "NUESTRA HISTORIA",
         "text": "Fundado en 1990, F&NT® nació con la idea de crear suplementos alimenticios, con respaldo técnico, fórmulas propias e ingredientes certificados. Hoy ofrecemos más de 90 presentaciones adaptadas a tus objetivos, con la calidad y confianza que nos distingue."
       }
+    },
+    "slider_conocenos_TcNbz9": {
+      "type": "slider-conocenos",
+      "blocks": {
+        "define_item_K6NnKm": {
+          "type": "define_item",
+          "settings": {
+            "icon": "shopify://shop_images/Group_706.png",
+            "title": "FÓRMULAS LIMPIAS",
+            "text": "Nuestros productos no contienen azúcares añadidos* y son totalmente libres de gluten.\n *Excepto en fórmulas diseñadas específicamente para proveer energía inmediata.",
+            "footnote": ""
+          }
+        },
+        "define_item_hxAK3F": {
+          "type": "define_item",
+          "settings": {
+            "icon": "shopify://shop_images/Group_706.png",
+            "title": "FÓRMULAS LIMPIAS",
+            "text": "Nuestros productos no contienen azúcares añadidos* y son totalmente libres de gluten.\n *Excepto en fórmulas diseñadas específicamente para proveer energía inmediata.",
+            "footnote": ""
+          }
+        },
+        "define_item_EK963j": {
+          "type": "define_item",
+          "settings": {
+            "icon": "shopify://shop_images/Group_706.png",
+            "title": "FÓRMULAS LIMPIAS",
+            "text": "Nuestros productos no contienen azúcares añadidos* y son totalmente libres de gluten.\n *Excepto en fórmulas diseñadas específicamente para proveer energía inmediata.",
+            "footnote": ""
+          }
+        }
+      },
+      "block_order": [
+        "define_item_K6NnKm",
+        "define_item_hxAK3F",
+        "define_item_EK963j"
+      ],
+      "name": "Lo que nos define",
+      "settings": {
+        "title": "LO QUE NOS DEFINE"
+      }
     }
   },
   "order": [
     "main",
     "banner_conocenos_nNzdHt",
-    "image_conocenos_4a7VGU"
+    "image_conocenos_4a7VGU",
+    "slider_conocenos_TcNbz9"
   ]
 }
