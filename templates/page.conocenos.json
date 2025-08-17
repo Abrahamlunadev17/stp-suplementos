@@ -64,10 +64,40 @@
         "image_desktop": "shopify://shop_images/Frame_676.png",
         "image_mobile": "shopify://shop_images/Frame_19_f676725e-bb7a-4280-8fbc-8ece7ea9affc.png"
       }
+    },
+    "image_conocenos_4a7VGU": {
+      "type": "image-conocenos",
+      "blocks": {
+        "card_Jh4Wnx": {
+          "type": "card",
+          "settings": {
+            "card_title": "MISIÓN",
+            "card_text": "Nuestra misión es ofrecer suplementos alimenticios que se adapten a cada estilo de vida, siendo el complemento ideal para la salud, el bienestar y el rendimiento, sin importar tu nivel de actividad."
+          }
+        },
+        "card_4EJ6Yq": {
+          "type": "card",
+          "settings": {
+            "card_title": "VISIÓN",
+            "card_text": "Nuestra visión es seguir elevando el estándar en suplementos desarrollados en México, con fórmulas propias, ingredientes certificados y expansión internacional, llevando nutrición de calidad a más personas cada año."
+          }
+        }
+      },
+      "block_order": [
+        "card_Jh4Wnx",
+        "card_4EJ6Yq"
+      ],
+      "name": "Nuestra Historia",
+      "settings": {
+        "image_desktop": "shopify://shop_images/historia.png",
+        "title": "NUESTRA HISTORIA",
+        "text": "Fundado en 1990, F&NT® nació con la idea de crear suplementos alimenticios, con respaldo técnico, fórmulas propias e ingredientes certificados. Hoy ofrecemos más de 90 presentaciones adaptadas a tus objetivos, con la calidad y confianza que nos distingue."
+      }
     }
   },
   "order": [
     "main",
-    "banner_conocenos_nNzdHt"
+    "banner_conocenos_nNzdHt",
+    "image_conocenos_4a7VGU"
   ]
 }
