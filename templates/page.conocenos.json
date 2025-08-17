@@ -328,6 +328,50 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "stpmarquee_image_myjpXG": {
+      "type": "stpmarquee-image",
+      "blocks": {
+        "image_ic9CXT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group.png"
+          }
+        },
+        "image_8X6Nmd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_29.png"
+          }
+        },
+        "image_T33G9f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_719.png"
+          }
+        },
+        "image_9MQWyt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_718_f39b5a35-10a7-4096-85d0-2fe998209dcb.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_ic9CXT",
+        "image_8X6Nmd",
+        "image_T33G9f",
+        "image_9MQWyt"
+      ],
+      "name": "Scrolling Image",
+      "settings": {
+        "text-head": "<p>ENCUENTRANOS TAMBIEN EN </p>",
+        "text_spacing": true,
+        "colorBackground": "#cf2928",
+        "direction": "left",
+        "speed": 200,
+        "image-width": 60
+      }
     }
   },
   "order": [
@@ -335,6 +379,7 @@
     "banner_conocenos_nNzdHt",
     "image_conocenos_4a7VGU",
     "slider_conocenos_TcNbz9",
-    "product_list_pib4xk"
+    "product_list_pib4xk",
+    "stpmarquee_image_myjpXG"
   ]
 }
