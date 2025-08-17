@@ -154,11 +154,21 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
+                },
+                "slide_pdp_X4yRMd": {
+                  "type": "slide-pdp",
+                  "name": "Producto",
+                  "settings": {
+                    "text-desc": "<p>{{ closest.product.metafields.custom.peso.value }}</p>",
+                    "text-porcion": "<p>{{ closest.product.metafields.custom.gramaje.value }}</p>"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "text_xrnftG",
-                "price_tVjtKg"
+                "price_tVjtKg",
+                "slide_pdp_X4yRMd"
               ]
             },
             "variant_picker_R3rGDr": {
