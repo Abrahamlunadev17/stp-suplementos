@@ -133,13 +133,22 @@
                   },
                   "blocks": {}
                 },
+                "slide_pdp_X4yRMd": {
+                  "type": "slide-pdp",
+                  "name": "Producto",
+                  "settings": {
+                    "text-desc": "<p>{{ closest.product.metafields.custom.peso.value }}</p>",
+                    "text-porcion": "<p>{{ closest.product.metafields.custom.gramaje.value }}</p>"
+                  },
+                  "blocks": {}
+                },
                 "price_tVjtKg": {
                   "type": "price",
                   "settings": {
                     "show_sale_price_first": true,
                     "show_installments": false,
                     "show_tax_info": false,
-                    "type_preset": "paragraph",
+                    "type_preset": "h4",
                     "width": "100%",
                     "alignment": "left",
                     "font": "var(--font-body--family)",
@@ -155,20 +164,21 @@
                   },
                   "blocks": {}
                 },
-                "slide_pdp_X4yRMd": {
-                  "type": "slide-pdp",
-                  "name": "Producto",
+                "discount_XBTMyn": {
+                  "type": "discount",
+                  "name": "Descuento",
                   "settings": {
-                    "text-desc": "<p>{{ closest.product.metafields.custom.peso.value }}</p>",
-                    "text-porcion": "<p>{{ closest.product.metafields.custom.gramaje.value }}</p>"
+                    "text": "<p>Obtén <strong>10% de descuento</strong></p>",
+                    "button_text": "OBTENER AHORA"
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
                 "text_xrnftG",
+                "slide_pdp_X4yRMd",
                 "price_tVjtKg",
-                "slide_pdp_X4yRMd"
+                "discount_XBTMyn"
               ]
             },
             "variant_picker_R3rGDr": {
