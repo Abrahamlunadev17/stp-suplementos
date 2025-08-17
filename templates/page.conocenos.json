@@ -56,9 +56,18 @@
         "padding-block-start": 40,
         "padding-block-end": 80
       }
+    },
+    "banner_conocenos_nNzdHt": {
+      "type": "banner-conocenos",
+      "name": "Hero Responsive conocenos",
+      "settings": {
+        "image_desktop": "shopify://shop_images/Frame_676.png",
+        "image_mobile": "shopify://shop_images/Frame_19_f676725e-bb7a-4280-8fbc-8ece7ea9affc.png"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "banner_conocenos_nNzdHt"
   ]
 }
