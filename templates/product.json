@@ -576,11 +576,20 @@
             "title": "Fórmulas de calidad con tablas nutrimentales completa",
             "text": "Nuestras tablas superan el estándar del mercado: muestran información clara, detallada y respaldada por ingredientes certificados e importados."
           }
+        },
+        "slide_QBQgHz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/historia.png",
+            "title": "Variedad que se adapta a ti",
+            "text": "Más de 90 presentaciones pensadas para distintos objetivos, estilos de vida y niveles de entrenamiento."
+          }
         }
       },
       "block_order": [
         "slide_B3TNAa",
-        "slide_QWxM6x"
+        "slide_QWxM6x",
+        "slide_QBQgHz"
       ],
       "name": "Slider Fórmula",
       "settings": {}
