@@ -1,0 +1,234 @@
+<div class="container-pdp-formula">
+  <div class="patron-pdp-slider">
+    {% comment %} <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="681"
+      height="752"
+      viewBox="0 0 681 752"
+      fill="none">
+      <g style="mix-blend-mode:multiply" opacity="0.35">
+        <rect
+          x="519.523"
+          width="103.559"
+          height="795.576"
+          transform="rotate(40.7693 519.523 0)"
+          fill="url(#paint0_linear_366_6)" />
+      </g>
+      <g style="mix-blend-mode:multiply" opacity="0.35">
+        <rect
+          x="605.523"
+          y="85"
+          width="98.5657"
+          height="795.576"
+          transform="rotate(40.7693 605.523 85)"
+          fill="url(#paint1_linear_366_6)" />
+      </g>
+      <defs>
+        <linearGradient
+          id="paint0_linear_366_6"
+          x1="571.303"
+          y1="0"
+          x2="571.303"
+          y2="795.576"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#E23332" />
+          <stop offset="1" stop-color="#AB1A1F" />
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear_366_6"
+          x1="654.806"
+          y1="85"
+          x2="654.806"
+          y2="880.576"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#E23332" />
+          <stop offset="1" stop-color="#AB1A1F" />
+        </linearGradient>
+      </defs>
+    </svg> {% endcomment %}
+  </div>
+  <div class="page-width-formula">
+
+
+    <h3>{{ section.settings.title }}</h3>
+    <div class="swiper formula-pdp-swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide">
+            <div class="formula-pdp-slide">
+              {% if block.settings.image != blank %}
+                <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.title }}">
+              {% endif %}
+              <div class="wrapper-text-pdp-formula">
+                <h4>{{ block.settings.subtitle }}</h4>
+                <p>{{ block.settings.text }}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <!-- Swiper Pagination (opcional) -->
+      <div class="swiper-pagination--formula"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .container-pdp-formula {
+    background-color: #D62828;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .patron-pdp-slider {
+    position: absolute;
+    bottom: -74px;
+    left: 59%;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .patron-pdp-slider svg {
+    max-width: 300px;
+    height: auto;
+  }
+
+  .page-width-formula {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 54px 32px;
+    position: relative;
+  }
+  .formula-pdp-slide {
+    padding-bottom: 54px;
+  }
+
+
+  .formula-pdp-slide h4 {
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .formula-pdp-slide img {
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  .formula-pdp-slide p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+
+  .swiper-pagination--formula {
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+  }
+
+  .swiper-pagination--formula .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    opacity: 1;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .swiper-pagination--formula .swiper-pagination-bullet-active {
+    width: 16px;
+    border-radius: 999999px;
+    background-color: white;
+  }
+
+
+</style>
+
+
+<script>
+  const swiperFormula = new Swiper('.formula-pdp-swiper', {
+    loop: false,
+    spaceBetween: 24,
+    pagination: {
+      el: '.swiper-pagination--formula',
+      clickable: true
+    },
+    autoplay: {
+      delay: 5000
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    }
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Fórmula PDP (Swiper)",
+    "tag": "section",
+    "class": "section-formula-pdp",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Título",
+        "default": "LA DIFERENCIA ESTÁ EN NUESTRA FÓRMULA"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Título",
+            "default": "LA DIFERENCIA ESTÁ EN NUESTRA FÓRMULA"
+          }, {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Imagen"
+          }, {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtítulo",
+            "default": "DISEÑADOS PARA CADA NIVEL Y OBJETIVO"
+          }, {
+            "type": "textarea",
+            "id": "text",
+            "label": "Texto descriptivo",
+            "default": "Tanto si estás empezando como si entrenas a nivel avanzado, tenemos opciones para cada etapa de tu progreso."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Fórmula PDP Slider",
+        "category": "Custom",
+        "blocks": [
+          {
+            "type": "slide"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

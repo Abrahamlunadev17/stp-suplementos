@@ -6,85 +6,84 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
-    "hero_jVaWmY": {
-      "type": "hero",
+    "banner_home_iJN86z": {
+      "type": "banner-home",
+      "name": "Banner general",
+      "settings": {
+        "img": "shopify://shop_images/Frame_676.png",
+        "img2": "shopify://shop_images/Frame_19_f676725e-bb7a-4280-8fbc-8ece7ea9affc.png",
+        "boton-name1": "IR A COMPRAR",
+        "url1": "shopify://collections/frontpage",
+        "boton-name2": "IR AL QUIZ",
+        "url2": "shopify://collections",
+        "top_mobile": 90,
+        "left_mobile": 50,
+        "top_desktop": 84,
+        "left_desktop": 66
+      }
+    },
+    "stpmarquee_image_w3nw4e": {
+      "type": "stpmarquee-image",
       "blocks": {
-        "text_YLPk4p": {
-          "type": "text",
-          "name": "t:names.heading",
+        "image_hAQk3j": {
+          "type": "image",
           "settings": {
-            "text": "<p>Browse our latest products</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground-heading)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+            "image": "shopify://shop_images/Group_715.svg"
+          }
         },
-        "button_H9gpTf": {
-          "type": "button",
-          "name": "t:names.button",
+        "image_hLrLim": {
+          "type": "image",
           "settings": {
-            "label": "Shop all",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-secondary",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
+            "image": "shopify://shop_images/Group_721.svg"
+          }
+        },
+        "image_FMRFCY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_717.svg"
+          }
+        },
+        "image_EihpMg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_720.svg"
+          }
+        },
+        "image_QtV6wm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_716.svg"
+          }
+        },
+        "image_MRqM79": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_718.svg"
+          }
         }
       },
       "block_order": [
-        "text_YLPk4p",
-        "button_H9gpTf"
+        "image_hAQk3j",
+        "image_hLrLim",
+        "image_FMRFCY",
+        "image_EihpMg",
+        "image_QtV6wm",
+        "image_MRqM79"
       ],
-      "name": "t:names.hero",
+      "name": "Scrolling Image",
       "settings": {
-        "media_type_1": "image",
-        "media_type_2": "image",
-        "open_in_new_tab": false,
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "space-between",
-        "vertical_alignment": "flex-end",
-        "align_baseline": true,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "flex-end",
-        "gap": 24,
-        "section_width": "page-width",
-        "section_height": "medium",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-6",
-        "toggle_overlay": true,
-        "overlay_color": "#12121266",
-        "overlay_style": "solid",
-        "gradient_direction": "to bottom",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 100,
-        "padding-block-end": 72
+        "text-head": "",
+        "text_spacing": true,
+        "colorBackground": "#CF2928",
+        "direction": "left",
+        "speed": 200,
+        "image-width": 60
       }
     },
-    "product_list_fa6P9H": {
+    "product_list_38HyPz": {
       "type": "product-list",
       "blocks": {
         "static-header": {
@@ -121,7 +120,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_list_text_YFtzcL": {
+            "product_list_text_XzWtDP": {
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
@@ -129,9 +128,9 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h4",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
-                "font_size": "",
+                "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
@@ -147,7 +146,7 @@
               },
               "blocks": {}
             },
-            "product_list_button_MWeP9V": {
+            "product_list_button_LAQijQ": {
               "type": "_product-list-button",
               "name": "t:names.product_list_button",
               "settings": {
@@ -163,8 +162,8 @@
             }
           },
           "block_order": [
-            "product_list_text_YFtzcL",
-            "product_list_button_MWeP9V"
+            "product_list_text_XzWtDP",
+            "product_list_button_LAQijQ"
           ]
         },
         "static-product-card": {
@@ -185,7 +184,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_card_gallery_677WP3": {
+            "product_card_gallery_Yx64aD": {
               "type": "_product-card-gallery",
               "name": "t:names.product_card_media",
               "settings": {
@@ -201,11 +200,11 @@
               },
               "blocks": {}
             },
-            "product_title_YXxMTj": {
+            "product_title_34Ud6A": {
               "type": "product-title",
               "name": "t:names.product_title",
               "settings": {
-                "width": "100%",
+                "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
@@ -226,7 +225,7 @@
               },
               "blocks": {}
             },
-            "price_JQzVV4": {
+            "price_nUfdyf": {
               "type": "price",
               "name": "t:names.product_price",
               "settings": {
@@ -251,25 +250,25 @@
             }
           },
           "block_order": [
-            "product_card_gallery_677WP3",
-            "product_title_YXxMTj",
-            "price_JQzVV4"
+            "product_card_gallery_Yx64aD",
+            "product_title_34Ud6A",
+            "price_nUfdyf"
           ]
         }
       },
-      "name": "Featured collection",
+      "name": "t:names.products_carousel",
       "settings": {
-        "collection": "all",
-        "layout_type": "grid",
+        "collection": "",
+        "layout_type": "carousel",
         "carousel_on_mobile": false,
-        "max_products": 8,
+        "max_products": 6,
         "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 8,
         "rows_gap": 24,
         "icons_style": "arrow",
-        "icons_shape": "none",
+        "icons_shape": "circle",
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
@@ -277,10 +276,411 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "stp_grid_products_3x9CRQ": {
+      "type": "stp-grid-products",
+      "blocks": {
+        "card_WrDGWa": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/image_4.png",
+            "title": "PROTEÍNAS",
+            "full_width": true
+          }
+        },
+        "card_9aqBKn": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/image_17.png",
+            "title": "CREATINAS",
+            "full_width": false
+          }
+        },
+        "card_7adgQK": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/image_18.png",
+            "title": "ENERGÉTICOS Y PRE-ENTRENOS",
+            "full_width": false
+          }
+        },
+        "card_y3PP6E": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/image_19.png",
+            "title": "VASODILATADORES",
+            "full_width": false
+          }
+        },
+        "card_tkpTC6": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/image_20.png",
+            "title": "AMINOÁCIDOS Y RECUPERACIÓN",
+            "full_width": false
+          }
+        },
+        "card_fK9iph": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/image_16.png",
+            "title": "QUEMA GRASA Y METABOLISMO",
+            "full_width": true
+          }
+        }
+      },
+      "block_order": [
+        "card_WrDGWa",
+        "card_9aqBKn",
+        "card_7adgQK",
+        "card_y3PP6E",
+        "card_tkpTC6",
+        "card_fK9iph"
+      ],
+      "name": "Grid de Productos",
+      "settings": {}
+    },
+    "stpmarquee_image_cxLteF": {
+      "type": "stpmarquee-image",
+      "blocks": {
+        "image_jgbgEi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Mask_group.png"
+          }
+        },
+        "image_nMWMPH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_29.png"
+          }
+        },
+        "image_VnEded": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_719.png"
+          }
+        },
+        "image_kDBp9g": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_718_f39b5a35-10a7-4096-85d0-2fe998209dcb.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_jgbgEi",
+        "image_nMWMPH",
+        "image_VnEded",
+        "image_kDBp9g"
+      ],
+      "name": "Scrolling Image",
+      "settings": {
+        "text-head": "<p>ENCUENTRANOS TAMBIEN EN </p>",
+        "text_spacing": true,
+        "colorBackground": "#CF2928",
+        "direction": "left",
+        "speed": 200,
+        "image-width": 60
+      }
+    },
+    "product_list_dhCWgz": {
+      "type": "product-list",
+      "blocks": {
+        "static-header": {
+          "type": "_product-list-content",
+          "name": "t:names.header",
+          "static": true,
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": false,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-end",
+            "align_baseline": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_list_text_WUPXk3": {
+              "type": "_product-list-text",
+              "name": "t:names.collection_title",
+              "settings": {
+                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_list_button_PwkBUx": {
+              "type": "_product-list-button",
+              "name": "t:names.product_list_button",
+              "settings": {
+                "label": "View all",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_list_text_WUPXk3",
+            "product_list_button_PwkBUx"
+          ]
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 4,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_card_gallery_xyTPr4": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "image_ratio": "adapt",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_title_gqafHc": {
+              "type": "product-title",
+              "name": "t:names.product_title",
+              "settings": {
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "price_bXTq73": {
+              "type": "price",
+              "name": "t:names.product_price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "color": "var(--color-foreground)",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_gallery_xyTPr4",
+            "product_title_gqafHc",
+            "price_bXTq73"
+          ]
+        }
+      },
+      "name": "t:names.products_carousel",
+      "settings": {
+        "collection": "",
+        "layout_type": "carousel",
+        "carousel_on_mobile": false,
+        "max_products": 6,
+        "columns": 4,
+        "mobile_columns": "2",
+        "mobile_card_size": "60cqw",
+        "columns_gap": 8,
+        "rows_gap": 24,
+        "icons_style": "arrow",
+        "icons_shape": "circle",
+        "section_width": "page-width",
+        "horizontal_alignment": "flex-start",
+        "gap": 28,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
+    "stp_benefits_FRbmz9": {
+      "type": "stp-benefits",
+      "name": "Beneficios",
+      "settings": {
+        "text-wrapper": "¿POR QUÉ ELEGIR F&NT?",
+        "image_desktop": "shopify://shop_images/Frame_729_a07a4250-2329-4cad-a112-6d34fbf274d1.png",
+        "image_mobile": "shopify://shop_images/Frame_730.png",
+        "cta_label": "IR A COMPRAR",
+        "cta_url": ""
+      }
+    },
+    "stp_atleta_w4Hbft": {
+      "type": "stp-atleta",
+      "name": "Sección Atleta",
+      "settings": {
+        "title": "IMPULSANDO EL RENDIMIENTO DE ATLETAS POR MÁS DE 30 AÑOS",
+        "text": "Con más de tres décadas de trayectoria, en F&NT formulamos y producimos suplementos con base en la experiencia y la innovación, utilizando ingredientes certificados y procesos propios que cumplen con estándares de calidad.\n\nHoy ofrecemos más de 75 presentaciones, adaptadas a tus objetivos, con la calidad y confianza que nos distingue.",
+        "bg_image": "shopify://shop_images/44ea398bf2acca6c065a0b249ece31d095b42c44.png"
+      }
+    },
+    "stp_reviews_xgAPmE": {
+      "type": "stp-reviews",
+      "blocks": {
+        "review_aRjfdf": {
+          "type": "review",
+          "settings": {
+            "quote": "El mejor suplemento que he probado",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "author": "Juan López",
+            "product_img": "shopify://shop_images/image_16.png",
+            "product_title": "Whey Protein Powder",
+            "product_url": "shopify://collections"
+          }
+        },
+        "review_XAPGyy": {
+          "type": "review",
+          "settings": {
+            "quote": "El mejor suplemento que he probado",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "author": "Juan López",
+            "product_img": "shopify://shop_images/image_16.png",
+            "product_title": "Whey Protein Powder",
+            "product_url": "shopify://collections"
+          }
+        },
+        "review_Twyir4": {
+          "type": "review",
+          "settings": {
+            "quote": "El mejor suplemento que he probado",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "author": "Juan López",
+            "product_img": "shopify://shop_images/image_16.png",
+            "product_title": "Whey Protein Powder",
+            "product_url": "shopify://collections"
+          }
+        },
+        "review_UGT8xL": {
+          "type": "review",
+          "settings": {
+            "quote": "El mejor suplemento que he probado",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "author": "Juan López",
+            "product_img": "shopify://shop_images/image_16.png",
+            "product_title": "Whey Protein Powder",
+            "product_url": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "review_aRjfdf",
+        "review_XAPGyy",
+        "review_Twyir4",
+        "review_UGT8xL"
+      ],
+      "name": "Slider de Reseñas",
+      "settings": {
+        "reviews_count": "+10,000 reseñas en plataformas digitales",
+        "title": "CONFIANZA COMPROBADA POR MILES DE USUARIOS"
+      }
+    },
+    "stp_quiz_MJz7jz": {
+      "type": "stp-quiz",
+      "name": "Quiz Banner",
+      "settings": {
+        "bg_image": "shopify://shop_images/image.png",
+        "title": "ENCUENTRA TU SUPLEMENTO IDEAL",
+        "subtitle": "Todos entrenamos distinto: unos buscan resistencia, otros potencia, otros transformar su físico.",
+        "desc": "Descubre qué productos F&NT® están hechos para ti.",
+        "cta_label": "IR AL QUIZ",
+        "cta_url": "shopify://collections"
+      }
     }
   },
   "order": [
-    "hero_jVaWmY",
-    "product_list_fa6P9H"
+    "banner_home_iJN86z",
+    "stpmarquee_image_w3nw4e",
+    "product_list_38HyPz",
+    "stp_grid_products_3x9CRQ",
+    "stpmarquee_image_cxLteF",
+    "product_list_dhCWgz",
+    "stp_benefits_FRbmz9",
+    "stp_atleta_w4Hbft",
+    "stp_reviews_xgAPmE",
+    "stp_quiz_MJz7jz"
   ]
 }

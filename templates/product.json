@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "product-information",
@@ -70,6 +71,7 @@
               "type": "group",
               "name": "Header",
               "settings": {
+                "link": "",
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -94,6 +96,7 @@
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
+                "placeholder": "",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
@@ -158,18 +161,6 @@
                 "price_tVjtKg"
               ]
             },
-            "divider_VJhene": {
-              "type": "_divider",
-              "name": "t:names.divider",
-              "settings": {
-                "thickness": 1,
-                "corner_radius": "square",
-                "width_percent": 100,
-                "padding-block-start": 0,
-                "padding-block-end": 0
-              },
-              "blocks": {}
-            },
             "variant_picker_R3rGDr": {
               "type": "variant-picker",
               "settings": {
@@ -196,6 +187,7 @@
               "blocks": {
                 "quantity": {
                   "type": "quantity",
+                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
@@ -210,6 +202,7 @@
                 },
                 "accelerated-checkout": {
                   "type": "accelerated-checkout",
+                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
@@ -217,25 +210,165 @@
               },
               "block_order": []
             },
-            "text_aEtTtq": {
-              "type": "text",
-              "name": "Product description",
+            "accordion_hziyLV": {
+              "type": "accordion",
+              "name": "t:names.accordion",
               "settings": {
-                "text": "{{ closest.product.description }}",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-primary--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
+                "icon": "caret",
+                "dividers": true,
+                "type_preset": "h6",
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "accordion_row_LhjwgX": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "DESCRIPCIÓN DEL PRODUCTO",
+                    "open_by_default": true,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_WDi3Kq": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_WDi3Kq"
+                  ]
+                },
+                "accordion_row_BkrRym": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "INFORMACIÓN NUTRICIONAL",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_yAyJqy": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_yAyJqy"
+                  ]
+                },
+                "accordion_row_hhHr3R": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "INGREDIENTES",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_MjFThq": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_MjFThq"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_row_LhjwgX",
+                "accordion_row_BkrRym",
+                "accordion_row_hhHr3R"
+              ]
+            },
+            "image_dH84E3": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "shopify://shop_images/Frame_718.png",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -246,10 +379,10 @@
           },
           "block_order": [
             "group_icgrde",
-            "divider_VJhene",
             "variant_picker_R3rGDr",
             "buy_buttons_eYQEYi",
-            "text_aEtTtq"
+            "accordion_hziyLV",
+            "image_dH84E3"
           ]
         }
       },
@@ -389,9 +522,9 @@
       "settings": {
         "product": "{{ closest.product }}",
         "recommendation_type": "related",
-        "layout_type": "grid",
+        "layout_type": "carousel",
         "carousel_on_mobile": false,
-        "max_products": 4,
+        "max_products": 3,
         "columns": 4,
         "mobile_columns": "2",
         "columns_gap": 12,
@@ -404,10 +537,178 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "stp_experts_39rVHz": {
+      "type": "stp-experts",
+      "blocks": {
+        "card_KEwjdP": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/doctor.png",
+            "text": "Nombre del especialista",
+            "especialidad": "Nutriológo.",
+            "subtitulo": "<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.<br/><br/></p>"
+          }
+        },
+        "card_aUAtFy": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/doctor.png",
+            "text": "Nombre del especialista",
+            "especialidad": "Nutriológo.",
+            "subtitulo": "<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.<br/><br/></p>"
+          }
+        },
+        "card_VpzVYN": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/doctor.png",
+            "text": "Nombre del especialista",
+            "especialidad": "Nutriológo.",
+            "subtitulo": "<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.<br/><br/></p>"
+          }
+        },
+        "card_rC6Tfp": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/doctor.png",
+            "text": "Nombre del especialista",
+            "especialidad": "Nutriológo.",
+            "subtitulo": "<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "card_KEwjdP",
+        "card_aUAtFy",
+        "card_VpzVYN",
+        "card_rC6Tfp"
+      ],
+      "name": "Beneficios Bienestar",
+      "settings": {
+        "heading": "LO QUE LOS EXPERTOS DICEN:",
+        "bg": "",
+        "button_label": "IR A COMPRAR",
+        "button_link": ""
+      }
+    },
+    "stp_reviews_enE4UU": {
+      "type": "stp-reviews",
+      "blocks": {
+        "review_XnckW4": {
+          "type": "review",
+          "settings": {
+            "quote": "El mejor suplemento que he probado",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "author": "Juan López",
+            "product_img": "shopify://shop_images/image_16.png",
+            "product_title": "Whey Protein Powder",
+            "product_url": "shopify://collections"
+          }
+        },
+        "review_Vx8nxc": {
+          "type": "review",
+          "settings": {
+            "quote": "El mejor suplemento que he probado",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "author": "Juan López",
+            "product_img": "shopify://shop_images/image_16.png",
+            "product_title": "Whey Protein Powder",
+            "product_url": "shopify://collections"
+          }
+        },
+        "review_mqTCUc": {
+          "type": "review",
+          "settings": {
+            "quote": "El mejor suplemento que he probado",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "author": "Juan López",
+            "product_img": "shopify://shop_images/image_16.png",
+            "product_title": "Whey Protein Powder",
+            "product_url": "shopify://collections"
+          }
+        },
+        "review_RdWx88": {
+          "type": "review",
+          "settings": {
+            "quote": "El mejor suplemento que he probado",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+            "author": "Juan López",
+            "product_img": "shopify://shop_images/image_16.png",
+            "product_title": "Whey Protein Powder",
+            "product_url": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "review_XnckW4",
+        "review_Vx8nxc",
+        "review_mqTCUc",
+        "review_RdWx88"
+      ],
+      "name": "Slider de Reseñas",
+      "settings": {
+        "reviews_count": "+10,000 reseñas en plataformas digitales",
+        "title": "CONFIANZA COMPROBADA POR MILES DE USUARIOS"
+      }
+    },
+    "stp_faqs_6JTHEw": {
+      "type": "stp-faqs",
+      "blocks": {
+        "faq_Vw4nEQ": {
+          "type": "faq",
+          "settings": {
+            "question": "¿LOREM IPSUM?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        },
+        "faq_WTxEH8": {
+          "type": "faq",
+          "settings": {
+            "question": "¿LOREM IPSUM?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        },
+        "faq_yirYLa": {
+          "type": "faq",
+          "settings": {
+            "question": "¿LOREM IPSUM?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        },
+        "faq_BybiXw": {
+          "type": "faq",
+          "settings": {
+            "question": "¿LOREM IPSUM?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        },
+        "faq_MpReHe": {
+          "type": "faq",
+          "settings": {
+            "question": "¿LOREM IPSUM?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        }
+      },
+      "block_order": [
+        "faq_Vw4nEQ",
+        "faq_WTxEH8",
+        "faq_yirYLa",
+        "faq_BybiXw",
+        "faq_MpReHe"
+      ],
+      "name": "Preguntas Frecuentes",
+      "settings": {
+        "title": "PREGUNTAS FRECUENTES"
+      }
     }
   },
   "order": [
     "main",
-    "product_recommendations_qggXJq"
+    "product_recommendations_qggXJq",
+    "stp_experts_39rVHz",
+    "stp_reviews_enE4UU",
+    "stp_faqs_6JTHEw"
   ]
 }

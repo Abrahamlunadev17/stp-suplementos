@@ -76,9 +76,9 @@
 {% endstyle %}
 
 <div class="wrapper-image-marquee" style="background-color: {{ section.settings.colorBackground }};">
-  {% if text-head %}
+  {% if section.settings.text-head  %}
     <div class="text-header-scrolling">
-      {{ section.settings['text-head'] }}
+      <p>{{ section.settings['text-head'] }}</p>
     </div>
   {% endif %}
   <div class="scrolling-text scrolling-text--{{ section.id }}">

@@ -11,34 +11,14 @@
   "type": "header",
   "name": "Header",
   "sections": {
-    "header_announcements_9jGBFp": {
-      "type": "header-announcements",
-      "blocks": {
-        "announcement_BxgCk9": {
-          "type": "_announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": "",
-            "font": "var(--font-subheading--family)",
-            "font_size": "0.75rem",
-            "weight": "",
-            "letter_spacing": "normal",
-            "case": "none"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "announcement_BxgCk9"
-      ],
-      "name": "t:names.announcement_bar",
+    "stpmarqueen_header_MLFLFz": {
+      "type": "stpmarqueen-header",
+      "name": "Texto en movimiento",
       "settings": {
-        "speed": 5,
-        "section_width": "page-width",
-        "color_scheme": "scheme-1",
-        "divider_width": 1,
-        "padding-block-start": 15,
-        "padding-block-end": 15
+        "text": "ENVÍOS GRATIS A TODO MÉXICO EN COMPRAS MAYORES A $1,500",
+        "colorBackground": "#cf2928",
+        "colorText": "#fff",
+        "link": ""
       }
     },
     "header_section": {
@@ -120,7 +100,7 @@
     }
   },
   "order": [
-    "header_announcements_9jGBFp",
+    "stpmarqueen_header_MLFLFz",
     "header_section"
   ]
 }

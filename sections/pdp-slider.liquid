@@ -1,0 +1,161 @@
+<div class="formula-slider-section">
+  <div class="page-wrapper-w">
+    <h2 class="formula-slider-title">LA DIFERENCIA ESTÁ EN NUESTRA FÓRMULA</h2>
+
+    <div class="swiper formula-swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide formula-slide">
+            <div class="formula-card">
+              <div class="formula-image-wrapper">
+                {{ block.settings.image | image_url: width: 600 | image_tag: class: 'formula-img' }}
+              </div>
+              <h3 class="formula-card-title">{{ block.settings.title }}</h3>
+              <p class="formula-card-text">{{ block.settings.text }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <!-- Bullets -->
+      <div class="swiper-pagination formula-bullets"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.formula-swiper', {
+      slidesPerView: 1.1,
+      spaceBetween: 16,
+      pagination: {
+        el: '.formula-bullets',
+        clickable: true
+      },
+      breakpoints: {
+        750: {
+          slidesPerView: 3,
+          spaceBetween: 32
+        }
+      }
+    });
+  });
+</script>
+
+<style>
+  .formula-slider-section {
+    background: #cf2928;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+  }
+
+  .page-wrapper-w {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .formula-slider-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .formula-card {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 64px;
+  }
+
+  .formula-image-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .formula-img {
+    border-radius: 16px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .formula-card-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .formula-card-text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .formula-bullets {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .formula-swiper .formula-bullets .swiper-pagination-bullet {
+    display: inline-block;
+    width: 24px;
+    height: 4px;
+    background-color: #c3c3c3;
+    border-radius: 54px;
+    margin: 0 3px !important;
+    opacity: 1;
+    transition: background-color 0.3s ease;
+  }
+
+  .formula-swiper .formula-bullets .swiper-pagination-bullet-active {
+    background-color: #ffffff;
+  }
+
+  @media (min-width: 798px) {
+    .formula-img {
+      height: 400px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Slider Fórmula",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Imagen"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Título",
+            "default": "TÍTULO"
+          }, {
+            "type": "textarea",
+            "id": "text",
+            "label": "Texto"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Slider Fórmula",
+        "category": "Sliders",
+        "blocks": [
+          {
+            "type": "slide"
+          }, {
+            "type": "slide"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

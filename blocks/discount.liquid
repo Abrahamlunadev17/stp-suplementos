@@ -1,0 +1,91 @@
+<div class="wrappe-discount">
+  <div class="discount-left">
+    <p class="discount-label">{{ block.settings.text | replace: '<p>', '' | replace: '</p>', '' }}</p>
+  </div>
+
+  <div class="discount-right">
+    <button class="discount-button">{{ block.settings.button_text }}</button>
+  </div>
+</div>
+
+<style>
+  .wrappe-discount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 999px;
+    padding: 1rem;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-shadow: 0 0 0 1px #ccc;
+    font-family: inherit;
+    box-sizing: border-box;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  .discount-left {
+    flex-grow: 1;
+    min-width: 0;
+  }
+
+  .discount-label {
+    margin: 0;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    word-break: break-word;
+  }
+
+  .discount-button {
+    background-color: #D62828;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 798px) {
+    .discount-label {
+      font-size: 12px;
+    }
+
+    .wrappe-discount {
+      gap: 16px;
+    }
+  }
+
+
+</style>
+
+{% schema %}
+  {
+    "name": "Descuento",
+    "tag": "section",
+    "class": "section-descuento",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Texto descriptivo",
+        "default": "<p>Obtén <strong>10% de descuento</strong></p>"
+      }, {
+        "type": "text",
+        "id": "button_text",
+        "label": "Texto del botón",
+        "default": "OBTENER AHORA"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Descuento",
+        "category": "Product"
+      }
+    ]
+  }
+{% endschema %}
