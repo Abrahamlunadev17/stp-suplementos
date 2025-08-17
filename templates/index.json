@@ -77,7 +77,7 @@
       "settings": {
         "text-head": "",
         "text_spacing": true,
-        "colorBackground": "#CF2928",
+        "colorBackground": "#cf2928",
         "direction": "left",
         "speed": 200,
         "image-width": 60
@@ -258,7 +258,7 @@
       },
       "name": "t:names.products_carousel",
       "settings": {
-        "collection": "",
+        "collection": "prueba",
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 6,
@@ -378,7 +378,7 @@
       "settings": {
         "text-head": "<p>ENCUENTRANOS TAMBIEN EN </p>",
         "text_spacing": true,
-        "colorBackground": "#CF2928",
+        "colorBackground": "#cf2928",
         "direction": "left",
         "speed": 200,
         "image-width": 60
