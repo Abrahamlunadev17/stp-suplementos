@@ -110,8 +110,8 @@
           "type": "define_item",
           "settings": {
             "icon": "shopify://shop_images/Group_706.png",
-            "title": "FÓRMULAS LIMPIAS",
-            "text": "Nuestros productos no contienen azúcares añadidos* y son totalmente libres de gluten.\n *Excepto en fórmulas diseñadas específicamente para proveer energía inmediata.",
+            "title": "VARIEDAD",
+            "text": "Contamos con más de 50 suplementos y deliciosos sabores para elegir según tus objetivos.",
             "footnote": ""
           }
         },
@@ -119,8 +119,8 @@
           "type": "define_item",
           "settings": {
             "icon": "shopify://shop_images/Group_706.png",
-            "title": "FÓRMULAS LIMPIAS",
-            "text": "Nuestros productos no contienen azúcares añadidos* y son totalmente libres de gluten.\n *Excepto en fórmulas diseñadas específicamente para proveer energía inmediata.",
+            "title": "HECHO EN MÉXICO",
+            "text": "Somos una marca 100% mexicana con 30 años de experiencia en nutrición deportiva.",
             "footnote": ""
           }
         }
