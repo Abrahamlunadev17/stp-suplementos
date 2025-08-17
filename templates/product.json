@@ -404,7 +404,7 @@
           "type": "text",
           "name": "t:names.header",
           "settings": {
-            "text": "<h3>You may also like </h3>",
+            "text": "<p>OPTIMIZA TU RENDIMIENTO CON:</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
