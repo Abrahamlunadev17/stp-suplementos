@@ -8,22 +8,9 @@
  * ------------------------------------------------------------
  */
 {
-  "parent": "header-group.json",
+  "parent": "footer-group.json",
   "context": {
     "market": "mx"
   },
-  "sections": {
-    "header_section": {
-      "settings": {
-        "logo_position": "center"
-      },
-      "blocks": {
-        "header-menu": {
-          "settings": {
-            "menu": "new-menu"
-          }
-        }
-      }
-    }
-  }
+  "sections": {}
 }
