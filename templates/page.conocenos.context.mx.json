@@ -8,26 +8,9 @@
  * ------------------------------------------------------------
  */
 {
-  "parent": "product.json",
+  "parent": "page.conocenos.json",
   "context": {
     "market": "mx"
   },
-  "sections": {
-    "main": {
-      "settings": {},
-      "blocks": {
-        "product-details": {
-          "blocks": {
-            "accordion_hziyLV": {
-              "settings": {
-                "icon": "caret",
-                "border": "none"
-              }
-            }
-          },
-          "settings": {}
-        }
-      }
-    }
-  }
+  "sections": {}
 }
