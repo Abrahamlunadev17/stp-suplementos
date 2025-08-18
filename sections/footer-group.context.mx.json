@@ -20,15 +20,30 @@
           "blocks": {
             "group_4aCyy7": {
               "blocks": {},
-              "block_order": [
-                "text_3L9Fjq"
-              ],
+              "block_order": [],
+              "settings": {}
+            }
+          },
+          "settings": {}
+        },
+        "footer_utilities_KRaGcH": {
+          "blocks": {
+            "copyright": {
+              "disabled": true,
+              "settings": {}
+            },
+            "policy_list": {
+              "disabled": true,
               "settings": {}
             }
           },
           "settings": {}
         }
-      }
+      },
+      "block_order": [
+        "group_tbFfTQ",
+        "footer_utilities_KRaGcH"
+      ]
     }
   }
 }
