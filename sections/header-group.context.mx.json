@@ -15,12 +15,16 @@
   "sections": {
     "header_section": {
       "settings": {
-        "logo_position": "center"
+        "logo_position": "center",
+        "color_scheme_top": "scheme-5"
       },
       "blocks": {
         "header-menu": {
           "settings": {
-            "menu": "new-menu"
+            "menu": "new-menu",
+            "menu_style": "text",
+            "color_scheme": "scheme-5",
+            "menu_font_style": "inverse"
           }
         }
       }
