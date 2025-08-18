@@ -12,5 +12,23 @@
   "context": {
     "market": "mx"
   },
-  "sections": {}
+  "sections": {
+    "footer": {
+      "settings": {},
+      "blocks": {
+        "group_tbFfTQ": {
+          "blocks": {
+            "group_4aCyy7": {
+              "blocks": {},
+              "block_order": [
+                "text_3L9Fjq"
+              ],
+              "settings": {}
+            }
+          },
+          "settings": {}
+        }
+      }
+    }
+  }
 }
