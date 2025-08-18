@@ -24,7 +24,9 @@
               }
             }
           },
-          "settings": {}
+          "settings": {
+            "alignment": "left"
+          }
         }
       }
     }
