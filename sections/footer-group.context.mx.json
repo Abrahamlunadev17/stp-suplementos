@@ -205,6 +205,16 @@
             "policy_list": {
               "disabled": true,
               "settings": {}
+            },
+            "social_icons": {
+              "blocks": {
+                "social_link_JnLXB6": {
+                  "settings": {
+                    "link": "https://youtube.-com"
+                  }
+                }
+              },
+              "settings": {}
             }
           },
           "settings": {}
