@@ -16,15 +16,53 @@
     "footer": {
       "settings": {},
       "blocks": {
-        "group_tbFfTQ": {
-          "blocks": {
-            "group_4aCyy7": {
-              "blocks": {},
-              "block_order": [],
-              "settings": {}
-            }
-          },
-          "settings": {}
+        "menu_7VNTj": {
+          "type": "menu",
+          "name": "t:names.menu",
+          "disabled": false,
+          "settings": {
+            "menu": "new-menu",
+            "heading": "",
+            "header-f03857203b26b2e8c0f85b281d88ef76": null,
+            "menu_spacing": 12,
+            "show_as_accordion": false,
+            "accordion_icon": "caret",
+            "accordion_dividers": false,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "header-646c7a6da33c41855cc05fa3a7c2aaf8": null,
+            "heading_preset": "h3",
+            "link_preset": "paragraph",
+            "header-a8e1a7567d0d1e37de0d528a750c038e": null,
+            "padding-block-start": 22,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          }
+        },
+        "menu_GdCkD": {
+          "type": "menu",
+          "name": "t:names.menu",
+          "disabled": false,
+          "settings": {
+            "menu": "customer-account-main-menu",
+            "heading": "",
+            "header-f03857203b26b2e8c0f85b281d88ef76": null,
+            "menu_spacing": 12,
+            "show_as_accordion": false,
+            "accordion_icon": "caret",
+            "accordion_dividers": false,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "header-646c7a6da33c41855cc05fa3a7c2aaf8": null,
+            "heading_preset": "h3",
+            "link_preset": "paragraph",
+            "header-a8e1a7567d0d1e37de0d528a750c038e": null,
+            "padding-block-start": 22,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          }
         },
         "footer_utilities_KRaGcH": {
           "blocks": {
@@ -41,7 +79,8 @@
         }
       },
       "block_order": [
-        "group_tbFfTQ",
+        "menu_7VNTj",
+        "menu_GdCkD",
         "footer_utilities_KRaGcH"
       ]
     }
