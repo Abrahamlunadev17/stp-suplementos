@@ -29,6 +29,31 @@
           }
         }
       }
+    },
+    "banner_home_EhpAQ": {
+      "type": "banner-home",
+      "disabled": false,
+      "settings": {
+        "img": "shopify://shop_images/Frame_737.png",
+        "img2": "shopify://shop_images/Frame_736.png",
+        "video": null,
+        "video2": null,
+        "boton-name1": "IR A COMPRAR",
+        "url1": "",
+        "boton-name2": "IR AL QUIZ",
+        "url2": "",
+        "top_mobile": 85,
+        "left_mobile": 50,
+        "top_desktop": 80,
+        "left_desktop": 27
+      },
+      "blocks": {},
+      "block_order": [],
+      "name": "Banner general"
     }
-  }
+  },
+  "order": [
+    "banner_home_EhpAQ",
+    "main"
+  ]
 }
