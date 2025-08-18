@@ -12,5 +12,21 @@
   "context": {
     "market": "mx"
   },
-  "sections": {}
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "static-blog-post-card": {
+          "blocks": {
+            "image": {
+              "settings": {
+                "height": "small"
+              }
+            }
+          },
+          "settings": {}
+        }
+      }
+    }
+  }
 }
