@@ -1,5 +1,5 @@
 
-
+<div class="wrapper-card-product">
 {% liquid
   assign product = closest.product
 -%}
@@ -9,6 +9,19 @@
 {% endcapture %}
 
 {% render 'product-card', children: children, product: product %}
+</div>
+
+
+
+<style>
+  .wrapper-card-product {
+    background-color: white;
+    padding: 12px 12px;
+    margin-bottom: 32px;
+    border-radius: 8px;
+    min-height: 200px;
+  }
+</style>
 
 {% schema %}
 {
