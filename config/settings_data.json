@@ -85,11 +85,19 @@
         "disabled": false,
         "settings": {}
       },
+      "5733569959556273306": {
+        "type": "shopify://apps/recomma-product-quiz-builder/blocks/recommenda_link_quiz/66d3c4bd-027b-4c27-8ac0-2965d95b778a",
+        "disabled": false,
+        "settings": {
+          "color": "#838383",
+          "hide_close_button": false
+        }
+      },
       "18134635481486484319": {
         "type": "shopify://apps/recomma-product-quiz-builder/blocks/recommenda_popup_quiz/66d3c4bd-027b-4c27-8ac0-2965d95b778a",
         "disabled": false,
         "settings": {
-          "quiz_id": 0,
+          "quiz_id": 1973,
           "open_delay": 1,
           "hide_after_one_submission": false,
           "hide_after_close": false,
@@ -99,14 +107,6 @@
           "color": "#838383",
           "hide_close_button": false,
           "show_in_pages": ""
-        }
-      },
-      "5733569959556273306": {
-        "type": "shopify://apps/recomma-product-quiz-builder/blocks/recommenda_link_quiz/66d3c4bd-027b-4c27-8ac0-2965d95b778a",
-        "disabled": false,
-        "settings": {
-          "color": "#838383",
-          "hide_close_button": false
         }
       }
     },
