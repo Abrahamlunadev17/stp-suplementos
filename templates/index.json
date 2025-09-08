@@ -347,7 +347,8 @@
         }
       },
       "custom_css": [
-        "h3 {color: white;}"
+        "h3 {color: white;}",
+        "span,p {color:black;}"
       ],
       "name": "t:names.products_carousel",
       "settings": {
@@ -469,7 +470,7 @@
       ],
       "name": "Scrolling Image",
       "settings": {
-        "text-head": "<p>ENCUENTRANOS TAMBIEN EN </p>",
+        "text-head": "ENCUENTRANOS TAMBIEN EN",
         "text_spacing": true,
         "colorBackground": "#cf2928",
         "direction": "left",
