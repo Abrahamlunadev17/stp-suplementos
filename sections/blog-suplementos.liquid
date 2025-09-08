@@ -1,0 +1,220 @@
+<div class="p-w-blogposts">
+  <div class="blog-filter-buttons">
+    {% assign rendered_buttons = "" %}
+    {% for block in section.blocks %}
+      {% assign blog = blogs[block.settings.blog.handle] %}
+      {% unless rendered_buttons contains blog.handle %}
+        <a
+          href="#"
+          class="blog-filter-button{% if forloop.first %} active{% endif %}"
+          data-blog="{{ blog.handle }}">
+          {{ block.settings.label }}
+        </a>
+        {% assign rendered_buttons = rendered_buttons | append: blog.handle | append: "," %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+
+  <div class="blog-posts-container-">
+    {% assign rendered_blogs = "" %}
+    {% for block in section.blocks %}
+      {% assign blog = blogs[block.settings.blog.handle] %}
+
+      {% unless rendered_blogs contains blog.handle %}
+        <div
+          class="blog-posts-grid blog-group"
+          data-blog="{{ blog.handle }}"
+          {% unless forloop.first %}
+          style="display: none;"
+          {% endunless %}>
+          {% for article in blog.articles %}
+            <div class="blog-post-card">
+              {% if article.image %}
+                <img src="{{ article.image | img_url: 'master' }}" alt="{{ article.title }}">
+              {% endif %}
+              <div class="blog-post-content">
+                <h3>{{ article.title }}</h3>
+                <p>{{ article.excerpt | strip_html | truncate: 100 }}</p>
+                <a class="blog-button" href="{{ article.url }}">VER MÁS +</a>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        {% assign rendered_blogs = rendered_blogs | append: blog.handle | append: "," %}
+      {% endunless %}
+    {% endfor %}
+  </div>
+
+</div>
+
+
+<style>
+  .blog-filter-buttons {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .blog-posts-container- {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 54px;
+  }
+
+  .p-w-blogposts {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .blog-filter-button {
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: 0.3s ease;
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+  }
+
+  .blog-filter-button.active {
+    background-color: #d62c2c;
+    border-color: #d62c2c;
+    color: white;
+  }
+
+  .blog-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .blog-post-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-post-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .blog-post-content {
+    padding: 1rem;
+    color: black;
+  }
+
+  .blog-post-content h3 {
+    margin: 0 0 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .blog-post-content p {
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  .blog-button {
+    margin-top: 1rem;
+    display: block;
+    background: #d62c2c;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+@media (max-width: 768px) {
+    .blog-posts-container- {
+        grid-template-columns: 1fr;
+        padding-bottom: 32px;
+    }
+    .blog-posts-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    .blog-filter-buttons {
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+    .p-w-blogposts {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+}
+
+
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.blog-filter-button');
+    const groups = document.querySelectorAll('.blog-group');
+  
+    buttons.forEach(button => {
+      button.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        // Activar botón
+        buttons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+  
+        const blog = this.dataset.blog;
+  
+        groups.forEach(group => {
+          if (group.dataset.blog === blog) {
+            group.style.display = 'grid';
+          } else {
+            group.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Blog por Tema",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "tag_button",
+        "name": "Botón de tema",
+        "settings": [
+          {
+            "type": "text",
+            "id": "label",
+            "label": "Nombre del tema",
+            "default": "Suplementos"
+          }, {
+            "type": "blog",
+            "id": "blog",
+            "label": "Blog relacionado"
+          }
+        ]
+      }
+    ],
+    "max_blocks": 10,
+    "presets": [
+      {
+        "name": "Filtro de Blog por Tema"
+      }
+    ]
+  }
+{% endschema %}
