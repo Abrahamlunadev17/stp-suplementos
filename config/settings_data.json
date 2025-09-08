@@ -83,8 +83,8 @@
       "scheme-1": {
         "settings": {
           "background": "#161616",
-          "foreground_heading": "#000000",
-          "foreground": "#000000",
+          "foreground_heading": "#ffffff",
+          "foreground": "#ffffff",
           "primary": "#ffffffcf",
           "primary_hover": "#f9f9f9",
           "border": "#0000000f",
