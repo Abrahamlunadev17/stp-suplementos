@@ -83,6 +83,33 @@
         "image-width": 60
       }
     },
+    "tabs_collection_aLQGCf": {
+      "type": "tabs-collection",
+      "blocks": {
+        "tab_jKaKB8": {
+          "type": "tab",
+          "settings": {
+            "collection": "prueba"
+          }
+        },
+        "tab_DVEXRU": {
+          "type": "tab",
+          "settings": {
+            "collection": "frontpage"
+          }
+        }
+      },
+      "block_order": [
+        "tab_jKaKB8",
+        "tab_DVEXRU"
+      ],
+      "name": "Tabs de Colección",
+      "settings": {
+        "heading": "¿Cuál es tu objetivo?",
+        "subheading": "",
+        "max_products": 8
+      }
+    },
     "product_list_38HyPz": {
       "type": "product-list",
       "blocks": {
@@ -346,6 +373,7 @@
           ]
         }
       },
+      "disabled": true,
       "custom_css": [
         "h3,span.add-to-cart-text__content,span.svg-wrapper.add-to-cart-icon {color: white;}",
         "span,p {color: black;}"
@@ -627,6 +655,7 @@
   "order": [
     "banner_home_iJN86z",
     "stpmarquee_image_w3nw4e",
+    "tabs_collection_aLQGCf",
     "product_list_38HyPz",
     "stp_grid_products_3x9CRQ",
     "stpmarquee_image_cxLteF",
