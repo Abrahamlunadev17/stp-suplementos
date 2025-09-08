@@ -249,6 +249,9 @@
           ]
         }
       },
+      "custom_css": [
+        "span,button{color:white;}"
+      ],
       "settings": {
         "layout_type": "grid",
         "product_card_size": "medium",
