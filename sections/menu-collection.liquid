@@ -1,0 +1,119 @@
+<div class="category-blocks">
+  {% for block in section.blocks %}
+    <a href="{{ block.settings.url }}" class="category-block{% if request.path == block.settings.url %} active{% endif %}">
+      {% if request.path == block.settings.url %}
+        <span class="category-icon">
+          <!-- SVG de las flechas rojas -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 46 44"
+            fill="none">
+            <g style="mix-blend-mode:multiply" opacity="0.55">
+              <path d="M-5.46094 44.2479L10.7187 23.4452L-4.14045 3.80893e-05L10.7187 3.74397e-05L25.2476 22.124L8.73791 44.2479L-5.46094 44.2479Z" fill="#E23332" />
+            </g>
+            <g style="mix-blend-mode:multiply" opacity="0.55">
+              <path d="M14.3672 44.2478L30.5468 23.4451L15.6877 -8.39811e-05L30.5468 -8.46306e-05L45.0758 22.1239L28.566 44.2478L14.3672 44.2478Z" fill="#E23332" />
+            </g>
+          </svg>
+        </span>
+      {% endif %}
+      <span class="category-label">{{ block.settings.title }}</span>
+    </a>
+  {% endfor %}
+</div>
+
+<style>
+  .category-blocks {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    padding: 32px 0px;
+    gap: 1rem;
+    padding: 1rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .category-block {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    flex: 0 0 auto;
+    padding: 0.75rem 1.5rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    scroll-snap-align: start;
+  }
+
+  .category-block:hover {
+    background-color: #ddd;
+  }
+
+  .category-block.active {
+    background-color: #d62c2c;
+    color: white;
+  }
+
+  .category-block .category-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 0.5rem;
+  }
+
+  .category-block .category-icon svg {
+    width: 22px;
+    height: auto;
+  }
+
+  .category-block .category-label {
+    display: inline-block;
+  }
+  @media (max-width: 768px) {
+
+    .category-blocks {
+      margin: 0 24px;
+    }
+
+  }
+
+</style>
+
+{% schema %}
+  {
+    "name": "Categorías destacadas",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "category_block",
+        "name": "Bloque de categoría",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Nombre de la categoría",
+            "default": "PROTEÍNAS"
+          }, {
+            "type": "url",
+            "id": "url",
+            "label": "Enlace de la categoría"
+          }
+        ]
+      }
+    ],
+    "max_blocks": 10,
+    "presets": [
+      {
+        "name": "Categorías destacadas"
+      }
+    ]
+  }
+{% endschema %}
