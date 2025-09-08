@@ -110,33 +110,6 @@
         "max_products": 8
       }
     },
-    "tabs_collection_rhtnVK": {
-      "type": "tabs-collection",
-      "blocks": {
-        "tab_jxmE9g": {
-          "type": "tab",
-          "settings": {
-            "collection": "prueba"
-          }
-        },
-        "tab_HwKT8F": {
-          "type": "tab",
-          "settings": {
-            "collection": "frontpage"
-          }
-        }
-      },
-      "block_order": [
-        "tab_jxmE9g",
-        "tab_HwKT8F"
-      ],
-      "name": "Tabs de Colección",
-      "settings": {
-        "heading": "BEST SELLER",
-        "subheading": "",
-        "max_products": 8
-      }
-    },
     "product_list_38HyPz": {
       "type": "product-list",
       "blocks": {
@@ -533,6 +506,33 @@
         "image-width": 60
       }
     },
+    "tabs_collection_rhtnVK": {
+      "type": "tabs-collection",
+      "blocks": {
+        "tab_jxmE9g": {
+          "type": "tab",
+          "settings": {
+            "collection": "prueba"
+          }
+        },
+        "tab_HwKT8F": {
+          "type": "tab",
+          "settings": {
+            "collection": "frontpage"
+          }
+        }
+      },
+      "block_order": [
+        "tab_jxmE9g",
+        "tab_HwKT8F"
+      ],
+      "name": "Tabs de Colección",
+      "settings": {
+        "heading": "BEST SELLER",
+        "subheading": "",
+        "max_products": 8
+      }
+    },
     "stp_benefits_FRbmz9": {
       "type": "stp-benefits",
       "name": "Beneficios",
@@ -683,10 +683,10 @@
     "banner_home_iJN86z",
     "stpmarquee_image_w3nw4e",
     "tabs_collection_aLQGCf",
-    "tabs_collection_rhtnVK",
     "product_list_38HyPz",
     "stp_grid_products_3x9CRQ",
     "stpmarquee_image_cxLteF",
+    "tabs_collection_rhtnVK",
     "stp_benefits_FRbmz9",
     "stp_atleta_w4Hbft",
     "stp_reviews_xgAPmE",
