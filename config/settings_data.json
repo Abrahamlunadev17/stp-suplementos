@@ -95,7 +95,7 @@
       },
       "18134635481486484319": {
         "type": "shopify://apps/recomma-product-quiz-builder/blocks/recommenda_popup_quiz/66d3c4bd-027b-4c27-8ac0-2965d95b778a",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "quiz_id": 1973,
           "open_delay": 1,

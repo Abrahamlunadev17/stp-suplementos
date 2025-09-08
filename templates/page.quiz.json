@@ -64,10 +64,22 @@
         "image_desktop": "shopify://shop_images/quiz.png",
         "image_mobile": "shopify://shop_images/quiz-mobile.png"
       }
+    },
+    "custom_liquid_k3t8iN": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<iframe src=\"https://quiz-builder-24wuu.ondigitalocean.app/quiz/fntsuplementos.myshopify.com/1973\" width=\"100%\" height=\"700\" frameborder=\"0\" allow=\"clipboard-write\"></iframe>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
     "main",
-    "banner_conocenos_dyC7ky"
+    "banner_conocenos_dyC7ky",
+    "custom_liquid_k3t8iN"
   ]
 }
