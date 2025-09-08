@@ -195,7 +195,7 @@
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
-                "color": "var(--color-foreground)",
+                "color": "var(--color-primary)",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -250,7 +250,7 @@
         }
       },
       "custom_css": [
-        "span,button{color:white;}"
+        "span,button {color: white;}"
       ],
       "settings": {
         "layout_type": "grid",
