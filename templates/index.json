@@ -347,7 +347,7 @@
         }
       },
       "custom_css": [
-        "h3,button.span {color: white;}",
+        "h3,span.add-to-cart-text__content,span.svg-wrapper.add-to-cart-icon {color: white;}",
         "span,p {color: black;}"
       ],
       "name": "t:names.products_carousel",
