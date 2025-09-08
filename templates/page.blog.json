@@ -64,10 +64,28 @@
         "image_desktop": "shopify://shop_images/Frame_738.png",
         "image_mobile": "shopify://shop_images/Group_7292.png"
       }
+    },
+    "blog_suplementos_fHGAxN": {
+      "type": "blog-suplementos",
+      "blocks": {
+        "tag_button_XH9enh": {
+          "type": "tag_button",
+          "settings": {
+            "label": "Suplementos",
+            "blog": "suplementos"
+          }
+        }
+      },
+      "block_order": [
+        "tag_button_XH9enh"
+      ],
+      "name": "Filtro de Blog por Tema",
+      "settings": {}
     }
   },
   "order": [
     "main",
-    "banner_conocenos_FfhPyW"
+    "banner_conocenos_FfhPyW",
+    "blog_suplementos_fHGAxN"
   ]
 }
