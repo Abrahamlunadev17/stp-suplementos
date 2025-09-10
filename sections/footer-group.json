@@ -14,18 +14,6 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "divider_hFm3am": {
-          "type": "_divider",
-          "name": "t:names.divider",
-          "settings": {
-            "thickness": 1,
-            "corner_radius": "square",
-            "width_percent": 100,
-            "padding-block-start": 0,
-            "padding-block-end": 0
-          },
-          "blocks": {}
-        },
         "logo_CYnpCG": {
           "type": "logo",
           "name": "t:names.logo",
@@ -154,7 +142,6 @@
         }
       },
       "block_order": [
-        "divider_hFm3am",
         "logo_CYnpCG",
         "menu_MKt63M",
         "footer_utilities_KRaGcH"
@@ -175,7 +162,7 @@
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
-        "padding-block-start": 0,
+        "padding-block-start": 33,
         "padding-block-end": 30
       }
     }
