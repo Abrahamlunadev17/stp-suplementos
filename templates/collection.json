@@ -9,6 +9,31 @@
  */
 {
   "sections": {
+    "menu_collection_PeLAKi": {
+      "type": "menu-collection",
+      "blocks": {
+        "category_block_mBwULh": {
+          "type": "category_block",
+          "settings": {
+            "title": "PROTEÍNAS",
+            "url": "shopify://collections/frontpage"
+          }
+        },
+        "category_block_89chWN": {
+          "type": "category_block",
+          "settings": {
+            "title": "PROTEÍNAS",
+            "url": "shopify://collections/prueba"
+          }
+        }
+      },
+      "block_order": [
+        "category_block_mBwULh",
+        "category_block_89chWN"
+      ],
+      "name": "Categorías destacadas",
+      "settings": {}
+    },
     "section": {
       "type": "section",
       "blocks": {
@@ -325,6 +350,7 @@
     }
   },
   "order": [
+    "menu_collection_PeLAKi",
     "section",
     "main"
   ]
