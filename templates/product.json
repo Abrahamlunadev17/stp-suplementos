@@ -294,7 +294,6 @@
                     "heading": "INFORMACIÓN NUTRICIONAL",
                     "open_by_default": false,
                     "icon": "none",
-                    "image_upload": "{{ closest.product.metafields.custom.tabla_nutrimental.value }}",
                     "width": 20
                   },
                   "blocks": {
@@ -302,7 +301,7 @@
                       "type": "image",
                       "name": "t:names.image",
                       "settings": {
-                        "image": "shopify://shop_images/Frame_492_1.png",
+                        "image": "{{ closest.product.metafields.custom.tabla_nutrimental.value }}",
                         "link": "",
                         "image_ratio": "adapt",
                         "width": "fill",
