@@ -10,7 +10,14 @@
   }
 
   span.marquee-text {
-    font-weight: bold;
+    font-family: 'HelveticaCondensedmMedium', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    padding-right: 40px;
+    text-transform: uppercase;
+    display: inline-block;
+    white-space: nowrap;
+    color:{{ section.settings.colorText }};
   }
 
   .custom-marquee a {
@@ -41,7 +48,7 @@
         <a href="{{ section.settings.link }}" class="">
       {%- endif -%}
           <div class="track py-1">
-            <span class="content marquee-text">{{ section.settings.text | escape | upcase }}</span>
+            <peso class="content marquee-text">{{ section.settings.text | escape | upcase }}</span>
             <span class="content marquee-text">{{ section.settings.text | escape | upcase }}</span>
             <span class="content marquee-text">{{ section.settings.text | escape | upcase }}</span>
             <span class="content marquee-text">{{ section.settings.text | escape | upcase }}</span>

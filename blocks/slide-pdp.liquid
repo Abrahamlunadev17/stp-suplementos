@@ -2,9 +2,11 @@
   <div class="desc-pdp-porcion">
     <p>{{ block.settings.text-desc }}</p>
   </div>
-  <div class="porcion-pdp">
-    <p>{{ block.settings.text-porcion }}</p>
-  </div>
+  {% if block.settings.text-porcion != blank %}
+    <div class="porcion-pdp">
+      <p>{{ block.settings.text-porcion }}</p>
+    </div>
+  {% endif %}
 </div>
 
 <style>

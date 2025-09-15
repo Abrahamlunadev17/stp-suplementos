@@ -1,0 +1,34 @@
+/* ====== Fonts personalizadas ====== */
+
+/* Helvetica Condensed para títulos */
+@font-face {
+  font-family: "HelveticaCondensed";
+  src: url("https://cdn.shopify.com/s/files/1/0940/7037/4676/files/Helvetica_Neue_LT_87_Heavy_Condensed.ttf?v=1757540352") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Helvetica Neue para párrafos */
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("https://cdn.shopify.com/s/files/1/0940/7037/4676/files/HelveticaNeue.ttc?v=1757540353") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "HelveticaCondensedmMedium";
+  src: url("https://cdn.shopify.com/s/files/1/0940/7037/4676/files/Helvetica_Neue_LT_67_Medium_Condensed.ttf?v=1757540352") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ====== Usos ====== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "HelveticaCondensed", sans-serif;
+}
+
+p,div,span,a,li,td,th {
+  font-family: "HelveticaNeue", sans-serif;
+}

@@ -1,13 +1,10 @@
-
-
-
 <div class="stp-reviews-section">
   <div>
     <span class="stp-reviews-stars">★★★★★</span>
     <span class="stp-reviews-count">{{ section.settings.reviews_count }}</span>
   </div>
   <div class="stp-reviews-title">
-    {{ section.settings.title | escape }}
+    <h4>{{ section.settings.title | escape }}</h4>
   </div>
   <div class="swiper stp-swiper-reviews">
     <div class="swiper-wrapper wrapper-reviews">
@@ -68,6 +65,9 @@
     font-size: 1rem;
     margin-left: 8px;
     font-weight: 400;
+    font-family: "HelveticaCondensedmMedium"
+    , sans-serif;
+
   }
   .stp-reviews-title {
     color: #fff;
@@ -94,6 +94,7 @@
   .stp-review-content {
     padding: 32px 18px 0;
     flex: 1 1 auto;
+
   }
   .stp-review-stars {
     color: #151515;
@@ -105,16 +106,22 @@
     font-weight: bold;
     margin-bottom: 12px;
     color: #151515;
+    font-family: "HelveticaCondensedmMedium"
+    , sans-serif;
   }
   .stp-review-text {
     font-size: 1rem;
     color: #222;
     margin-bottom: 18px;
+    font-family: "HelveticaCondensedmMedium"
+    , sans-serif;
   }
   .stp-review-author {
     font-size: 0.98rem;
     color: #151515;
     font-style: italic;
+    font-family: "HelveticaCondensedmMedium"
+    , sans-serif;
     margin-bottom: 8px;
   }
   .stp-review-product {
@@ -142,9 +149,9 @@
     text-align: left;
   }
   .stp-review-product-title {
-    font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 2px;
+    font-family: "HelveticaCondensedmMedium", sans-serif;
   }
   .stp-review-product-link {
     color: #fff;
@@ -186,7 +193,7 @@
       max-width: 95vw;
     }
     .stp-review-content {
-      padding: 18px 8px 0;
+      padding: 18px 24px 0;
     }
     .stp-review-product {
       min-height: 70px;

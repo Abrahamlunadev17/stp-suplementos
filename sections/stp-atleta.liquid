@@ -1,6 +1,8 @@
 <div class="stp-atleta-section">
-  <div class="stp-atleta-bg-circular"></div>
+
   <div class="stp-atleta-content">
+
+    <div class="stp-atleta-bg-circular"></div>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="100%"
@@ -26,7 +28,9 @@
       </defs>
     </svg>
     <div class="stp-atleta-title">
-      {{ section.settings.title | escape }}
+      <h4>
+        {{ section.settings.title | escape }}
+      </h4>
     </div>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +57,7 @@
       </defs>
     </svg>
     <div class="stp-atleta-desc">
-      {{ section.settings.text | newline_to_br }}
+      <h5>{{ section.settings.text | newline_to_br }}</h5>
     </div>
   </div>
   <div class="stp-atleta-bg-container">
@@ -71,12 +75,13 @@
 
   .stp-atleta-bg-circular {
     border-radius: 515px;
-    background: rgba(207, 41, 40, 0.35);
+    background: rgb(207 41 40 / 75%);
     width: 515px;
     height: 515px;
     filter: blur(113.05000305175781px);
     position: absolute;
     top: 5%;
+    z-index: -1;
     right: 40%;
   }
   .stp-atleta-section {
@@ -102,7 +107,7 @@
     width: 100%;
     max-height: 700px;
     object-fit: cover;
-    z-index: 1;
+    z-index: 2;
     opacity: 1;
   }
 
@@ -112,7 +117,8 @@
     z-index: 2;
     max-width: initial;
     margin: 0 auto;
-    padding: 0 16px 32px;
+    padding: 48px 16px 32px;
+    overflow: hidden;
   }
   .stp-atleta-title {
     font-size: 1rem;
@@ -126,11 +132,17 @@
     margin-bottom: 0;
     line-height: 1.5;
     padding: 32px;
-    text-align: left;
+    text-align: center;
+  }
+
+  .stp-atleta-desc h5 {
+    font-family: 'HelveticaCondensedmMedium';
+    font-weight: normal;
+    font-size: 16px;
   }
 
   @media (min-width: 998px) {
-    .stp-atleta-bg-circular {}
+
 
   .stp-atleta-section {
     display: flex;
@@ -166,10 +178,10 @@
   }
 
   .stp-atleta-bg-circular {
-    top: 0;
+    left: 0;
     right: 0;
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
   }
 
 }
@@ -185,8 +197,7 @@
         "id": "title",
         "label": "Título",
         "default": "IMPULSANDO EL RENDIMIENTO DE ATLETAS POR MÁS DE 30 AÑOS"
-      },
-       {
+      }, {
         "type": "textarea",
         "id": "text",
         "label": "Texto",

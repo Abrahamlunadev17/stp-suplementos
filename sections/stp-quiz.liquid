@@ -7,22 +7,21 @@
   {% endif %}
   <div class="stp-quiz-content">
     <div class="stp-quiz-title">
-      {{ section.settings.title | escape }}
+      <h4>{{ section.settings.title | escape }}</h4>
     </div>
     {% if section.settings.subtitle != blank %}
       <div class="stp-quiz-subtitle">
-        {{ section.settings.subtitle }}
+        <p>{{ section.settings.subtitle }}</p>
       </div>
     {% endif %}
     {% if section.settings.desc != blank %}
       <div class="stp-quiz-desc">
-        {{ section.settings.desc }}
+        <p>{{ section.settings.desc }}</p>
       </div>
     {% endif %}
     {% if section.settings.cta_label != blank and section.settings.cta_url != blank %}
       <a href="{{ section.settings.cta_url }}" class="stp-quiz-btn">
         {{ section.settings.cta_label | escape }}
-        <span class="arrow">&#8594;</span>
       </a>
     {% endif %}
   </div>
@@ -69,30 +68,37 @@
     margin-bottom: 18px;
     letter-spacing: 1px;
   }
-  .stp-quiz-subtitle {
-    font-size: 1.05rem;
+  .stp-quiz-subtitle p {
     margin-bottom: 6px;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: 'HelveticaCondensedmMedium'
+    , sans-serif;
+
   }
-  .stp-quiz-desc {
-    font-size: 1rem;
+  .stp-quiz-desc p {
+    font-size: 1.2rem;
     margin-bottom: 28px;
     font-weight: 400;
+    font-family: 'HelveticaCondensedmMedium'
+    , sans-serif;
   }
   .stp-quiz-btn {
-    margin-top: 16px;
+    margin: 0 auto;
     background: #e53935;
     color: #fff;
-    font-weight: bold;
+    font-family: "HelveticaCondensed"
+    , sans-serif;
     font-size: 1.2rem;
     border: none;
     border-radius: 8px;
     padding: 6px 68px;
     cursor: pointer;
     text-decoration: none;
-    display: inline-flex;
+    justify-content: center;
+    display: flex;
     align-items: center;
     transition: background 0.2s;
+    max-width: 270px;
   }
   .stp-quiz-btn .arrow {
     margin-left: 12px;
@@ -107,7 +113,7 @@
       border-bottom: 1px solid transparent;
     }
     .stp-quiz-content {
-      padding: 64px 16px;
+      padding: 64px 36px;
       border-radius: 32px;
       border: 1px solid #ffffff;
       overflow: hidden;
@@ -132,10 +138,11 @@
 
     .wrapper-quiz {
       padding: 24px;
+      margin-bottom: 54px;
     }
     .stp-quiz-btn {
 
-      padding: 6px 54px;
+      padding: 6px 56px;
 
     }
   }
