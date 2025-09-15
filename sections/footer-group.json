@@ -13,13 +13,61 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "social_icon_E46RMa": {
+          "type": "social_icon",
+          "settings": {
+            "title": "Facebook",
+            "icon": "shopify://shop_images/02.svg",
+            "url": ""
+          }
+        },
+        "social_icon_iAdz68": {
+          "type": "social_icon",
+          "settings": {
+            "title": "Facebook",
+            "icon": "shopify://shop_images/03.svg",
+            "url": ""
+          }
+        },
+        "social_icon_CdXaJg": {
+          "type": "social_icon",
+          "settings": {
+            "title": "Facebook",
+            "icon": "shopify://shop_images/01.svg",
+            "url": ""
+          }
+        },
+        "social_icon_pMVEVM": {
+          "type": "social_icon",
+          "settings": {
+            "title": "Facebook",
+            "icon": "shopify://shop_images/04.svg",
+            "url": ""
+          }
+        },
+        "payment_icon_XxtJpk": {
+          "type": "payment_icon",
+          "settings": {
+            "title": "Visa",
+            "icon": "shopify://shop_images/payments.svg"
+          }
+        }
+      },
+      "block_order": [
+        "social_icon_E46RMa",
+        "social_icon_iAdz68",
+        "social_icon_CdXaJg",
+        "social_icon_pMVEVM",
+        "payment_icon_XxtJpk"
+      ],
       "name": "Footer",
       "settings": {
         "logo": "shopify://shop_images/logo_ftn.svg",
         "logo_alt": "Logo",
-        "menu_left": "",
-        "menu_right": "",
-        "copy_text": "Copyright © 2025 Tu tienda",
+        "menu_left": "new-menu",
+        "menu_right": "new-menu",
+        "copy_text": "Copyright © 2025 FNT | FOOD & NUTRITION TECHNOLOGIES",
         "bg_color": "#e23332",
         "text_color": "#ffffff",
         "link_hover_color": "#ffd1d1",
