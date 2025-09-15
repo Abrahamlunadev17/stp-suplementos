@@ -26,7 +26,7 @@
 
 /* ====== Usos ====== */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "HelveticaCondensed", sans-serif;
+  font-family: "HelveticaCondensed", sans-serif !important;
 }
 
 p,div,span,a,li,td,th {
