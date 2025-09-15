@@ -297,24 +297,22 @@
                     "width": 20
                   },
                   "blocks": {
-                    "text_yAyJqy": {
-                      "type": "text",
+                    "image_NCrbra": {
+                      "type": "image",
+                      "name": "t:names.image",
                       "settings": {
-                        "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
+                        "image": "shopify://shop_images/Frame_492_1.png",
+                        "link": "",
+                        "image_ratio": "adapt",
+                        "width": "fill",
+                        "custom_width": 100,
+                        "width_mobile": "fill",
+                        "custom_width_mobile": 100,
+                        "height": "fit",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
@@ -324,7 +322,7 @@
                     }
                   },
                   "block_order": [
-                    "text_yAyJqy"
+                    "image_NCrbra"
                   ]
                 },
                 "accordion_row_hhHr3R": {
