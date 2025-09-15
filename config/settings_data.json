@@ -154,8 +154,8 @@
         "settings": {
           "background": "#161616",
           "foreground_heading": "#ffffff",
-          "foreground": "#ffffffcf",
-          "primary": "#ffffffcf",
+          "foreground": "#ffffff",
+          "primary": "#ffffff",
           "primary_hover": "#ffffff",
           "border": "#dfdfdf",
           "shadow": "#000000",
