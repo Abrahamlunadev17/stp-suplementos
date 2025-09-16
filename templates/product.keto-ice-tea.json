@@ -766,36 +766,29 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Para qué sirve Keto Ice Tea y cómo ayuda al metabolismo?",
+            "answer": "Keto Ice Tea está formulado para activar el metabolismo, apoyar la quema de grasa y mejorar los niveles de energía. Es ideal como complemento para entrenamientos o como bebida funcional entre comidas."
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuándo es el mejor momento para tomarlo?",
+            "answer": "Puedes tomarlo antes del entrenamiento o entre comidas, según tu rutina. Es una opción refrescante y efectiva para activar el metabolismo a lo largo del día."
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuánto aporta por porción y cuántas porciones tiene el envase?",
+            "answer": "Cada porción contiene 10 g de extractos bioactivos. El envase rinde 30 porciones."
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
-          }
-        },
-        "faq_MpReHe": {
-          "type": "faq",
-          "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Qué ingredientes activos contiene?",
+            "answer": "Contiene extractos de té negro, té verde, L-Carnitina, antioxidantes, electrolitos y otros compuestos funcionales que favorecen la quema de grasa y el control metabólico."
           }
         }
       },
@@ -803,8 +796,7 @@
         "faq_Vw4nEQ",
         "faq_WTxEH8",
         "faq_yirYLa",
-        "faq_BybiXw",
-        "faq_MpReHe"
+        "faq_BybiXw"
       ],
       "name": "Preguntas Frecuentes",
       "settings": {
