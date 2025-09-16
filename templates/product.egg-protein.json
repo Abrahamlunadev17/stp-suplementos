@@ -773,22 +773,38 @@
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuánta proteína aporta por porción y cuántas porciones trae el envase?",
-            "answer": "Cada porción aporta 33 g de proteína. El número de porciones depende del tamaño del envase, con presentaciones de 30 y 60 porciones."
+            "question": "¿Cuáles son los beneficios de la ovoalbúmina?",
+            "answer": "La ovoalbúmina es una de las fuentes proteicas más completas. Favorece la síntesis muscular, mejora la recuperación y tiene excelente digestibilidad."
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿En qué se diferencia Isolate Protein de Whey Protein?",
-            "answer": "Isolate Protein es una fórmula sin carbohidratos, ideal para quienes buscan definición muscular. Whey Protein, en cambio, tiene una formulación que incluye carbohidratos."
+            "question": "¿Cuánta proteína aporta por porción y cuántas porciones tiene el envase?",
+            "answer": "Cada porción aporta 23 g de proteína. El número de porciones depende del tamaño del envase, con presentaciones de 10 y 35 porciones."
+          }
+        },
+        "faq_eM8ikq": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Es buena opción si tengo sensibilidad digestiva?",
+            "answer": "Sí. Egg Protein está formulada para tener una alta tolerancia digestiva."
+          }
+        },
+        "faq_f8qAVn": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Es apta para mujeres o adultos mayores?",
+            "answer": "Sí. Su perfil de aminoácidos y su aporte de colágeno la hacen ideal para apoyar masa muscular, recuperación y salud articular en diferentes etapas de la vida."
           }
         }
       },
       "block_order": [
         "faq_Vw4nEQ",
         "faq_WTxEH8",
-        "faq_yirYLa"
+        "faq_yirYLa",
+        "faq_eM8ikq",
+        "faq_f8qAVn"
       ],
       "name": "Preguntas Frecuentes",
       "settings": {
