@@ -766,45 +766,37 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
-          }
-        },
-        "faq_WTxEH8": {
-          "type": "faq",
-          "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
-          }
-        },
-        "faq_yirYLa": {
-          "type": "faq",
-          "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
-          }
-        },
-        "faq_BybiXw": {
-          "type": "faq",
-          "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Qué beneficios ofrece Omega Pro frente a otras proteínas?",
+            "answer": "Su fórmula combina proteína de suero con péptidos bioactivos, colágeno hidrolizado e isoflavonas. Esto la hace ideal no solo para ganar masa muscular, sino también para fortalecer articulaciones, tejidos conectivos y mejorar la recuperación."
           }
         },
         "faq_MpReHe": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Contiene colágeno en su fórmula?",
+            "answer": "Sí. Cada porción aporta 4 g de péptidos de colágeno hidrolizado, que contribuyen a la salud de músculos, tendones y cartílagos."
+          }
+        },
+        "faq_pjDnJT": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Cuánta proteína aporta por porción y cuántas porciones tiene el envase?",
+            "answer": "Cada porción aporta 27 g de proteína. El número de porciones depende del tamaño del envase, con presentaciones de 30 y 60 porciones."
+          }
+        },
+        "faq_De4ePK": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Cuál es el mejor momento para tomar Omega Pro?",
+            "answer": "Después de entrenar es el mejor momento para aprovechar su aporte de proteína y colágeno. También puedes tomarla por la mañana como parte de tu nutrición diaria."
           }
         }
       },
       "block_order": [
         "faq_Vw4nEQ",
-        "faq_WTxEH8",
-        "faq_yirYLa",
-        "faq_BybiXw",
-        "faq_MpReHe"
+        "faq_MpReHe",
+        "faq_pjDnJT",
+        "faq_De4ePK"
       ],
       "name": "Preguntas Frecuentes",
       "settings": {
