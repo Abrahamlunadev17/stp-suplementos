@@ -766,36 +766,43 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Para qué sirve la creatina y qué beneficios ofrece?",
+            "answer": "La creatina ayuda a restaurar los niveles de ATP, que es la fuente primaria de energía muscular. Mejora la fuerza, potencia, recuperación y rendimiento durante entrenamientos de alta intensidad."
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cómo y cuándo debo tomarla?",
+            "answer": "Toma una porción diaria, idealmente antes o después del entrenamiento. En días de descanso, se recomienda tomarla en ayunas para mantener niveles óptimos."
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuántos gramos contiene cada porción y cuántas porciones tiene el envase?",
+            "answer": "Cada porción contiene 5 g de creatina pura. El envase rinde para 80 porciones."
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Es necesario hacer una fase de carga?",
+            "answer": "No es necesaria. Puedes tomar 5 g diarios de forma constante y obtendrás resultados efectivos. La fase de carga es opcional si buscas una saturación más rápida de creatina en el músculo."
           }
         },
         "faq_MpReHe": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Qué significa que esté micronizada?",
+            "answer": "Que sus partículas son más pequeñas, lo que mejora su disolución y facilita su absorción en el organismo."
+          }
+        },
+        "faq_w7w3zL": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Puedo combinarla con proteína u otros suplementos?",
+            "answer": "Sí. Es compatible con proteínas, BCAA’s y pre-entrenos. De hecho, se recomienda combinarla para optimizar los resultados."
           }
         }
       },
@@ -804,7 +811,8 @@
         "faq_WTxEH8",
         "faq_yirYLa",
         "faq_BybiXw",
-        "faq_MpReHe"
+        "faq_MpReHe",
+        "faq_w7w3zL"
       ],
       "name": "Preguntas Frecuentes",
       "settings": {
