@@ -1,5 +1,6 @@
 <div class="stp-faqs-section">
   <div class="stp-faqs-bg-circular"></div>
+    <div class="stp-faqs-bg-circular-top"></div>
   <div class="stp-faqs-container">
     <h2 class="stp-faqs-title">{{ section.settings.title | escape }}</h2>
     <div class="stp-faqs-list">
@@ -35,7 +36,6 @@
 <style>
   .stp-faqs-section {
     position: relative;
-    background: linear-gradient(135deg, #151515 70%, #b71c1c 100%);
     padding: 64px 0;
     min-height: 500px;
     overflow: hidden;
@@ -44,6 +44,19 @@
     position: absolute;
     top: 10%;
     left: 60%;
+    width: 400px;
+    height: 400px;
+    background: rgba(207, 41, 40, 0.28);
+    border-radius: 50%;
+    filter: blur(90px);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .stp-faqs-bg-circular-top {
+    position: absolute;
+    bottom: 50%;
+    left: -70%;
     width: 400px;
     height: 400px;
     background: rgba(207, 41, 40, 0.28);
@@ -80,15 +93,17 @@
     border: none;
     color: #fff;
     font-size: 1.08rem;
-    font-weight: bold;
     text-align: left;
     padding: 18px 0;
     cursor: pointer;
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: color 0.2s;
     outline: none;
+    font-family: 'Helvetica';
+    font-weight: lighter;
   }
   .stp-faq-icon {
     transition: transform 0.3s cubic-bezier(0.68,-0.55,0.27,1.55);
@@ -105,6 +120,7 @@
     padding: 0 0 18px;
     display: none;
     animation: fadeInFaq 0.3s;
+
   }
   .stp-faq-question[aria-expanded="true"] + .stp-faq-answer {
     display: block;
@@ -123,8 +139,8 @@
     .stp-faqs-bg-circular {
       width: 600px;
       height: 600px;
-      left: 70%;
-      top: 5%;
+      left: 80%;
+      top: 40%;
       filter: blur(120px);
     }
     .stp-faqs-container {
@@ -133,6 +149,22 @@
     .stp-faqs-title {
       font-size: 2.3rem;
     }
+
+
+      .stp-faqs-bg-circular-top {
+    position: absolute;
+    bottom: 50%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: rgba(207, 41, 40, 0.28);
+    border-radius: 50%;
+    filter: blur(90px);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+
   }
 </style>
 
