@@ -81,11 +81,27 @@
             "label": "Entrenamientos",
             "blog": "entrenamiento"
           }
+        },
+        "tag_button_tpkkWL": {
+          "type": "tag_button",
+          "settings": {
+            "label": "Bienestar",
+            "blog": ""
+          }
+        },
+        "tag_button_U9mjmQ": {
+          "type": "tag_button",
+          "settings": {
+            "label": "Recetas",
+            "blog": ""
+          }
         }
       },
       "block_order": [
         "tag_button_XH9enh",
-        "tag_button_n9JAKd"
+        "tag_button_n9JAKd",
+        "tag_button_tpkkWL",
+        "tag_button_U9mjmQ"
       ],
       "name": "Filtro de Blog por Tema",
       "settings": {}
