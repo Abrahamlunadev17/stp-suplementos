@@ -765,7 +765,7 @@
       ],
       "name": "Slider de Reseñas",
       "settings": {
-        "reviews_count": "+10,000 reseñas en plataformas digitales",
+        "reviews_count": "+10,000 reseñas de 5 estrellas en plataformas digitales",
         "title": "CONFIANZA COMPROBADA POR MILES DE USUARIOS"
       }
     },
@@ -775,10 +775,10 @@
       "settings": {
         "bg_image": "shopify://shop_images/image.png",
         "title": "ENCUENTRA TU SUPLEMENTO IDEAL",
-        "subtitle": "Todos entrenamos distinto: unos buscan resistencia, otros potencia, otros transformar su físico.",
-        "desc": "Descubre qué productos F&NT® están hechos para ti.",
+        "subtitle": "Todos entrenamos distinto: unos buscan resistencia, otros potencia, otros transformar su físico.Descubre qué productos F&NT® están hechos para ti.",
+        "desc": "",
         "cta_label": "IR AL QUIZ",
-        "cta_url": "shopify://collections"
+        "cta_url": "shopify://pages/quiz"
       }
     },
     "1757308425fa64e6ea": {
