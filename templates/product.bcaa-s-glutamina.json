@@ -766,36 +766,43 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuál es la función de los BCAA’s en esta fórmula?",
+            "answer": "Los BCAA’s ayudan a reducir la fatiga muscular, mejorar el rendimiento durante el entrenamiento y acelerar la recuperación posterior al ejercicio."
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Qué beneficios aporta la glutamina incluida?",
+            "answer": "La glutamina favorece la regeneración del tejido muscular, fortalece el sistema inmune y ayuda a mantener un entorno anabólico durante la recuperación."
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuánto aporta por porción y cuántas porciones tiene el envase?",
+            "answer": "Cada porción contiene 7 g de BCAA’s y 2.5 g de glutamina. El envase rinde 25 porciones."
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuándo se recomienda tomarlo?",
+            "answer": "Puedes tomarlo 30 minutos antes o durante el entrenamiento. En días de descanso, se recomienda consumirlo por la mañana."
           }
         },
         "faq_MpReHe": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Sirve para entrenamientos de fuerza o solo para cardio?",
+            "answer": "Es útil en ambos casos. Mejora el rendimiento, la resistencia y la recuperación tanto en rutinas de fuerza como en sesiones de alta intensidad o cardio."
+          }
+        },
+        "faq_MFrif8": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Puedo tomarlo si no entreno ese día?",
+            "answer": "Sí. En días de descanso, ayuda a mantener niveles óptimos de recuperación y evita el desgaste muscular."
           }
         }
       },
@@ -804,7 +811,8 @@
         "faq_WTxEH8",
         "faq_yirYLa",
         "faq_BybiXw",
-        "faq_MpReHe"
+        "faq_MpReHe",
+        "faq_MFrif8"
       ],
       "name": "Preguntas Frecuentes",
       "settings": {
