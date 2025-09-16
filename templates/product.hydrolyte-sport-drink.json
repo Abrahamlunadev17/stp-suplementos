@@ -766,36 +766,50 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Para qué tipo de entrenamiento está diseñado HydroLyte Sport Drink?",
+            "answer": "Está formulado para entrenamientos exigentes que demandan hidratación continua, como resistencia, cross training, deportes de equipo o sesiones prolongadas. Ayuda a mantener el rendimiento físico y prevenir la fatiga por deshidratación."
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Qué beneficios ofrece frente a una bebida hidratante comercial?",
+            "answer": "HydroLyte ofrece una fórmula isotónica con 5 electrolitos esenciales, carbohidratos funcionales como dextrina cíclica y palatinosa, y jugo natural. A diferencia de las bebidas comerciales, está pensada para una hidratación de alto rendimiento con mejor absorción y tolerancia digestiva."
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuánto aporta por porción y cuántas porciones tiene el envase?",
+            "answer": "Cada porción aporta 535 mg de electrolitos y 28 g de carbohidratos en una mezcla de 31.5 g de isotónicos. El envase rinde 30 porciones."
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Qué tipo de electrolitos y nutrientes contiene?",
+            "answer": "Incluye sodio, potasio, magnesio, calcio y zinc. Además, su fórmula se complementa con carbohidratos funcionales, jugo natural deshidratado y un perfil avanzado de ingredientes con certificaciones Kosher y FSSC 22000, según sea el caso"
           }
         },
         "faq_MpReHe": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Para qué sirve la combinación de carbohidratos y electrolitos en esta fórmula?",
+            "answer": "Ayuda a mantener el equilibrio de líquidos, reponer minerales perdidos por sudor y suministrar energía continua durante el esfuerzo físico prolongado."
+          }
+        },
+        "faq_M9gg47": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Qué beneficios aporta la Dextrina Cíclica y la Palatinosa?",
+            "answer": "La dextrina cíclica proporciona energía inmediata de rápida absorción sin molestias digestivas, mientras que la palatinosa (isomaltulosa) ofrece energía sostenida con bajo índice glucémico."
+          }
+        },
+        "faq_LbctYk": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Qué significa que HydroLyte sea una bebida isotónica?",
+            "answer": "Significa que su concentración de solutos es similar a la de los fluidos del cuerpo, lo que facilita su absorción y permite una hidratación más rápida y eficiente durante el entrenamiento."
           }
         }
       },
@@ -804,7 +818,9 @@
         "faq_WTxEH8",
         "faq_yirYLa",
         "faq_BybiXw",
-        "faq_MpReHe"
+        "faq_MpReHe",
+        "faq_M9gg47",
+        "faq_LbctYk"
       ],
       "name": "Preguntas Frecuentes",
       "settings": {
