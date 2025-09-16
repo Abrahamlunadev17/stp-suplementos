@@ -1,0 +1,318 @@
+<div class="contenedor-ciencia">
+  <h3 class="stp-faqs-title ">{{ section.settings.title | escape }}</h3>
+
+  <div class="contenedor-imagen">
+    {% if section.settings.image_desktop != blank %}
+      <img
+        src="{{ section.settings.image_desktop | image_url: width: 800 }}"
+        alt="Ciencia Detrás"
+        class="img-bote" />
+    {% endif %}
+
+    <div class="cards-ciencia">
+      {% for block in section.blocks %}
+        <div class="card-ciencia">
+
+          <h4 class="card-title">{{ block.settings.card_title }}</h4>
+          <p class="card-text">{{ block.settings.card_text }}</p>
+
+
+          <a href="{{ block.settings.card_link }}" class="view-all-button">IR A COMPRAR</a>
+
+
+        </div>
+      {% endfor %}
+
+    </div>
+
+
+    <div class="boton-slider">
+      &rarr;
+    </div>
+
+
+  </div>
+  <!-- Ver todo -->
+  <div class="view-all-wrapper">
+    <a href="" class="view-all-button">IR A COMPRAR</a>
+  </div>
+
+</div>
+
+
+<style>
+  .contenedor-ciencia {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #151515 70%, #b71c1c 100%);
+  }
+
+
+  .contenedor-ciencia .stp-faqs-title {
+    text-align: center;
+  }
+  .contenedor-imagen {
+    width: 1200px;
+    display: flex;
+
+  }
+  .img-bote {
+    width: 800px;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 50px;
+    margin-left: -150px;
+
+  }
+
+  .cards-ciencia {
+    width: 400px;
+    position: relative;
+    min-height: 560px;
+  }
+  .card-ciencia {
+    position: absolute;
+    transition: top 0.45s ease
+    , right 0.45s ease
+    , transform 0.45s ease
+    , opacity 0.3s ease;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 20px 10px;
+    width: 250px;
+    justify-content: start;
+    align-items: flex-start;
+  }
+
+  /* Posiciones (idénticas a tus nth-child) */
+  .card-ciencia.pos1 {
+    top: 10%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+  }
+  .card-ciencia.pos2 {
+    top: 30%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+  }
+  .card-ciencia.pos3 {
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+  .card-ciencia.pos4 {
+    top: 70%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+  }
+  .card-ciencia.pos5 {
+    top: 90%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .card-ciencia.pos1 .view-all-button,
+  .card-ciencia.pos1 .card-text,
+  .card-ciencia.pos2 .view-all-button,
+  .card-ciencia.pos2 .card-text,
+  .card-ciencia.pos4 .view-all-button,
+  .card-ciencia.pos4 .card-text,
+  .card-ciencia.pos5 .view-all-button,
+  .card-ciencia.pos5 .card-text {
+    display: none;
+  }
+
+
+  .card-ciencia {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 20px 10px;
+    width: 250px;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .card-title {
+    margin: 0;
+  }
+  .card-text {
+    margin: 0;
+  }
+
+
+  .boton-slider {
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+  }
+
+
+  /* ====== MOBILE (<=768px) : mismo layout, escalado y reubicado ====== */
+  @media (max-width: 768px) {
+    .contenedor-imagen {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      padding-right: 10px;
+      position: relative;
+    }
+
+    .img-bote {
+      width: 300px;
+      padding: 14px;
+      margin-left: -150px;
+      border-width: 2px;
+    }
+
+    .cards-ciencia {
+      width: calc(100% - 10px);
+      min-height: 420px;
+      position: relative;
+    }
+
+    .card-ciencia {
+      width: 180px;
+
+      padding: 14px 10px;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+
+
+    .card-ciencia.pos1 {
+      top: 14%;
+      left: 35%;
+      right: auto;
+    }
+    .card-ciencia.pos2 {
+      top: 32%;
+      right: auto;
+    }
+    .card-ciencia.pos3 {
+      top: 52%;
+      left: 50%;
+      right: auto;
+    }
+    .card-ciencia.pos4 {
+      top: 72%;
+      right: auto;
+    }
+    .card-ciencia.pos5 {
+      top: 88%;
+      left: 35%;
+      right: auto;
+    }
+
+    .boton-slider {
+      width: 50px !important;
+      height: 40px;
+      font-size: auto;
+
+    }
+
+    .card-title {
+      font-size: 14px
+    }
+    .card-text {
+      font-size: 10px
+    }
+
+    .contenedor-imagen .view-all-button {
+      font-size: 15px !important;
+      padding: 5px !important;
+    }
+
+
+  }
+
+</style>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const cards = Array.from(document.querySelectorAll('.cards-ciencia .card-ciencia'));
+  const btn = document.querySelector('.boton-slider');
+  const positions = ['pos1','pos2','pos3','pos4','pos5'];
+  let offset = 0;
+  
+  // Asignar posiciones iniciales según el orden en el DOM
+  function applyPositions() {
+    cards.forEach((el, i) => {
+      el.classList.remove(...positions);
+      el.classList.add(positions[(i + offset) % positions.length]);
+    });
+  }
+  
+  applyPositions();
+  
+  btn?.addEventListener('click', () => {
+    offset = (offset + 1) % positions.length; // rota 1 paso
+    applyPositions();
+  });
+  });
+</script>
+
+
+{% schema %}
+  {
+    "name": "Ciencia Detrás",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image_desktop",
+        "label": "Imagen"
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "Título",
+        "default": "LA CIENCIA DETRÁS DE TUS RESULTADOS"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "card",
+        "name": "Tarjeta",
+        "settings": [
+          {
+            "type": "text",
+            "id": "card_title",
+            "label": "Título de la tarjeta",
+            "default": "MISIÓN"
+          }, {
+            "type": "textarea",
+            "id": "card_text",
+            "label": "Texto de la tarjeta",
+            "default": "Texto de misión o visión aquí."
+          }
+        ]
+      }
+    ],
+    "max_blocks": 5,
+    "presets": [
+      {
+        "name": "Ciencia Detrás"
+      }
+    ]
+  }
+{% endschema %}
