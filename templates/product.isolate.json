@@ -783,28 +783,12 @@
             "question": "¿En qué se diferencia Isolate Protein de Whey Protein?",
             "answer": "Isolate Protein es una fórmula sin carbohidratos, ideal para quienes buscan definición muscular. Whey Protein, en cambio, tiene una formulación que incluye carbohidratos."
           }
-        },
-        "faq_BybiXw": {
-          "type": "faq",
-          "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
-          }
-        },
-        "faq_MpReHe": {
-          "type": "faq",
-          "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
-          }
         }
       },
       "block_order": [
         "faq_Vw4nEQ",
         "faq_WTxEH8",
-        "faq_yirYLa",
-        "faq_BybiXw",
-        "faq_MpReHe"
+        "faq_yirYLa"
       ],
       "name": "Preguntas Frecuentes",
       "settings": {
