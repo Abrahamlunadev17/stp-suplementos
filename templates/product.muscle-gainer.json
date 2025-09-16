@@ -766,36 +766,29 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Para qué sirve Muscle Gainer y quién debería tomarlo?",
+            "answer": "Está diseñado para quienes buscan aumentar masa muscular y volumen de forma efectiva. Es ideal si tienes metabolismo acelerado o dificultad para subir de peso solo con alimentación."
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuándo es el mejor momento para tomarlo?",
+            "answer": "Tómalo después de entrenar o entre comidas como aporte extra de calorías, proteína y carbohidratos para apoyar el crecimiento muscular."
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuántas porciones tiene el envase?",
+            "answer": "El producto está disponible en presentaciones de 10 y 20 porciones, con medida incluida en cada envase."
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
-          }
-        },
-        "faq_MpReHe": {
-          "type": "faq",
-          "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuánta proteína y carbohidratos aporta por porción?",
+            "answer": "Cada porción aporta 30 g de proteína y 110 g de carbohidratos, formulados para apoyar la recuperación y el desarrollo de masa muscular."
           }
         }
       },
@@ -803,8 +796,7 @@
         "faq_Vw4nEQ",
         "faq_WTxEH8",
         "faq_yirYLa",
-        "faq_BybiXw",
-        "faq_MpReHe"
+        "faq_BybiXw"
       ],
       "name": "Preguntas Frecuentes",
       "settings": {
