@@ -766,36 +766,29 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Para qué sirve el óxido nítrico en el entrenamiento?",
+            "answer": "Favorece la vasodilatación, lo que mejora el flujo sanguíneo hacia los músculos. Esto se traduce en mayor oxigenación, mejor rendimiento y un bombeo muscular más intenso."
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Qué ingredientes contiene esta fórmula?",
+            "answer": "Incluye l-arginina, l-citrulina, cafeína, l-glutamina, y vitaminas. Esta combinación está diseñada para optimizar el rendimiento físico."
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuándo es el mejor momento para tomarlo?",
+            "answer": "Tómalo 30 minutos antes del entrenamiento para maximizar sus efectos de vasodilatación, energía y resistencia."
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
-          }
-        },
-        "faq_MpReHe": {
-          "type": "faq",
-          "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Me ayuda a mejorar el bombeo muscular?",
+            "answer": "Sí. Está formulado para potenciar el flujo sanguíneo, lo que se traduce en un bombeo muscular más notorio durante la rutina."
           }
         }
       },
@@ -803,8 +796,7 @@
         "faq_Vw4nEQ",
         "faq_WTxEH8",
         "faq_yirYLa",
-        "faq_BybiXw",
-        "faq_MpReHe"
+        "faq_BybiXw"
       ],
       "name": "Preguntas Frecuentes",
       "settings": {
