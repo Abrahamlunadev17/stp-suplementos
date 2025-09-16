@@ -117,6 +117,69 @@
         "max_products": 8
       }
     },
+    "stp_grid_products_LUKhaY": {
+      "type": "stp-grid-products",
+      "blocks": {
+        "card_YyEReJ": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/image_4.png",
+            "title": "PROTEÍNAS",
+            "full_width": true
+          }
+        },
+        "card_h9QUrG": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/image_17.png",
+            "title": "CREATINAS",
+            "full_width": false
+          }
+        },
+        "card_pmkUPH": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/image_18.png",
+            "title": "ENERGÉTICOS Y PRE-ENTRENOS",
+            "full_width": false
+          }
+        },
+        "card_d9qzFr": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/image_19.png",
+            "title": "VASODILATADORES",
+            "full_width": false
+          }
+        },
+        "card_BWYE8D": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/image_20.png",
+            "title": "AMINOÁCIDOS Y RECUPERACIÓN",
+            "full_width": false
+          }
+        },
+        "card_nqqfUm": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/image_16.png",
+            "title": "QUEMA GRASA Y METABOLISMO",
+            "full_width": true
+          }
+        }
+      },
+      "block_order": [
+        "card_YyEReJ",
+        "card_h9QUrG",
+        "card_pmkUPH",
+        "card_d9qzFr",
+        "card_BWYE8D",
+        "card_nqqfUm"
+      ],
+      "name": "Grid de Productos",
+      "settings": {}
+    },
     "product_list_38HyPz": {
       "type": "product-list",
       "blocks": {
@@ -743,6 +806,7 @@
     "banner_home_iJN86z",
     "stpmarquee_image_w3nw4e",
     "tabs_collection_aLQGCf",
+    "stp_grid_products_LUKhaY",
     "product_list_38HyPz",
     "stp_grid_products_3x9CRQ",
     "ciencia_detras_FgF7gM",
