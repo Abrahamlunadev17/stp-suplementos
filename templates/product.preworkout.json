@@ -766,36 +766,29 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuánta cafeína contiene por porción?",
+            "answer": "Cada porción contiene 275 mg de cafeína, una dosis efectiva para mejorar energía, enfoque y rendimiento físico."
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuándo es el mejor momento para tomarlo?",
+            "answer": "Tómalo de 15 a 30 minutos antes de entrenar para aprovechar al máximo su efecto energético, de enfoque y rendimiento."
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Se puede tomar todos los días?",
+            "answer": "Sí, pero se recomienda no exceder una porción al día y evitar su uso continuo por más de 8 semanas sin descanso. No debe tomarse 4 horas antes de dormir."
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
-          }
-        },
-        "faq_MpReHe": {
-          "type": "faq",
-          "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Qué contiene además de cafeína?",
+            "answer": "Incluye BCAA’s, creatina, beta-alanina, citrulina, taurina, maca, tribulus y vitaminas. Su fórmula está diseñada para mejorar energía, enfoque y resistencia muscular."
           }
         }
       },
@@ -803,8 +796,7 @@
         "faq_Vw4nEQ",
         "faq_WTxEH8",
         "faq_yirYLa",
-        "faq_BybiXw",
-        "faq_MpReHe"
+        "faq_BybiXw"
       ],
       "name": "Preguntas Frecuentes",
       "settings": {
