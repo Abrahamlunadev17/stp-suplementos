@@ -311,7 +311,7 @@
       },
       "name": "t:names.products_carousel",
       "settings": {
-        "collection": "",
+        "collection": "proteina",
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 6,
@@ -366,7 +366,7 @@
       ],
       "name": "Scrolling Image",
       "settings": {
-        "text-head": "<p>ENCUENTRANOS TAMBIEN EN </p>",
+        "text-head": "ENCUENTRANOS TAMBIEN EN",
         "text_spacing": true,
         "colorBackground": "#cf2928",
         "direction": "left",
