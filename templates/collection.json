@@ -18,10 +18,26 @@
             "title": "PROTEÍNAS",
             "url": "shopify://collections/proteina"
           }
+        },
+        "category_block_RBPiY4": {
+          "type": "category_block",
+          "settings": {
+            "title": "CREATINAS",
+            "url": "shopify://collections/creatinas"
+          }
+        },
+        "category_block_GiWrWM": {
+          "type": "category_block",
+          "settings": {
+            "title": "AMINOÁCIDOS",
+            "url": ""
+          }
         }
       },
       "block_order": [
-        "category_block_yfhMfL"
+        "category_block_yfhMfL",
+        "category_block_RBPiY4",
+        "category_block_GiWrWM"
       ],
       "name": "Categorías destacadas",
       "settings": {}
