@@ -32,12 +32,20 @@
             "title": "AMINOÁCIDOS",
             "url": ""
           }
+        },
+        "category_block_HfL6VR": {
+          "type": "category_block",
+          "settings": {
+            "title": "VASOSDILATADORES",
+            "url": "shopify://collections/vasodilatadores"
+          }
         }
       },
       "block_order": [
         "category_block_yfhMfL",
         "category_block_RBPiY4",
-        "category_block_GiWrWM"
+        "category_block_GiWrWM",
+        "category_block_HfL6VR"
       ],
       "name": "Categorías destacadas",
       "settings": {}
