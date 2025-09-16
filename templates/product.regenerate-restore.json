@@ -766,36 +766,29 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Para qué sirve Regenerate & Restore?",
+            "answer": "Está diseñado para apoyar la recuperación muscular profunda, la salud articular y el fortalecimiento de tejidos conectivos después del entrenamiento o en etapas de desgaste físico."
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuáles son los beneficios del colágeno en esta fórmula?",
+            "answer": "El colágeno hidrolizado aporta péptidos bioactivos que favorecen la regeneración de tendones, ligamentos y cartílago, además de contribuir a la firmeza de piel y tejidos."
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Contiene solo colágeno o también aminoácidos esenciales?",
+            "answer": "Además de colágeno, la fórmula incluye aminoácidos clave como leucina, glicina, lisina y prolina, junto con vitaminas y ácido hialurónico para potenciar la regeneración."
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
-          }
-        },
-        "faq_MpReHe": {
-          "type": "faq",
-          "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuándo es el mejor momento para tomarlo?",
+            "answer": "Puede tomarse por la mañana o después del entrenamiento, según tu rutina. En ambos casos ayuda a optimizar la recuperación y mantener articulaciones saludables."
           }
         }
       },
@@ -803,8 +796,7 @@
         "faq_Vw4nEQ",
         "faq_WTxEH8",
         "faq_yirYLa",
-        "faq_BybiXw",
-        "faq_MpReHe"
+        "faq_BybiXw"
       ],
       "name": "Preguntas Frecuentes",
       "settings": {
