@@ -766,36 +766,29 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Para qué sirve Diet Shake y qué beneficios ofrece?",
+            "answer": "Es una fórmula diseñada para apoyar el control de peso, mejorar la digestión y mantener la masa muscular. Aporta proteína de alto valor biológico junto con ingredientes funcionales que complementan tu nutrición diaria."
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Qué función tienen los probióticos y prebióticos en esta fórmula?",
+            "answer": "Los probióticos promueven una microbiota intestinal saludable, mientras que los prebióticos alimentan esas bacterias buenas. Juntos favorecen una mejor digestión, absorción de nutrientes y bienestar general."
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Ayuda a mantener la masa muscular mientras se baja de peso?",
+            "answer": "Sí. Cada porción contiene 20 g de proteína que ayudan a conservar la masa muscular, especialmente útil en planes de reducción calórica o entrenamiento enfocado en recomposición corporal."
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
-          }
-        },
-        "faq_MpReHe": {
-          "type": "faq",
-          "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Qué contiene la fórmula y para qué sirve cada componente funcional?",
+            "answer": "Incluye probióticos (salud intestinal), prebióticos (nutrición para la microbiota), colágeno hidrolizado (soporte estructural y piel) y enzimas digestivas (mejor absorción y menor inflamación post-ingesta), junto con otros ingredientes que complementan sus beneficios digestivos y metabólicos."
           }
         }
       },
@@ -803,8 +796,7 @@
         "faq_Vw4nEQ",
         "faq_WTxEH8",
         "faq_yirYLa",
-        "faq_BybiXw",
-        "faq_MpReHe"
+        "faq_BybiXw"
       ],
       "name": "Preguntas Frecuentes",
       "settings": {
