@@ -773,15 +773,15 @@
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿Cuánta proteína aporta por porción y cuántas porciones trae el envase?",
+            "answer": "Cada porción aporta 33 g de proteína. El número de porciones depende del tamaño del envase, con presentaciones de 30 y 60 porciones."
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿En qué se diferencia Isolate Protein de Whey Protein?",
+            "answer": "Isolate Protein es una fórmula sin carbohidratos, ideal para quienes buscan definición muscular. Whey Protein, en cambio, tiene una formulación que incluye carbohidratos."
           }
         },
         "faq_BybiXw": {
