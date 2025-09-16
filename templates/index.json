@@ -470,6 +470,58 @@
       "name": "Grid de Productos",
       "settings": {}
     },
+    "ciencia_detras_FgF7gM": {
+      "type": "ciencia-detras",
+      "blocks": {
+        "card_8Mqktn": {
+          "type": "card",
+          "settings": {
+            "card_title": "MISIÓN",
+            "card_text": "Texto de misión o visión aquí."
+          }
+        },
+        "card_H3nwPj": {
+          "type": "card",
+          "settings": {
+            "card_title": "MISIÓN",
+            "card_text": "Texto de misión o visión aquí."
+          }
+        },
+        "card_i3TJNN": {
+          "type": "card",
+          "settings": {
+            "card_title": "MISIÓN",
+            "card_text": "Texto de misión o visión aquí."
+          }
+        },
+        "card_MbRRAU": {
+          "type": "card",
+          "settings": {
+            "card_title": "MISIÓN",
+            "card_text": "Texto de misión o visión aquí."
+          }
+        },
+        "card_FnmVyc": {
+          "type": "card",
+          "settings": {
+            "card_title": "MISIÓN",
+            "card_text": "Texto de misión o visión aquí."
+          }
+        }
+      },
+      "block_order": [
+        "card_8Mqktn",
+        "card_H3nwPj",
+        "card_i3TJNN",
+        "card_MbRRAU",
+        "card_FnmVyc"
+      ],
+      "name": "Ciencia Detrás",
+      "settings": {
+        "image_desktop": "shopify://shop_images/3500G-FRESA_1_1.png",
+        "title": "LA CIENCIA DETRÁS DE TUS RESULTADOS"
+      }
+    },
     "stpmarquee_image_cxLteF": {
       "type": "stpmarquee-image",
       "blocks": {
@@ -693,6 +745,7 @@
     "tabs_collection_aLQGCf",
     "product_list_38HyPz",
     "stp_grid_products_3x9CRQ",
+    "ciencia_detras_FgF7gM",
     "stpmarquee_image_cxLteF",
     "tabs_collection_rhtnVK",
     "stp_benefits_FRbmz9",
