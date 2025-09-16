@@ -794,8 +794,15 @@
         "faq_MpReHe": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+            "question": "¿La pueden tomar mujeres o es solo para hombres?",
+            "answer": "Es totalmente apta para mujeres. La fórmula está diseñada para apoyar el desarrollo muscular y la recuperación sin importar el género."
+          }
+        },
+        "faq_fKrbxE": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Puedo combinarla con otros productos como creatina o BCAA’s?",
+            "answer": "Sí. De hecho, Whey Protein ya contiene 1 g de creatina por porción, pero puedes complementarla con otros suplementos según tus objetivos."
           }
         }
       },
@@ -804,7 +811,8 @@
         "faq_WTxEH8",
         "faq_yirYLa",
         "faq_BybiXw",
-        "faq_MpReHe"
+        "faq_MpReHe",
+        "faq_fKrbxE"
       ],
       "name": "Preguntas Frecuentes",
       "settings": {
