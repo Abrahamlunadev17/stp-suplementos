@@ -86,6 +86,12 @@
     "tabs_collection_aLQGCf": {
       "type": "tabs-collection",
       "blocks": {
+        "tab_thkjCh": {
+          "type": "tab",
+          "settings": {
+            "collection": "proteina"
+          }
+        },
         "tab_jKaKB8": {
           "type": "tab",
           "settings": {
@@ -100,6 +106,7 @@
         }
       },
       "block_order": [
+        "tab_thkjCh",
         "tab_jKaKB8",
         "tab_DVEXRU"
       ],
