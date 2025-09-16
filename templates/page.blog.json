@@ -74,10 +74,18 @@
             "label": "Suplementos",
             "blog": "suplementos"
           }
+        },
+        "tag_button_n9JAKd": {
+          "type": "tag_button",
+          "settings": {
+            "label": "Entrenamientos",
+            "blog": "entrenamiento"
+          }
         }
       },
       "block_order": [
-        "tag_button_XH9enh"
+        "tag_button_XH9enh",
+        "tag_button_n9JAKd"
       ],
       "name": "Filtro de Blog por Tema",
       "settings": {}
