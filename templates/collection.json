@@ -12,24 +12,16 @@
     "menu_collection_PeLAKi": {
       "type": "menu-collection",
       "blocks": {
-        "category_block_mBwULh": {
+        "category_block_yfhMfL": {
           "type": "category_block",
           "settings": {
             "title": "PROTEÍNAS",
-            "url": "shopify://collections/frontpage"
-          }
-        },
-        "category_block_89chWN": {
-          "type": "category_block",
-          "settings": {
-            "title": "PROTEÍNAS",
-            "url": "shopify://collections/prueba"
+            "url": "shopify://collections/proteina"
           }
         }
       },
       "block_order": [
-        "category_block_mBwULh",
-        "category_block_89chWN"
+        "category_block_yfhMfL"
       ],
       "name": "Categorías destacadas",
       "settings": {}
