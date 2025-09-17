@@ -248,6 +248,22 @@
               },
               "blocks": {}
             },
+            "steps_TTzTFL": {
+              "type": "steps",
+              "name": "Pasos",
+              "settings": {
+                "image_1": "shopify://shop_images/image-22.png",
+                "text_1": "PASO 1",
+                "description_1": "Toma 1 porción de Whey Protein (50 g) usando la medida incluida en el envase.",
+                "image_2": "shopify://shop_images/image-1.png",
+                "text_2": "PASO 2",
+                "description_2": "Licúa con 300 ml de agua, leche o bebida de tu preferencia durante 30 segundos para lograr una textura suave.",
+                "image_3": "shopify://shop_images/image-2.png",
+                "text_3": "PASO 3",
+                "description_3": "Disfruta una malteada rica en proteínas, ideal para complementar tu entrenamiento."
+              },
+              "blocks": {}
+            },
             "buy_buttons_eYQEYi": {
               "type": "buy-buttons",
               "settings": {
@@ -452,6 +468,7 @@
           "block_order": [
             "group_icgrde",
             "variant_picker_R3rGDr",
+            "steps_TTzTFL",
             "buy_buttons_eYQEYi",
             "accordion_hziyLV",
             "image_dH84E3"
