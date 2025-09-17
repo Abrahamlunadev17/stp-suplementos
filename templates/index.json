@@ -133,7 +133,7 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/image_17.png",
-            "image-bg": "shopify://shop_images/Frame_764.png",
+            "image-bg": "shopify://shop_images/Frame_760.png",
             "title": "CREATINAS",
             "full_width": false
           }
@@ -142,7 +142,7 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/image_18.png",
-            "image-bg": "shopify://shop_images/Frame_763.png",
+            "image-bg": "shopify://shop_images/Frame_761.png",
             "title": "ENERGÉTICOS Y PRE-ENTRENOS",
             "full_width": false
           }
@@ -160,7 +160,7 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/image_20.png",
-            "image-bg": "shopify://shop_images/Frame_761.png",
+            "image-bg": "shopify://shop_images/Frame_763.png",
             "title": "AMINOÁCIDOS Y RECUPERACIÓN",
             "full_width": false
           }
@@ -169,7 +169,7 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/image_16.png",
-            "image-bg": "shopify://shop_images/Frame_760.png",
+            "image-bg": "shopify://shop_images/Frame_764.png",
             "title": "QUEMA GRASA Y METABOLISMO",
             "full_width": true
           }
@@ -658,7 +658,7 @@
       "name": "Tabs de Colección",
       "settings": {
         "heading": "BEST SELLER",
-        "subheading": "",
+        "subheading": "ALTA CALIDAD, MÁXIMA EFECTIVIDAD",
         "max_products": 8
       }
     },
