@@ -224,6 +224,22 @@
                     "button_text": "OBTENER AHORA"
                   },
                   "blocks": {}
+                },
+                "steps_knjxJd": {
+                  "type": "steps",
+                  "name": "Pasos",
+                  "settings": {
+                    "image_1": "shopify://shop_images/image-22.png",
+                    "text_1": "PASO 1",
+                    "description_1": "Toma 1 porción de Isolate Protein (50 g) usando la medida incluida en el envase.",
+                    "image_2": "shopify://shop_images/image-1.png",
+                    "text_2": "PASO 2",
+                    "description_2": "Licúa con 300 ml de agua, leche o bebida de tu preferencia durante 30 segundos para lograr una textura suave.",
+                    "image_3": "shopify://shop_images/image-2.png",
+                    "text_3": "PASO 3",
+                    "description_3": "Disfruta una malteada rica en proteínas y sin carbohidratos, ideal para complementar tu entrenamiento."
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -232,7 +248,8 @@
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
                 "text_7MgNRH",
-                "discount_XBTMyn"
+                "discount_XBTMyn",
+                "steps_knjxJd"
               ]
             },
             "variant_picker_R3rGDr": {
