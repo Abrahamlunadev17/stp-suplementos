@@ -224,6 +224,22 @@
                     "button_text": "OBTENER AHORA"
                   },
                   "blocks": {}
+                },
+                "steps_nyqppr": {
+                  "type": "steps",
+                  "name": "Pasos",
+                  "settings": {
+                    "image_1": "shopify://shop_images/image-22.png",
+                    "text_1": "PASO 1",
+                    "description_1": "Toma 1 porción de Muscle Gainer (200 g) usando la medida incluida en el envase.",
+                    "image_2": "shopify://shop_images/image-1.png",
+                    "text_2": "PASO 2",
+                    "description_2": "Licúa con 600 ml de agua o leche fría durante 30 segundos para lograr una textura suave.",
+                    "image_3": "shopify://shop_images/image-2.png",
+                    "text_3": "PASO 3",
+                    "description_3": "Disfruta una malteada rica en proteínas y carbohidratos, ideal para apoyar el aumento de masa muscular."
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -232,7 +248,8 @@
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
                 "text_7MgNRH",
-                "discount_XBTMyn"
+                "discount_XBTMyn",
+                "steps_nyqppr"
               ]
             },
             "variant_picker_R3rGDr": {
