@@ -224,6 +224,22 @@
                     "button_text": "OBTENER AHORA"
                   },
                   "blocks": {}
+                },
+                "steps_Vn4BEC": {
+                  "type": "steps",
+                  "name": "Pasos",
+                  "settings": {
+                    "image_1": "shopify://shop_images/image-22.png",
+                    "text_1": "PASO 1",
+                    "description_1": "Toma 1 porción de HydroLyte Sport Drink (35 g) usando la medida incluida en el envase.",
+                    "image_2": "shopify://shop_images/image-1.png",
+                    "text_2": "PASO 2",
+                    "description_2": "Mezcla en 500 ml de agua fría y agita durante 30 segundos hasta disolver completamente.",
+                    "image_3": "shopify://shop_images/image-2.png",
+                    "text_3": "PASO 3",
+                    "description_3": "Tómalo antes, durante o después del entrenamiento para mantenerte hidratado y con energía."
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -232,7 +248,8 @@
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
                 "text_7MgNRH",
-                "discount_XBTMyn"
+                "discount_XBTMyn",
+                "steps_Vn4BEC"
               ]
             },
             "variant_picker_R3rGDr": {
