@@ -60,8 +60,6 @@
   }
 
   .blog-posts-container- {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     padding-bottom: 54px;
   }
 
@@ -107,13 +105,16 @@
 
   .blog-post-card img {
     width: 100%;
-    height: auto;
+    height: 300px;
     display: block;
+    object-fit: cover;
   }
 
   .blog-post-content {
-    padding: 1rem;
+    padding: 2rem 0px;
     color: black;
+    width: 95%;
+    min-height: 100px;
   }
 
   .blog-post-content h3 {

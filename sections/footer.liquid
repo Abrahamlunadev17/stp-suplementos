@@ -1,10 +1,28 @@
 <footer class="footer-custom color-{{ section.settings.color_scheme }}">
+
+  <!-- SVG decorativo -->
+  <span class="footer-svg-absolute">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 454 391"
+      fill="none"
+      preserveAspectRatio="none">
+      <g style="mix-blend-mode:multiply" opacity="0.45">
+        <path d="M0 390.752L142.882 207.044L11.6612 -5.56282e-05L142.882 -6.13641e-05L271.187 195.376L125.39 390.752L0 390.752Z" fill="#E23332" />
+      </g>
+      <g style="mix-blend-mode:multiply" opacity="0.45">
+        <path d="M182 390.752L324.882 207.044L193.661 -5.56282e-05L324.882 -6.13641e-05L453.187 195.376L307.39 390.752L182 390.752Z" fill="#E23332" />
+      </g>
+    </svg>
+  </span>
+
   <div class="footer-container-suplementos">
 
     <div class="grid-footer">
       <div class="wrapp-footer-menus">
 
         <div class="menus-grid">
+          <!-- Menú izquierdo -->
           <div class="footer-column">
             {% if section.settings.menu_left != blank %}
               <ul class="footer-menu">
@@ -31,7 +49,6 @@
           </div>
         </div>
 
-
         <!-- Redes sociales -->
         <div class="footer-socials">
           {% for block in section.blocks %}
@@ -56,9 +73,6 @@
           {% endfor %}
         </div>
 
-      <!-- Copyright -->
-
-
       </div>
 
       <!-- Logo -->
@@ -70,12 +84,10 @@
         {% endif %}
       </div>
     </div>
-  <!-- Menú izquierdo -->
-
 
   </div>
 
-
+  <!-- Copyright -->
   <div class="footer-copy">
     <p>{{ section.settings.copy_text }}</p>
   </div>
@@ -88,6 +100,32 @@
     color: {{ section.settings.text_color }};
     padding: {{ section.settings.padding_top }}
     px 0{{ section.settings.padding_bottom }}px;
+    position: relative;
+    overflow: hidden;
+    /* asegura que el SVG no se salga */
+  }
+
+  /* SVG decorativo */
+  .footer-svg-absolute {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+  }
+
+  .footer-svg-absolute svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .footer-container-suplementos,
+  .footer-copy {
+    position: relative;
+    z-index: 2;
   }
 
   .footer-container-suplementos {
@@ -118,8 +156,6 @@
     align-items: center;
   }
 
-
-
   .menus-grid {
     display: flex;
     align-items: center;
@@ -127,6 +163,7 @@
     gap: 32px;
     width: 70%;
   }
+
   .footer-column {
     text-align: center;
   }
@@ -148,6 +185,7 @@
     font-family: 'HelveticaCondensedmMedium';
     font-size: 18px;
   }
+
   .footer-link:hover {
     color: {{ section.settings.link_hover_color }};
   }
@@ -196,37 +234,48 @@
   .footer-copy {
     font-size: 14px;
     text-align: center;
-    padding: 32px 0px;
-  }
-
-  /* Desktop */
-  @media (max-width: 768px) {
-
-
-  .grid-footer {
-display: flex;
-flex-direction: column;
-}
-.footer-copy{ 
-  margin: 0;
-}
-.footer-container-suplementos {
     padding: 32px 24px;
-  } 
-
-  .menus-grid {
-    justify-content: space-between;
-     width: 100%;
   }
 
-  .wrapp-footer-menus {
-    width: 100%;
-  }
-  .footer-menu{
-    text-align: left;
-  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .grid-footer {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-copy {
+      margin: 0;
+    }
+    .footer-container-suplementos {
+      padding: 32px 24px;
+    }
+    .menus-grid {
+      justify-content: space-between;
+      width: 100%;
+    }
+    .wrapp-footer-menus {
+      width: 100%;
+    }
+    .footer-menu {
+      text-align: left;
+    }
 
+    .footer-svg-absolute {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
 
+    /* Ajuste del SVG en mobile */
+    .footer-svg-absolute svg {
+      width: 250%;
+      height: auto;
+    }
+  }
 </style>
 
 {% schema %}

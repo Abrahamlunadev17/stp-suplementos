@@ -25,7 +25,11 @@
   }
   .text-header-scrolling {
     text-align: center;
-    padding-bottom: 16px
+  }
+
+  .text-header-scrolling h4 {
+    text-align: center;
+    padding: 14px 0px 18px 0px;
   }
 
   .scrolling-text__inner {
@@ -76,9 +80,9 @@
 {% endstyle %}
 
 <div class="wrapper-image-marquee" style="background-color: {{ section.settings.colorBackground }};">
-  {% if section.settings.text-head  %}
-    <div  style="color:white;" class="text-header-scrolling  ">
-      <p>{{ section.settings['text-head'] }}</p>
+  {% if section.settings.text-head %}
+    <div style="color:white;" class="text-header-scrolling">
+      <h4>{{ section.settings['text-head'] }}</h4>
     </div>
   {% endif %}
   <div class="scrolling-text scrolling-text--{{ section.id }}">

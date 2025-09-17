@@ -1,5 +1,4 @@
-
-<h3 class="text-center"> 
+<h3 class="text-center">
   NUESTROS PRODUCTOS
 </h3>
 
@@ -9,7 +8,10 @@
       <div class="stp-grid-product-card
       {% if forloop.first %} stp-grid-product-card--first{% endif %}
       {% if forloop.last %} stp-grid-product-card--last{% endif %}
-    ">
+    " style="background-image: url({{ block.settings['image-bg'] | img_url: 'large' }}); background-color: #e53935;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;">
         {% if block.settings.image != blank %}
           <div class="image-container-stp">
             <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.title | escape }}">
@@ -24,8 +26,9 @@
 </div>
 
 <style>
-.text-center{
-text-align:center;}
+  .text-center {
+    text-align: center;
+  }
 
   /* --- Grid Products Section Styles --- */
   .stp-grid-products-section {
@@ -106,7 +109,7 @@ text-align:center;}
   .stp-grid-product-card span {
     color: #fff;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
     z-index: 2;
     text-shadow: 1px 1px 4px #b71c1c;
   }
@@ -185,7 +188,13 @@ text-align:center;}
             "type": "image_picker",
             "id": "image",
             "label": "Imagen"
-          }, {
+          },
+          {
+            "type": "image_picker",
+            "id": "image-bg",
+            "label": "Imagen"
+          },
+           {
             "type": "text",
             "id": "title",
             "label": "Título"

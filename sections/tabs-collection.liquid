@@ -65,7 +65,18 @@
                         {% if product.metafields.custom.short_description.value != blank %}
                           <h5 class="short-description">{{ product.metafields.custom.short_description.value }}</h5>
                         {% endif %}
-                        <p class="price-tabs">{{ product.price | money_with_currency }}</p>
+                        <p class="price-tabs">
+                          {% if product.compare_at_price > product.price %}
+                            <span>
+                              {{ product.price | money_with_currency }}
+                            </span>
+                            <span style="text-decoration:line-through;color:#ff0000;">
+                              {{ product.compare_at_price | money_with_currency }}
+                            </span>
+                          {% else %}
+                            {{ product.price | money_with_currency }}
+                          {% endif %}
+                        </p>
                       </div>
                     </a>
                     <form method="post" action="/cart/add">

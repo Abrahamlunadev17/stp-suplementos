@@ -1,0 +1,186 @@
+<div class="section-steps--">
+
+  <p class="title-steps">INSTRUCCIONES DE USO</p>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="box-container">
+          {% if block.settings.image_1 != blank %}
+            <img src="{{ block.settings.image_1 | image_url: width: 600 }}" alt="{{ block.settings.text_1 | escape }}">
+          {% endif %}
+          <div class="wrapper-text-steps">
+            <p class="title-box">{{ block.settings.text_1 }}</p>
+            <p>{{ block.settings.description_1 }}</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="box-container">
+          {% if block.settings.image_2 != blank %}
+            <img src="{{ block.settings.image_2 | image_url: width: 600 }}" alt="{{ block.settings.text_2 | escape }}">
+          {% endif %}
+          <div class="wrapper-text-steps">
+            <p class="title-box">{{ block.settings.text_2 }}</p>
+            <p>{{ block.settings.description_2 }}</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+       <div class="box-container">
+          {% if block.settings.image_3 != blank %}
+            <img src="{{ block.settings.image_3 | image_url: width: 600 }}" alt="{{ block.settings.text_3 | escape }}">
+          {% endif %}
+          <div class="wrapper-text-steps">
+            <p class="title-box">{{ block.settings.text_3 }}</p>
+            <p>{{ block.settings.description_3 }}</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controles -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+</div>
+
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 24, // agrega espacio entre los slides
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+
+<style>
+
+  .title-steps {
+    padding-bottom: 12px;
+  }
+
+  .section-steps-- {
+    padding: 12px 0;
+  }
+
+  .section-steps {
+    width: 100%;
+  }
+
+  .box--text {
+    padding-top: 12px;
+  }
+
+  p.title-box {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0px;
+  }
+
+  .box-container {
+    padding-bottom: 32px;
+  }
+
+  .box-container img {
+    height: 150px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid #ffffffb2;
+  }
+
+  .wrapper-text-steps{
+    padding-right: 36px;
+  }
+
+  .box-container h3,
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: 1024px) {
+     .box-container img {
+    height: 200px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid #ffffffb2;
+  }
+
+  }
+
+</style>
+
+{% schema %}
+  {
+    "name": "Parte 2",
+    "class": "section-steps",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image_1",
+        "label": "Imagen Slide 1"
+      },
+      {
+        "type": "text",
+        "id": "text_1",
+        "label": "Título Slide 1"
+      },
+      {
+        "type": "textarea",
+        "id": "description_1",
+        "label": "Descripción Slide 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_2",
+        "label": "Imagen Slide 2"
+      }, {
+        "type": "text",
+        "id": "text_2",
+        "label": "Título Slide 2"
+      }, {
+        "type": "textarea",
+        "id": "description_2",
+        "label": "Descripción Slide 2"
+      }, {
+        "type": "image_picker",
+        "id": "image_3",
+        "label": "Imagen Slide 3"
+      }, {
+        "type": "text",
+        "id": "text_3",
+        "label": "Título Slide 3"
+      }, {
+        "type": "textarea",
+        "id": "description_3",
+        "label": "Descripción Slide 3"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Pasos",
+        "category": "Product"
+      }
+    ]
+  }
+{% endschema %}
