@@ -224,6 +224,22 @@
                     "button_text": "OBTENER AHORA"
                   },
                   "blocks": {}
+                },
+                "steps_dVzbck": {
+                  "type": "steps",
+                  "name": "Pasos",
+                  "settings": {
+                    "image_1": "shopify://shop_images/image-22.png",
+                    "text_1": "PASO 1",
+                    "description_1": "Toma 1 porción de BCAA’s & Glutamina (15 g) usando la medida incluida en el envase.",
+                    "image_2": "shopify://shop_images/image-1.png",
+                    "text_2": "PASO 2",
+                    "description_2": "Tómalo 30 minutos antes o durante el entrenamiento. En días de descanso, consúmelo por la mañana.",
+                    "image_3": "shopify://shop_images/image-2.png",
+                    "text_3": "PASO 3",
+                    "description_3": "Disfruta una malteada rica en proteínas, ideal para complementar tu entrenamiento."
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -232,7 +248,8 @@
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
                 "text_7MgNRH",
-                "discount_XBTMyn"
+                "discount_XBTMyn",
+                "steps_dVzbck"
               ]
             },
             "variant_picker_R3rGDr": {
