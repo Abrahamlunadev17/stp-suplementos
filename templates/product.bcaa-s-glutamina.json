@@ -219,6 +219,7 @@
                 "discount_XBTMyn": {
                   "type": "discount",
                   "name": "Descuento",
+                  "disabled": true,
                   "settings": {
                     "text": "<p>Obtén <strong>10% de descuento</strong></p>",
                     "button_text": "OBTENER AHORA"
@@ -475,6 +476,7 @@
           ]
         }
       },
+      "custom_css": [],
       "settings": {
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
