@@ -347,7 +347,8 @@
       "custom_css": [
         "span,button {color: white;}",
         ".price {color: black;}",
-        ".metafield-multi_line_text_field {color: black;}"
+        ".metafield-multi_line_text_field {color: black;}",
+        ".product-badges__badge {background-color: red;}"
       ],
       "settings": {
         "layout_type": "grid",
