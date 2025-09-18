@@ -627,7 +627,7 @@
       ],
       "name": "Scrolling Image",
       "settings": {
-        "text-head": "ENCUENTRANOS TAMBIEN EN",
+        "text-head": "ENCUENTRANOS TAMBIÉN EN",
         "text_spacing": true,
         "colorBackground": "#cf2928",
         "direction": "left",
