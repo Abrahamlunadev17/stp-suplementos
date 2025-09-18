@@ -658,7 +658,7 @@
       "name": "Tabs de Colección",
       "settings": {
         "heading": "BEST SELLER",
-        "subheading": "ALTA CALIDAD, MÁXIMA EFECTIVIDAD",
+        "subheading": "",
         "max_products": 8
       }
     },
