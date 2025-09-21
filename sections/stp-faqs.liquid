@@ -1,4 +1,5 @@
-<div class="stp-faqs-section" id="faq-{{ section.id }}">
+<div class="stp-faqs-section" id="{{ section.id }}">
+
   <div class="stp-faqs-bg-circular"></div>
   <div class="stp-faqs-bg-circular-top"></div>
   <div class="stp-faqs-container">
@@ -178,25 +179,37 @@
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('[id^="faq-"]').forEach(function(sectionEl) {
-      const buttons = sectionEl.querySelectorAll('.stp-faq-question');
-      buttons.forEach(function(btn) {
-        btn.addEventListener('click', function() {
-          const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+  function initFaqSection(sectionEl) {
+    if (!sectionEl) return;
+    const buttons = sectionEl.querySelectorAll('.stp-faq-question');
 
-          // Cierra todos los FAQs dentro de esta sección
-          buttons.forEach(function(b) {
-            b.setAttribute('aria-expanded', 'false');
-          });
+    buttons.forEach(function(btn) {
+      btn.removeEventListener('click', btn._faqToggle); // prevenir duplicados
 
-          // Si estaba cerrado, abrir este
-          if (!isExpanded) {
-            btn.setAttribute('aria-expanded', 'true');
-          }
-        });
-      });
+      btn._faqToggle = function () {
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+        buttons.forEach(b => b.setAttribute('aria-expanded', 'false'));
+        if (!isExpanded) {
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      };
+
+      btn.addEventListener('click', btn._faqToggle);
     });
+  }
+
+  // Cargar al inicio
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.stp-faqs-section').forEach(initFaqSection);
+  });
+
+  // Editor de Shopify: recarga de secciones
+  document.addEventListener('shopify:section:load', function(e) {
+    const sectionId = e.detail.sectionId;
+    const sectionEl = document.getElementById(sectionId);
+    if (sectionEl) {
+      initFaqSection(sectionEl);
+    }
   });
 </script>
 
