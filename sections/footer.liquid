@@ -28,7 +28,7 @@
               <ul class="footer-menu">
                 {% for link in linklists[section.settings.menu_left].links %}
                   <li>
-                    <a href="{{ link.url }}" class="footer-link">{{ link.title }}</a>
+                    <a href="{{ link.url }}" class="footer-link">{{ link.title | upcase }}</a>
                   </li>
                 {% endfor %}
               </ul>
@@ -41,7 +41,7 @@
               <ul class="footer-menu">
                 {% for link in linklists[section.settings.menu_right].links %}
                   <li>
-                    <a href="{{ link.url }}" class="footer-link">{{ link.title }}</a>
+                    <a href="{{ link.url }}" class="footer-link">{{ link.title | upcase   }}</a>
                   </li>
                 {% endfor %}
               </ul>
