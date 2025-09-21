@@ -170,19 +170,21 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.stp-faq-question').forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      var expanded = btn.getAttribute('aria-expanded') === 'true';
-      // Close all
-      document.querySelectorAll('.stp-faq-question').forEach(function(b) {
-        b.setAttribute('aria-expanded', 'false');
+    document.querySelectorAll('.stp-faqs-section').forEach(function(section) {
+      section.querySelectorAll('.stp-faq-question').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          // Cerrar todos en esta sección
+          section.querySelectorAll('.stp-faq-question').forEach(function(b) {
+            b.setAttribute('aria-expanded', 'false');
+          });
+          // Abrir solo si estaba cerrado
+          if (!expanded) {
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
       });
-      // Open this one if it was closed
-      if (!expanded) {
-        btn.setAttribute('aria-expanded', 'true');
-      }
     });
-  });
   });
 </script>
 
