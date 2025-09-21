@@ -89,19 +89,22 @@
         "tab_thkjCh": {
           "type": "tab",
           "settings": {
-            "collection": "proteina"
+            "collection": "proteina",
+            "title-text": "MASA MUSCULAR"
           }
         },
         "tab_jKaKB8": {
           "type": "tab",
           "settings": {
-            "collection": "aminoacidos-y-recuperacion"
+            "collection": "aminoacidos-y-recuperacion",
+            "title-text": "Recuperación"
           }
         },
         "tab_DVEXRU": {
           "type": "tab",
           "settings": {
-            "collection": "creatinas"
+            "collection": "creatinas",
+            "title-text": "GANAR PESO"
           }
         }
       },
@@ -641,13 +644,15 @@
         "tab_jxmE9g": {
           "type": "tab",
           "settings": {
-            "collection": "energeticos"
+            "collection": "energeticos",
+            "title-text": ""
           }
         },
         "tab_HwKT8F": {
           "type": "tab",
           "settings": {
-            "collection": "quema-grasa-y-metabolismo"
+            "collection": "quema-grasa-y-metabolismo",
+            "title-text": ""
           }
         }
       },
