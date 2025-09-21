@@ -36,35 +36,21 @@
         "faq_UrnQBC": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
+            "question": "1. ¿Cuál es el suplemento ideal para mis objetivos?",
             "answer": "Respuesta de ejemplo para la pregunta frecuente."
           }
         },
         "faq_cH9FPm": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
+            "question": "2. ¿Cómo garantizan la calidad y seguridad de los suplementos?",
             "answer": "Respuesta de ejemplo para la pregunta frecuente."
           }
         },
         "faq_i9g4zg": {
           "type": "faq",
           "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
-          }
-        },
-        "faq_pTcEeJ": {
-          "type": "faq",
-          "settings": {
-            "question": "¿LOREM IPSUM?",
-            "answer": "Respuesta de ejemplo para la pregunta frecuente."
-          }
-        },
-        "faq_PEiwee": {
-          "type": "faq",
-          "settings": {
-            "question": "¿LOREM IPSUM?",
+            "question": "3. ¿Los productos contienen azúcar o glúten?",
             "answer": "Respuesta de ejemplo para la pregunta frecuente."
           }
         }
@@ -72,18 +58,128 @@
       "block_order": [
         "faq_UrnQBC",
         "faq_cH9FPm",
-        "faq_i9g4zg",
-        "faq_pTcEeJ",
-        "faq_PEiwee"
+        "faq_i9g4zg"
       ],
       "name": "Preguntas Frecuentes",
       "settings": {
-        "title": "PREGUNTAS FRECUENTES"
+        "title": "SUPLEMENTOS Y CALIDAD"
+      }
+    },
+    "stp_faqs_wyc9Y9": {
+      "type": "stp-faqs",
+      "blocks": {
+        "faq_fcUrch": {
+          "type": "faq",
+          "settings": {
+            "question": "4. ¿Cuánto tarda en llegar mi pedido?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        },
+        "faq_T4QLTQ": {
+          "type": "faq",
+          "settings": {
+            "question": "5. ¿Ofrecen envío gratuito?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        },
+        "faq_6Yprp9": {
+          "type": "faq",
+          "settings": {
+            "question": "6. ¿Puedo devolver o cambiar un producto?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        },
+        "faq_fhDHJ8": {
+          "type": "faq",
+          "settings": {
+            "question": "7. ¿Qué hago si mi pedido llega dañado?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        }
+      },
+      "block_order": [
+        "faq_fcUrch",
+        "faq_T4QLTQ",
+        "faq_6Yprp9",
+        "faq_fhDHJ8"
+      ],
+      "name": "Preguntas Frecuentes",
+      "settings": {
+        "title": "SUPLEMENTOS Y CALIDAD"
+      }
+    },
+    "stp_faqs_Gc8d7D": {
+      "type": "stp-faqs",
+      "blocks": {
+        "faq_xfAFCk": {
+          "type": "faq",
+          "settings": {
+            "question": "1. ¿Cuál es el suplemento ideal para mis objetivos?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        },
+        "faq_6HpxBV": {
+          "type": "faq",
+          "settings": {
+            "question": "2. ¿Cómo garantizan la calidad y seguridad de los suplementos?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        },
+        "faq_7PtNjm": {
+          "type": "faq",
+          "settings": {
+            "question": "3. ¿Los productos contienen azúcar o glúten?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        },
+        "faq_EdkifM": {
+          "type": "faq",
+          "settings": {
+            "question": "4. ¿Cuánto tarda en llegar mi pedido?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        },
+        "faq_qzrCVL": {
+          "type": "faq",
+          "settings": {
+            "question": "5. ¿Ofrecen envío gratuito?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        },
+        "faq_HNMpj8": {
+          "type": "faq",
+          "settings": {
+            "question": "6. ¿Puedo devolver o cambiar un producto?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        },
+        "faq_M9PGTC": {
+          "type": "faq",
+          "settings": {
+            "question": "7. ¿Qué hago si mi pedido llega dañado?",
+            "answer": "Respuesta de ejemplo para la pregunta frecuente."
+          }
+        }
+      },
+      "block_order": [
+        "faq_xfAFCk",
+        "faq_6HpxBV",
+        "faq_7PtNjm",
+        "faq_EdkifM",
+        "faq_qzrCVL",
+        "faq_HNMpj8",
+        "faq_M9PGTC"
+      ],
+      "name": "Preguntas Frecuentes",
+      "settings": {
+        "title": "SUPLEMENTOS Y CALIDAD"
       }
     }
   },
   "order": [
     "main",
-    "stp_faqs_EmCPta"
+    "stp_faqs_EmCPta",
+    "stp_faqs_wyc9Y9",
+    "stp_faqs_Gc8d7D"
   ]
 }
