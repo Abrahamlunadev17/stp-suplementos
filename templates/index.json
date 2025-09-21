@@ -653,20 +653,12 @@
           "type": "tab",
           "settings": {
             "collection": "energeticos",
-            "title-text": ""
-          }
-        },
-        "tab_HwKT8F": {
-          "type": "tab",
-          "settings": {
-            "collection": "quema-grasa-y-metabolismo",
-            "title-text": ""
+            "title-text": "BEST SELLERS"
           }
         }
       },
       "block_order": [
-        "tab_jxmE9g",
-        "tab_HwKT8F"
+        "tab_jxmE9g"
       ],
       "name": "Tabs de Colección",
       "settings": {
