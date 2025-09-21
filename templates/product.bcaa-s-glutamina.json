@@ -107,29 +107,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_xrnftG": {
-                  "type": "text",
-                  "name": "Product title",
+                "custom_liquid_3gWjgH": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
                   "settings": {
-                    "text": "<h1>{{ closest.product.title }}</h1>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h1",
-                    "font": "var(--font-primary--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
+                    "custom_liquid": "<h2> {{product.title | upcase }}"
                   },
                   "blocks": {}
                 },
@@ -244,7 +226,7 @@
                 }
               },
               "block_order": [
-                "text_xrnftG",
+                "custom_liquid_3gWjgH",
                 "text_wrwq77",
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
