@@ -229,13 +229,13 @@
                   "type": "steps",
                   "name": "Pasos",
                   "settings": {
-                    "image_1": "shopify://shop_images/image-22.png",
+                    "video_1": "shopify://files/videos/ESCENA 1.mov",
                     "text_1": "PASO 1",
                     "description_1": "Toma 1 porción de Whey Protein (50 g) usando la medida incluida en el envase.",
-                    "image_2": "shopify://shop_images/image-1.png",
+                    "video_2": "shopify://files/videos/ESCENA 2.mov",
                     "text_2": "PASO 2",
                     "description_2": "Mezcla en 300 ml de agua fría hasta disolver completamente para obtener una bebida refrescante tipo té helado",
-                    "image_3": "shopify://shop_images/image-2.png",
+                    "video_3": "shopify://files/videos/ESCENA 3.mov",
                     "text_3": "PASO 3",
                     "description_3": "Tómalo antes del entrenamiento o entre comidas para activar tu metabolismo y elevar tus niveles de energía."
                   },
