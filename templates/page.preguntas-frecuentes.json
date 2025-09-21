@@ -64,102 +64,10 @@
       "settings": {
         "title": "SUPLEMENTOS Y CALIDAD"
       }
-    },
-    "stp_faqs_wyc9Y9": {
-      "type": "stp-faqs",
-      "blocks": {
-        "faq_fcUrch": {
-          "type": "faq",
-          "settings": {
-            "question": "4. ¿Cuánto tarda en llegar mi pedido?",
-            "answer": "Los envíos nacionales (dentro de México) toman entre 3 a 7 días hábiles. Al realizar tu compra, recibirás una guía para rastrear tu pedido en todo momento."
-          }
-        },
-        "faq_T4QLTQ": {
-          "type": "faq",
-          "settings": {
-            "question": "5. ¿Ofrecen envío gratuito?",
-            "answer": "Sí. El envío es gratuito en compras mayores a $1,500.00 MXN. \nSi tu compra es menor a ese monto, el costo de envío se calcula automáticamente al finalizar la compra. \nAplica únicamente en envíos dentro de México."
-          }
-        },
-        "faq_6Yprp9": {
-          "type": "faq",
-          "settings": {
-            "question": "6. ¿Puedo devolver o cambiar un producto?",
-            "answer": "Para que un producto sea sujeto a cambio o devolución, debe presentar algún defecto de fabricación, daño durante el envío, o haber llegado roto o abierto. \nProcedimiento para solicitar un cambio o devolución: \n• Reportar la causa dentro de las primeras 24 horas posteriores a la recepción del producto. \n• Enviar una imagen del producto dañado o defectuoso como evidencia. • El producto debe estar en su empaque original y no haber sido consumido. \n• Proporcione su nombre completo y datos de contacto, y envíe esta información a través de nuestras líneas de atención al cliente: \n• Correo: contacto@fnt.mx \n• WhatsApp: 33 2239 7487 \n(Horario de atención: Lunes a Viernes de 9:00 a 18:00 hrs)"
-          }
-        },
-        "faq_fhDHJ8": {
-          "type": "faq",
-          "settings": {
-            "question": "7. ¿Qué hago si mi pedido llega dañado?",
-            "answer": "Si tu pedido llega dañado, contáctanos dentro de las primeras 24 horas con fotografías claras del producto y del empaque. \nEl producto debe estar sin abrir y conservar el sello de garantía intacto para poder gestionar el cambio o reembolso. \nNuestro equipo te asistirá en todo momento para resolverlo lo antes posible."
-          }
-        }
-      },
-      "block_order": [
-        "faq_fcUrch",
-        "faq_T4QLTQ",
-        "faq_6Yprp9",
-        "faq_fhDHJ8"
-      ],
-      "name": "Preguntas Frecuentes",
-      "settings": {
-        "title": "COMPRAS Y ENVÍOS"
-      }
-    },
-    "stp_faqs_Gc8d7D": {
-      "type": "stp-faqs",
-      "blocks": {
-        "faq_xfAFCk": {
-          "type": "faq",
-          "settings": {
-            "question": "  8. ¿Ofrecen descuentos por compras al mayoreo?",
-            "answer": "Sí. Si deseas comprar en volumen para tu gimnasio, tienda, equipo o negocio, contáctanos. Ofrecemos precios preferenciales y descuentos exclusivos a partir de ciertos montos."
-          }
-        },
-        "faq_6HpxBV": {
-          "type": "faq",
-          "settings": {
-            "question": "9. ¿Cómo puedo convertirme en distribuidor autorizado?",
-            "answer": "Si estás interesado en distribuir nuestros productos, contáctanos para conocer los requisitos y beneficios de formar parte de nuestra red. \nEstaremos encantados de colaborar contigo."
-          }
-        }
-      },
-      "block_order": [
-        "faq_xfAFCk",
-        "faq_6HpxBV"
-      ],
-      "name": "Preguntas Frecuentes",
-      "settings": {
-        "title": "MAYOREO Y DISTRIBUCIÓN "
-      }
-    },
-    "stp_faqs_UXWAfX": {
-      "type": "stp-faqs",
-      "blocks": {
-        "faq_U3rdmn": {
-          "type": "faq",
-          "settings": {
-            "question": "10. ¿Dónde puedo conocer más sobre un producto? ",
-            "answer": "Puedes encontrar toda la información relevante (ingredientes, beneficios, tabla nutrimental y modo de uso) dentro de cada página de producto en nuestro sitio web. \nSi tienes dudas específicas, escríbenos y nuestro equipo te atenderá personalmente"
-          }
-        }
-      },
-      "block_order": [
-        "faq_U3rdmn"
-      ],
-      "name": "Preguntas Frecuentes",
-      "settings": {
-        "title": "CONSULTAS DETALLADAS MAYOREO Y DISTRIBUCIÓN "
-      }
     }
   },
   "order": [
     "main",
-    "stp_faqs_EmCPta",
-    "stp_faqs_wyc9Y9",
-    "stp_faqs_Gc8d7D",
-    "stp_faqs_UXWAfX"
+    "stp_faqs_EmCPta"
   ]
 }
