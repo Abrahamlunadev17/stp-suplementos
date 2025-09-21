@@ -5,7 +5,7 @@
 <div class="stp-grid-products-section">
   <div class="stp-grid-products-grid">
     {% for block in section.blocks %}
-      <a href="amatoramx.com"> 
+      <a href="{{  block.settings.link }}"> 
       <div class="stp-grid-product-card
       {% if forloop.first %} stp-grid-product-card--first{% endif %}
       {% if forloop.last %} stp-grid-product-card--last{% endif %}
@@ -195,6 +195,12 @@
             "type": "image_picker",
             "id": "image-bg",
             "label": "Imagen"
+          },
+          {
+
+            "type": "url",
+            "id": "link",
+            "label": "Link"
           },
            {
             "type": "text",
