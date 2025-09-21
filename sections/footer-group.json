@@ -66,7 +66,7 @@
         "logo": "shopify://shop_images/logo_ftn.svg",
         "logo_alt": "Logo",
         "menu_left": "new-menu",
-        "menu_right": "new-menu",
+        "menu_right": "footer",
         "copy_text": "Copyright © 2025 FNT | FOOD & NUTRITION TECHNOLOGIES",
         "bg_color": "#bf2324",
         "text_color": "#ffffff",
