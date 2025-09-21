@@ -1,34 +1,28 @@
-<h3 class="text-center">NUESTROS PRODUCTOS</h3>
+<h3 class="text-center">
+  NUESTROS PRODUCTOS
+</h3>
 
 <div class="stp-grid-products-section">
   <div class="stp-grid-products-grid">
     {% for block in section.blocks %}
-      <div
-        class="
-          stp-grid-product-card
-          {% if forloop.first %} stp-grid-product-card--first{% endif %}
-          {% if forloop.last %} stp-grid-product-card--last{% endif %}
-        "
-        style="
-          background-image: url({{ block.settings['image-bg'] | img_url: 'large' }}); background-color: #e53935;
-          background-position: center center;
-          background-repeat: no-repeat;
-          background-size: cover;
-        "
-      >
+      <a href="amatoramx.com"> 
+      <div class="stp-grid-product-card
+      {% if forloop.first %} stp-grid-product-card--first{% endif %}
+      {% if forloop.last %} stp-grid-product-card--last{% endif %}
+    " style="background-image: url({{ block.settings['image-bg'] | img_url: 'large' }}); background-color: #e53935;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;">
         {% if block.settings.image != blank %}
           <div class="image-container-stp">
-            <a href="amatoramx.com">
-              <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.title | escape }}">
-            </a>
+            <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.title | escape }}">
           </div>
         {% endif %}
         <div class="wrapper-text-card-stp">
-          <a href="amatoramx.com">
           <span>{{ block.settings.title }}</span>
-            </a>
         </div>
       </div>
+      </a>
     {% endfor %}
   </div>
 </div>
@@ -178,86 +172,86 @@
 
 
   }
+
+
 </style>
 
+
 {% schema %}
-{
-  "name": "Grid de Productos",
-  "settings": [],
-  "blocks": [
-    {
-      "type": "card",
-      "name": "Card",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Imagen"
-        },
-        {
-          "type": "image_picker",
-          "id": "image-bg",
-          "label": "Imagen"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Título"
-        },
-        {
-          "type": "checkbox",
-          "id": "full_width",
-          "label": "¿Card de ancho completo?",
-          "default": false
-        }
-      ]
-    }
-  ],
-  "max_blocks": 7,
-  "presets": [
-    {
-      "name": "Grid de Productos",
-      "blocks": [
-        {
-          "type": "card",
-          "settings": {
-            "title": "PROTEÍNAS",
-            "full_width": true
+  {
+    "name": "Grid de Productos",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "card",
+        "name": "Card",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Imagen"
+          },
+          {
+            "type": "image_picker",
+            "id": "image-bg",
+            "label": "Imagen"
+          },
+           {
+            "type": "text",
+            "id": "title",
+            "label": "Título"
+          }, {
+            "type": "checkbox",
+            "id": "full_width",
+            "label": "¿Card de ancho completo?",
+            "default": false
           }
-        },
-        {
-          "type": "card",
-          "settings": {
-            "title": "CREATINAS"
+        ]
+      }
+    ],
+    "max_blocks": 7,
+    "presets": [
+      {
+        "name": "Grid de Productos",
+        "blocks": [
+          {
+            "type": "card",
+            "settings": {
+              "title": "PROTEÍNAS",
+              "full_width": true
+            }
+          },
+          {
+            "type": "card",
+            "settings": {
+              "title": "CREATINAS"
+            }
+          },
+          {
+            "type": "card",
+            "settings": {
+              "title": "ENERGÉTICOS Y PRE-ENTRENOS"
+            }
+          },
+          {
+            "type": "card",
+            "settings": {
+              "title": "VASODILATADORES"
+            }
+          }, {
+            "type": "card",
+            "settings": {
+              "title": "AMINOÁCIDOS Y RECUPERACIÓN"
+            }
+          }, {
+            "type": "card",
+            "settings": {
+              "title": "QUEMA GRASA Y METABOLISMO",
+              "full_width": true
+            }
           }
-        },
-        {
-          "type": "card",
-          "settings": {
-            "title": "ENERGÉTICOS Y PRE-ENTRENOS"
-          }
-        },
-        {
-          "type": "card",
-          "settings": {
-            "title": "VASODILATADORES"
-          }
-        },
-        {
-          "type": "card",
-          "settings": {
-            "title": "AMINOÁCIDOS Y RECUPERACIÓN"
-          }
-        },
-        {
-          "type": "card",
-          "settings": {
-            "title": "QUEMA GRASA Y METABOLISMO",
-            "full_width": true
-          }
-        }
-      ]
-    }
-  ]
-}
+        ]
+      }
+    ]
+  }
 {% endschema %}
