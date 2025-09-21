@@ -197,6 +197,14 @@
               },
               "blocks": {}
             },
+            "custom_liquid_388yzM": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "<h3> {{ product.title }} <h3>"
+              },
+              "blocks": {}
+            },
             "product_title_4nY4eT": {
               "type": "product-title",
               "name": "t:names.product_title",
@@ -204,12 +212,12 @@
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h4",
+                "type_preset": "custom",
                 "font": "var(--font-heading--family)",
-                "font_size": "1rem",
+                "font_size": "1.25rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
-                "case": "none",
+                "case": "uppercase",
                 "wrap": "pretty",
                 "color": "var(--color-primary)",
                 "background": false,
@@ -336,6 +344,7 @@
           },
           "block_order": [
             "card-gallery",
+            "custom_liquid_388yzM",
             "product_title_4nY4eT",
             "text_AqpqFD",
             "price_EzJzMm",
