@@ -1,78 +1,71 @@
 <div class="section-steps--">
-
   <p class="title-steps">INSTRUCCIONES DE USO</p>
 
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-
       <!-- Slide 1 -->
       <div class="swiper-slide">
         <div class="box-container">
-          {% if block.settings.image_1 != blank %}
-            <img src="{{ block.settings.image_1 | image_url: width: 600 }}" alt="{{ block.settings.text_1 | escape }}">
+          {% if block.settings.video_1 != blank %}
+            {{ block.settings.video_1 | video_tag: muted: true, loop: true, autoplay: true }}
           {% endif %}
+
           <div class="wrapper-text-steps">
             <p class="title-box">{{ block.settings.text_1 }}</p>
             <p>{{ block.settings.description_1 }}</p>
           </div>
-
         </div>
       </div>
 
       <!-- Slide 2 -->
       <div class="swiper-slide">
         <div class="box-container">
-          {% if block.settings.image_2 != blank %}
-            <img src="{{ block.settings.image_2 | image_url: width: 600 }}" alt="{{ block.settings.text_2 | escape }}">
+          {% if block.settings.video_1 != blank %}
+            {{ block.settings.video_2 | video_tag: muted: true, loop: true, autoplay: true }}
           {% endif %}
+
           <div class="wrapper-text-steps">
             <p class="title-box">{{ block.settings.text_2 }}</p>
             <p>{{ block.settings.description_2 }}</p>
           </div>
-
         </div>
       </div>
 
       <!-- Slide 3 -->
       <div class="swiper-slide">
-       <div class="box-container">
-          {% if block.settings.image_3 != blank %}
-            <img src="{{ block.settings.image_3 | image_url: width: 600 }}" alt="{{ block.settings.text_3 | escape }}">
+        <div class="box-container">
+          {% if block.settings.video_1 != blank %}
+            {{ block.settings.video_3 | video_tag: muted: true, loop: true, autoplay: true }}
           {% endif %}
+
           <div class="wrapper-text-steps">
             <p class="title-box">{{ block.settings.text_3 }}</p>
             <p>{{ block.settings.description_3 }}</p>
           </div>
-
         </div>
       </div>
-
     </div>
 
     <!-- Controles -->
     <div class="swiper-pagination"></div>
   </div>
-
 </div>
 
-
 <script>
-  var swiper = new Swiper(".mySwiper", {
+  var swiper = new Swiper('.mySwiper', {
     spaceBetween: 24, // agrega espacio entre los slides
     pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
+      el: '.swiper-pagination',
+      type: 'fraction',
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
   });
 </script>
 
-
 <style>
-
   .title-steps {
     padding-bottom: 12px;
   }
@@ -126,61 +119,64 @@
   }
 
   }
-
 </style>
-
 {% schema %}
-  {
-    "name": "Parte 2",
-    "class": "section-steps",
-    "tag": "section",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "image_1",
-        "label": "Imagen Slide 1"
-      },
-      {
-        "type": "text",
-        "id": "text_1",
-        "label": "Título Slide 1"
-      },
-      {
-        "type": "textarea",
-        "id": "description_1",
-        "label": "Descripción Slide 1"
-      },
-      {
-        "type": "image_picker",
-        "id": "image_2",
-        "label": "Imagen Slide 2"
-      }, {
-        "type": "text",
-        "id": "text_2",
-        "label": "Título Slide 2"
-      }, {
-        "type": "textarea",
-        "id": "description_2",
-        "label": "Descripción Slide 2"
-      }, {
-        "type": "image_picker",
-        "id": "image_3",
-        "label": "Imagen Slide 3"
-      }, {
-        "type": "text",
-        "id": "text_3",
-        "label": "Título Slide 3"
-      }, {
-        "type": "textarea",
-        "id": "description_3",
-        "label": "Descripción Slide 3"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Pasos",
-        "category": "Product"
-      }
-    ]
-  }
+{
+  "name": "Parte 2",
+  "class": "section-steps",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "video",
+      "id": "video_1",
+      "label": "Video Slide 1"
+    },
+    {
+      "type": "text",
+      "id": "text_1",
+      "label": "Título Slide 1"
+    },
+    {
+      "type": "textarea",
+      "id": "description_1",
+      "label": "Descripción Slide 1"
+    },
+    {
+      "type": "video",
+      "id": "video_2",
+      "label": "Video Slide 2"
+    },
+    {
+      "type": "text",
+      "id": "text_2",
+      "label": "Título Slide 2"
+    },
+    {
+      "type": "textarea",
+      "id": "description_2",
+      "label": "Descripción Slide 2"
+    },
+    {
+      "type": "video",
+      "id": "video_3",
+      "label": "Video Slide 3"
+    },
+    {
+      "type": "text",
+      "id": "text_3",
+      "label": "Título Slide 3"
+    },
+    {
+      "type": "textarea",
+      "id": "description_3",
+      "label": "Descripción Slide 3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Pasos",
+      "category": "Product"
+    }
+  ]
+}
 {% endschema %}
