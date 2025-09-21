@@ -171,14 +171,14 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.stp-faqs-section').forEach(function(section) {
+      const sectionId = section.getAttribute('id');
       section.querySelectorAll('.stp-faq-question').forEach(function(btn) {
         btn.addEventListener('click', function() {
           const expanded = btn.getAttribute('aria-expanded') === 'true';
-          // Cerrar todos en esta sección
+          // Cerrar todos los FAQs dentro de esta sección solamente
           section.querySelectorAll('.stp-faq-question').forEach(function(b) {
             b.setAttribute('aria-expanded', 'false');
           });
-          // Abrir solo si estaba cerrado
           if (!expanded) {
             btn.setAttribute('aria-expanded', 'true');
           }
