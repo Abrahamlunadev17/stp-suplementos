@@ -1,7 +1,16 @@
-<div class="pdp-porcion">
-  olaaa
-</div>
-
+{% if product.metafields.custom.relacionados != blank %}
+  <div class="gramajes-wrapper">
+    <h3>Gramaje:</h3>
+    <div class="gramajes-list">
+      {% assign productos_relacionados = product.metafields.custom.relacionados.value %}
+      {% for producto in productos_relacionados %}
+        <a href="{{ producto.url }}" class="gramaje-item {% if producto.id == product.id %}active{% endif %}">
+          {{ producto.metafields.custom.peso }} g
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
 <style>
   .pdp-porcion {
     display: flex;
