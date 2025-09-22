@@ -330,28 +330,28 @@
         "padding-block-end": 48
       }
     },
-    "stpmarquee_image_myjpXG": {
+    "stpmarquee_image_b3J78Q": {
       "type": "stpmarquee-image",
       "blocks": {
-        "image_ic9CXT": {
+        "image_pNKXjP": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Mask_group.png"
           }
         },
-        "image_8X6Nmd": {
+        "image_W4na96": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Frame_29.png"
           }
         },
-        "image_T33G9f": {
+        "image_MCem7t": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Frame_719.png"
           }
         },
-        "image_9MQWyt": {
+        "image_r9FnMx": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Frame_718_f39b5a35-10a7-4096-85d0-2fe998209dcb.png"
@@ -359,14 +359,14 @@
         }
       },
       "block_order": [
-        "image_ic9CXT",
-        "image_8X6Nmd",
-        "image_T33G9f",
-        "image_9MQWyt"
+        "image_pNKXjP",
+        "image_W4na96",
+        "image_MCem7t",
+        "image_r9FnMx"
       ],
       "name": "Scrolling Image",
       "settings": {
-        "text-head": "ENCUENTRANOS TAMBIEN EN",
+        "text-head": "ENCUÉNTRANOS TAMBIÉN EN",
         "text_spacing": true,
         "colorBackground": "#cf2928",
         "direction": "left",
@@ -381,6 +381,6 @@
     "image_conocenos_4a7VGU",
     "slider_conocenos_TcNbz9",
     "product_list_pib4xk",
-    "stpmarquee_image_myjpXG"
+    "stpmarquee_image_b3J78Q"
   ]
 }
