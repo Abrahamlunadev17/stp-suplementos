@@ -198,15 +198,6 @@
                   },
                   "blocks": {}
                 },
-                "slide_pdp_XdmrJ7": {
-                  "type": "slide-pdp",
-                  "name": "Producto",
-                  "settings": {
-                    "text-desc": "",
-                    "text-porcion": ""
-                  },
-                  "blocks": {}
-                },
                 "discount_XBTMyn": {
                   "type": "discount",
                   "name": "Descuento",
@@ -224,7 +215,6 @@
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
                 "text_7MgNRH",
-                "slide_pdp_XdmrJ7",
                 "discount_XBTMyn"
               ]
             },
