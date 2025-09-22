@@ -1,62 +1,57 @@
-<p> holaaaa </p>
+<div class="pdp-porcion">
+  <div class="desc-pdp-porcion">
+    <p>{{ block.settings.text-desc }}</p>
+  </div>
+  {% if block.settings.text-porcion != blank %}
+    <div class="porcion-pdp">
+      <p>{{ block.settings.text-porcion }}</p>
+    </div>
+  {% endif %}
+</div>
+
+<style>
+  .pdp-porcion {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .desc-pdp-porcion p{ 
+ font-size: 18px;
+  }
+
+
+  .porcion-pdp {
+    background-color: #E23332;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 9999px;
+  }
+</style>
+
 
 {% schema %}
-{
-  "name": "Parte 2",
-  "class": "section-steps",
-  "tag": "section",
-  "settings": [
-    {
-      "type": "video",
-      "id": "video_1",
-      "label": "Video Slide 1"
-    },
-    {
-      "type": "text",
-      "id": "text_1",
-      "label": "Título Slide 1"
-    },
-    {
-      "type": "textarea",
-      "id": "description_1",
-      "label": "Descripción Slide 1"
-    },
-    {
-      "type": "video",
-      "id": "video_2",
-      "label": "Video Slide 2"
-    },
-    {
-      "type": "text",
-      "id": "text_2",
-      "label": "Título Slide 2"
-    },
-    {
-      "type": "textarea",
-      "id": "description_2",
-      "label": "Descripción Slide 2"
-    },
-    {
-      "type": "video",
-      "id": "video_3",
-      "label": "Video Slide 3"
-    },
-    {
-      "type": "text",
-      "id": "text_3",
-      "label": "Título Slide 3"
-    },
-    {
-      "type": "textarea",
-      "id": "description_3",
-      "label": "Descripción Slide 3"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Pasos 3",
-      "category": "Amatora"
-    }
-  ]
-}
+  {
+    "name": "Porcion 2",
+    "tag": null,
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "text-desc",
+        "label": "Text Descrpicion"
+      },
+      {
+        "type": "richtext",
+        "id": "text-porcion",
+        "label": "Text porcion"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Producto 2",
+        "category": "Product"
+      }
+    ]
+  }
 {% endschema %}
