@@ -198,15 +198,6 @@
                   },
                   "blocks": {}
                 },
-                "related_product_jPTVqi": {
-                  "type": "related-product",
-                  "name": "Relacionado",
-                  "settings": {
-                    "text-desc": "",
-                    "text-porcion": ""
-                  },
-                  "blocks": {}
-                },
                 "discount_XBTMyn": {
                   "type": "discount",
                   "name": "Descuento",
@@ -240,7 +231,6 @@
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
                 "text_7MgNRH",
-                "related_product_jPTVqi",
                 "discount_XBTMyn",
                 "steps_dVzbck"
               ]
