@@ -1,0 +1,57 @@
+<div class="pdp-porcion">
+  <div class="desc-pdp-porcion">
+    <p>{{ block.settings.text-desc }}</p>
+  </div>
+  {% if block.settings.text-porcion != blank %}
+    <div class="porcion-pdp">
+      <p>{{ block.settings.text-porcion }}</p>
+    </div>
+  {% endif %}
+</div>
+
+<style>
+  .pdp-porcion {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .desc-pdp-porcion p{ 
+ font-size: 18px;
+  }
+
+
+  .porcion-pdp {
+    background-color: #E23332;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 9999px;
+  }
+</style>
+
+
+{% schema %}
+  {
+    "name": "Relacionado",
+    "tag": null,
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "text-desc",
+        "label": "Text Descrpicion"
+      },
+      {
+        "type": "richtext",
+        "id": "text-porcion",
+        "label": "Text porcion"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Relacionado",
+        "category": "Product"
+      }
+    ]
+  }
+{% endschema %}
