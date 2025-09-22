@@ -213,6 +213,15 @@
                     "description_3": "Tómalo 30 minutos antes del entrenamiento para favorecer la vasodilatación y optimizar tu rendimiento físico."
                   },
                   "blocks": {}
+                },
+                "related_product_pkNrFi": {
+                  "type": "related-product",
+                  "name": "Relacionado",
+                  "settings": {
+                    "text-desc": "",
+                    "text-porcion": ""
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -221,7 +230,8 @@
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
                 "text_7MgNRH",
-                "steps_M6kR8b"
+                "steps_M6kR8b",
+                "related_product_pkNrFi"
               ]
             },
             "variant_picker_R3rGDr": {
