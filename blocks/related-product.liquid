@@ -1,4 +1,5 @@
 
+  {% if product.metafields.custom.relacionados != blank %}
   <div class="gramajes-wrapper">
     <h5>Gramaje:</h5>
     <div class="gramajes-list">
@@ -10,6 +11,7 @@
       {% endfor %}
     </div>
   </div>
+  {% endif %}
 
 <style>
 .gramajes-list {
