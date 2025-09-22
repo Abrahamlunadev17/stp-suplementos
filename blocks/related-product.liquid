@@ -1,5 +1,4 @@
-
-  {% if product.metafields.custom.relacionados != blank %}
+{% if product.metafields.custom.relacionados != blank %}
   <div class="gramajes-wrapper">
     <h5>Gramaje:</h5>
     <div class="gramajes-list">
@@ -11,17 +10,21 @@
       {% endfor %}
     </div>
   </div>
-  {% endif %}
+{% endif %}
 
 <style>
 .gramajes-list {
   display: flex;
   gap: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+  scrollbar-width: thin; /* Firefox */
 }
 
 a.gramaje-item {
-  display: inline-block;
-    padding: 6px 18px;
+  flex: 0 0 auto;
+  padding: 6px 18px;
   border-radius: 12px;
   background-color: #ccc;
   color: black;
@@ -32,6 +35,16 @@ a.gramaje-item.active {
   background-color: white;
   border: 2px solid black;
 }
+
+.gramajes-list::-webkit-scrollbar {
+  display: none;
+}
+
+.gramajes-list {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
 
 </style>
 
