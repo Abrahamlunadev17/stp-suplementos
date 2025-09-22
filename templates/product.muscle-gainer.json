@@ -198,15 +198,6 @@
                   },
                   "blocks": {}
                 },
-                "discount_XBTMyn": {
-                  "type": "discount",
-                  "name": "Descuento",
-                  "settings": {
-                    "text": "<p>Obtén <strong>10% de descuento</strong></p>",
-                    "button_text": "OBTENER AHORA"
-                  },
-                  "blocks": {}
-                },
                 "steps_nyqppr": {
                   "type": "steps",
                   "name": "Pasos",
@@ -230,7 +221,6 @@
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
                 "text_7MgNRH",
-                "discount_XBTMyn",
                 "steps_nyqppr"
               ]
             },
@@ -432,7 +422,7 @@
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "custom",
-                "custom_width": 35,
+                "custom_width": 70,
                 "width_mobile": "custom",
                 "custom_width_mobile": 71,
                 "height": "fit",
