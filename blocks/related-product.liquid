@@ -5,7 +5,7 @@
       {% assign productos_relacionados = product.metafields.custom.relacionados.value %}
       {% for producto in productos_relacionados %}
         <a href="{{ producto.url }}" class="gramaje-item {% if producto.id == product.id %}active{% endif %}">
-          {{ producto.metafields.custom.peso }} g
+          {{ producto.metafields.custom.peso }}
         </a>
       {% endfor %}
     </div>
