@@ -136,6 +136,7 @@
           "settings": {
             "image": "shopify://shop_images/image_4.png",
             "image-bg": "shopify://shop_images/Frame_759.png",
+            "link": "",
             "title": "PROTEÍNAS",
             "full_width": true
           }
@@ -145,6 +146,7 @@
           "settings": {
             "image": "shopify://shop_images/image_17.png",
             "image-bg": "shopify://shop_images/Frame_760.png",
+            "link": "",
             "title": "CREATINAS",
             "full_width": false
           }
@@ -154,6 +156,7 @@
           "settings": {
             "image": "shopify://shop_images/image_18.png",
             "image-bg": "shopify://shop_images/Frame_761.png",
+            "link": "",
             "title": "ENERGÉTICOS Y PRE-ENTRENOS",
             "full_width": false
           }
@@ -163,6 +166,7 @@
           "settings": {
             "image": "shopify://shop_images/image_19.png",
             "image-bg": "shopify://shop_images/Frame_762.png",
+            "link": "",
             "title": "VASODILATADORES",
             "full_width": false
           }
@@ -172,6 +176,7 @@
           "settings": {
             "image": "shopify://shop_images/image_20.png",
             "image-bg": "shopify://shop_images/Frame_763.png",
+            "link": "",
             "title": "AMINOÁCIDOS Y RECUPERACIÓN",
             "full_width": false
           }
@@ -181,6 +186,7 @@
           "settings": {
             "image": "shopify://shop_images/image_16.png",
             "image-bg": "shopify://shop_images/Frame_764.png",
+            "link": "",
             "title": "QUEMA GRASA Y METABOLISMO",
             "full_width": true
           }
@@ -493,6 +499,7 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/image_4.png",
+            "link": "",
             "title": "PROTEÍNAS",
             "full_width": true
           }
@@ -501,6 +508,7 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/image_17.png",
+            "link": "",
             "title": "CREATINAS",
             "full_width": false
           }
@@ -509,6 +517,7 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/image_18.png",
+            "link": "",
             "title": "ENERGÉTICOS Y PRE-ENTRENOS",
             "full_width": false
           }
@@ -517,6 +526,7 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/image_19.png",
+            "link": "",
             "title": "VASODILATADORES",
             "full_width": false
           }
@@ -525,6 +535,7 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/image_20.png",
+            "link": "",
             "title": "AMINOÁCIDOS Y RECUPERACIÓN",
             "full_width": false
           }
@@ -533,6 +544,7 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/image_16.png",
+            "link": "",
             "title": "QUEMA GRASA Y METABOLISMO",
             "full_width": true
           }
@@ -652,7 +664,7 @@
         "tab_jxmE9g": {
           "type": "tab",
           "settings": {
-            "collection": "energeticos",
+            "collection": "best-sellers",
             "title-text": "BEST SELLERS"
           }
         }
