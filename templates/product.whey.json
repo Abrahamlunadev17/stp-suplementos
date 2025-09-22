@@ -247,6 +247,15 @@
               },
               "blocks": {}
             },
+            "related_product_jWdKVe": {
+              "type": "related-product",
+              "name": "Relacionado",
+              "settings": {
+                "text-desc": "",
+                "text-porcion": ""
+              },
+              "blocks": {}
+            },
             "buy_buttons_eYQEYi": {
               "type": "buy-buttons",
               "settings": {
@@ -452,6 +461,7 @@
             "group_icgrde",
             "variant_picker_R3rGDr",
             "steps_TTzTFL",
+            "related_product_jWdKVe",
             "buy_buttons_eYQEYi",
             "accordion_hziyLV",
             "image_dH84E3"

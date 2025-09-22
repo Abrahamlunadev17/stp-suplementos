@@ -213,6 +213,15 @@
                     "description_3": "Tómalo de 15 a 30 minutos antes de entrenar para potenciar tu desempeño en cada sesión."
                   },
                   "blocks": {}
+                },
+                "related_product_6B9jEa": {
+                  "type": "related-product",
+                  "name": "Relacionado",
+                  "settings": {
+                    "text-desc": "",
+                    "text-porcion": ""
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -221,7 +230,8 @@
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
                 "text_7MgNRH",
-                "steps_XnFnCp"
+                "steps_XnFnCp",
+                "related_product_6B9jEa"
               ]
             },
             "variant_picker_R3rGDr": {

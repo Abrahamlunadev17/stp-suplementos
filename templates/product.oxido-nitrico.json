@@ -214,7 +214,7 @@
                   },
                   "blocks": {}
                 },
-                "related_product_pkNrFi": {
+                "related_product_hbttaN": {
                   "type": "related-product",
                   "name": "Relacionado",
                   "settings": {
@@ -231,7 +231,7 @@
                 "price_tVjtKg",
                 "text_7MgNRH",
                 "steps_M6kR8b",
-                "related_product_pkNrFi"
+                "related_product_hbttaN"
               ]
             },
             "variant_picker_R3rGDr": {

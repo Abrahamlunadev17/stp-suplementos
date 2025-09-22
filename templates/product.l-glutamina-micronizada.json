@@ -213,6 +213,15 @@
                     "description_3": "Tómalo una vez al día, preferentemente después del ejercicio. En días de descanso, consúmelo en ayunas."
                   },
                   "blocks": {}
+                },
+                "related_product_JGC6tx": {
+                  "type": "related-product",
+                  "name": "Relacionado",
+                  "settings": {
+                    "text-desc": "",
+                    "text-porcion": ""
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -221,7 +230,8 @@
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
                 "text_7MgNRH",
-                "steps_cDAE7X"
+                "steps_cDAE7X",
+                "related_product_JGC6tx"
               ]
             },
             "variant_picker_R3rGDr": {

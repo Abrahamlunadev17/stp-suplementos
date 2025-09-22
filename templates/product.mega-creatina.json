@@ -222,6 +222,15 @@
                     "description_3": "Tómalo 30 minutos antes del entrenamiento, o en ayunas durante días de descanso para mantener niveles óptimos de creatina"
                   },
                   "blocks": {}
+                },
+                "related_product_cBbYUK": {
+                  "type": "related-product",
+                  "name": "Relacionado",
+                  "settings": {
+                    "text-desc": "",
+                    "text-porcion": ""
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -231,7 +240,8 @@
                 "price_tVjtKg",
                 "text_7MgNRH",
                 "discount_XBTMyn",
-                "steps_HQVN79"
+                "steps_HQVN79",
+                "related_product_cBbYUK"
               ]
             },
             "variant_picker_R3rGDr": {

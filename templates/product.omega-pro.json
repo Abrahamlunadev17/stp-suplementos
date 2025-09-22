@@ -213,6 +213,15 @@
                     "description_3": "Disfruta una malteada rica en proteínas y colágeno, ideal para complementar tu entrenamiento."
                   },
                   "blocks": {}
+                },
+                "related_product_kVgtFa": {
+                  "type": "related-product",
+                  "name": "Relacionado",
+                  "settings": {
+                    "text-desc": "",
+                    "text-porcion": ""
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -221,7 +230,8 @@
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
                 "text_7MgNRH",
-                "steps_Mb4AtD"
+                "steps_Mb4AtD",
+                "related_product_kVgtFa"
               ]
             },
             "variant_picker_R3rGDr": {

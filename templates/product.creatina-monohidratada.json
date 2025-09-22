@@ -213,6 +213,15 @@
                     "description_3": "Tómala una vez al día. Antes o después del ejercicio, o en ayunas si es día de descanso."
                   },
                   "blocks": {}
+                },
+                "related_product_fdAwJK": {
+                  "type": "related-product",
+                  "name": "Relacionado",
+                  "settings": {
+                    "text-desc": "",
+                    "text-porcion": ""
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -221,7 +230,8 @@
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
                 "text_7MgNRH",
-                "steps_9BtHih"
+                "steps_9BtHih",
+                "related_product_fdAwJK"
               ]
             },
             "variant_picker_R3rGDr": {

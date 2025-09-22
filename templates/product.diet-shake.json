@@ -213,6 +213,15 @@
                     "description_3": "Tómalo como desayuno, cena ligera o colación entre comidas para apoyar tus objetivos nutricionales."
                   },
                   "blocks": {}
+                },
+                "related_product_M7XYaG": {
+                  "type": "related-product",
+                  "name": "Relacionado",
+                  "settings": {
+                    "text-desc": "",
+                    "text-porcion": ""
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -221,7 +230,8 @@
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
                 "text_7MgNRH",
-                "steps_baAF4E"
+                "steps_baAF4E",
+                "related_product_M7XYaG"
               ]
             },
             "variant_picker_R3rGDr": {
