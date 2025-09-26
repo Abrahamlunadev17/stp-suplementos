@@ -10,7 +10,7 @@
         {% assign peso = producto.metafields.custom.peso %}
         {% unless pesos_mostrados contains peso %}
           <a href="{{ producto.url }}" class="gramaje-item {% if peso == product.metafields.custom.peso %}active{% endif %}">
-            {{ peso }} g
+            {{ peso }} 
           </a>
           {% assign pesos_mostrados = pesos_mostrados | append: peso | append: ',' %}
         {% endunless %}
