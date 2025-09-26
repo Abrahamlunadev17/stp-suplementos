@@ -72,6 +72,36 @@
     background-color: white;
     border: 2px solid black;
   }
+
+  .sabores-wrapper h5 {
+  margin: 0;
+}
+
+.sabores-list {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 12px 0;
+  scrollbar-width: thin;
+}
+
+a.sabor-item {
+  flex: 0 0 auto;
+  padding: 6px 18px;
+  border-radius: 12px;
+  background-color: #ccc;
+  color: black;
+  text-decoration: none;
+}
+
+a.sabor-item.active {
+  background-color: white;
+  border: 2px solid black;
+}
+
+
+
 </style>
 
 {% schema %}
