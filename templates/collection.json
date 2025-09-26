@@ -197,14 +197,6 @@
               },
               "blocks": {}
             },
-            "custom_liquid_388yzM": {
-              "type": "custom-liquid",
-              "name": "t:names.custom_liquid",
-              "settings": {
-                "custom_liquid": "<h3> {{ product.title }} <h3>"
-              },
-              "blocks": {}
-            },
             "product_title_4nY4eT": {
               "type": "product-title",
               "name": "t:names.product_title",
@@ -344,7 +336,6 @@
           },
           "block_order": [
             "card-gallery",
-            "custom_liquid_388yzM",
             "product_title_4nY4eT",
             "text_AqpqFD",
             "price_EzJzMm",
