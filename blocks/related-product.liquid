@@ -1,29 +1,33 @@
+{%- comment -%} === BLOQUE DE GRAMAJES === {%- endcomment -%}
 {% if product.metafields.custom.relacionados != blank %}
-  {% assign relacionados = product.metafields.custom.relacionados.value %}
-
-  {%- comment -%} === GRAMAJES === {%- endcomment -%}
   <div class="gramajes-wrapper">
     <h5>Gramaje:</h5>
     <div class="gramajes-list">
-      {% assign gramajes_mostrados = '' %}
+      {% assign relacionados = product.metafields.custom.relacionados.value %}
+      {% assign pesos_mostrados = '' %}
+
       {% for producto in relacionados %}
         {% assign peso = producto.metafields.custom.peso %}
-        {% unless gramajes_mostrados contains peso %}
+        {% unless pesos_mostrados contains peso %}
           <a href="{{ producto.url }}" class="gramaje-item {% if peso == product.metafields.custom.peso %}active{% endif %}">
             {{ peso }} g
           </a>
-          {% assign gramajes_mostrados = gramajes_mostrados | append: peso | append: ',' %}
+          {% assign pesos_mostrados = pesos_mostrados | append: peso | append: ',' %}
         {% endunless %}
       {% endfor %}
     </div>
   </div>
+{% endif %}
 
-  {%- comment -%} === SABORES === {%- endcomment -%}
+{%- comment -%} === BLOQUE DE SABORES === {%- endcomment -%}
+{% if product.metafields.custom.sabor_list != blank %}
   <div class="sabores-wrapper">
-    <h5>Sabor</h5>
+    <h5>Sabor:</h5>
     <div class="sabores-list">
+      {% assign sabores = product.metafields.custom.sabor_list.value %}
       {% assign sabores_mostrados = '' %}
-      {% for producto in relacionados %}
+
+      {% for producto in sabores %}
         {% assign sabor = producto.metafields.custom.sabor %}
         {% unless sabores_mostrados contains sabor %}
           <a href="{{ producto.url }}" class="sabor-item {% if sabor == product.metafields.custom.sabor %}active{% endif %}">
@@ -35,6 +39,7 @@
     </div>
   </div>
 {% endif %}
+
 
 <style>
 .gramajes-wrapper {
