@@ -9,6 +9,19 @@
         </a>
       {% endfor %}
     </div>
+
+    <h5>Sabor</h5>
+
+     <div class="gramajes-list">
+      {% assign productos_relacionados = product.metafields.custom.relacionados.value %}
+      {% for producto in productos_relacionados %}
+        <a href="{{ producto.url }}" class="gramaje-item {% if producto.id == product.id %}active{% endif %}">
+          {{ producto.metafields.custom.peso }}
+        </a>
+      {% endfor %}
+    </div>
+
+
   </div>
 {% endif %}
 
