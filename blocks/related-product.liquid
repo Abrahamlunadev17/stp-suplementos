@@ -1,22 +1,40 @@
 {% if product.metafields.custom.relacionados != blank %}
-  <div class="gramajes-wrapper">
-    <h5>Presentaciones:</h5>
-    <div class="gramajes-list">
-      {% assign productos_relacionados = product.metafields.custom.relacionados.value %}
-      {% for producto in productos_relacionados %}
-        {% assign es_activo = false %}
-        {% if producto.id == product.id %}
-          {% assign es_activo = true %}
-        {% endif %}
+  {% assign relacionados = product.metafields.custom.relacionados.value %}
 
-        <a href="{{ producto.url }}" class="gramaje-item {% if es_activo %}active{% endif %}">
-          {{ producto.metafields.custom.peso }}g · {{ producto.metafields.custom.sabor }}
-        </a>
+  {%- comment -%} === GRAMAJES === {%- endcomment -%}
+  <div class="gramajes-wrapper">
+    <h5>Gramaje:</h5>
+    <div class="gramajes-list">
+      {% assign gramajes_mostrados = '' %}
+      {% for producto in relacionados %}
+        {% assign peso = producto.metafields.custom.peso %}
+        {% unless gramajes_mostrados contains peso %}
+          <a href="{{ producto.url }}" class="gramaje-item {% if peso == product.metafields.custom.peso %}active{% endif %}">
+            {{ peso }} g
+          </a>
+          {% assign gramajes_mostrados = gramajes_mostrados | append: peso | append: ',' %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+
+  {%- comment -%} === SABORES === {%- endcomment -%}
+  <div class="sabores-wrapper">
+    <h5>Sabor</h5>
+    <div class="sabores-list">
+      {% assign sabores_mostrados = '' %}
+      {% for producto in relacionados %}
+        {% assign sabor = producto.metafields.custom.sabor %}
+        {% unless sabores_mostrados contains sabor %}
+          <a href="{{ producto.url }}" class="sabor-item {% if sabor == product.metafields.custom.sabor %}active{% endif %}">
+            {{ sabor }}
+          </a>
+          {% assign sabores_mostrados = sabores_mostrados | append: sabor | append: ',' %}
+        {% endunless %}
       {% endfor %}
     </div>
   </div>
 {% endif %}
-
 
 <style>
 .gramajes-wrapper {
