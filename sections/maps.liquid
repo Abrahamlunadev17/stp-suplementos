@@ -1,0 +1,97 @@
+<div class="fnt-contact-section">
+  <div class="fnt-contact-wrapper">
+    <!-- Mapa o Liquid embebido -->
+    <div class="fnt-contact-map">
+      {% if section.settings.map_embed_code != blank %}
+        {{ section.settings.map_embed_code }}
+      {% endif %}
+    </div>
+
+    <!-- Información de contacto -->
+    <div class="fnt-contact-info">
+      <h2>Información de contacto:</h2>
+      <p>
+        <strong>Dirección:</strong> Primero de Enero No. 77-A, Col. Nuevo México, C.P. 45138, Zapopan Jalisco, México.
+      </p>
+      <p><strong>Tel:</strong> 33 3624 1344 | 33 3743 7958</p>
+      <p><strong>WhatsApp:</strong> 33 2239 7487</p>
+      <p><strong>Email:</strong> contacto@fnt.mx</p>
+      <p><strong>Instagram, TikTok, Facebook:</strong> @fntsuplementos</p>
+    </div>
+  </div>
+</div>
+
+<style>
+
+.fnt-contact-section {
+    background: #111;
+    color: white;
+    padding: 40px 20px;
+    font-family: sans-serif;
+  }
+
+  .fnt-contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .fnt-contact-map {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .fnt-contact-info {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .fnt-contact-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .fnt-contact-info p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+
+  /* Responsive: columnas en mobile */
+  @media screen and (max-width: 768px) {
+    .fnt-contact-wrapper {
+      flex-direction: column;
+    }
+
+    .fnt-contact-map,
+    .fnt-contact-info {
+      width: 100%;
+    }
+  }
+</style>
+
+
+{% schema %}
+
+{
+  "name": "Sección de contacto FNT",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "map_embed_code",
+      "label": "Código embed del mapa (iframe)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mapa"
+    }
+  ]
+}
+
+{% endschema %}
+
