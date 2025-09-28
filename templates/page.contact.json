@@ -293,10 +293,18 @@
         "padding-block-end": 84
       }
     },
-    "section_GR7UDR": {
+    "section_BbVenU": {
       "type": "section",
       "blocks": {
-        "group_igKxzT": {
+        "custom_liquid_PBkaAP": {
+          "type": "custom-liquid",
+          "name": "t:names.custom_liquid",
+          "settings": {
+            "custom_liquid": "<iframe  class=\"map-fnt\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4425.431152344401!2d-103.44096572416373!3d20.76012969694974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428a5f0920408e3%3A0x9dffbfa88bb51366!2sFNT%20Food%20%26%20Nutrition%20Technologies!5e1!3m2!1ses-419!2smx!4v1759103053190!5m2!1ses-419!2smx\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+          },
+          "blocks": {}
+        },
+        "group_hnNzex": {
           "type": "group",
           "settings": {
             "link": "",
@@ -335,36 +343,10 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "text_qqTBqc": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<p>Información de contacto:</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_cjYAhC": {
+            "text_PVKJr7": {
               "type": "text",
               "settings": {
-                "text": "<p>Primero de Enero No. 77-A, Col. Nuevo México, C.P. 45138, Zapopan Jalisco, México.</p><p>Tel: 33 3624 1344 | 33 3743 7958</p><p>WhatsApp: 33 2239 7487</p><p>contacto@fnt.mx</p><p>Instagram, Tiktok, Facebook: @fntsuplementos<br/><br/></p>",
+                "text": "<p>Made with care and unconditionally loved by our customers, this signature bestseller exceeds all expectations.</p>",
                 "width": "fit-content",
                 "max_width": "narrow",
                 "alignment": "left",
@@ -388,22 +370,13 @@
             }
           },
           "block_order": [
-            "text_qqTBqc",
-            "text_cjYAhC"
+            "text_PVKJr7"
           ]
-        },
-        "custom_liquid_4GGPnf": {
-          "type": "custom-liquid",
-          "name": "t:names.custom_liquid",
-          "settings": {
-            "custom_liquid": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4425.431153791634!2d-103.44326171491021!3d20.760129647520053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428a5f0920408e3%3A0x9dffbfa88bb51366!2sFNT%20Food%20%26%20Nutrition%20Technologies!5e1!3m2!1ses-419!2smx!4v1758233972311!5m2!1ses-419!2smx\" width=\"800\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "group_igKxzT",
-        "custom_liquid_4GGPnf"
+        "custom_liquid_PBkaAP",
+        "group_hnNzex"
       ],
       "name": "t:names.image_with_text",
       "settings": {
@@ -439,6 +412,6 @@
     "section_GQTRrg",
     "main",
     "form",
-    "section_GR7UDR"
+    "section_BbVenU"
   ]
 }
