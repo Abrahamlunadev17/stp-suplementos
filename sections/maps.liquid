@@ -9,14 +9,7 @@
 
     <!-- Información de contacto -->
     <div class="fnt-contact-info">
-      <h2>Información de contacto:</h2>
-      <p>
-        <strong>Dirección:</strong> Primero de Enero No. 77-A, Col. Nuevo México, C.P. 45138, Zapopan Jalisco, México.
-      </p>
-      <p><strong>Tel:</strong> 33 3624 1344 | 33 3743 7958</p>
-      <p><strong>WhatsApp:</strong> 33 2239 7487</p>
-      <p><strong>Email:</strong> contacto@fnt.mx</p>
-      <p><strong>Instagram, TikTok, Facebook:</strong> @fntsuplementos</p>
+     {{ section.settings.text }}
     </div>
   </div>
 </div>
@@ -81,10 +74,16 @@
   "name": "Sección de contacto FNT",
   "settings": [
     {
-      "type": "textarea",
+      "type": "liquid",
       "id": "map_embed_code",
       "label": "Código embed del mapa (iframe)"
+    },
+    {
+        "type": "richtext",
+        "id": "text",
+        "label": "Texto"
     }
+    
   ],
   "presets": [
     {
