@@ -8,7 +8,7 @@
           href="#"
           class="blog-filter-button{% if forloop.first %} active{% endif %}"
           data-blog="{{ blog.handle }}">
-          {{ block.settings.label }}
+          <p>{{ block.settings.label }} </p>
         </a>
         {% assign rendered_buttons = rendered_buttons | append: blog.handle | append: "," %}
       {% endunless %}
@@ -33,7 +33,7 @@
                 <img src="{{ article.image | img_url: 'master' }}" alt="{{ article.title }}">
               {% endif %}
               <div class="blog-post-content">
-                <h3>{{ article.title }}</h3>
+                <p>{{ article.title }}</p>
                 <p>{{ article.excerpt | strip_html | truncate: 100 }}</p>
                 <a class="blog-button" href="{{ article.url }}">VER MÁS +</a>
               </div>
