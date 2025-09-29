@@ -55,7 +55,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<p>¿TIENES DUDAS O NECESITAS AYUDA?</p>",
+                "text": "<h1>¿TIENES DUDAS O NECESITAS AYUDA?</h1>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
