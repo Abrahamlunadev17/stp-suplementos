@@ -19,6 +19,14 @@
 }
 
 @font-face {
+  font-family: "HelveticaNeueMedium";
+  src: url("https://cdn.shopify.com/s/files/1/0940/7037/4676/files/HelveticaNeueMedium.otf?v=1759106931")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Helvetica";
   src: url("https://cdn.shopify.com/s/files/1/0940/7037/4676/files/Helvetica.ttf?v=1759104593")
       format("truetype"),
