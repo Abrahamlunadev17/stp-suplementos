@@ -8,7 +8,7 @@
           href="#"
           class="blog-filter-button{% if forloop.first %} active{% endif %}"
           data-blog="{{ blog.handle }}">
-          <p>{{ block.settings.label }} </p>
+          <p class="button-text-blog-fnt">{{ block.settings.label }} </p>
         </a>
         {% assign rendered_buttons = rendered_buttons | append: blog.handle | append: "," %}
       {% endunless %}
@@ -57,6 +57,10 @@
     flex-wrap: nowrap;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+  }
+
+  .button-text-blog-fnt{
+    font-weight:200;
   }
 
   .blog-posts-container- {
