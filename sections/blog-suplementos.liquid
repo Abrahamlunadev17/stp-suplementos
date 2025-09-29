@@ -33,7 +33,7 @@
                 <img src="{{ article.image | img_url: 'master' }}" alt="{{ article.title }}">
               {% endif %}
               <div class="blog-post-content">
-                <p>{{ article.title }}</p>
+                <p class="title-post-fnt">{{ article.title | upcase }}</p>
                 <p>{{ article.excerpt | strip_html | truncate: 100 }}</p>
                 <a class="blog-button" href="{{ article.url }}">VER MÁS +</a>
               </div>
@@ -57,6 +57,10 @@
     flex-wrap: nowrap;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+  }
+
+  .title-post-fnt {
+  font-weight:bold;
   }
 
   .button-text-blog-fnt{
