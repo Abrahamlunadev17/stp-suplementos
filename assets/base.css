@@ -2088,7 +2088,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 }
 
 .compare-at-price {
- color: red !important;
+ color: #E23332 !important;
   text-decoration-line: line-through;
   text-decoration-thickness: 1.5px;
 }
