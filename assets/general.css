@@ -46,7 +46,7 @@ h6 {
   font-family: "HelveticaCondensed", sans-serif !important;
 }
 
-p,
+
 div,
 span,
 a,
@@ -55,3 +55,9 @@ td,
 th {
   font-family: "HelveticaCondensedmMedium", sans-serif;
 }
+
+
+p{
+  
+  font-family: "Helvetica", sans-serif !important;
+} 
