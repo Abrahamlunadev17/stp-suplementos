@@ -20,13 +20,26 @@
 
 @font-face {
   font-family: "Helvetica";
-  src: url("https://cdn.shopify.com/s/files/1/0940/7037/4676/files/Helvetica.ttc?v=1757540352")
+  src: url("https://cdn.shopify.com/s/files/1/0940/7037/4676/files/Helvetica.ttf?v=1759104593")
       format("truetype"),
-    url("https://cdn.shopify.com/s/files/1/0940/7037/4676/files/Helvetica.ttc?v=1757540352")
-      format("ttc");
+    url("https://cdn.shopify.com/s/files/1/0940/7037/4676/files/Helvetica.ttf?v=1759104593")
+      format("TTF");
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Helveticabold";
+  src: url("https://cdn.shopify.com/s/files/1/0940/7037/4676/files/Helvetica-Bold.ttf?v=1759104593")
+      format("TTF"),
+    url("https://cdn.shopify.com/s/files/1/0940/7037/4676/files/Helvetica-Bold.ttf?v=1759104593")
+      format("TTF");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
 
 @font-face {
   font-family: "HelveticaCondensedmMedium";
