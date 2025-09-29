@@ -11,7 +11,7 @@
             class="stp-faq-question"
             aria-expanded="false"
             aria-controls="faq-{{ section.id }}-{{ block.id }}">
-            {{ block.settings.question }}
+            <p>{{ block.settings.question | upcase }} </p>
             <span class="stp-faq-icon">
               <svg width="24" height="24" viewBox="0 0 24 24">
                 <polyline
