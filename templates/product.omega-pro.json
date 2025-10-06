@@ -202,13 +202,13 @@
                   "type": "steps",
                   "name": "Pasos",
                   "settings": {
-                    "video_1": "shopify://files/videos/ESCENA 1.mov",
+                    "video_1": "shopify://files/videos/ESCENA 1 PROTEINAS.mov",
                     "text_1": "PASO 1",
                     "description_1": "Toma 1 porción de Omega Pro (50 g) usando la medida incluida en el envase.",
-                    "video_2": "shopify://files/videos/ESCENA 2.mov",
+                    "video_2": "shopify://files/videos/ESCENA 2 PROTEINA.mov",
                     "text_2": "PASO 2",
                     "description_2": "Licúa con 300 ml de agua, leche o bebida de tu preferencia durante 30 segundos para lograr una textura suave.",
-                    "video_3": "shopify://files/videos/ESCENA 3.mov",
+                    "video_3": "shopify://files/videos/ESCENA 3 PROTEINAS.mov",
                     "text_3": "PASO 3",
                     "description_3": "Disfruta una malteada rica en proteínas y colágeno, ideal para complementar tu entrenamiento."
                   },
