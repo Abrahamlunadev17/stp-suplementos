@@ -3,7 +3,8 @@
     <img
       class="stp-quiz-bg"
       src="{{ section.settings.bg_image | img_url: '1800x' }}"
-      alt="Quiz fondo">
+      alt="Quiz fondo"
+    >
   {% endif %}
   <div class="stp-quiz-content">
     <div class="stp-quiz-title">
@@ -28,168 +29,169 @@
 </div>
 
 <style>
-  .stp-quiz-section {
-    position: relative;
-    background: #151515;
-    min-height: 280px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    padding: 0;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-  }
-  .stp-quiz-bg {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.45;
-    z-index: 1;
-    pointer-events: none;
-    border-radius: 0;
-    overflow: hidden;
-  }
-  .stp-quiz-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 98px 16px;
-    color: #fff;
-  }
-  .stp-quiz-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 18px;
-    letter-spacing: 1px;
-  }
-  .stp-quiz-subtitle p {
-    margin-bottom: 6px;
-    font-size: 1.2rem;
-    font-family: 'HelveticaCondensedmMedium'
-    , sans-serif;
-
-  }
-  .stp-quiz-desc p {
-    font-size: 1.2rem;
-    margin-bottom: 28px;
-    font-weight: 400;
-    font-family: "HelveticaCondensedmMedium", sans-serif;
-  }
-  .stp-quiz-btn {
-    margin: 0 auto;
-    background: #e53935;
-    color: #fff;
-    font-family: "HelveticaCondensed"
-    , sans-serif;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 8px;
-    padding: 6px 68px;
-    cursor: pointer;
-    text-decoration: none;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    transition: background 0.2s;
-    max-width: 270px;
-  }
-  .stp-quiz-btn .arrow {
-    margin-left: 12px;
-    font-size: 1.3em;
-  }
-  .stp-quiz-btn:hover {
-    background: #b71c1c;
-  }
-  @media (max-width: 749px) {
     .stp-quiz-section {
-      border-top: 1px solid transparent;
-      border-bottom: 1px solid transparent;
-    }
-    .stp-quiz-content {
-      padding: 64px 36px;
-      border-radius: 32px;
-      border: 1px solid #ffffff;
-      overflow: hidden;
-      min-height: 500px;
+      position: relative;
+      background: #151515;
+      min-height: 280px;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 18px;
-
+      overflow: hidden;
+      padding: 0;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
     }
-
-
     .stp-quiz-bg {
-
-      border-radius: 32px;
-
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.45;
+      z-index: 1;
+      pointer-events: none;
+      border-radius: 0;
+      overflow: hidden;
+    }
+    .stp-quiz-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 98px 16px;
+      color: #fff;
     }
     .stp-quiz-title {
-      font-size: 1.2rem;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
     }
+    .stp-quiz-subtitle p {
+      margin-bottom: 6px;
+      font-size: 1.2rem;
+      font-family: "HelveticaCondensedmMedium", sans-serif;
 
-    .wrapper-quiz {
-      padding: 24px;
-      margin-bottom: 54px;
+    }
+    .stp-quiz-desc p {
+      font-size: 1.2rem;
+      margin-bottom: 28px;
+      font-weight: 400;
+      font-family: 'HelveticaCondensedmMedium'
+      , sans-serif;
     }
     .stp-quiz-btn {
-
-      padding: 6px 56px;
-
+      margin: 0 auto;
+      background: #e53935;
+      color: #fff;
+      font-family: "HelveticaCondensed"
+      , sans-serif;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      padding: 6px 68px;
+      cursor: pointer;
+      text-decoration: none;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      transition: background 0.2s;
+      max-width: 270px;
     }
-  }
+    .stp-quiz-btn .arrow {
+      margin-left: 12px;
+      font-size: 1.3em;
+    }
+    .stp-quiz-btn:hover {
+      background: #b71c1c;
+    }
+    @media (max-width: 749px) {
+      .stp-quiz-section {
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+      }
+      .stp-quiz-content {
+        padding: 64px 36px;
+        border-radius: 32px;
+        border: 1px solid #ffffff;
+        overflow: hidden;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+
+      }
+
+
+      .stp-quiz-bg {
+
+        border-radius: 32px;
+
+      }
+      .stp-quiz-title {
+        font-size: 1.2rem;
+      }
+
+      .wrapper-quiz {
+        padding: 24px;
+        margin-bottom: 54px;
+      }
+      .stp-quiz-btn {
+
+        padding: 6px 56px;
+
+      }
+    }
 </style>
 
-
 {% schema %}
-  {
-    "name": "Quiz Banner",
-    "class": "wrapper-quiz",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "bg_image",
-        "label": "Imagen de fondo"
-      },
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Título",
-        "default": "ENCUENTRA TU SUPLEMENTO IDEAL"
-      },
-      {
-        "type": "text",
-        "id": "subtitle",
-        "label": "Subtítulo",
-        "default": "Todos entrenamos distinto: unos buscan resistencia, otros potencia, otros transformar su físico."
-      },
-      {
-        "type": "text",
-        "id": "desc",
-        "label": "Descripción",
-        "default": "Descubre qué productos F&NT® están hechos para ti."
-      }, {
-        "type": "text",
-        "id": "cta_label",
-        "label": "Texto del botón",
-        "default": "IR AL QUIZ"
-      }, {
-        "type": "url",
-        "id": "cta_url",
-        "label": "Enlace del botón"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Quiz Banner"
-      }
-    ]
-  }
+{
+  "name": "Quiz Banner",
+  "class": "wrapper-quiz",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Imagen de fondo"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título",
+      "default": "ENCUENTRA TU SUPLEMENTO IDEAL"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtítulo",
+      "default": "Todos entrenamos distinto: unos buscan resistencia, otros potencia, otros transformar su físico."
+    },
+    {
+      "type": "text",
+      "id": "desc",
+      "label": "Descripción",
+      "default": "Descubre qué productos F&NT® están hechos para ti."
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Texto del botón",
+      "default": "IR AL QUIZ"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Enlace del botón"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Quiz Banner"
+    }
+  ]
+}
 {% endschema %}
