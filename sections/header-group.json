@@ -43,7 +43,7 @@
           "static": true,
           "settings": {
             "menu": "new-menu",
-            "menu_style": "text",
+            "menu_style": "featured_collections",
             "featured_products_aspect_ratio": "4 / 5",
             "featured_collections_aspect_ratio": "16 / 9",
             "image_border_radius": 0,
