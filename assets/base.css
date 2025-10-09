@@ -2437,6 +2437,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 
 .shopify-policy__container {
   padding-block: var(--padding-xl);
+  max-width:1400px !important;
 }
 
 .checkbox {
