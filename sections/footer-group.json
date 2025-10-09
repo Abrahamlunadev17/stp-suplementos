@@ -19,7 +19,7 @@
           "settings": {
             "title": "Facebook",
             "icon": "shopify://shop_images/02.svg",
-            "url": ""
+            "url": "#"
           }
         },
         "social_icon_iAdz68": {
@@ -27,7 +27,7 @@
           "settings": {
             "title": "Facebook",
             "icon": "shopify://shop_images/03.svg",
-            "url": ""
+            "url": "#"
           }
         },
         "social_icon_CdXaJg": {
@@ -35,7 +35,7 @@
           "settings": {
             "title": "Facebook",
             "icon": "shopify://shop_images/01.svg",
-            "url": ""
+            "url": "#"
           }
         },
         "social_icon_pMVEVM": {
@@ -43,7 +43,7 @@
           "settings": {
             "title": "Facebook",
             "icon": "shopify://shop_images/04.svg",
-            "url": ""
+            "url": "#"
           }
         },
         "payment_icon_XxtJpk": {
