@@ -100,26 +100,26 @@
             "title-text": "REPARACIÓN MUSCULAR"
           }
         },
-        "tab_qTrEjn": {
-          "type": "tab",
-          "settings": {
-            "collection": "reducir-peso-corporal",
-            "title-text": "BAJAR DE PESO"
-          }
-        },
         "tab_zRJqhc": {
           "type": "tab",
           "settings": {
             "collection": "aumentar-fuerza-y-energia",
             "title-text": "AUMENTAR FUERZA"
           }
+        },
+        "tab_qTrEjn": {
+          "type": "tab",
+          "settings": {
+            "collection": "reducir-peso-corporal",
+            "title-text": "REDUCIR PESO CORPOTAL"
+          }
         }
       },
       "block_order": [
         "tab_thkjCh",
         "tab_96Tg3F",
-        "tab_qTrEjn",
-        "tab_zRJqhc"
+        "tab_zRJqhc",
+        "tab_qTrEjn"
       ],
       "name": "Tabs de Colección",
       "settings": {
