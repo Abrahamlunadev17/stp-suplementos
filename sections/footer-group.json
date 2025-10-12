@@ -19,7 +19,7 @@
           "settings": {
             "title": "Facebook",
             "icon": "shopify://shop_images/02.svg",
-            "url": "#"
+            "url": "shopify://collections/all"
           }
         },
         "social_icon_iAdz68": {
