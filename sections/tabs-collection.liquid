@@ -127,52 +127,82 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const container = document.getElementById('tabs-collections-swiper-{{ section.id }}');
-    if (!container) return;
+  const container = document.getElementById('tabs-collections-swiper-{{ section.id }}');
+  if (!container) return;
 
-    const buttons = container.querySelectorAll('.tab-button');
-    const panels = container.querySelectorAll('.tab-panel');
-    const viewAllBtn = container.querySelector('#viewAllBtn-{{ section.id }}');
+  const buttons = container.querySelectorAll('.tab-button');
+  const panels = container.querySelectorAll('.tab-panel');
+  const viewAllBtn = container.querySelector('#viewAllBtn-{{ section.id }}');
 
-    panels.forEach((panel, index) => {
-      const swiperEl = panel.querySelector('.swiper');
+  panels.forEach((panel, index) => {
+    const swiperEl = panel.querySelector('.swiper');
+    const prevArrow = panel.querySelector(`.arrow-prev-slide-tabs-${index + 1}`);
+    const nextArrow = panel.querySelector(`.arrow-next-slide-tabs-${index + 1}`);
 
-      new Swiper(swiperEl, {
-        slidesPerView: 1.3,
-        spaceBetween: 16,
-        freeMode: true,
-        navigation: {
-          nextEl: `.arrow-next-slide-tabs-${index + 1}`,
-          prevEl: `.arrow-prev-slide-tabs-${index + 1}`,
+    const swiper = new Swiper(swiperEl, {
+      slidesPerView: 1.3,
+      spaceBetween: 16,
+      freeMode: true,
+      navigation: {
+        nextEl: `.arrow-next-slide-tabs-${index + 1}`,
+        prevEl: `.arrow-prev-slide-tabs-${index + 1}`,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 4,
+        }
+      },
+      on: {
+        init: function () {
+          updateArrowStates(this);
         },
-        breakpoints: {
-          768: {
-            slidesPerView: 4,
-          },
+        slideChange: function () {
+          updateArrowStates(this);
         },
-      });
+        reachBeginning: function () {
+          updateArrowStates(this);
+        },
+        reachEnd: function () {
+          updateArrowStates(this);
+        }
+      }
     });
 
-    buttons.forEach((btn) => {
-      btn.addEventListener('click', function () {
-        const target = this.dataset.collection;
-        const url = this.dataset.url;
+    function updateArrowStates(swiperInstance) {
+      if (swiperInstance.isBeginning) {
+        prevArrow.classList.add('arrow-disabled');
+      } else {
+        prevArrow.classList.remove('arrow-disabled');
+      }
 
-        buttons.forEach((b) => b.classList.remove('active'));
-        this.classList.add('active');
+      if (swiperInstance.isEnd) {
+        nextArrow.classList.add('arrow-disabled');
+      } else {
+        nextArrow.classList.remove('arrow-disabled');
+      }
+    }
+  });
 
-        panels.forEach((p) => {
-          if (p.dataset.collection === target) {
-            p.classList.remove('hidden');
-          } else {
-            p.classList.add('hidden');
-          }
-        });
+  buttons.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const target = this.dataset.collection;
+      const url = this.dataset.url;
 
-        viewAllBtn.setAttribute('href', url);
+      buttons.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      panels.forEach(p => {
+        if (p.dataset.collection === target) {
+          p.classList.remove('hidden');
+        } else {
+          p.classList.add('hidden');
+        }
       });
+
+      viewAllBtn.setAttribute('href', url);
     });
   });
+});
 </script>
 
 <style>
