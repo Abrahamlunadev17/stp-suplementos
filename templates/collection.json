@@ -29,7 +29,7 @@
         "category_block_GiWrWM": {
           "type": "category_block",
           "settings": {
-            "title": "AMINOÁCIDOS",
+            "title": "ENERGÉTICOS Y PRE-ENTRENOS",
             "url": "shopify://collections/energeticos-y-pre-entrenos"
           }
         },
@@ -39,13 +39,29 @@
             "title": "VASOSDILATADORES",
             "url": "shopify://collections/vasodilatadores"
           }
+        },
+        "category_block_XnT6CQ": {
+          "type": "category_block",
+          "settings": {
+            "title": "QUEMA GRASA Y METABOLISMO",
+            "url": "shopify://collections/quema-grasa-y-metabolismo"
+          }
+        },
+        "category_block_YhW66q": {
+          "type": "category_block",
+          "settings": {
+            "title": "AMINOÁCIDOS Y RECUPERACIÓN",
+            "url": "shopify://collections/aminoacidos-y-recuperacion"
+          }
         }
       },
       "block_order": [
         "category_block_yfhMfL",
         "category_block_RBPiY4",
         "category_block_GiWrWM",
-        "category_block_HfL6VR"
+        "category_block_HfL6VR",
+        "category_block_XnT6CQ",
+        "category_block_YhW66q"
       ],
       "name": "Categorías destacadas",
       "settings": {}
