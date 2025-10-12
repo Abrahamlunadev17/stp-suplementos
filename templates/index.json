@@ -92,34 +92,10 @@
             "collection": "proteina",
             "title-text": "MASA MUSCULAR"
           }
-        },
-        "tab_jKaKB8": {
-          "type": "tab",
-          "settings": {
-            "collection": "aminoacidos-y-recuperacion",
-            "title-text": "REDUCIR PESO CORPORAL"
-          }
-        },
-        "tab_DVEXRU": {
-          "type": "tab",
-          "settings": {
-            "collection": "creatinas",
-            "title-text": "AUMENTAR FUERZA Y ENERGÍA"
-          }
-        },
-        "tab_6yKFgM": {
-          "type": "tab",
-          "settings": {
-            "collection": "muscle-gainer",
-            "title-text": "REPARACIÓN MUSCULAR"
-          }
         }
       },
       "block_order": [
-        "tab_thkjCh",
-        "tab_jKaKB8",
-        "tab_DVEXRU",
-        "tab_6yKFgM"
+        "tab_thkjCh"
       ],
       "name": "Tabs de Colección",
       "settings": {
