@@ -104,7 +104,7 @@
           "type": "tab",
           "settings": {
             "collection": "aumentar-fuerza-y-energia",
-            "title-text": "AUMENTAR FUERZA"
+            "title-text": "AUMENTAR FUERZA Y ENERGÍA"
           }
         },
         "tab_qTrEjn": {
@@ -136,7 +136,7 @@
           "settings": {
             "image": "shopify://shop_images/image_4.png",
             "image-bg": "shopify://shop_images/Frame_759.png",
-            "link": "",
+            "link": "shopify://collections/proteina",
             "title": "PROTEÍNAS",
             "full_width": true
           }
@@ -146,7 +146,7 @@
           "settings": {
             "image": "shopify://shop_images/image_17.png",
             "image-bg": "shopify://shop_images/Frame_760.png",
-            "link": "",
+            "link": "shopify://collections/creatinas",
             "title": "CREATINAS",
             "full_width": false
           }
