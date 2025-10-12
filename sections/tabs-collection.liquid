@@ -114,48 +114,60 @@
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const container = document.getElementById('tabs-collections-swiper-{{ section.id }}');
-    if (!container) return;
-  
-    const swiperEls = container.querySelectorAll('.mySwiper-{{ section.id }}');
-    swiperEls.forEach(swiperEl => {
-      new Swiper(swiperEl, {
-        slidesPerView: 1.3,
-        spaceBetween: 16,
-        freeMode: true,
-        breakpoints: {
-          768: {
-            slidesPerView: 4,
-          }
+document.addEventListener('DOMContentLoaded', function () {
+  const container = document.getElementById('tabs-collections-swiper-{{ section.id }}');
+  if (!container) return;
+
+  const buttons = container.querySelectorAll('.tab-button');
+  const panels = container.querySelectorAll('.tab-panel');
+  const viewAllBtn = container.querySelector('#viewAllBtn-{{ section.id }}');
+
+  // Inicializa un Swiper distinto por cada tab-panel
+  panels.forEach((panel, index) => {
+    const swiperEl = panel.querySelector('.swiper');
+
+    // Vincula flechas únicas por índice de forloop
+    new Swiper(swiperEl, {
+      slidesPerView: 1.3,
+      spaceBetween: 16,
+      freeMode: true,
+      navigation: {
+        nextEl: `.swiper-button-next-${index + 1}`,
+        prevEl: `.swiper-button-prev-${index + 1}`,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 4,
         }
-      });
-    });
-  
-    const buttons = container.querySelectorAll('.tab-button');
-    const panels = container.querySelectorAll('.tab-panel');
-    const viewAllBtn = container.querySelector('#viewAllBtn-{{ section.id }}');
-  
-    buttons.forEach(btn => {
-      btn.addEventListener('click', function () {
-        const target = this.dataset.collection;
-        const url = this.dataset.url;
-  
-        buttons.forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-  
-        panels.forEach(p => {
-          if (p.dataset.collection === target) {
-            p.classList.remove('hidden');
-          } else {
-            p.classList.add('hidden');
-          }
-        });
-  
-        viewAllBtn.setAttribute('href', url);
-      });
+      }
     });
   });
+
+  // Lógica de tabs
+  buttons.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const target = this.dataset.collection;
+      const url = this.dataset.url;
+
+      // Activar el botón actual
+      buttons.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      // Mostrar solo el carrusel correspondiente
+      panels.forEach(p => {
+        if (p.dataset.collection === target) {
+          p.classList.remove('hidden');
+        } else {
+          p.classList.add('hidden');
+        }
+      });
+
+      // Actualiza el enlace "Ver todo"
+      viewAllBtn.setAttribute('href', url);
+    });
+  });
+});
+
 </script>
 
 <style>
@@ -322,6 +334,59 @@
   .view-all-button:hover {
     background: #c62c2b;
   }
+
+/* Flechas Swiper minimalistas */
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.06);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Posicionamiento izquierdo y derecho */
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+/* Estilo del ícono (usa pseudo-elemento de Swiper por defecto) */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Hover sutil */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* Opcional: esconder flechas en mobile */
+@media screen and (max-width: 767px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
+
+
 </style>
 
 {% schema %}
