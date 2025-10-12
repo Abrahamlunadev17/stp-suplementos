@@ -332,56 +332,72 @@
       background: #c62c2b;
     }
 
-  /* Flechas Swiper minimalistas */
-  .swiper-button-prev,
-  .swiper-button-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.06);
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.3s ease;
-    cursor: pointer;
-    font-size: 20px;
-  }
 
-  /* Posicionamiento izquierdo y derecho */
-  .swiper-button-prev {
-    left: 0;
-  }
+    /* === FLECHAS PERSONALIZADAS PARA SLIDER DE TABS === */
 
-  .swiper-button-next {
-    right: 0;
-  }
+/* Aplica a todas las flechas que comiencen con ese nombre */
+[class^="arrow-prev-slide-tabs-"],
+[class^="arrow-next-slide-tabs-"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.06);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  font-size: 20px;
+  pointer-events: auto;
+}
 
-  /* Estilo del ícono (usa pseudo-elemento de Swiper por defecto) */
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-  }
+/* Posición izquierda y derecha */
+[class^="arrow-prev-slide-tabs-"] {
+  left: 0;
+}
 
-  /* Hover sutil */
-  .swiper-button-prev:hover,
-  .swiper-button-next:hover {
-    background: rgba(0, 0, 0, 0.15);
-  }
+[class^="arrow-next-slide-tabs-"] {
+  right: 0;
+}
 
-  /* Opcional: esconder flechas en mobile */
-  @media screen and (max-width: 767px) {
-    .swiper-button-prev,
-    .swiper-button-next {
-      display: none;
-    }
+/* Contenido visual usando pseudo-elementos */
+[class^="arrow-prev-slide-tabs-"]::after {
+  content: '‹';
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  color: black;
+}
+
+[class^="arrow-next-slide-tabs-"]::after {
+  content: '›';
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  color: black;
+}
+
+/* Hover con más contraste */
+[class^="arrow-prev-slide-tabs-"]:hover,
+[class^="arrow-next-slide-tabs-"]:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* Ocultar en mobile (opcional) */
+@media screen and (max-width: 767px) {
+  [class^="arrow-prev-slide-tabs-"],
+  [class^="arrow-next-slide-tabs-"] {
+    display: none;
   }
+}
+
+
+
 </style>
 
 {% schema %}
