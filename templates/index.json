@@ -156,7 +156,7 @@
           "settings": {
             "image": "shopify://shop_images/image_18.png",
             "image-bg": "shopify://shop_images/Frame_761.png",
-            "link": "",
+            "link": "shopify://collections/energeticos-y-pre-entrenos",
             "title": "ENERGÉTICOS Y PRE-ENTRENOS",
             "full_width": false
           }
@@ -166,7 +166,7 @@
           "settings": {
             "image": "shopify://shop_images/image_19.png",
             "image-bg": "shopify://shop_images/Frame_762.png",
-            "link": "",
+            "link": "shopify://collections/vasodilatadores",
             "title": "VASODILATADORES",
             "full_width": false
           }
@@ -176,7 +176,7 @@
           "settings": {
             "image": "shopify://shop_images/image_20.png",
             "image-bg": "shopify://shop_images/Frame_763.png",
-            "link": "",
+            "link": "shopify://collections/aminoacidos-y-recuperacion",
             "title": "AMINOÁCIDOS Y RECUPERACIÓN",
             "full_width": false
           }
@@ -186,7 +186,7 @@
           "settings": {
             "image": "shopify://shop_images/image_16.png",
             "image-bg": "shopify://shop_images/Frame_764.png",
-            "link": "",
+            "link": "shopify://collections/quema-grasa-y-metabolismo",
             "title": "QUEMA GRASA Y METABOLISMO",
             "full_width": true
           }
