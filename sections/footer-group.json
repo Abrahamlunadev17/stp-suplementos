@@ -41,6 +41,7 @@
         },
         "social_icon_pMVEVM": {
           "type": "social_icon",
+          "disabled": true,
           "settings": {
             "title": "Facebook",
             "icon": "shopify://shop_images/04.svg",
