@@ -17,21 +17,22 @@
         "social_icon_E46RMa": {
           "type": "social_icon",
           "settings": {
-            "title": "Facebook",
+            "title": "TIK TOK",
             "icon": "shopify://shop_images/02.svg",
-            "url": "shopify://collections/all"
+            "url": "https://www.tiktok.com/@fntsuplementos"
           }
         },
         "social_icon_iAdz68": {
           "type": "social_icon",
           "settings": {
-            "title": "Facebook",
+            "title": "Instagram",
             "icon": "shopify://shop_images/03.svg",
-            "url": "#"
+            "url": "https://www.instagram.com/fntsuplementos/?utm_source=ig_web_button_share_sheet"
           }
         },
         "social_icon_CdXaJg": {
           "type": "social_icon",
+          "disabled": true,
           "settings": {
             "title": "Facebook",
             "icon": "shopify://shop_images/01.svg",
