@@ -41,11 +41,10 @@
         },
         "social_icon_pMVEVM": {
           "type": "social_icon",
-          "disabled": true,
           "settings": {
             "title": "Facebook",
             "icon": "shopify://shop_images/04.svg",
-            "url": "#"
+            "url": "https://www.facebook.com/profile.php?id=61582883980804"
           }
         },
         "payment_icon_XxtJpk": {
