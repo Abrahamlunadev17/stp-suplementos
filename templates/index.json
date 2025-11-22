@@ -134,50 +134,45 @@
         "card_YyEReJ": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/image_4.png",
-            "image-bg": "shopify://shop_images/Frame_759.png",
+            "image-bg": "shopify://shop_images/3_f518d135-1a00-4d1b-9345-ac347b9269ee.png",
             "link": "shopify://collections/proteina",
-            "title": "PROTEÍNAS",
+            "title": "",
             "full_width": true
           }
         },
         "card_h9QUrG": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/image_17.png",
-            "image-bg": "shopify://shop_images/Frame_760.png",
+            "image-bg": "shopify://shop_images/5_6d8f1392-06e3-47be-a5d9-3e18d62d76f3.png",
             "link": "shopify://collections/creatinas",
-            "title": "CREATINAS",
+            "title": "",
             "full_width": false
           }
         },
         "card_pmkUPH": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/image_18.png",
-            "image-bg": "shopify://shop_images/Frame_761.png",
+            "image-bg": "shopify://shop_images/4_445f5341-5df4-41e4-a25d-e8bbcbe550f7.png",
             "link": "shopify://collections/energeticos-y-pre-entrenos",
-            "title": "ENERGÉTICOS Y PRE-ENTRENOS",
+            "title": "",
             "full_width": false
           }
         },
         "card_d9qzFr": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/image_19.png",
-            "image-bg": "shopify://shop_images/Frame_762.png",
+            "image-bg": "shopify://shop_images/2_25aae7d8-9361-47f0-8311-ffe666cbbf28.png",
             "link": "shopify://collections/vasodilatadores",
-            "title": "VASODILATADORES",
+            "title": "",
             "full_width": false
           }
         },
         "card_BWYE8D": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/image_20.png",
-            "image-bg": "shopify://shop_images/Frame_763.png",
+            "image-bg": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a.png",
             "link": "shopify://collections/aminoacidos-y-recuperacion",
-            "title": "AMINOÁCIDOS Y RECUPERACIÓN",
+            "title": "",
             "full_width": false
           }
         },
