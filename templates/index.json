@@ -152,6 +152,7 @@
         "card_pmkUPH": {
           "type": "card",
           "settings": {
+            "image": "shopify://shop_images/Empty.png",
             "image-bg": "shopify://shop_images/4_445f5341-5df4-41e4-a25d-e8bbcbe550f7.png",
             "link": "shopify://collections/energeticos-y-pre-entrenos",
             "title": "",
@@ -161,7 +162,8 @@
         "card_d9qzFr": {
           "type": "card",
           "settings": {
-            "image-bg": "shopify://shop_images/2_25aae7d8-9361-47f0-8311-ffe666cbbf28.png",
+            "image": "shopify://shop_images/Empty.png",
+            "image-bg": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
             "link": "shopify://collections/vasodilatadores",
             "title": "",
             "full_width": false
@@ -179,10 +181,9 @@
         "card_nqqfUm": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/image_16.png",
-            "image-bg": "shopify://shop_images/Frame_764.png",
+            "image-bg": "shopify://shop_images/6_7e7b318c-f1df-4977-af75-c2d076e4a9ac.png",
             "link": "shopify://collections/quema-grasa-y-metabolismo",
-            "title": "QUEMA GRASA Y METABOLISMO",
+            "title": "",
             "full_width": true
           }
         }
