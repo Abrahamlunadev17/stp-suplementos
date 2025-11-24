@@ -789,7 +789,7 @@
         "instafeed_app_block_zyD3YN": {
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "SIGUENOS",
+            "title": "Únete al movimiento",
             "title_color": "#ffffff",
             "title_size_v2": 0,
             "alignment": "center",
@@ -833,7 +833,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-end": 45
       }
     },
     "stp_quiz_MJz7jz": {
