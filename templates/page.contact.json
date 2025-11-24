@@ -107,7 +107,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "IR A WHATSAPP",
-                "link": "shopify://collections/all",
+                "link": "https://api.whatsapp.com/send?phone=5213322397487",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
