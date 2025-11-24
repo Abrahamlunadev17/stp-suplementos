@@ -609,38 +609,38 @@
         "padding-block-end": 48
       }
     },
-    "pdp_slider_CQdCyj": {
+    "pdp_slider_E33PrA": {
       "type": "pdp-slider",
       "blocks": {
-        "slide_B3TNAa": {
+        "slide_g86iMQ": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/historia.png",
+            "image": "shopify://shop_images/1_2dabdada-08cb-4da9-8c32-6b1c6c270f3c.png",
             "title": "Diseñados para cada nivel y objetivo",
             "text": "Tanto si estás empezando como si entrenas a nivel avanzado, tenemos opciones para cada etapa de tu progreso."
           }
         },
-        "slide_QWxM6x": {
+        "slide_xxxRUE": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/historia.png",
+            "image": "shopify://shop_images/3_2f45bc85-8af1-4474-9985-c06df33453db.png",
             "title": "Fórmulas de calidad con tablas nutrimentales completa",
             "text": "Nuestras tablas superan el estándar del mercado: muestran información clara, detallada y respaldada por ingredientes certificados e importados."
           }
         },
-        "slide_QBQgHz": {
+        "slide_Wyn4Ty": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/historia.png",
+            "image": "shopify://shop_images/2_7fc4313a-3893-4317-b0cb-834b5b22b0c2.png",
             "title": "Variedad que se adapta a ti",
             "text": "Más de 90 presentaciones pensadas para distintos objetivos, estilos de vida y niveles de entrenamiento."
           }
         }
       },
       "block_order": [
-        "slide_B3TNAa",
-        "slide_QWxM6x",
-        "slide_QBQgHz"
+        "slide_g86iMQ",
+        "slide_xxxRUE",
+        "slide_Wyn4Ty"
       ],
       "name": "Slider Fórmula",
       "settings": {}
@@ -836,7 +836,7 @@
   "order": [
     "main",
     "product_recommendations_qggXJq",
-    "pdp_slider_CQdCyj",
+    "pdp_slider_E33PrA",
     "stp_reviews_FFidCB",
     "stp_experts_39rVHz",
     "stp_faqs_6JTHEw"
