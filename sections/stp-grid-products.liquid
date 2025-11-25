@@ -10,10 +10,10 @@
           {% if block.settings.image_mobile != blank or block.settings.image_desktop != blank %}
             <div class="image-container-stp">
               {% if block.settings.image_mobile != blank %}
-                <img src="{{ block.settings.image_mobile | img_url: 'medium' }}" alt="{{ block.settings.title | escape }}" class="img-mobile">
+                <img src="{{ block.settings.image_mobile | img_url: 'medium' }}" alt="{{ block.settings.title | escape }}" class="img-mobile--">
               {% endif %}
               {% if block.settings.image_desktop != blank %}
-                <img src="{{ block.settings.image_desktop | img_url: 'medium' }}" alt="{{ block.settings.title | escape }}" class="img-desktop">
+                <img src="{{ block.settings.image_desktop | img_url: 'medium' }}" alt="{{ block.settings.title | escape }}" class="img-desktop--">
               {% endif %}
             </div>
           {% endif %}
@@ -78,11 +78,11 @@
   display: block;
 }
 
-.img-mobile {
+.img-mobile-- {
   display: block;
 }
 
-.img-desktop {
+.img-desktop-- {
   display: none;
 }
 
@@ -128,11 +128,11 @@
     font-size: 1.2rem;
   }
 
-  .img-mobile {
+  .img-mobile-- {
     display: none;
   }
 
-  .img-desktop {
+  .img-desktop-- {
     display: block;
   }
 }
