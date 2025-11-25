@@ -10,10 +10,10 @@
           {% if block.settings.image_mobile != blank or block.settings.image_desktop != blank %}
        
               {% if block.settings.image_mobile != blank %}
-                <img src="{{ block.settings.image_mobile | img_url: 'medium' }}" alt="{{ block.settings.title | escape }}" class="img-mobile--">
+                <img src="{{ block.settings.image_mobile | img_url: 'master' }}" alt="{{ block.settings.title | escape }}" class="img-mobile--">
               {% endif %}
               {% if block.settings.image_desktop != blank %}
-                <img src="{{ block.settings.image_desktop | img_url: 'medium' }}" alt="{{ block.settings.title | escape }}" class="img-desktop--">
+                <img src="{{ block.settings.image_desktop | img_url: 'master' }}" alt="{{ block.settings.title | escape }}" class="img-desktop--">
               {% endif %}
             
           {% endif %}
