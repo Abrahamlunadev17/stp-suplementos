@@ -93,13 +93,10 @@
   }
 
   .stp-atleta-bg-container {
-  background-color:#ffffff;
-  position: relative;
-  padding: 4rem 0;
-  min-height: 400px;
-  background-size: cover;       /* hace que la imagen cubra todo */
-  background-position: center; /* la centra */
-  background-repeat: no-repeat;
+    background-image: url('https://cdn.shopify.com/s/files/1/0940/7037/4676/files/image-cover.png?v=1754810593');
+    position: relative;
+    padding: 4rem 0;
+    min-height: 400px;
   }
 
   img.stp-atleta-bg {
@@ -139,7 +136,7 @@
   }
 
   .stp-atleta-desc h5 {
-    font-family: 'HelveticaCondensedmMedium' !important;
+    font-family: 'HelveticaCondensedmMedium';
     font-weight: normal;
     font-size: 16px;
   }
@@ -190,94 +187,32 @@
 }
 
 </style>
+
 {% schema %}
-{
-  "name": "Grid de Productos",
-  "settings": [],
-  "blocks": [
-    {
-      "type": "card",
-      "name": "Card",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Imagen"
-        },
-        {
-          "type": "image_picker",
-          "id": "image_bg_mobile",
-          "label": "Imagen fondo Mobile"
-        },
-        {
-          "type": "image_picker",
-          "id": "image_bg_desktop",
-          "label": "Imagen fondo Desktop"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Link"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Título"
-        },
-        {
-          "type": "checkbox",
-          "id": "full_width",
-          "label": "¿Card de ancho completo?",
-          "default": false
-        }
-      ]
-    }
-  ],
-  "max_blocks": 7,
-  "presets": [
-    {
-      "name": "Grid de Productos",
-      "blocks": [
-        {
-          "type": "card",
-          "settings": {
-            "title": "PROTEÍNAS",
-            "full_width": true
-          }
-        },
-        {
-          "type": "card",
-          "settings": {
-            "title": "CREATINAS"
-          }
-        },
-        {
-          "type": "card",
-          "settings": {
-            "title": "ENERGÉTICOS Y PRE-ENTRENOS"
-          }
-        },
-        {
-          "type": "card",
-          "settings": {
-            "title": "VASODILATADORES"
-          }
-        },
-        {
-          "type": "card",
-          "settings": {
-            "title": "AMINOÁCIDOS Y RECUPERACIÓN"
-          }
-        },
-        {
-          "type": "card",
-          "settings": {
-            "title": "QUEMA GRASA Y METABOLISMO",
-            "full_width": true
-          }
-        }
-      ]
-    }
-  ]
-}
+  {
+    "name": "Sección Atleta",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Título",
+        "default": "IMPULSANDO EL RENDIMIENTO DE ATLETAS POR MÁS DE 30 AÑOS"
+      }, {
+        "type": "textarea",
+        "id": "text",
+        "label": "Texto",
+        "default": "Con más de tres décadas de trayectoria, en F&NT formulamos y producimos suplementos con base en la experiencia y la innovación, utilizando ingredientes certificados y procesos propios que cumplen con estándares de calidad.\n\nHoy ofrecemos más de 75 presentaciones, adaptadas a tus objetivos, con la calidad y confianza que nos distingue."
+      }, {
+        "type": "image_picker",
+        "id": "bg_image",
+        "label": "Imagen de fondo (atleta)"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Sección Atleta"
+      }
+    ]
+  }
+
 {% endschema %}
