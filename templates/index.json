@@ -131,61 +131,61 @@
     "stp_grid_products_LUKhaY": {
       "type": "stp-grid-products",
       "blocks": {
-        "card_YyEReJ": {
-          "type": "card",
-          "settings": {
-            "image_mobile": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
-            "image_desktop": "shopify://shop_images/BANNER_QUIZ_1.png",
-            "link": "shopify://collections/proteina",
-            "title": "",
-            "full_width": true
-          }
-        },
-        "card_Chi9fD": {
-          "type": "card",
-          "settings": {
-            "image_mobile": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
-            "image_desktop": "shopify://shop_images/BANNER_QUIZ_1.png",
-            "link": "shopify://collections/proteina",
-            "title": "",
-            "full_width": true
-          }
-        },
-        "card_bcrzNA": {
-          "type": "card",
-          "settings": {
-            "image_mobile": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
-            "image_desktop": "shopify://shop_images/BANNER_QUIZ_1.png",
-            "link": "shopify://collections/proteina",
-            "title": "",
-            "full_width": true
-          }
-        },
         "card_dR6rep": {
           "type": "card",
           "settings": {
             "image_mobile": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
-            "image_desktop": "shopify://shop_images/BANNER_QUIZ_1.png",
+            "image_desktop": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
             "link": "shopify://collections/proteina",
             "title": "",
             "full_width": true
           }
         },
-        "card_XwanxX": {
+        "card_9MdpkD": {
           "type": "card",
           "settings": {
             "image_mobile": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
-            "image_desktop": "shopify://shop_images/BANNER_QUIZ_1.png",
+            "image_desktop": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
             "link": "shopify://collections/proteina",
             "title": "",
             "full_width": true
           }
         },
-        "card_zpKCxq": {
+        "card_Dh66Yw": {
           "type": "card",
           "settings": {
             "image_mobile": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
-            "image_desktop": "shopify://shop_images/BANNER_QUIZ_1.png",
+            "image_desktop": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
+            "link": "shopify://collections/proteina",
+            "title": "",
+            "full_width": true
+          }
+        },
+        "card_mT6K7B": {
+          "type": "card",
+          "settings": {
+            "image_mobile": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
+            "image_desktop": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
+            "link": "shopify://collections/proteina",
+            "title": "",
+            "full_width": true
+          }
+        },
+        "card_w6reX3": {
+          "type": "card",
+          "settings": {
+            "image_mobile": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
+            "image_desktop": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
+            "link": "shopify://collections/proteina",
+            "title": "",
+            "full_width": true
+          }
+        },
+        "card_B7PUUq": {
+          "type": "card",
+          "settings": {
+            "image_mobile": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
+            "image_desktop": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
             "link": "shopify://collections/proteina",
             "title": "",
             "full_width": true
@@ -193,12 +193,12 @@
         }
       },
       "block_order": [
-        "card_YyEReJ",
-        "card_Chi9fD",
-        "card_bcrzNA",
         "card_dR6rep",
-        "card_XwanxX",
-        "card_zpKCxq"
+        "card_9MdpkD",
+        "card_Dh66Yw",
+        "card_mT6K7B",
+        "card_w6reX3",
+        "card_B7PUUq"
       ],
       "name": "Grid de Productos",
       "settings": {}
