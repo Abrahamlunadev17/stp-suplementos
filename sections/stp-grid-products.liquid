@@ -9,7 +9,8 @@
         <div class="stp-grid-product-card">
           {% if block.settings.image != blank %}
             <div class="image-container-stp">
-              <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.title | escape }}">
+              <img src="{{ block.settings.image_mobile | img_url: 'medium' }}" alt="{{ block.settings.title | escape }}">
+               <img src="{{ block.settings.image_desktop | img_url: 'medium' }}" alt="{{ block.settings.title | escape }}">
             </div>
           {% endif %}
           <div class="wrapper-text-card-stp">
