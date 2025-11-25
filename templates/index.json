@@ -141,42 +141,52 @@
             "full_width": true
           }
         },
-        "card_h9QUrG": {
+        "card_Chi9fD": {
           "type": "card",
           "settings": {
-            "link": "shopify://collections/creatinas",
+            "image_mobile": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
+            "image_desktop": "shopify://shop_images/BANNER_QUIZ_1.png",
+            "link": "shopify://collections/proteina",
             "title": "",
-            "full_width": false
+            "full_width": true
           }
         },
-        "card_pmkUPH": {
+        "card_bcrzNA": {
           "type": "card",
           "settings": {
-            "link": "shopify://collections/energeticos-y-pre-entrenos",
+            "image_mobile": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
+            "image_desktop": "shopify://shop_images/BANNER_QUIZ_1.png",
+            "link": "shopify://collections/proteina",
             "title": "",
-            "full_width": false
+            "full_width": true
           }
         },
-        "card_d9qzFr": {
+        "card_dR6rep": {
           "type": "card",
           "settings": {
-            "link": "shopify://collections/vasodilatadores",
+            "image_mobile": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
+            "image_desktop": "shopify://shop_images/BANNER_QUIZ_1.png",
+            "link": "shopify://collections/proteina",
             "title": "",
-            "full_width": false
+            "full_width": true
           }
         },
-        "card_MhDLzM": {
+        "card_XwanxX": {
           "type": "card",
           "settings": {
-            "link": "",
+            "image_mobile": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
+            "image_desktop": "shopify://shop_images/BANNER_QUIZ_1.png",
+            "link": "shopify://collections/proteina",
             "title": "",
-            "full_width": false
+            "full_width": true
           }
         },
-        "card_nqqfUm": {
+        "card_zpKCxq": {
           "type": "card",
           "settings": {
-            "link": "shopify://collections/quema-grasa-y-metabolismo",
+            "image_mobile": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
+            "image_desktop": "shopify://shop_images/BANNER_QUIZ_1.png",
+            "link": "shopify://collections/proteina",
             "title": "",
             "full_width": true
           }
@@ -184,11 +194,11 @@
       },
       "block_order": [
         "card_YyEReJ",
-        "card_h9QUrG",
-        "card_pmkUPH",
-        "card_d9qzFr",
-        "card_MhDLzM",
-        "card_nqqfUm"
+        "card_Chi9fD",
+        "card_bcrzNA",
+        "card_dR6rep",
+        "card_XwanxX",
+        "card_zpKCxq"
       ],
       "name": "Grid de Productos",
       "settings": {}
