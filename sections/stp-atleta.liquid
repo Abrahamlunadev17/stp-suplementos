@@ -190,32 +190,94 @@
 }
 
 </style>
-
 {% schema %}
-  {
-    "name": "Sección Atleta",
-    "settings": [
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Título",
-        "default": "IMPULSANDO EL RENDIMIENTO DE ATLETAS POR MÁS DE 30 AÑOS"
-      }, {
-        "type": "textarea",
-        "id": "text",
-        "label": "Texto",
-        "default": "Con más de tres décadas de trayectoria, en F&NT formulamos y producimos suplementos con base en la experiencia y la innovación, utilizando ingredientes certificados y procesos propios que cumplen con estándares de calidad.\n\nHoy ofrecemos más de 75 presentaciones, adaptadas a tus objetivos, con la calidad y confianza que nos distingue."
-      }, {
-        "type": "image_picker",
-        "id": "bg_image",
-        "label": "Imagen de fondo (atleta)"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Sección Atleta"
-      }
-    ]
-  }
-
+{
+  "name": "Grid de Productos",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Imagen"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_bg_mobile",
+          "label": "Imagen fondo Mobile"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_bg_desktop",
+          "label": "Imagen fondo Desktop"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Título"
+        },
+        {
+          "type": "checkbox",
+          "id": "full_width",
+          "label": "¿Card de ancho completo?",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "max_blocks": 7,
+  "presets": [
+    {
+      "name": "Grid de Productos",
+      "blocks": [
+        {
+          "type": "card",
+          "settings": {
+            "title": "PROTEÍNAS",
+            "full_width": true
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "title": "CREATINAS"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "title": "ENERGÉTICOS Y PRE-ENTRENOS"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "title": "VASODILATADORES"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "title": "AMINOÁCIDOS Y RECUPERACIÓN"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "title": "QUEMA GRASA Y METABOLISMO",
+            "full_width": true
+          }
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
