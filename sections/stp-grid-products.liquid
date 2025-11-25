@@ -6,15 +6,25 @@
   <div class="stp-grid-products-grid">
     {% for block in section.blocks %}
       <a href="{{ block.settings.link }}" class="stp-grid-product-wrapper {% if block.settings.full_width %}full-width{% endif %}">
-        <div class="stp-grid-product-card" style="background-image: url({{ block.settings['image-bg'] | img_url: 'large' }}); background-color: #e53935;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;">
+        <div class="stp-grid-product-card">
+
+          {% if block.settings.image_bg_mobile or block.settings.image_bg_desktop %}
+            <div class="bg-image-wrapper">
+              {% if block.settings.image_bg_mobile %}
+                <img class="bg-image bg-mobile" src="{{ block.settings.image_bg_mobile | img_url: 'master' }}" alt="">
+              {% endif %}
+              {% if block.settings.image_bg_desktop %}
+                <img class="bg-image bg-desktop" src="{{ block.settings.image_bg_desktop | img_url: 'master' }}" alt="">
+              {% endif %}
+            </div>
+          {% endif %}
+
           {% if block.settings.image != blank %}
             <div class="image-container-stp">
               <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.title | escape }}">
             </div>
           {% endif %}
+
           <div class="wrapper-text-card-stp">
             <span>{{ block.settings.title }}</span>
           </div>
@@ -24,8 +34,8 @@
   </div>
 </div>
 
-
-<style>.text-center {
+<style>
+.text-center {
   text-align: center;
 }
 
@@ -44,18 +54,15 @@
   position: relative;
 }
 
-
-
-/* Common link wrapper */
+/* Wrapper */
 .stp-grid-product-wrapper {
   display: block;
   text-decoration: none;
   color: inherit;
 }
 
-/* Product card */
+/* Card */
 .stp-grid-product-card {
-  background: #e53935;
   border-radius: 10px;
   padding: 18px 16px 16px;
   display: flex;
@@ -65,30 +72,61 @@
   position: relative;
   overflow: hidden;
   height: 100%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   min-height: 180px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  background: none;
+  z-index: 1;
 }
 
-/* Image */
+/* Background image */
+.bg-image-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: none;
+}
+.bg-mobile {
+  display: block;
+}
+@media (min-width: 749px) {
+  .bg-mobile {
+    display: none;
+  }
+  .bg-desktop {
+    display: block;
+  }
+}
+
+/* Foreground image */
+.image-container-stp {
+  z-index: 2;
+  width: 100%;
+}
 .stp-grid-product-card img {
   width: 100%;
   height: 100px;
   object-fit: contain;
   margin-bottom: 10px;
-  z-index: 2;
   display: block;
 }
 
 /* Text */
 .wrapper-text-card-stp {
   text-align: center;
+  z-index: 2;
 }
-
 .stp-grid-product-card span {
   color: #fff;
   font-weight: bold;
   font-size: 1rem;
-  z-index: 2;
   text-shadow: 1px 1px 4px #b71c1c;
 }
 
@@ -99,7 +137,6 @@
     grid-gap: 24px;
   }
 
-  /* Full-width spans all 3 columns */
   .stp-grid-product-card {
     flex-direction: row;
     gap: 16px;
@@ -108,8 +145,7 @@
 
   .stp-grid-product-card img {
     height: 200px;
-    object-fit:contain;
-    width: 100%;
+    object-fit: contain;
   }
 
   .wrapper-text-card-stp {
@@ -124,8 +160,8 @@
     font-size: 1.2rem;
   }
 }
-
 </style>
+
 
 
 {% schema %}
