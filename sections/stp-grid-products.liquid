@@ -6,25 +6,15 @@
   <div class="stp-grid-products-grid">
     {% for block in section.blocks %}
       <a href="{{ block.settings.link }}" class="stp-grid-product-wrapper {% if block.settings.full_width %}full-width{% endif %}">
-        <div class="stp-grid-product-card">
-
-          {% if block.settings.image_bg_mobile or block.settings.image_bg_desktop %}
-            <div class="bg-image-wrapper">
-              {% if block.settings.image_bg_mobile %}
-                <img class="bg-image bg-mobile" src="{{ block.settings.image_bg_mobile | img_url: 'master' }}" alt="">
-              {% endif %}
-              {% if block.settings.image_bg_desktop %}
-                <img class="bg-image bg-desktop" src="{{ block.settings.image_bg_desktop | img_url: 'master' }}" alt="">
-              {% endif %}
-            </div>
-          {% endif %}
-
-          {% if block.settings.image %}
+        <div class="stp-grid-product-card" style="background-image: url({{ block.settings['image-bg'] | img_url: 'large' }}); background-color: #e53935;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;">
+          {% if block.settings.image != blank %}
             <div class="image-container-stp">
               <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.title | escape }}">
             </div>
           {% endif %}
-
           <div class="wrapper-text-card-stp">
             <span>{{ block.settings.title }}</span>
           </div>
@@ -34,119 +24,82 @@
   </div>
 </div>
 
-<style>
-.text-center {
+
+<style>.text-center {
   text-align: center;
 }
 
+/* Section */
 .stp-grid-products-section {
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px 16px;
 }
 
-/* Grid layout */
+/* Grid */
 .stp-grid-products-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  grid-gap: 16px;
+  position: relative;
 }
 
-/* Full-width blocks span all columns */
-@media (min-width: 749px) {
-  .stp-grid-products-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
 
-  .stp-grid-product-wrapper.full-width {
-    grid-column: span 3;
-  }
-}
 
-/* Card wrapper */
+/* Common link wrapper */
 .stp-grid-product-wrapper {
   display: block;
   text-decoration: none;
   color: inherit;
 }
 
-/* Card layout */
+/* Product card */
 .stp-grid-product-card {
-  position: relative;
+  background: #e53935;
   border-radius: 10px;
   padding: 18px 16px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 180px;
+  position: relative;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-  background: none;
-  z-index: 1;
-}
-
-/* Background image */
-.bg-image-wrapper {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.bg-image {
-  width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  min-height: 180px;
 }
 
-.bg-mobile {
-  display: block;
-}
-
-@media (min-width: 749px) {
-  .bg-mobile {
-    display: none;
-  }
-
-  .bg-desktop {
-    display: block;
-  }
-}
-
-/* Product image */
-.image-container-stp {
-  z-index: 2;
-  width: 100%;
-}
-
+/* Image */
 .stp-grid-product-card img {
   width: 100%;
   height: 100px;
   object-fit: contain;
   margin-bottom: 10px;
+  z-index: 2;
   display: block;
 }
 
-/* Text content */
+/* Text */
 .wrapper-text-card-stp {
   text-align: center;
-  z-index: 2;
 }
 
 .stp-grid-product-card span {
   color: #fff;
   font-weight: bold;
   font-size: 1rem;
+  z-index: 2;
   text-shadow: 1px 1px 4px #b71c1c;
 }
 
-/* Desktop layout tweaks */
+/* Desktop */
 @media (min-width: 749px) {
+  .stp-grid-products-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+  }
+
+  /* Full-width spans all 3 columns */
   .stp-grid-product-card {
     flex-direction: row;
     gap: 16px;
@@ -155,6 +108,8 @@
 
   .stp-grid-product-card img {
     height: 200px;
+    object-fit:contain;
+    width: 100%;
   }
 
   .wrapper-text-card-stp {
@@ -169,96 +124,91 @@
     font-size: 1.2rem;
   }
 }
+
 </style>
 
+
 {% schema %}
-{
-  "name": "Grid de Productos",
-  "settings": [],
-  "blocks": [
-    {
-      "type": "card",
-      "name": "Card",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Imagen principal"
-        },
-        {
-          "type": "image_picker",
-          "id": "image_bg_mobile",
-          "label": "Imagen de fondo (Mobile)"
-        },
-        {
-          "type": "image_picker",
-          "id": "image_bg_desktop",
-          "label": "Imagen de fondo (Desktop)"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "Link"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Título"
-        },
-        {
-          "type": "checkbox",
-          "id": "full_width",
-          "label": "¿Card de ancho completo?",
-          "default": false
-        }
-      ]
-    }
-  ],
-  "max_blocks": 7,
-  "presets": [
-    {
-      "name": "Grid de Productos",
-      "blocks": [
-        {
-          "type": "card",
-          "settings": {
-            "title": "PROTEÍNAS",
-            "full_width": true
+  {
+    "name": "Grid de Productos",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "card",
+        "name": "Card",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Imagen"
+          },
+          {
+            "type": "image_picker",
+            "id": "image-bg",
+            "label": "Imagen"
+          },
+          {
+
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          },
+           {
+            "type": "text",
+            "id": "title",
+            "label": "Título"
+          }, {
+            "type": "checkbox",
+            "id": "full_width",
+            "label": "¿Card de ancho completo?",
+            "default": false
           }
-        },
-        {
-          "type": "card",
-          "settings": {
-            "title": "CREATINAS"
+        ]
+      }
+    ],
+    "max_blocks": 7,
+    "presets": [
+      {
+        "name": "Grid de Productos",
+        "blocks": [
+          {
+            "type": "card",
+            "settings": {
+              "title": "PROTEÍNAS",
+              "full_width": true
+            }
+          },
+          {
+            "type": "card",
+            "settings": {
+              "title": "CREATINAS"
+            }
+          },
+          {
+            "type": "card",
+            "settings": {
+              "title": "ENERGÉTICOS Y PRE-ENTRENOS"
+            }
+          },
+          {
+            "type": "card",
+            "settings": {
+              "title": "VASODILATADORES"
+            }
+          }, {
+            "type": "card",
+            "settings": {
+              "title": "AMINOÁCIDOS Y RECUPERACIÓN"
+            }
+          }, {
+            "type": "card",
+            "settings": {
+              "title": "QUEMA GRASA Y METABOLISMO",
+              "full_width": true
+            }
           }
-        },
-        {
-          "type": "card",
-          "settings": {
-            "title": "ENERGÉTICOS Y PRE-ENTRENOS"
-          }
-        },
-        {
-          "type": "card",
-          "settings": {
-            "title": "VASODILATADORES"
-          }
-        },
-        {
-          "type": "card",
-          "settings": {
-            "title": "AMINOÁCIDOS Y RECUPERACIÓN"
-          }
-        },
-        {
-          "type": "card",
-          "settings": {
-            "title": "QUEMA GRASA Y METABOLISMO",
-            "full_width": true
-          }
-        }
-      ]
-    }
-  ]
-}
+        ]
+      }
+    ]
+  }
 {% endschema %}
