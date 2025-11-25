@@ -134,7 +134,7 @@
         "card_YyEReJ": {
           "type": "card",
           "settings": {
-            "image-bg": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_16b47ec7-0024-40fc-98ba-7758e6ba748b.png",
+            "image": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_16b47ec7-0024-40fc-98ba-7758e6ba748b.png",
             "link": "shopify://collections/proteina",
             "title": "",
             "full_width": true
@@ -143,7 +143,6 @@
         "card_h9QUrG": {
           "type": "card",
           "settings": {
-            "image-bg": "shopify://shop_images/5_6d8f1392-06e3-47be-a5d9-3e18d62d76f3.png",
             "link": "shopify://collections/creatinas",
             "title": "",
             "full_width": false
@@ -153,7 +152,6 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/Empty.png",
-            "image-bg": "shopify://shop_images/4_445f5341-5df4-41e4-a25d-e8bbcbe550f7.png",
             "link": "shopify://collections/energeticos-y-pre-entrenos",
             "title": "",
             "full_width": false
@@ -163,7 +161,6 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/Empty.png",
-            "image-bg": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
             "link": "shopify://collections/vasodilatadores",
             "title": "",
             "full_width": false
@@ -172,7 +169,6 @@
         "card_BWYE8D": {
           "type": "card",
           "settings": {
-            "image-bg": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a.png",
             "link": "shopify://collections/aminoacidos-y-recuperacion",
             "title": "",
             "full_width": false
@@ -181,7 +177,6 @@
         "card_nqqfUm": {
           "type": "card",
           "settings": {
-            "image-bg": "shopify://shop_images/6_7e7b318c-f1df-4977-af75-c2d076e4a9ac.png",
             "link": "shopify://collections/quema-grasa-y-metabolismo",
             "title": "",
             "full_width": true
@@ -689,11 +684,7 @@
     "stp_atleta_w4Hbft": {
       "type": "stp-atleta",
       "name": "Sección Atleta",
-      "settings": {
-        "title": "IMPULSANDO EL RENDIMIENTO DE ATLETAS POR MÁS DE 30 AÑOS",
-        "text": "Con más de tres décadas de trayectoria, en F&NT formulamos y producimos suplementos con base en la experiencia y la innovación, utilizando ingredientes certificados y procesos propios que cumplen con estándares de calidad.\n\nHoy ofrecemos más de 75 presentaciones, adaptadas a tus objetivos, con la calidad y confianza que nos distingue.",
-        "bg_image": "shopify://shop_images/IMG_0513_2.png"
-      }
+      "settings": {}
     },
     "stp_reviews_xgAPmE": {
       "type": "stp-reviews",
