@@ -6,10 +6,7 @@
   <div class="stp-grid-products-grid">
     {% for block in section.blocks %}
       <a href="{{ block.settings.link }}" class="stp-grid-product-wrapper {% if block.settings.full_width %}full-width{% endif %}">
-        <div class="stp-grid-product-card" style="background-image: url({{ block.settings['image-bg'] | img_url: 'large' }}); background-color: #e53935;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;">
+        <div class="stp-grid-product-card">
           {% if block.settings.image != blank %}
             <div class="image-container-stp">
               <img src="{{ block.settings.image | img_url: 'medium' }}" alt="{{ block.settings.title | escape }}">
