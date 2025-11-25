@@ -134,7 +134,8 @@
         "card_YyEReJ": {
           "type": "card",
           "settings": {
-            "image-bg": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_16b47ec7-0024-40fc-98ba-7758e6ba748b.png",
+            "image_mobile": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
+            "image_desktop": "shopify://shop_images/BANNER_QUIZ_1.png",
             "link": "shopify://collections/proteina",
             "title": "",
             "full_width": true
@@ -143,7 +144,6 @@
         "card_h9QUrG": {
           "type": "card",
           "settings": {
-            "image-bg": "shopify://shop_images/5_6d8f1392-06e3-47be-a5d9-3e18d62d76f3.png",
             "link": "shopify://collections/creatinas",
             "title": "",
             "full_width": false
@@ -152,7 +152,6 @@
         "card_pmkUPH": {
           "type": "card",
           "settings": {
-            "image-bg": "shopify://shop_images/4_445f5341-5df4-41e4-a25d-e8bbcbe550f7.png",
             "link": "shopify://collections/energeticos-y-pre-entrenos",
             "title": "",
             "full_width": false
@@ -161,7 +160,6 @@
         "card_d9qzFr": {
           "type": "card",
           "settings": {
-            "image-bg": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a_6ba2f690-8cca-4a6c-9de4-f8364e6ea476.png",
             "link": "shopify://collections/vasodilatadores",
             "title": "",
             "full_width": false
@@ -170,7 +168,6 @@
         "card_MhDLzM": {
           "type": "card",
           "settings": {
-            "image-bg": "shopify://shop_images/Se_aplicara_un_protocolo_que_inicia_la_transferencia_a_1_ms_aumentando_gradualmente_hasta_un_maximo_de_7_ms._Comenzar_con_baja_velocidad_reduce_la_generacion_de_carga_estatica_en_el_a.png",
             "link": "",
             "title": "",
             "full_width": false
@@ -179,7 +176,6 @@
         "card_nqqfUm": {
           "type": "card",
           "settings": {
-            "image-bg": "shopify://shop_images/6_7e7b318c-f1df-4977-af75-c2d076e4a9ac.png",
             "link": "shopify://collections/quema-grasa-y-metabolismo",
             "title": "",
             "full_width": true
@@ -492,7 +488,6 @@
         "card_WrDGWa": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/image_4.png",
             "link": "",
             "title": "PROTEÍNAS",
             "full_width": true
@@ -501,7 +496,6 @@
         "card_9aqBKn": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/image_17.png",
             "link": "",
             "title": "CREATINAS",
             "full_width": false
@@ -510,7 +504,6 @@
         "card_7adgQK": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/image_18.png",
             "link": "",
             "title": "ENERGÉTICOS Y PRE-ENTRENOS",
             "full_width": false
@@ -519,7 +512,6 @@
         "card_y3PP6E": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/image_19.png",
             "link": "",
             "title": "VASODILATADORES",
             "full_width": false
@@ -528,7 +520,6 @@
         "card_tkpTC6": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/image_20.png",
             "link": "",
             "title": "AMINOÁCIDOS Y RECUPERACIÓN",
             "full_width": false
@@ -537,7 +528,6 @@
         "card_fK9iph": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/image_16.png",
             "link": "",
             "title": "QUEMA GRASA Y METABOLISMO",
             "full_width": true
