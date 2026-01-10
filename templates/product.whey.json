@@ -872,15 +872,39 @@
         "title": "PREGUNTAS FRECUENTES"
       }
     },
-    "1768075052de19ff7b": {
+    "1768083886d294d690": {
       "type": "_blocks",
+      "blocks": {
+        "revie_reviews_por_whatsapp_app_block_2_G4QcNi": {
+          "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block-2/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+          "settings": {
+            "title": "RESEÑAS",
+            "format": "1",
+            "max_width": 900,
+            "content_padding": 22,
+            "star_color": "#ffffff",
+            "show_comment": "No",
+            "max_count": 10,
+            "star_text": "Estrellas",
+            "subtitle": "OPINIONES",
+            "buyer": "Comprador verificado",
+            "based": "Basado en",
+            "opinions": "opiniones",
+            "no_reviews": "SIN OPINIONES",
+            "show_summary": "No"
+          }
+        }
+      },
+      "block_order": [
+        "revie_reviews_por_whatsapp_app_block_2_G4QcNi"
+      ],
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 12,
         "section_width": "page-width",
@@ -910,6 +934,6 @@
     "stp_reviews_zqcbJw",
     "stp_experts_39rVHz",
     "stp_faqs_6JTHEw",
-    "1768075052de19ff7b"
+    "1768083886d294d690"
   ]
 }
