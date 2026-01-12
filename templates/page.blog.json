@@ -71,28 +71,28 @@
         "tag_button_XH9enh": {
           "type": "tag_button",
           "settings": {
-            "label": "Suplementos",
+            "label": "SUPLEMENTOS",
             "blog": "suplementos"
           }
         },
         "tag_button_n9JAKd": {
           "type": "tag_button",
           "settings": {
-            "label": "Entrenamientos",
+            "label": "ENTRENAMIENTO",
             "blog": "entrenamiento"
           }
         },
         "tag_button_tpkkWL": {
           "type": "tag_button",
           "settings": {
-            "label": "Bienestar",
+            "label": "BIENESTAR",
             "blog": "bienestar"
           }
         },
         "tag_button_U9mjmQ": {
           "type": "tag_button",
           "settings": {
-            "label": "Recetas",
+            "label": "RECETAS",
             "blog": "recetas"
           }
         }
