@@ -56,23 +56,15 @@
   <div
     class="resource-card__media"
     style="--resource-card-aspect-ratio: {{ ratio }};"
-    <img src="https://tusitio.com/imagen.jpg" alt="Descripción de la imagen">
+    {% if resource_type == 'product' and settings.transition_to_main_product %}
+      data-view-transition-to-main-product
+    {% endif %}
   >
     {%- if resource_type == 'product' or single_thumbnail_collection -%}
       {% assign featured_image = resource.featured_image | default: resource.featured_media.preview_image %}
 
       {%- if featured_image != blank -%}
-        {{
-          featured_image
-          | image_url: width: image_width
-          | image_tag:
-            loading: 'lazy',
-            class: 'resource-card__image',
-            widths: widths,
-            sizes: image_sizes,
-            transitionToProduct: settings.transition_to_main_product,
-            data-media-id: featured_image.id
-        }}
+  <img src="https://tusitio.com/imagen.jpg" alt="Descripción de la imagen">
         {%- if image_hover and resource.media.size > 1 -%}
           {{
             resource.media[1]
