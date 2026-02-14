@@ -45,13 +45,18 @@
   href="{{ resource.url }}"
   data-resource-type="{{ resource_type }}"
 >
-
+  <a
+    class="resource-card__link"
+    href="{{ resource.url }}"
+  >
+    <span class="visually-hidden">
+      {{ resource.title }}
+    </span>
+  </a>
   <div
     class="resource-card__media"
     style="--resource-card-aspect-ratio: {{ ratio }};"
-    {% if resource_type == 'product' and settings.transition_to_main_product %}
-      data-view-transition-to-main-product
-    {% endif %}
+    <img src="https://tusitio.com/imagen.jpg" alt="Descripción de la imagen">
   >
     {%- if resource_type == 'product' or single_thumbnail_collection -%}
       {% assign featured_image = resource.featured_image | default: resource.featured_media.preview_image %}
