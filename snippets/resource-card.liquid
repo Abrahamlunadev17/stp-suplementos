@@ -218,6 +218,7 @@
 
     &::before {
   content: "";
+      content: "";
     position: absolute;
     top: 0%;
     right: 0;
@@ -225,11 +226,12 @@
     left: 0;
     background-image: url(/cdn/shop/files/IMG_0706_2.jpg?v=1768260344);
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
     border-radius: var(--resource-card-corner-radius);
     pointer-events: none;
     z-index: var(--layer-flat);
+    filter: brightness(0.5);
     }
   }
 
