@@ -64,7 +64,17 @@
       {% assign featured_image = resource.featured_image | default: resource.featured_media.preview_image %}
 
       {%- if featured_image != blank -%}
-  <img src="https://tusitio.com/imagen.jpg" alt="Descripción de la imagen">
+        {{
+          featured_image
+          | image_url: width: image_width
+          | image_tag:
+            loading: 'lazy',
+            class: 'resource-card__image',
+            widths: widths,
+            sizes: image_sizes,
+            transitionToProduct: settings.transition_to_main_product,
+            data-media-id: featured_image.id
+        }}
         {%- if image_hover and resource.media.size > 1 -%}
           {{
             resource.media[1]
