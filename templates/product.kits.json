@@ -1,0 +1,915 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "media_presentation": "grid",
+            "media_columns": "two",
+            "image_gap": 4,
+            "large_first_image": true,
+            "icons_style": "none",
+            "slideshow_controls_style": "counter",
+            "slideshow_mobile_controls_style": "counter",
+            "thumbnail_position": "right",
+            "thumbnail_width": 44,
+            "aspect_ratio": "1",
+            "constrain_to_viewport": true,
+            "media_fit": "contain",
+            "media_radius": 9,
+            "extend_media": false,
+            "zoom": true,
+            "video_loop": true,
+            "hide_variants": false,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 28,
+            "sticky_details_desktop": true,
+            "inherit_color_scheme": true,
+            "color_scheme": "scheme-1",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_icgrde": {
+              "type": "group",
+              "name": "Header",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "placeholder": "",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "custom_liquid_ktdXp8": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "settings": {
+                    "custom_liquid": "<h2> {{product.title | upcase }}"
+                  },
+                  "blocks": {}
+                },
+                "text_wrwq77": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>{{ closest.product.metafields.custom.short_description | metafield_tag }}</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h4",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "revie_reviews_por_whatsapp_app_block_X8ipEw": {
+                  "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+                  "settings": {
+                    "star_color": "#ffffff",
+                    "text_color": "#ffffff",
+                    "star_text_2": "reseñas",
+                    "size": 19,
+                    "showcero": "2",
+                    "format": "1",
+                    "utm": "2"
+                  }
+                },
+                "slide_pdp_X4yRMd": {
+                  "type": "slide-pdp",
+                  "name": "Producto",
+                  "settings": {
+                    "text-desc": "<p>{{ closest.product.metafields.custom.peso.value }}</p>",
+                    "text-porcion": "<p>{{ closest.product.metafields.custom.gramaje.value }}</p>"
+                  },
+                  "blocks": {}
+                },
+                "price_tVjtKg": {
+                  "type": "price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "h4",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 4,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_7MgNRH": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>{{ closest.product.metafields.custom.long_descripction | metafield_tag }}</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "discount_XBTMyn": {
+                  "type": "discount",
+                  "name": "Descuento",
+                  "disabled": true,
+                  "settings": {
+                    "text": "<p>Obtén <strong>10% de descuento</strong></p>",
+                    "button_text": "OBTENER AHORA"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "custom_liquid_ktdXp8",
+                "text_wrwq77",
+                "revie_reviews_por_whatsapp_app_block_X8ipEw",
+                "slide_pdp_X4yRMd",
+                "price_tVjtKg",
+                "text_7MgNRH",
+                "discount_XBTMyn"
+              ]
+            },
+            "variant_picker_R3rGDr": {
+              "type": "variant-picker",
+              "settings": {
+                "variant_style": "buttons",
+                "show_swatches": false,
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "steps_TTzTFL": {
+              "type": "steps",
+              "name": "Pasos",
+              "settings": {
+                "video_1": "shopify://files/videos/ESCENA 1 PROTEINAS.mov",
+                "text_1": "PASO 1",
+                "description_1": "Toma 1 porción de Whey Protein (50 g) usando la medida incluida en el envase.",
+                "video_2": "shopify://files/videos/ESCENA 2 PROTEINA.mov",
+                "text_2": "PASO 2",
+                "description_2": "Licúa con 300 ml de agua, leche o bebida de tu preferencia durante 30 segundos para lograr una textura suave.",
+                "video_3": "shopify://files/videos/ESCENA 3 PROTEINAS.mov",
+                "text_3": "PASO 3",
+                "description_3": "Disfruta una malteada rica en proteínas, ideal para complementar tu entrenamiento."
+              },
+              "blocks": {}
+            },
+            "related_product_jWdKVe": {
+              "type": "related-product",
+              "name": "Relacionado",
+              "settings": {
+                "text-desc": "",
+                "text-porcion": ""
+              },
+              "blocks": {}
+            },
+            "buy_buttons_eYQEYi": {
+              "type": "buy-buttons",
+              "settings": {
+                "stacking": true,
+                "show_pickup_availability": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "quantity": {
+                  "type": "quantity",
+                  "disabled": true,
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {
+                    "style_class": "button-secondary"
+                  },
+                  "blocks": {}
+                },
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "disabled": true,
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "accordion_hziyLV": {
+              "type": "accordion",
+              "name": "t:names.accordion",
+              "settings": {
+                "icon": "caret",
+                "dividers": true,
+                "type_preset": "paragraph",
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "accordion_row_LhjwgX": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "DESCRIPCIÓN DEL PRODUCTO",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_WDi3Kq": {
+                      "type": "text",
+                      "settings": {
+                        "text": "{{ closest.product.description }}",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "center",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_WDi3Kq"
+                  ]
+                },
+                "accordion_row_BkrRym": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "INFORMACIÓN NUTRICIONAL",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "image_NCrbra": {
+                      "type": "image",
+                      "name": "t:names.image",
+                      "settings": {
+                        "image": "{{ closest.product.metafields.custom.tabla_nutrimental.value }}",
+                        "link": "",
+                        "image_ratio": "adapt",
+                        "width": "fill",
+                        "custom_width": 100,
+                        "width_mobile": "fill",
+                        "custom_width_mobile": 100,
+                        "height": "fit",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "image_NCrbra"
+                  ]
+                },
+                "accordion_row_hhHr3R": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "INGREDIENTES",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_MjFThq": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>{{ closest.product.metafields.custom.ingredientes | metafield_tag }}</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_MjFThq"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_row_LhjwgX",
+                "accordion_row_BkrRym",
+                "accordion_row_hhHr3R"
+              ]
+            },
+            "image_dH84E3": {
+              "type": "image",
+              "name": "t:names.image",
+              "settings": {
+                "image": "{{ closest.product.metafields.custom.listado_de_sellos.value }}",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "custom",
+                "custom_width": 70,
+                "width_mobile": "custom",
+                "custom_width_mobile": 71,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_icgrde",
+            "variant_picker_R3rGDr",
+            "steps_TTzTFL",
+            "related_product_jWdKVe",
+            "buy_buttons_eYQEYi",
+            "accordion_hziyLV",
+            "image_dH84E3"
+          ]
+        }
+      },
+      "settings": {
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": true,
+        "limit_details_width": false,
+        "gap": 48,
+        "color_scheme": "scheme-2",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "1768083886d294d690": {
+      "type": "_blocks",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "product_recommendations_qggXJq": {
+      "type": "product-recommendations",
+      "blocks": {
+        "text_Y6hPaq": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h3><strong>OPTIMIZA TU RENDIMIENTO CON:</strong></h3>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground-heading)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 8,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 8,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_card_gallery_DNizbJ": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "image_ratio": "adapt",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_title_M7MJkb": {
+              "type": "product-title",
+              "name": "t:names.product_title",
+              "settings": {
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "price_gLWgA6": {
+              "type": "price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "color": "var(--color-foreground)",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_gallery_DNizbJ",
+            "product_title_M7MJkb",
+            "price_gLWgA6"
+          ]
+        }
+      },
+      "block_order": [
+        "text_Y6hPaq"
+      ],
+      "name": "t:names.product_recommendations",
+      "settings": {
+        "product": "{{ closest.product }}",
+        "recommendation_type": "related",
+        "layout_type": "carousel",
+        "carousel_on_mobile": false,
+        "max_products": 3,
+        "columns": 4,
+        "mobile_columns": "2",
+        "columns_gap": 12,
+        "rows_gap": 24,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 28,
+        "color_scheme": "scheme-5",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
+    "pdp_slider_dqGT6P": {
+      "type": "pdp-slider",
+      "blocks": {
+        "slide_RQAH3W": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1_2dabdada-08cb-4da9-8c32-6b1c6c270f3c.png",
+            "title": "Diseñados para cada nivel y objetivo",
+            "text": "Tanto si estás empezando como si entrenas a nivel avanzado, tenemos opciones para cada etapa de tu progreso."
+          }
+        },
+        "slide_EtAqhT": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/3_2f45bc85-8af1-4474-9985-c06df33453db.png",
+            "title": "Fórmulas de calidad con tablas nutrimentales completa",
+            "text": "Nuestras tablas superan el estándar del mercado: muestran información clara, detallada y respaldada por ingredientes certificados e importados."
+          }
+        },
+        "slide_KP8ywh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/2_7fc4313a-3893-4317-b0cb-834b5b22b0c2.png",
+            "title": "Variedad que se adapta a ti",
+            "text": "Más de 90 presentaciones pensadas para distintos objetivos, estilos de vida y niveles de entrenamiento."
+          }
+        }
+      },
+      "block_order": [
+        "slide_RQAH3W",
+        "slide_EtAqhT",
+        "slide_KP8ywh"
+      ],
+      "name": "Slider Fórmula",
+      "settings": {}
+    },
+    "stp_reviews_zqcbJw": {
+      "type": "stp-reviews",
+      "blocks": {
+        "review_BacKbi": {
+          "type": "review",
+          "settings": {
+            "quote": "Excelente!!!",
+            "text": "Esta es la primera vez que compro suplementos, es la primera marca que compro y el envase viene lleno, la verdad quedé sorprendida, además de que me encantó su sabor.\nNo me queda más que decir que fue una excelente compra!",
+            "author": "Roxx Martinez – Cliente verificado de Amazon",
+            "product_title": "Whey Protein Vainilla",
+            "product_url": "shopify://products/whey-protein-vainilla-3500g"
+          }
+        },
+        "review_7mFMaF": {
+          "type": "review",
+          "settings": {
+            "quote": "Buena proteína",
+            "text": "De las mejores proteínas que he probado, me ayuda bastante como suplemento alimenticio cubriendo las necesidades. Excelente sabor y consistencia, no inflama ni te incomoda el estómago. Ya van 4 veces que la pido. Se las recomiendo mucho.",
+            "author": "Cliente verificado de Amazon",
+            "product_title": "Isolate Chocolate, 1,500 g",
+            "product_url": "shopify://products/isolate-protein-chocolate-3000g"
+          }
+        },
+        "review_WNkFkq": {
+          "type": "review",
+          "settings": {
+            "quote": "Excelente",
+            "text": "“Excelente producto en sus ingredientes. Me ayudó a aumentar masa muscular en poco tiempo y sobre todo no inflama. Delicioso sabor.”",
+            "author": "Rebeca – Cliente verificado de Amazon",
+            "product_title": "Whey Protein Fresa, 1,750 g",
+            "product_url": "shopify://products/whey-protein-fresa-3500g"
+          }
+        },
+        "review_Cr7HCT": {
+          "type": "review",
+          "settings": {
+            "quote": "Excelente producto",
+            "text": "“Excelente producto, fácil de disolver, fácil de llevar, se mezcla muy fácil y lo mejor es que no deja grumos. Lo puedes mezclar en agua fría o leche. Su sabor muy rico. Lo recomiendo al 100.”",
+            "author": "Cliente verificado de Mercado Libre",
+            "product_title": "Diet Shake Fresa, 500 g",
+            "product_url": "shopify://products/diet-shake-fresa-500g"
+          }
+        },
+        "review_RRVTAV": {
+          "type": "review",
+          "settings": {
+            "quote": "Muy buena",
+            "text": "“Me gusta mucho este sabor, es buenísimo. Me ayuda a que no me salga acné. Llevo un año tomándola.”",
+            "author": "Miriam Alejandra V. – Cliente verificado de Liverpool",
+            "product_title": "Whey Protein Vainilla, 500 g",
+            "product_url": "shopify://products/whey-protein-vainilla-500g"
+          }
+        },
+        "review_w33BjV": {
+          "type": "review",
+          "settings": {
+            "quote": "Muy recomendado",
+            "text": "“Me cayó de maravilla, lo he comprado varias veces y lo seguiré haciendo. ¡Súper recomendado!”\nCliente verificado de Mercado Libre",
+            "author": "Cliente verificado de Mercado Libre",
+            "product_title": "HydroLyte Sport Drink Piña, 1,050 g",
+            "product_url": "shopify://products/hydrolyte-sport-drink-pina-1000g"
+          }
+        },
+        "review_kdDAFw": {
+          "type": "review",
+          "settings": {
+            "quote": "Excelente producto",
+            "text": "“Gracias, excelente precio, y es un producto muy bueno. Tengo años que lo consumo, lo recomiendo.”",
+            "author": "Cliente verificado de Mercado Libre",
+            "product_title": "Óxido Nítrico Uva, 1,000 g",
+            "product_url": "shopify://products/oxido-nitrico-uva-1000g"
+          }
+        }
+      },
+      "block_order": [
+        "review_BacKbi",
+        "review_7mFMaF",
+        "review_WNkFkq",
+        "review_Cr7HCT",
+        "review_RRVTAV",
+        "review_w33BjV",
+        "review_kdDAFw"
+      ],
+      "name": "Slider de Reseñas",
+      "settings": {
+        "reviews_count": "+10,000 reseñas de 5 estrellas en plataformas digitales",
+        "title": "CONFIANZA COMPROBADA POR MILES DE USUARIOS"
+      }
+    },
+    "stp_experts_39rVHz": {
+      "type": "stp-experts",
+      "blocks": {
+        "card_KEwjdP": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/doctor.png",
+            "text": "Nombre del especialista",
+            "especialidad": "Nutriológo.",
+            "subtitulo": "<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.<br/><br/></p>"
+          }
+        },
+        "card_aUAtFy": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/doctor.png",
+            "text": "Nombre del especialista",
+            "especialidad": "Nutriológo.",
+            "subtitulo": "<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.<br/><br/></p>"
+          }
+        },
+        "card_VpzVYN": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/doctor.png",
+            "text": "Nombre del especialista",
+            "especialidad": "Nutriológo.",
+            "subtitulo": "<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.<br/><br/></p>"
+          }
+        },
+        "card_rC6Tfp": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/doctor.png",
+            "text": "Nombre del especialista",
+            "especialidad": "Nutriológo.",
+            "subtitulo": "<p>Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "card_KEwjdP",
+        "card_aUAtFy",
+        "card_VpzVYN",
+        "card_rC6Tfp"
+      ],
+      "disabled": true,
+      "name": "Beneficios Bienestar",
+      "settings": {
+        "heading": "LO QUE LOS EXPERTOS DICEN:",
+        "bg": "",
+        "button_label": "IR A COMPRAR",
+        "button_link": ""
+      }
+    },
+    "stp_faqs_6JTHEw": {
+      "type": "stp-faqs",
+      "blocks": {
+        "faq_Vw4nEQ": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Cuál es el mejor momento para tomar Whey Protein?",
+            "answer": "Lo ideal es tomarla después del entrenamiento, cuando el cuerpo necesita proteínas para recuperarse. También puede usarse como desayuno o colación."
+          }
+        },
+        "faq_WTxEH8": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Cuánta proteína contiene cada porción y cuántas porciones trae el envase?",
+            "answer": "Cada porción aporta 23 g de proteína. El número de porciones depende del tamaño del envase: hay presentaciones de 10, 20, 35 y 70 porciones"
+          }
+        },
+        "faq_yirYLa": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Puedo tomarla si no entreno todos los días?",
+            "answer": "Sí. En días de descanso puede tomarse como parte de tu alimentación para mantener un buen aporte proteico"
+          }
+        },
+        "faq_BybiXw": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Qué diferencia hay entre Whey Protein e Isolate Protein?",
+            "answer": "Whey Protein contiene una mezcla de proteínas con un perfil completo de nutrientes. Isolate Protein es una fórmula sin carbohidratos, diseñada para quienes buscan mayor definición."
+          }
+        },
+        "faq_MpReHe": {
+          "type": "faq",
+          "settings": {
+            "question": "¿La pueden tomar mujeres o es solo para hombres?",
+            "answer": "Es totalmente apta para mujeres. La fórmula está diseñada para apoyar el desarrollo muscular y la recuperación sin importar el género."
+          }
+        },
+        "faq_fKrbxE": {
+          "type": "faq",
+          "settings": {
+            "question": "¿Puedo combinarla con otros productos como creatina o BCAA’s?",
+            "answer": "Sí. De hecho, Whey Protein ya contiene 1 g de creatina por porción, pero puedes complementarla con otros suplementos según tus objetivos."
+          }
+        }
+      },
+      "block_order": [
+        "faq_Vw4nEQ",
+        "faq_WTxEH8",
+        "faq_yirYLa",
+        "faq_BybiXw",
+        "faq_MpReHe",
+        "faq_fKrbxE"
+      ],
+      "name": "Preguntas Frecuentes",
+      "settings": {
+        "title": "PREGUNTAS FRECUENTES"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1768083886d294d690",
+    "product_recommendations_qggXJq",
+    "pdp_slider_dqGT6P",
+    "stp_reviews_zqcbJw",
+    "stp_experts_39rVHz",
+    "stp_faqs_6JTHEw"
+  ]
+}
