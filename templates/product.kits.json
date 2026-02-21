@@ -365,6 +365,7 @@
                 },
                 "accordion_row_BkrRym": {
                   "type": "_accordion-row",
+                  "disabled": true,
                   "settings": {
                     "heading": "INFORMACIÓN NUTRICIONAL",
                     "open_by_default": false,
