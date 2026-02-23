@@ -700,7 +700,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".review-revie img {width: 64px; height: 64px;}"
+      ".review-revie img {display: none;}"
     ]
   }
 }
