@@ -697,5 +697,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".review-revie img {width: 64px; height: 64px;}"
+    ]
   }
 }
