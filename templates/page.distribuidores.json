@@ -73,6 +73,15 @@
         "left_desktop": 25
       }
     },
+    "mini_banner_HFxJxr": {
+      "type": "mini-banner",
+      "name": "mini-banner",
+      "settings": {
+        "img": "shopify://shop_images/por_que_fnt.png",
+        "img2": "shopify://shop_images/por_fnt_mobile.png",
+        "url1": ""
+      }
+    },
     "mini_banner_tMRi6H": {
       "type": "mini-banner",
       "name": "mini-banner",
@@ -322,6 +331,7 @@
   "order": [
     "main",
     "banner_home_nw43hy",
+    "mini_banner_HFxJxr",
     "mini_banner_tMRi6H",
     "section_4iWmpc",
     "stpmarquee_image_neGbiH",
