@@ -677,7 +677,7 @@
       "type": "stp-benefits",
       "name": "Beneficios",
       "settings": {
-        "text-wrapper": "¿POR QUÉ ELEGIR F&NT?",
+        "text-wrapper": "¿POR QUÉ ELEGIRNOS?",
         "image_desktop": "shopify://shop_images/Frame_729-stp.png",
         "image_mobile": "shopify://shop_images/Frame_730.png",
         "cta_label": "IR A COMPRAR",
@@ -689,7 +689,7 @@
       "name": "Sección Atleta",
       "settings": {
         "title": "IMPULSANDO EL RENDIMIENTO DE ATLETAS POR MÁS DE 30 AÑOS",
-        "text": "Con más de tres décadas de trayectoria, en F&NT formulamos y producimos suplementos con base en la experiencia y la innovación, utilizando ingredientes certificados y procesos propios que cumplen con estándares de calidad.\n\nHoy ofrecemos más de 75 presentaciones, adaptadas a tus objetivos, con la calidad y confianza que nos distingue.",
+        "text": "Con más de tres décadas de trayectoria, en F&NT® formulamos y producimos suplementos con base en la experiencia y la innovación, utilizando ingredientes certificados y procesos propios que cumplen con estándares de calidad.\n\nHoy ofrecemos más de 75 presentaciones, adaptadas a tus objetivos, con la calidad y confianza que nos distingue.",
         "bg_image": "shopify://shop_images/IMG_0513_2.png"
       }
     },
