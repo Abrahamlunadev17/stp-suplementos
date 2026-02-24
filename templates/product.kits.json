@@ -810,43 +810,43 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuál es el mejor momento para tomar Whey Protein?",
-            "answer": "Lo ideal es tomarla después del entrenamiento, cuando el cuerpo necesita proteínas para recuperarse. También puede usarse como desayuno o colación."
+            "question": "<p>{{ product.metafields.custom.preguntas_frecuentes.value.faq1 | metafield_tag }}</p>",
+            "answer": "<p>{{ product.metafields.custom.preguntas_frecuentes.value.answer1 | metafield_tag }}</p>"
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuánta proteína contiene cada porción y cuántas porciones trae el envase?",
-            "answer": "Cada porción aporta 23 g de proteína. El número de porciones depende del tamaño del envase: hay presentaciones de 10, 20, 35 y 70 porciones"
+            "question": "<p>{{ product.metafields.custom.preguntas_frecuentes.value.faq2 | metafield_tag }}</p>",
+            "answer": ""
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿Puedo tomarla si no entreno todos los días?",
-            "answer": "Sí. En días de descanso puede tomarse como parte de tu alimentación para mantener un buen aporte proteico"
+            "question": "",
+            "answer": "<p>Sí. En días de descanso puede tomarse como parte de tu alimentación para mantener un buen aporte proteico</p>"
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿Qué diferencia hay entre Whey Protein e Isolate Protein?",
-            "answer": "Whey Protein contiene una mezcla de proteínas con un perfil completo de nutrientes. Isolate Protein es una fórmula sin carbohidratos, diseñada para quienes buscan mayor definición."
+            "question": "",
+            "answer": ""
           }
         },
         "faq_MpReHe": {
           "type": "faq",
           "settings": {
-            "question": "¿La pueden tomar mujeres o es solo para hombres?",
-            "answer": "Es totalmente apta para mujeres. La fórmula está diseñada para apoyar el desarrollo muscular y la recuperación sin importar el género."
+            "question": "",
+            "answer": ""
           }
         },
         "faq_fKrbxE": {
           "type": "faq",
           "settings": {
-            "question": "¿Puedo combinarla con otros productos como creatina o BCAA’s?",
-            "answer": "Sí. De hecho, Whey Protein ya contiene 1 g de creatina por porción, pero puedes complementarla con otros suplementos según tus objetivos."
+            "question": "",
+            "answer": ""
           }
         }
       },
