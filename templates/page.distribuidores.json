@@ -57,6 +57,64 @@
         "padding-block-end": 80
       }
     },
+    "stpmarquee_image_neGbiH": {
+      "type": "stpmarquee-image",
+      "blocks": {
+        "image_QqF673": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_715.svg"
+          }
+        },
+        "image_fefUcA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_721.svg"
+          }
+        },
+        "image_e6qCzM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_717.svg"
+          }
+        },
+        "image_eMNJDy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_720.svg"
+          }
+        },
+        "image_BM6CKr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_716.svg"
+          }
+        },
+        "image_4yAFzE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Group_718.svg"
+          }
+        }
+      },
+      "block_order": [
+        "image_QqF673",
+        "image_fefUcA",
+        "image_e6qCzM",
+        "image_eMNJDy",
+        "image_BM6CKr",
+        "image_4yAFzE"
+      ],
+      "name": "Scrolling Image",
+      "settings": {
+        "text-head": "",
+        "text_spacing": true,
+        "colorBackground": "#cf2928",
+        "direction": "left",
+        "speed": 200,
+        "image-width": 60
+      }
+    },
     "stp_reviews_GREydL": {
       "type": "stp-reviews",
       "blocks": {
@@ -149,6 +207,7 @@
   },
   "order": [
     "main",
+    "stpmarquee_image_neGbiH",
     "stp_reviews_GREydL"
   ]
 }
