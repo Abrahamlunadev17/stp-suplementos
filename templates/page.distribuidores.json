@@ -82,6 +82,15 @@
         "url1": ""
       }
     },
+    "mini_banner_WGibQg": {
+      "type": "mini-banner",
+      "name": "mini-banner",
+      "settings": {
+        "img": "shopify://shop_images/Frame_727.png",
+        "img2": "shopify://shop_images/beneficios-distribuidores.png",
+        "url1": ""
+      }
+    },
     "mini_banner_tMRi6H": {
       "type": "mini-banner",
       "name": "mini-banner",
@@ -378,6 +387,7 @@
     "banner_home_nw43hy",
     "mini_banner_HFxJxr",
     "mini_banner_tMRi6H",
+    "mini_banner_WGibQg",
     "section_4iWmpc",
     "stpmarquee_image_neGbiH",
     "stp_reviews_GREydL",
