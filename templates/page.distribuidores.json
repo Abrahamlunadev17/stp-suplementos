@@ -333,6 +333,7 @@
         "slide_JL87zJ": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/distribuidores_03.png",
             "title": "Tiendas de suplementos",
             "text": ""
           }
@@ -340,6 +341,7 @@
         "slide_6fYnUP": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/distribuidores_04.png",
             "title": "Nutriológos",
             "text": ""
           }
@@ -347,6 +349,7 @@
         "slide_E68XN4": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/distribuidores_02.png",
             "title": "Emprendedores del mundofitness",
             "text": ""
           }
@@ -354,6 +357,7 @@
         "slide_MdpMNW": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/distribuidores_01.png",
             "title": "Marketplaces y mundo digital",
             "text": ""
           }
