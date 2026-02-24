@@ -219,12 +219,22 @@
         "reviews_count": "+10,000 reseñas de 5 estrellas en plataformas digitales",
         "title": "CONFIANZA COMPROBADA POR MILES DE USUARIOS"
       }
+    },
+    "mini_banner_tMRi6H": {
+      "type": "mini-banner",
+      "name": "mini-banner",
+      "settings": {
+        "img": "shopify://shop_images/TABLA_pricing.png",
+        "img2": "shopify://shop_images/Mobile-pricing_a00adb5a-0515-4fa4-b8f6-29b30d5d252d.png",
+        "url1": ""
+      }
     }
   },
   "order": [
     "main",
     "banner_home_nw43hy",
     "stpmarquee_image_neGbiH",
-    "stp_reviews_GREydL"
+    "stp_reviews_GREydL",
+    "mini_banner_tMRi6H"
   ]
 }
