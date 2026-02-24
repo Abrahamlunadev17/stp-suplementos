@@ -1,0 +1,79 @@
+<div class="w-full h-auto relative ">
+  {% if section.settings.img != blank %}
+  <a href=" {{
+    section.settings.url1 }}">
+  {{
+    section.settings.img
+    | image_url: width: 2040
+    | image_tag:
+      loading: 'lazy',
+      class: 'mini-banner-desktop  w-full h-auto ',
+      widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000'
+  }}
+  {{
+    section.settings.img2
+    | image_url: width: 2040
+    | image_tag:
+      loading: 'lazy',
+      class: 'mini-banner-mobile w-full h-auto ',
+      widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000'
+  }}
+   </a>
+  {% endif %}
+</div>
+
+<style>
+/* Oculta el banner móvil en desktop */
+.mini-banner-mobile {
+  display: block;
+}
+
+.mini-banner-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mini-banner-desktop {
+    display: block;
+  }
+
+  .mini-banner-mobile {
+    display: none;
+  }
+}
+
+</style>
+
+{% schema %}
+{
+  "name": "mini-banner",
+  "class": "mini-banner",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Imagen Computadora",
+      "info": "1900 px X 750px"
+    },
+    {
+      "type": "image_picker",
+      "id": "img2",
+      "label": "Imagen Móvil",
+      "info": "1080px X 1400px"
+    }, {
+      "type": "url",
+      "id": "url1",
+      "label": "Url Botón"
+    }
+   
+  ],
+  "presets": [
+    {
+      "name": "mini-banner"
+    }
+  ]
+}
+{% endschema %}
