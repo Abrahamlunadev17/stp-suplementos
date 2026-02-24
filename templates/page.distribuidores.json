@@ -326,6 +326,47 @@
         "reviews_count": "+10,000 reseñas de 5 estrellas en plataformas digitales",
         "title": "CONFIANZA COMPROBADA POR MILES DE USUARIOS"
       }
+    },
+    "distribuidores_slider_aDcGWW": {
+      "type": "distribuidores-slider",
+      "blocks": {
+        "slide_JL87zJ": {
+          "type": "slide",
+          "settings": {
+            "title": "Tiendas de suplementos",
+            "text": ""
+          }
+        },
+        "slide_6fYnUP": {
+          "type": "slide",
+          "settings": {
+            "title": "Nutriológos",
+            "text": ""
+          }
+        },
+        "slide_E68XN4": {
+          "type": "slide",
+          "settings": {
+            "title": "Emprendedores del mundofitness",
+            "text": ""
+          }
+        },
+        "slide_MdpMNW": {
+          "type": "slide",
+          "settings": {
+            "title": "Marketplaces y mundo digital",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_JL87zJ",
+        "slide_6fYnUP",
+        "slide_E68XN4",
+        "slide_MdpMNW"
+      ],
+      "name": "Distribuidores",
+      "settings": {}
     }
   },
   "order": [
@@ -335,6 +376,7 @@
     "mini_banner_tMRi6H",
     "section_4iWmpc",
     "stpmarquee_image_neGbiH",
-    "stp_reviews_GREydL"
+    "stp_reviews_GREydL",
+    "distribuidores_slider_aDcGWW"
   ]
 }
