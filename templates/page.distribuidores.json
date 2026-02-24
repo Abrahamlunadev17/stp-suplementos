@@ -57,6 +57,22 @@
         "padding-block-end": 80
       }
     },
+    "banner_home_nw43hy": {
+      "type": "banner-home",
+      "name": "Banner general",
+      "settings": {
+        "img": "shopify://shop_images/Banner-deskto-distribuidores.png",
+        "img2": "shopify://shop_images/Banne-mobile-distribuidores.png",
+        "boton-name1": "EMPIEZA A DISTRIBUIR",
+        "url1": "shopify://collections/all",
+        "boton-name2": "",
+        "url2": "shopify://pages/quiz",
+        "top_mobile": 36,
+        "left_mobile": 50,
+        "top_desktop": 69,
+        "left_desktop": 25
+      }
+    },
     "stpmarquee_image_neGbiH": {
       "type": "stpmarquee-image",
       "blocks": {
@@ -113,22 +129,6 @@
         "direction": "left",
         "speed": 200,
         "image-width": 60
-      }
-    },
-    "banner_home_nw43hy": {
-      "type": "banner-home",
-      "name": "Banner general",
-      "settings": {
-        "img": "shopify://shop_images/TRANSFORMA_TU_META_EN_RESULTADO_REALES.png",
-        "img2": "shopify://shop_images/2_d5e880b3-21c2-45e9-9134-6bc2cfb64123.png",
-        "boton-name1": "IR A COMPRAR",
-        "url1": "shopify://collections/all",
-        "boton-name2": "IR AL QUIZ",
-        "url2": "shopify://pages/quiz",
-        "top_mobile": 90,
-        "left_mobile": 50,
-        "top_desktop": 84,
-        "left_desktop": 66
       }
     },
     "stp_reviews_GREydL": {
