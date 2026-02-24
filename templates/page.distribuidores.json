@@ -115,6 +115,22 @@
         "image-width": 60
       }
     },
+    "banner_home_nw43hy": {
+      "type": "banner-home",
+      "name": "Banner general",
+      "settings": {
+        "img": "shopify://shop_images/TRANSFORMA_TU_META_EN_RESULTADO_REALES.png",
+        "img2": "shopify://shop_images/2_d5e880b3-21c2-45e9-9134-6bc2cfb64123.png",
+        "boton-name1": "IR A COMPRAR",
+        "url1": "shopify://collections/all",
+        "boton-name2": "IR AL QUIZ",
+        "url2": "shopify://pages/quiz",
+        "top_mobile": 90,
+        "left_mobile": 50,
+        "top_desktop": 84,
+        "left_desktop": 66
+      }
+    },
     "stp_reviews_GREydL": {
       "type": "stp-reviews",
       "blocks": {
@@ -207,6 +223,7 @@
   },
   "order": [
     "main",
+    "banner_home_nw43hy",
     "stpmarquee_image_neGbiH",
     "stp_reviews_GREydL"
   ]
