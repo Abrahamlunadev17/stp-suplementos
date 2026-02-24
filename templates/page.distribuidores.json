@@ -140,95 +140,6 @@
         "image-width": 60
       }
     },
-    "stp_reviews_GREydL": {
-      "type": "stp-reviews",
-      "blocks": {
-        "review_LwL4i8": {
-          "type": "review",
-          "settings": {
-            "quote": "Excelente!!!",
-            "text": "Esta es la primera vez que compro suplementos, es la primera marca que compro y el envase viene lleno, la verdad quedé sorprendida, además de que me encantó su sabor.\nNo me queda más que decir que fue una excelente compra!",
-            "author": "Roxx Martinez – Cliente verificado de Amazon",
-            "product_title": "Whey Protein Vainilla",
-            "product_url": "shopify://products/whey-protein-vainilla-3500g"
-          }
-        },
-        "review_y3NKHF": {
-          "type": "review",
-          "settings": {
-            "quote": "Buena proteína",
-            "text": "De las mejores proteínas que he probado, me ayuda bastante como suplemento alimenticio cubriendo las necesidades. Excelente sabor y consistencia, no inflama ni te incomoda el estómago. Ya van 4 veces que la pido. Se las recomiendo mucho.",
-            "author": "Cliente verificado de Amazon",
-            "product_title": "Isolate Chocolate, 1,500 g",
-            "product_url": "shopify://products/isolate-protein-chocolate-3000g"
-          }
-        },
-        "review_kL4cnD": {
-          "type": "review",
-          "settings": {
-            "quote": "Excelente",
-            "text": "“Excelente producto en sus ingredientes. Me ayudó a aumentar masa muscular en poco tiempo y sobre todo no inflama. Delicioso sabor.”",
-            "author": "Rebeca – Cliente verificado de Amazon",
-            "product_title": "Whey Protein Fresa, 1,750 g",
-            "product_url": "shopify://products/whey-protein-fresa-3500g"
-          }
-        },
-        "review_crTG3f": {
-          "type": "review",
-          "settings": {
-            "quote": "Excelente producto",
-            "text": "“Excelente producto, fácil de disolver, fácil de llevar, se mezcla muy fácil y lo mejor es que no deja grumos. Lo puedes mezclar en agua fría o leche. Su sabor muy rico. Lo recomiendo al 100.”",
-            "author": "Cliente verificado de Mercado Libre",
-            "product_title": "Diet Shake Fresa, 500 g",
-            "product_url": "shopify://products/diet-shake-fresa-500g"
-          }
-        },
-        "review_ha8ebz": {
-          "type": "review",
-          "settings": {
-            "quote": "Muy buena",
-            "text": "“Me gusta mucho este sabor, es buenísimo. Me ayuda a que no me salga acné. Llevo un año tomándola.”",
-            "author": "Miriam Alejandra V. – Cliente verificado de Liverpool",
-            "product_title": "Whey Protein Vainilla, 500 g",
-            "product_url": "shopify://products/whey-protein-vainilla-500g"
-          }
-        },
-        "review_RVFYKp": {
-          "type": "review",
-          "settings": {
-            "quote": "Muy recomendado",
-            "text": "“Me cayó de maravilla, lo he comprado varias veces y lo seguiré haciendo. ¡Súper recomendado!”\nCliente verificado de Mercado Libre",
-            "author": "Cliente verificado de Mercado Libre",
-            "product_title": "HydroLyte Sport Drink Piña, 1,050 g",
-            "product_url": "shopify://products/hydrolyte-sport-drink-pina-1000g"
-          }
-        },
-        "review_jTaCwB": {
-          "type": "review",
-          "settings": {
-            "quote": "Excelente producto",
-            "text": "“Gracias, excelente precio, y es un producto muy bueno. Tengo años que lo consumo, lo recomiendo.”",
-            "author": "Cliente verificado de Mercado Libre",
-            "product_title": "Óxido Nítrico Uva, 1,000 g",
-            "product_url": "shopify://products/oxido-nitrico-uva-1000g"
-          }
-        }
-      },
-      "block_order": [
-        "review_LwL4i8",
-        "review_y3NKHF",
-        "review_kL4cnD",
-        "review_crTG3f",
-        "review_ha8ebz",
-        "review_RVFYKp",
-        "review_jTaCwB"
-      ],
-      "name": "Slider de Reseñas",
-      "settings": {
-        "reviews_count": "+10,000 reseñas de 5 estrellas en plataformas digitales",
-        "title": "CONFIANZA COMPROBADA POR MILES DE USUARIOS"
-      }
-    },
     "section_GdFPmC": {
       "type": "section",
       "blocks": {
@@ -360,14 +271,103 @@
         "padding-block-start": 40,
         "padding-block-end": 40
       }
+    },
+    "stp_reviews_GREydL": {
+      "type": "stp-reviews",
+      "blocks": {
+        "review_LwL4i8": {
+          "type": "review",
+          "settings": {
+            "quote": "Excelente!!!",
+            "text": "Esta es la primera vez que compro suplementos, es la primera marca que compro y el envase viene lleno, la verdad quedé sorprendida, además de que me encantó su sabor.\nNo me queda más que decir que fue una excelente compra!",
+            "author": "Roxx Martinez – Cliente verificado de Amazon",
+            "product_title": "Whey Protein Vainilla",
+            "product_url": "shopify://products/whey-protein-vainilla-3500g"
+          }
+        },
+        "review_y3NKHF": {
+          "type": "review",
+          "settings": {
+            "quote": "Buena proteína",
+            "text": "De las mejores proteínas que he probado, me ayuda bastante como suplemento alimenticio cubriendo las necesidades. Excelente sabor y consistencia, no inflama ni te incomoda el estómago. Ya van 4 veces que la pido. Se las recomiendo mucho.",
+            "author": "Cliente verificado de Amazon",
+            "product_title": "Isolate Chocolate, 1,500 g",
+            "product_url": "shopify://products/isolate-protein-chocolate-3000g"
+          }
+        },
+        "review_kL4cnD": {
+          "type": "review",
+          "settings": {
+            "quote": "Excelente",
+            "text": "“Excelente producto en sus ingredientes. Me ayudó a aumentar masa muscular en poco tiempo y sobre todo no inflama. Delicioso sabor.”",
+            "author": "Rebeca – Cliente verificado de Amazon",
+            "product_title": "Whey Protein Fresa, 1,750 g",
+            "product_url": "shopify://products/whey-protein-fresa-3500g"
+          }
+        },
+        "review_crTG3f": {
+          "type": "review",
+          "settings": {
+            "quote": "Excelente producto",
+            "text": "“Excelente producto, fácil de disolver, fácil de llevar, se mezcla muy fácil y lo mejor es que no deja grumos. Lo puedes mezclar en agua fría o leche. Su sabor muy rico. Lo recomiendo al 100.”",
+            "author": "Cliente verificado de Mercado Libre",
+            "product_title": "Diet Shake Fresa, 500 g",
+            "product_url": "shopify://products/diet-shake-fresa-500g"
+          }
+        },
+        "review_ha8ebz": {
+          "type": "review",
+          "settings": {
+            "quote": "Muy buena",
+            "text": "“Me gusta mucho este sabor, es buenísimo. Me ayuda a que no me salga acné. Llevo un año tomándola.”",
+            "author": "Miriam Alejandra V. – Cliente verificado de Liverpool",
+            "product_title": "Whey Protein Vainilla, 500 g",
+            "product_url": "shopify://products/whey-protein-vainilla-500g"
+          }
+        },
+        "review_RVFYKp": {
+          "type": "review",
+          "settings": {
+            "quote": "Muy recomendado",
+            "text": "“Me cayó de maravilla, lo he comprado varias veces y lo seguiré haciendo. ¡Súper recomendado!”\nCliente verificado de Mercado Libre",
+            "author": "Cliente verificado de Mercado Libre",
+            "product_title": "HydroLyte Sport Drink Piña, 1,050 g",
+            "product_url": "shopify://products/hydrolyte-sport-drink-pina-1000g"
+          }
+        },
+        "review_jTaCwB": {
+          "type": "review",
+          "settings": {
+            "quote": "Excelente producto",
+            "text": "“Gracias, excelente precio, y es un producto muy bueno. Tengo años que lo consumo, lo recomiendo.”",
+            "author": "Cliente verificado de Mercado Libre",
+            "product_title": "Óxido Nítrico Uva, 1,000 g",
+            "product_url": "shopify://products/oxido-nitrico-uva-1000g"
+          }
+        }
+      },
+      "block_order": [
+        "review_LwL4i8",
+        "review_y3NKHF",
+        "review_kL4cnD",
+        "review_crTG3f",
+        "review_ha8ebz",
+        "review_RVFYKp",
+        "review_jTaCwB"
+      ],
+      "name": "Slider de Reseñas",
+      "settings": {
+        "reviews_count": "+10,000 reseñas de 5 estrellas en plataformas digitales",
+        "title": "CONFIANZA COMPROBADA POR MILES DE USUARIOS"
+      }
     }
   },
   "order": [
     "main",
     "banner_home_nw43hy",
     "mini_banner_tMRi6H",
+    "section_GdFPmC",
     "stpmarquee_image_neGbiH",
-    "stp_reviews_GREydL",
-    "section_GdFPmC"
+    "stp_reviews_GREydL"
   ]
 }
