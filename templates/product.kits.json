@@ -818,35 +818,28 @@
           "type": "faq",
           "settings": {
             "question": "<p>{{ product.metafields.custom.preguntas_frecuentes.value.faq2 | metafield_tag }}</p>",
-            "answer": ""
+            "answer": "<p>{{ product.metafields.custom.preguntas_frecuentes.value.answer2 | metafield_tag }}</p>"
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "",
-            "answer": "<p>Sí. En días de descanso puede tomarse como parte de tu alimentación para mantener un buen aporte proteico</p>"
+            "question": "<p>{{ product.metafields.custom.preguntas_frecuentes.value.faq3 | metafield_tag }}</p>",
+            "answer": "<p>{{ product.metafields.custom.preguntas_frecuentes.value.answer3 | metafield_tag }}</p>"
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "",
-            "answer": ""
+            "question": "<p>{{ product.metafields.custom.preguntas_frecuentes.value.faq4 | metafield_tag }}</p>",
+            "answer": "<p>{{ product.metafields.custom.preguntas_frecuentes.value.answer4 | metafield_tag }}</p>"
           }
         },
         "faq_MpReHe": {
           "type": "faq",
           "settings": {
-            "question": "",
-            "answer": ""
-          }
-        },
-        "faq_fKrbxE": {
-          "type": "faq",
-          "settings": {
-            "question": "",
-            "answer": ""
+            "question": "<p>{{ product.metafields.custom.preguntas_frecuentes.value.faq5 | metafield_tag }}</p>",
+            "answer": "<p>{{ product.metafields.custom.preguntas_frecuentes.value.answer5 | metafield_tag }}</p>"
           }
         }
       },
@@ -855,8 +848,7 @@
         "faq_WTxEH8",
         "faq_yirYLa",
         "faq_BybiXw",
-        "faq_MpReHe",
-        "faq_fKrbxE"
+        "faq_MpReHe"
       ],
       "name": "Preguntas Frecuentes",
       "settings": {
