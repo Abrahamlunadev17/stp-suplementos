@@ -86,8 +86,8 @@
       "type": "mini-banner",
       "name": "mini-banner",
       "settings": {
-        "img": "shopify://shop_images/TABLA_pricing.png",
-        "img2": "shopify://shop_images/Mobile-pricing_a00adb5a-0515-4fa4-b8f6-29b30d5d252d.png",
+        "img": "shopify://shop_images/TABLA_pricing_c2e51706-9675-488f-9eb3-b2d55804e999.png",
+        "img2": "shopify://shop_images/Mobile-pricing_65ed9fa4-7bd9-495f-8119-d819ee096be9.png",
         "url1": ""
       }
     },
@@ -99,6 +99,51 @@
         "img2": "shopify://shop_images/beneficios-distribuidores.png",
         "url1": ""
       }
+    },
+    "distribuidores_slider_aDcGWW": {
+      "type": "distribuidores-slider",
+      "blocks": {
+        "slide_JL87zJ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/distribuidores_03.png",
+            "title": "Tiendas de suplementos",
+            "text": ""
+          }
+        },
+        "slide_6fYnUP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/distribuidores_04.png",
+            "title": "Nutriológos",
+            "text": ""
+          }
+        },
+        "slide_E68XN4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/distribuidores_02.png",
+            "title": "Emprendedores del mundofitness",
+            "text": ""
+          }
+        },
+        "slide_MdpMNW": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/distribuidores_01.png",
+            "title": "Marketplaces y mundo digital",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_JL87zJ",
+        "slide_6fYnUP",
+        "slide_E68XN4",
+        "slide_MdpMNW"
+      ],
+      "name": "Distribuidores",
+      "settings": {}
     },
     "section_4iWmpc": {
       "type": "section",
@@ -188,51 +233,6 @@
         "padding-block-start": 40,
         "padding-block-end": 40
       }
-    },
-    "distribuidores_slider_aDcGWW": {
-      "type": "distribuidores-slider",
-      "blocks": {
-        "slide_JL87zJ": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/distribuidores_03.png",
-            "title": "Tiendas de suplementos",
-            "text": ""
-          }
-        },
-        "slide_6fYnUP": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/distribuidores_04.png",
-            "title": "Nutriológos",
-            "text": ""
-          }
-        },
-        "slide_E68XN4": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/distribuidores_02.png",
-            "title": "Emprendedores del mundofitness",
-            "text": ""
-          }
-        },
-        "slide_MdpMNW": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/distribuidores_01.png",
-            "title": "Marketplaces y mundo digital",
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_JL87zJ",
-        "slide_6fYnUP",
-        "slide_E68XN4",
-        "slide_MdpMNW"
-      ],
-      "name": "Distribuidores",
-      "settings": {}
     },
     "stpmarquee_image_neGbiH": {
       "type": "stpmarquee-image",
