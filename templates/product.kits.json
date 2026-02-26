@@ -247,6 +247,7 @@
             "steps_TTzTFL": {
               "type": "steps",
               "name": "Pasos",
+              "disabled": true,
               "settings": {
                 "video_1": "shopify://files/videos/ESCENA 1 PROTEINAS.mov",
                 "text_1": "PASO 1",
