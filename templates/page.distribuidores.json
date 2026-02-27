@@ -62,7 +62,7 @@
       "name": "Banner general",
       "settings": {
         "img": "shopify://shop_images/Banner-deskto-distribuidores.png",
-        "img2": "shopify://shop_images/Banne-mobile-distribuidores.png",
+        "img2": "shopify://shop_images/FNTmobile.png",
         "boton-name1": "EMPIEZA A DISTRIBUIR",
         "url1": "shopify://collections/all",
         "boton-name2": "",
