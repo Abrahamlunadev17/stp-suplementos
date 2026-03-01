@@ -115,6 +115,18 @@
                   },
                   "blocks": {}
                 },
+                "revie_reviews_por_whatsapp_app_block_YjQypA": {
+                  "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+                  "settings": {
+                    "star_color": "#ffffff",
+                    "text_color": "#ffffff",
+                    "star_text_2": "reseñas",
+                    "size": 19,
+                    "showcero": "2",
+                    "format": "1",
+                    "utm": "2"
+                  }
+                },
                 "text_wrwq77": {
                   "type": "text",
                   "name": "t:names.text",
@@ -226,6 +238,7 @@
               },
               "block_order": [
                 "custom_liquid_TEctcq",
+                "revie_reviews_por_whatsapp_app_block_YjQypA",
                 "text_wrwq77",
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
@@ -849,43 +862,43 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿Para qué sirve la L-Glutamina y qué beneficios tiene?",
-            "answer": "La glutamina ayuda a acelerar la recuperación muscular, fortalecer el sistema inmune y reducir el desgaste físico tras entrenamientos intensos"
+            "question": "<p>¿Para qué sirve la L-Glutamina y qué beneficios tiene?</p>",
+            "answer": "<p>La glutamina ayuda a acelerar la recuperación muscular, fortalecer el sistema inmune y reducir el desgaste físico tras entrenamientos intensos</p>"
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuándo es el mejor momento para tomarla?",
-            "answer": "Después del ejercicio o en ayunas durante los días de descanso, para mantener niveles óptimos de glutamina en el organismo."
+            "question": "<p>¿Cuándo es el mejor momento para tomarla?</p>",
+            "answer": "<p>Después del ejercicio o en ayunas durante los días de descanso, para mantener niveles óptimos de glutamina en el organismo.</p>"
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuánto aporta por porción y cuántas porciones tiene el envase?",
-            "answer": "Cada porción aporta 5 g de glutamina pura. El envase rinde 80 porciones."
+            "question": "<p>¿Cuánto aporta por porción y cuántas porciones tiene el envase?</p>",
+            "answer": "<p>Cada porción aporta 5 g de glutamina pura. El envase rinde 80 porciones.</p>"
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿Puede combinarse con otros suplementos?",
-            "answer": "Sí. Es compatible con proteína, creatina, BCAA’s y otros productos de recuperación. Se recomienda integrarla en rutinas intensas o de alto desgaste."
+            "question": "<p>¿Puede combinarse con otros suplementos?</p>",
+            "answer": "<p>Sí. Es compatible con proteína, creatina, BCAA’s y otros productos de recuperación. Se recomienda integrarla en rutinas intensas o de alto desgaste.</p>"
           }
         },
         "faq_MpReHe": {
           "type": "faq",
           "settings": {
-            "question": "¿Qué significa que sea micronizada?",
-            "answer": "Que sus partículas son más pequeñas, lo cual mejora su solubilidad y absorción en el cuerpo."
+            "question": "<p>¿Qué significa que sea micronizada?</p>",
+            "answer": "<p>Que sus partículas son más pequeñas, lo cual mejora su solubilidad y absorción en el cuerpo.</p>"
           }
         },
         "faq_qkRFBw": {
           "type": "faq",
           "settings": {
-            "question": "¿Se puede tomar en días de descanso?",
-            "answer": "Sí. De hecho, es recomendable tomarla en ayunas para mantener sus beneficios activos incluso sin entrenamiento."
+            "question": "<p>¿Se puede tomar en días de descanso?</p>",
+            "answer": "<p>Sí. De hecho, es recomendable tomarla en ayunas para mantener sus beneficios activos incluso sin entrenamiento.</p>"
           }
         }
       },
