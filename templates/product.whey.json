@@ -494,6 +494,30 @@
     },
     "1768083886d294d690": {
       "type": "_blocks",
+      "blocks": {
+        "revie_reviews_por_whatsapp_app_block_2_ikRALd": {
+          "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block-2/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+          "settings": {
+            "title": "RESEÑAS",
+            "format": "2",
+            "max_width": 900,
+            "content_padding": 22,
+            "star_color": "#000000",
+            "show_comment": "No",
+            "max_count": 10,
+            "star_text": "Estrellas",
+            "subtitle": "OPINIONES",
+            "buyer": "Comprador verificado",
+            "based": "Basado en",
+            "opinions": "opiniones",
+            "no_reviews": "SIN OPINIONES",
+            "show_summary": "No"
+          }
+        }
+      },
+      "block_order": [
+        "revie_reviews_por_whatsapp_app_block_2_ikRALd"
+      ],
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -849,43 +873,43 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuál es el mejor momento para tomar Whey Protein?",
-            "answer": "Lo ideal es tomarla después del entrenamiento, cuando el cuerpo necesita proteínas para recuperarse. También puede usarse como desayuno o colación."
+            "question": "<p>¿Cuál es el mejor momento para tomar Whey Protein?</p>",
+            "answer": "<p>Lo ideal es tomarla después del entrenamiento, cuando el cuerpo necesita proteínas para recuperarse. También puede usarse como desayuno o colación.</p>"
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuánta proteína contiene cada porción y cuántas porciones trae el envase?",
-            "answer": "Cada porción aporta 23 g de proteína. El número de porciones depende del tamaño del envase: hay presentaciones de 10, 20, 35 y 70 porciones"
+            "question": "<p>¿Cuánta proteína contiene cada porción y cuántas porciones trae el envase?</p>",
+            "answer": "<p>Cada porción aporta 23 g de proteína. El número de porciones depende del tamaño del envase: hay presentaciones de 10, 20, 35 y 70 porciones</p>"
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿Puedo tomarla si no entreno todos los días?",
-            "answer": "Sí. En días de descanso puede tomarse como parte de tu alimentación para mantener un buen aporte proteico"
+            "question": "<p>¿Puedo tomarla si no entreno todos los días?</p>",
+            "answer": "<p>Sí. En días de descanso puede tomarse como parte de tu alimentación para mantener un buen aporte proteico</p>"
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿Qué diferencia hay entre Whey Protein e Isolate Protein?",
-            "answer": "Whey Protein contiene una mezcla de proteínas con un perfil completo de nutrientes. Isolate Protein es una fórmula sin carbohidratos, diseñada para quienes buscan mayor definición."
+            "question": "<p>¿Qué diferencia hay entre Whey Protein e Isolate Protein?</p>",
+            "answer": "<p>Whey Protein contiene una mezcla de proteínas con un perfil completo de nutrientes. Isolate Protein es una fórmula sin carbohidratos, diseñada para quienes buscan mayor definición.</p>"
           }
         },
         "faq_MpReHe": {
           "type": "faq",
           "settings": {
-            "question": "¿La pueden tomar mujeres o es solo para hombres?",
-            "answer": "Es totalmente apta para mujeres. La fórmula está diseñada para apoyar el desarrollo muscular y la recuperación sin importar el género."
+            "question": "<p>¿La pueden tomar mujeres o es solo para hombres?</p>",
+            "answer": "<p>Es totalmente apta para mujeres. La fórmula está diseñada para apoyar el desarrollo muscular y la recuperación sin importar el género.</p>"
           }
         },
         "faq_fKrbxE": {
           "type": "faq",
           "settings": {
-            "question": "¿Puedo combinarla con otros productos como creatina o BCAA’s?",
-            "answer": "Sí. De hecho, Whey Protein ya contiene 1 g de creatina por porción, pero puedes complementarla con otros suplementos según tus objetivos."
+            "question": "<p>¿Puedo combinarla con otros productos como creatina o BCAA’s?</p>",
+            "answer": "<p>Sí. De hecho, Whey Protein ya contiene 1 g de creatina por porción, pero puedes complementarla con otros suplementos según tus objetivos.</p>"
           }
         }
       },
