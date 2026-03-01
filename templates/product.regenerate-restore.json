@@ -115,6 +115,18 @@
                   },
                   "blocks": {}
                 },
+                "revie_reviews_por_whatsapp_app_block_JYt7FC": {
+                  "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+                  "settings": {
+                    "star_color": "#ffffff",
+                    "text_color": "#ffffff",
+                    "star_text_2": "reseñas",
+                    "size": 19,
+                    "showcero": "2",
+                    "format": "1",
+                    "utm": "2"
+                  }
+                },
                 "text_wrwq77": {
                   "type": "text",
                   "name": "t:names.text",
@@ -226,6 +238,7 @@
               },
               "block_order": [
                 "custom_liquid_EkEixN",
+                "revie_reviews_por_whatsapp_app_block_JYt7FC",
                 "text_wrwq77",
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
@@ -849,29 +862,29 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿Para qué sirve Regenerate & Restore?",
-            "answer": "Está diseñado para apoyar la recuperación muscular profunda, la salud articular y el fortalecimiento de tejidos conectivos después del entrenamiento o en etapas de desgaste físico."
+            "question": "<p>¿Para qué sirve Regenerate & Restore?</p>",
+            "answer": "<p>Está diseñado para apoyar la recuperación muscular profunda, la salud articular y el fortalecimiento de tejidos conectivos después del entrenamiento o en etapas de desgaste físico.</p>"
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuáles son los beneficios del colágeno en esta fórmula?",
-            "answer": "El colágeno hidrolizado aporta péptidos bioactivos que favorecen la regeneración de tendones, ligamentos y cartílago, además de contribuir a la firmeza de piel y tejidos."
+            "question": "<p>¿Cuáles son los beneficios del colágeno en esta fórmula?</p>",
+            "answer": "<p>El colágeno hidrolizado aporta péptidos bioactivos que favorecen la regeneración de tendones, ligamentos y cartílago, además de contribuir a la firmeza de piel y tejidos.</p>"
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿Contiene solo colágeno o también aminoácidos esenciales?",
-            "answer": "Además de colágeno, la fórmula incluye aminoácidos clave como leucina, glicina, lisina y prolina, junto con vitaminas y ácido hialurónico para potenciar la regeneración."
+            "question": "<p>¿Contiene solo colágeno o también aminoácidos esenciales?</p>",
+            "answer": "<p>Además de colágeno, la fórmula incluye aminoácidos clave como leucina, glicina, lisina y prolina, junto con vitaminas y ácido hialurónico para potenciar la regeneración.</p>"
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuándo es el mejor momento para tomarlo?",
-            "answer": "Puede tomarse por la mañana o después del entrenamiento, según tu rutina. En ambos casos ayuda a optimizar la recuperación y mantener articulaciones saludables."
+            "question": "<p>¿Cuándo es el mejor momento para tomarlo?</p>",
+            "answer": "<p>Puede tomarse por la mañana o después del entrenamiento, según tu rutina. En ambos casos ayuda a optimizar la recuperación y mantener articulaciones saludables.</p>"
           }
         }
       },
