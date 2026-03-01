@@ -499,10 +499,10 @@
           "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block-2/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
           "settings": {
             "title": "RESEÑAS",
-            "format": "2",
-            "max_width": 900,
+            "format": "1",
+            "max_width": 1620,
             "content_padding": 22,
-            "star_color": "#000000",
+            "star_color": "#f8f8f8",
             "show_comment": "No",
             "max_count": 10,
             "star_text": "Estrellas",
