@@ -115,6 +115,18 @@
                   },
                   "blocks": {}
                 },
+                "revie_reviews_por_whatsapp_app_block_bqhVAa": {
+                  "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+                  "settings": {
+                    "star_color": "#ffffff",
+                    "text_color": "#ffffff",
+                    "star_text_2": "reseñas",
+                    "size": 19,
+                    "showcero": "2",
+                    "format": "1",
+                    "utm": "2"
+                  }
+                },
                 "text_wrwq77": {
                   "type": "text",
                   "name": "t:names.text",
@@ -226,6 +238,7 @@
               },
               "block_order": [
                 "custom_liquid_eP8QX7",
+                "revie_reviews_por_whatsapp_app_block_bqhVAa",
                 "text_wrwq77",
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
@@ -464,6 +477,64 @@
         "limit_details_width": false,
         "gap": 48,
         "color_scheme": "scheme-2",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "blocks_63nDRd": {
+      "type": "_blocks",
+      "blocks": {
+        "revie_reviews_por_whatsapp_app_block_2_VyaN8V": {
+          "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block-2/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+          "settings": {
+            "title": "RESEÑAS",
+            "format": "1",
+            "max_width": 1500,
+            "content_padding": 22,
+            "star_color": "#f8f8f8",
+            "show_comment": "yes",
+            "max_count": 10,
+            "star_text": "Estrellas",
+            "subtitle": "OPINIONES",
+            "buyer": "Comprador verificado",
+            "based": "Basado en",
+            "opinions": "opiniones",
+            "no_reviews": "SIN OPINIONES",
+            "show_summary": "No"
+          }
+        }
+      },
+      "block_order": [
+        "revie_reviews_por_whatsapp_app_block_2_VyaN8V"
+      ],
+      "custom_css": [
+        ".shopify-app-block {width: 100%;}"
+      ],
+      "name": "RESEÑAS",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "full-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -849,29 +920,29 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿Para qué sirve Keto Ice Tea y cómo ayuda al metabolismo?",
-            "answer": "Keto Ice Tea está formulado para activar el metabolismo, apoyar la quema de grasa y mejorar los niveles de energía. Es ideal como complemento para entrenamientos o como bebida funcional entre comidas."
+            "question": "<p>¿Para qué sirve Keto Ice Tea y cómo ayuda al metabolismo?</p>",
+            "answer": "<p>Keto Ice Tea está formulado para activar el metabolismo, apoyar la quema de grasa y mejorar los niveles de energía. Es ideal como complemento para entrenamientos o como bebida funcional entre comidas.</p>"
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuándo es el mejor momento para tomarlo?",
-            "answer": "Puedes tomarlo antes del entrenamiento o entre comidas, según tu rutina. Es una opción refrescante y efectiva para activar el metabolismo a lo largo del día."
+            "question": "<p>¿Cuándo es el mejor momento para tomarlo?</p>",
+            "answer": "<p>Puedes tomarlo antes del entrenamiento o entre comidas, según tu rutina. Es una opción refrescante y efectiva para activar el metabolismo a lo largo del día.</p>"
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuánto aporta por porción y cuántas porciones tiene el envase?",
-            "answer": "Cada porción contiene 10 g de extractos bioactivos. El envase rinde 30 porciones."
+            "question": "<p>¿Cuánto aporta por porción y cuántas porciones tiene el envase?</p>",
+            "answer": "<p>Cada porción contiene 10 g de extractos bioactivos. El envase rinde 30 porciones.</p>"
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿Qué ingredientes activos contiene?",
-            "answer": "Contiene extractos de té negro, té verde, L-Carnitina, antioxidantes, electrolitos y otros compuestos funcionales que favorecen la quema de grasa y el control metabólico."
+            "question": "<p>¿Qué ingredientes activos contiene?</p>",
+            "answer": "<p>Contiene extractos de té negro, té verde, L-Carnitina, antioxidantes, electrolitos y otros compuestos funcionales que favorecen la quema de grasa y el control metabólico.</p>"
           }
         }
       },
@@ -889,6 +960,7 @@
   },
   "order": [
     "main",
+    "blocks_63nDRd",
     "blocks_jfXhib",
     "product_recommendations_qggXJq",
     "pdp_slider_LfCg6L",

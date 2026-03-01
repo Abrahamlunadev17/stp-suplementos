@@ -521,6 +521,7 @@
       "custom_css": [
         ".shopify-app-block {width: 100%;}"
       ],
+      "name": "RESEÑAS",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,

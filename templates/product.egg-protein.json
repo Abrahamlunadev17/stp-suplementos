@@ -115,6 +115,18 @@
                   },
                   "blocks": {}
                 },
+                "revie_reviews_por_whatsapp_app_block_4dXtN3": {
+                  "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+                  "settings": {
+                    "star_color": "#ffffff",
+                    "text_color": "#ffffff",
+                    "star_text_2": "reseñas",
+                    "size": 19,
+                    "showcero": "2",
+                    "format": "1",
+                    "utm": "2"
+                  }
+                },
                 "text_wrwq77": {
                   "type": "text",
                   "name": "t:names.text",
@@ -226,6 +238,7 @@
               },
               "block_order": [
                 "custom_liquid_Ur7b3e",
+                "revie_reviews_por_whatsapp_app_block_4dXtN3",
                 "text_wrwq77",
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
@@ -464,6 +477,64 @@
         "limit_details_width": false,
         "gap": 48,
         "color_scheme": "scheme-2",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "blocks_AFLnQx": {
+      "type": "_blocks",
+      "blocks": {
+        "revie_reviews_por_whatsapp_app_block_2_kNf7Vh": {
+          "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block-2/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+          "settings": {
+            "title": "RESEÑAS",
+            "format": "1",
+            "max_width": 1500,
+            "content_padding": 22,
+            "star_color": "#f8f8f8",
+            "show_comment": "yes",
+            "max_count": 10,
+            "star_text": "Estrellas",
+            "subtitle": "OPINIONES",
+            "buyer": "Comprador verificado",
+            "based": "Basado en",
+            "opinions": "opiniones",
+            "no_reviews": "SIN OPINIONES",
+            "show_summary": "No"
+          }
+        }
+      },
+      "block_order": [
+        "revie_reviews_por_whatsapp_app_block_2_kNf7Vh"
+      ],
+      "custom_css": [
+        ".shopify-app-block {width: 100%;}"
+      ],
+      "name": "RESEÑAS",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "full-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -849,36 +920,36 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿Qué tipo de proteína contiene Egg Protein?",
-            "answer": "Está formulada con ovoalbúmina, una proteína de alto valor biológico obtenida de la clara de huevo, enriquecida con péptidos bioactivos, BCAA’s y vitaminas."
+            "question": "<p>¿Qué tipo de proteína contiene Egg Protein?</p>",
+            "answer": "<p>Está formulada con ovoalbúmina, una proteína de alto valor biológico obtenida de la clara de huevo, enriquecida con péptidos bioactivos, BCAA’s y vitaminas.</p>"
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuáles son los beneficios de la ovoalbúmina?",
-            "answer": "La ovoalbúmina es una de las fuentes proteicas más completas. Favorece la síntesis muscular, mejora la recuperación y tiene excelente digestibilidad."
+            "question": "<p>¿Cuáles son los beneficios de la ovoalbúmina?</p>",
+            "answer": "<p>La ovoalbúmina es una de las fuentes proteicas más completas. Favorece la síntesis muscular, mejora la recuperación y tiene excelente digestibilidad.</p>"
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuánta proteína aporta por porción y cuántas porciones tiene el envase?",
-            "answer": "Cada porción aporta 23 g de proteína. El número de porciones depende del tamaño del envase, con presentaciones de 10 y 35 porciones."
+            "question": "<p>¿Cuánta proteína aporta por porción y cuántas porciones tiene el envase?</p>",
+            "answer": "<p>Cada porción aporta 23 g de proteína. El número de porciones depende del tamaño del envase, con presentaciones de 10 y 35 porciones.</p>"
           }
         },
         "faq_eM8ikq": {
           "type": "faq",
           "settings": {
-            "question": "¿Es buena opción si tengo sensibilidad digestiva?",
-            "answer": "Sí. Egg Protein está formulada para tener una alta tolerancia digestiva."
+            "question": "<p>¿Es buena opción si tengo sensibilidad digestiva?</p>",
+            "answer": "<p>Sí. Egg Protein está formulada para tener una alta tolerancia digestiva.</p>"
           }
         },
         "faq_f8qAVn": {
           "type": "faq",
           "settings": {
-            "question": "¿Es apta para mujeres o adultos mayores?",
-            "answer": "Sí. Su perfil de aminoácidos y su aporte de colágeno la hacen ideal para apoyar masa muscular, recuperación y salud articular en diferentes etapas de la vida."
+            "question": "<p>¿Es apta para mujeres o adultos mayores?</p>",
+            "answer": "<p>Sí. Su perfil de aminoácidos y su aporte de colágeno la hacen ideal para apoyar masa muscular, recuperación y salud articular en diferentes etapas de la vida.</p>"
           }
         }
       },
@@ -897,6 +968,7 @@
   },
   "order": [
     "main",
+    "blocks_AFLnQx",
     "blocks_rztRaP",
     "product_recommendations_qggXJq",
     "pdp_slider_ntanU7",
