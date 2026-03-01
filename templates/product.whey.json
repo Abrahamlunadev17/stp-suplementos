@@ -500,7 +500,7 @@
           "settings": {
             "title": "RESEÑAS",
             "format": "1",
-            "max_width": 1800,
+            "max_width": 1500,
             "content_padding": 22,
             "star_color": "#f8f8f8",
             "show_comment": "yes",
@@ -517,6 +517,9 @@
       },
       "block_order": [
         "revie_reviews_por_whatsapp_app_block_2_ikRALd"
+      ],
+      "custom_css": [
+        ".shopify-app-block {width: 100%;}"
       ],
       "settings": {
         "content_direction": "column",
