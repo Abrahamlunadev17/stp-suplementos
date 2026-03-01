@@ -500,10 +500,10 @@
           "settings": {
             "title": "RESEÑAS",
             "format": "1",
-            "max_width": 1620,
+            "max_width": 1800,
             "content_padding": 22,
             "star_color": "#f8f8f8",
-            "show_comment": "No",
+            "show_comment": "yes",
             "max_count": 10,
             "star_text": "Estrellas",
             "subtitle": "OPINIONES",
