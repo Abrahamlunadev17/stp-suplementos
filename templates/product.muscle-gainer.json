@@ -115,6 +115,18 @@
                   },
                   "blocks": {}
                 },
+                "revie_reviews_por_whatsapp_app_block_amQJPW": {
+                  "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+                  "settings": {
+                    "star_color": "#ffffff",
+                    "text_color": "#ffffff",
+                    "star_text_2": "reseñas",
+                    "size": 19,
+                    "showcero": "2",
+                    "format": "1",
+                    "utm": "2"
+                  }
+                },
                 "text_wrwq77": {
                   "type": "text",
                   "name": "t:names.text",
@@ -226,6 +238,7 @@
               },
               "block_order": [
                 "custom_liquid_xLFUWC",
+                "revie_reviews_por_whatsapp_app_block_amQJPW",
                 "text_wrwq77",
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
@@ -849,29 +862,29 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿Para qué sirve Muscle Gainer y quién debería tomarlo?",
-            "answer": "Está diseñado para quienes buscan aumentar masa muscular y volumen de forma efectiva. Es ideal si tienes metabolismo acelerado o dificultad para subir de peso solo con alimentación."
+            "question": "<p>¿Para qué sirve Muscle Gainer y quién debería tomarlo?</p>",
+            "answer": "<p>Está diseñado para quienes buscan aumentar masa muscular y volumen de forma efectiva. Es ideal si tienes metabolismo acelerado o dificultad para subir de peso solo con alimentación.</p>"
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuándo es el mejor momento para tomarlo?",
-            "answer": "Tómalo después de entrenar o entre comidas como aporte extra de calorías, proteína y carbohidratos para apoyar el crecimiento muscular."
+            "question": "<p>¿Cuándo es el mejor momento para tomarlo?</p>",
+            "answer": "<p>Tómalo después de entrenar o entre comidas como aporte extra de calorías, proteína y carbohidratos para apoyar el crecimiento muscular.</p>"
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuántas porciones tiene el envase?",
-            "answer": "El producto está disponible en presentaciones de 10 y 20 porciones, con medida incluida en cada envase."
+            "question": "<p>¿Cuántas porciones tiene el envase?</p>",
+            "answer": "<p>El producto está disponible en presentaciones de 10 y 20 porciones, con medida incluida en cada envase.</p>"
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuánta proteína y carbohidratos aporta por porción?",
-            "answer": "Cada porción aporta 30 g de proteína y 110 g de carbohidratos, formulados para apoyar la recuperación y el desarrollo de masa muscular."
+            "question": "<p>¿Cuánta proteína y carbohidratos aporta por porción?</p>",
+            "answer": "<p>Cada porción aporta 30 g de proteína y 110 g de carbohidratos, formulados para apoyar la recuperación y el desarrollo de masa muscular.</p>"
           }
         }
       },
