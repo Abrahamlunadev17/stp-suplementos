@@ -115,6 +115,18 @@
                   },
                   "blocks": {}
                 },
+                "revie_reviews_por_whatsapp_app_block_napqAK": {
+                  "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+                  "settings": {
+                    "star_color": "#ffffff",
+                    "text_color": "#ffffff",
+                    "star_text_2": "reseñas",
+                    "size": 19,
+                    "showcero": "2",
+                    "format": "1",
+                    "utm": "2"
+                  }
+                },
                 "text_wrwq77": {
                   "type": "text",
                   "name": "t:names.text",
@@ -226,6 +238,7 @@
               },
               "block_order": [
                 "custom_liquid_w4kWtC",
+                "revie_reviews_por_whatsapp_app_block_napqAK",
                 "text_wrwq77",
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
@@ -468,6 +481,60 @@
         "padding-block-end": 0
       }
     },
+    "blocks_rkqxFc": {
+      "type": "_blocks",
+      "blocks": {
+        "revie_reviews_por_whatsapp_app_block_2_fKpAmx": {
+          "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block-2/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+          "settings": {
+            "title": "RESEÑAS",
+            "format": "1",
+            "max_width": 900,
+            "content_padding": 22,
+            "star_color": "#ffffff",
+            "show_comment": "No",
+            "max_count": 10,
+            "star_text": "Estrellas",
+            "subtitle": "OPINIONES",
+            "buyer": "Comprador verificado",
+            "based": "Basado en",
+            "opinions": "opiniones",
+            "no_reviews": "SIN OPINIONES",
+            "show_summary": "No"
+          }
+        }
+      },
+      "block_order": [
+        "revie_reviews_por_whatsapp_app_block_2_fKpAmx"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "product_recommendations_qggXJq": {
       "type": "product-recommendations",
       "blocks": {
@@ -607,60 +674,6 @@
         "color_scheme": "scheme-5",
         "padding-block-start": 48,
         "padding-block-end": 48
-      }
-    },
-    "blocks_rkqxFc": {
-      "type": "_blocks",
-      "blocks": {
-        "revie_reviews_por_whatsapp_app_block_2_fKpAmx": {
-          "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block-2/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
-          "settings": {
-            "title": "RESEÑAS",
-            "format": "1",
-            "max_width": 900,
-            "content_padding": 22,
-            "star_color": "#ffffff",
-            "show_comment": "No",
-            "max_count": 10,
-            "star_text": "Estrellas",
-            "subtitle": "OPINIONES",
-            "buyer": "Comprador verificado",
-            "based": "Basado en",
-            "opinions": "opiniones",
-            "no_reviews": "SIN OPINIONES",
-            "show_summary": "No"
-          }
-        }
-      },
-      "block_order": [
-        "revie_reviews_por_whatsapp_app_block_2_fKpAmx"
-      ],
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
       }
     },
     "pdp_slider_XqKEND": {
@@ -849,43 +862,43 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿Para qué sirve la creatina y qué beneficios ofrece?",
-            "answer": "La creatina ayuda a restaurar los niveles de ATP, que es la fuente primaria de energía muscular. Mejora la fuerza, potencia, recuperación y rendimiento durante entrenamientos de alta intensidad."
+            "question": "<p>¿Para qué sirve la creatina y qué beneficios ofrece?</p>",
+            "answer": "<p>La creatina ayuda a restaurar los niveles de ATP, que es la fuente primaria de energía muscular. Mejora la fuerza, potencia, recuperación y rendimiento durante entrenamientos de alta intensidad.</p>"
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿Cómo y cuándo debo tomarla?",
-            "answer": "Toma una porción diaria, idealmente antes o después del entrenamiento. En días de descanso, se recomienda tomarla en ayunas para mantener niveles óptimos."
+            "question": "<p>¿Cómo y cuándo debo tomarla?</p>",
+            "answer": "<p>Toma una porción diaria, idealmente antes o después del entrenamiento. En días de descanso, se recomienda tomarla en ayunas para mantener niveles óptimos.</p>"
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuántos gramos contiene cada porción y cuántas porciones tiene el envase?",
-            "answer": "Cada porción contiene 5 g de creatina pura. El envase rinde para 80 porciones."
+            "question": "<p>¿Cuántos gramos contiene cada porción y cuántas porciones tiene el envase?</p>",
+            "answer": "<p>Cada porción contiene 5 g de creatina pura. El envase rinde para 80 porciones.</p>"
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿Es necesario hacer una fase de carga?",
-            "answer": "No es necesaria. Puedes tomar 5 g diarios de forma constante y obtendrás resultados efectivos. La fase de carga es opcional si buscas una saturación más rápida de creatina en el músculo."
+            "question": "<p>¿Es necesario hacer una fase de carga?</p>",
+            "answer": "<p>No es necesaria. Puedes tomar 5 g diarios de forma constante y obtendrás resultados efectivos. La fase de carga es opcional si buscas una saturación más rápida de creatina en el músculo.</p>"
           }
         },
         "faq_MpReHe": {
           "type": "faq",
           "settings": {
-            "question": "¿Qué significa que esté micronizada?",
-            "answer": "Que sus partículas son más pequeñas, lo que mejora su disolución y facilita su absorción en el organismo."
+            "question": "<p>¿Qué significa que esté micronizada?</p>",
+            "answer": "<p>Que sus partículas son más pequeñas, lo que mejora su disolución y facilita su absorción en el organismo.</p>"
           }
         },
         "faq_w7w3zL": {
           "type": "faq",
           "settings": {
-            "question": "¿Puedo combinarla con proteína u otros suplementos?",
-            "answer": "Sí. Es compatible con proteínas, BCAA’s y pre-entrenos. De hecho, se recomienda combinarla para optimizar los resultados."
+            "question": "<p>¿Puedo combinarla con proteína u otros suplementos?</p>",
+            "answer": "<p>Sí. Es compatible con proteínas, BCAA’s y pre-entrenos. De hecho, se recomienda combinarla para optimizar los resultados.</p>"
           }
         }
       },
