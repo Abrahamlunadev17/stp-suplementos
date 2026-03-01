@@ -115,6 +115,18 @@
                   },
                   "blocks": {}
                 },
+                "revie_reviews_por_whatsapp_app_block_F93XDz": {
+                  "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+                  "settings": {
+                    "star_color": "#ffffff",
+                    "text_color": "#ffffff",
+                    "star_text_2": "reseñas",
+                    "size": 19,
+                    "showcero": "2",
+                    "format": "1",
+                    "utm": "2"
+                  }
+                },
                 "text_wrwq77": {
                   "type": "text",
                   "name": "t:names.text",
@@ -227,6 +239,7 @@
               },
               "block_order": [
                 "custom_liquid_3gWjgH",
+                "revie_reviews_por_whatsapp_app_block_F93XDz",
                 "text_wrwq77",
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
@@ -861,43 +874,43 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuál es la función de los BCAA’s en esta fórmula?",
-            "answer": "Los BCAA’s ayudan a reducir la fatiga muscular, mejorar el rendimiento durante el entrenamiento y acelerar la recuperación posterior al ejercicio."
+            "question": "<p>¿Cuál es la función de los BCAA’s en esta fórmula?</p>",
+            "answer": "<p>Los BCAA’s ayudan a reducir la fatiga muscular, mejorar el rendimiento durante el entrenamiento y acelerar la recuperación posterior al ejercicio.</p>"
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿Qué beneficios aporta la glutamina incluida?",
-            "answer": "La glutamina favorece la regeneración del tejido muscular, fortalece el sistema inmune y ayuda a mantener un entorno anabólico durante la recuperación."
+            "question": "<p>¿Qué beneficios aporta la glutamina incluida?</p>",
+            "answer": "<p>La glutamina favorece la regeneración del tejido muscular, fortalece el sistema inmune y ayuda a mantener un entorno anabólico durante la recuperación.</p>"
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuánto aporta por porción y cuántas porciones tiene el envase?",
-            "answer": "Cada porción contiene 7 g de BCAA’s y 2.5 g de glutamina. El envase rinde 25 porciones."
+            "question": "<p>¿Cuánto aporta por porción y cuántas porciones tiene el envase?</p>",
+            "answer": "<p>Cada porción contiene 7 g de BCAA’s y 2.5 g de glutamina. El envase rinde 25 porciones.</p>"
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuándo se recomienda tomarlo?",
-            "answer": "Puedes tomarlo 30 minutos antes o durante el entrenamiento. En días de descanso, se recomienda consumirlo por la mañana."
+            "question": "<p>¿Cuándo se recomienda tomarlo?</p>",
+            "answer": "<p>Puedes tomarlo 30 minutos antes o durante el entrenamiento. En días de descanso, se recomienda consumirlo por la mañana.</p>"
           }
         },
         "faq_MpReHe": {
           "type": "faq",
           "settings": {
-            "question": "¿Sirve para entrenamientos de fuerza o solo para cardio?",
-            "answer": "Es útil en ambos casos. Mejora el rendimiento, la resistencia y la recuperación tanto en rutinas de fuerza como en sesiones de alta intensidad o cardio."
+            "question": "<p>¿Sirve para entrenamientos de fuerza o solo para cardio?</p>",
+            "answer": "<p>Es útil en ambos casos. Mejora el rendimiento, la resistencia y la recuperación tanto en rutinas de fuerza como en sesiones de alta intensidad o cardio.</p>"
           }
         },
         "faq_MFrif8": {
           "type": "faq",
           "settings": {
-            "question": "¿Puedo tomarlo si no entreno ese día?",
-            "answer": "Sí. En días de descanso, ayuda a mantener niveles óptimos de recuperación y evita el desgaste muscular."
+            "question": "<p>¿Puedo tomarlo si no entreno ese día?</p>",
+            "answer": "<p>Sí. En días de descanso, ayuda a mantener niveles óptimos de recuperación y evita el desgaste muscular.</p>"
           }
         }
       },
