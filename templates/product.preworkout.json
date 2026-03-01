@@ -115,6 +115,18 @@
                   },
                   "blocks": {}
                 },
+                "revie_reviews_por_whatsapp_app_block_UVcLEP": {
+                  "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+                  "settings": {
+                    "star_color": "#ffffff",
+                    "text_color": "#ffffff",
+                    "star_text_2": "reseñas",
+                    "size": 19,
+                    "showcero": "2",
+                    "format": "1",
+                    "utm": "2"
+                  }
+                },
                 "text_wrwq77": {
                   "type": "text",
                   "name": "t:names.text",
@@ -226,6 +238,7 @@
               },
               "block_order": [
                 "custom_liquid_Yc9nNV",
+                "revie_reviews_por_whatsapp_app_block_UVcLEP",
                 "text_wrwq77",
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
@@ -849,29 +862,29 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuánta cafeína contiene por porción?",
-            "answer": "Cada porción contiene 275 mg de cafeína, una dosis efectiva para mejorar energía, enfoque y rendimiento físico."
+            "question": "<p>¿Cuánta cafeína contiene por porción?</p>",
+            "answer": "<p>Cada porción contiene 275 mg de cafeína, una dosis efectiva para mejorar energía, enfoque y rendimiento físico.</p>"
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuándo es el mejor momento para tomarlo?",
-            "answer": "Tómalo de 15 a 30 minutos antes de entrenar para aprovechar al máximo su efecto energético, de enfoque y rendimiento."
+            "question": "<p>¿Cuándo es el mejor momento para tomarlo?</p>",
+            "answer": "<p>Tómalo de 15 a 30 minutos antes de entrenar para aprovechar al máximo su efecto energético, de enfoque y rendimiento.</p>"
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿Se puede tomar todos los días?",
-            "answer": "Sí, pero se recomienda no exceder una porción al día y evitar su uso continuo por más de 8 semanas sin descanso. No debe tomarse 4 horas antes de dormir."
+            "question": "<p>¿Se puede tomar todos los días?</p>",
+            "answer": "<p>Sí, pero se recomienda no exceder una porción al día y evitar su uso continuo por más de 8 semanas sin descanso. No debe tomarse 4 horas antes de dormir.</p>"
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿Qué contiene además de cafeína?",
-            "answer": "Incluye BCAA’s, creatina, beta-alanina, citrulina, taurina, maca, tribulus y vitaminas. Su fórmula está diseñada para mejorar energía, enfoque y resistencia muscular."
+            "question": "<p>¿Qué contiene además de cafeína?</p>",
+            "answer": "<p>Incluye BCAA’s, creatina, beta-alanina, citrulina, taurina, maca, tribulus y vitaminas. Su fórmula está diseñada para mejorar energía, enfoque y resistencia muscular.</p>"
           }
         }
       },
