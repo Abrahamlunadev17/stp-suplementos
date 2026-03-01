@@ -115,6 +115,18 @@
                   },
                   "blocks": {}
                 },
+                "revie_reviews_por_whatsapp_app_block_whjHN9": {
+                  "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+                  "settings": {
+                    "star_color": "#ffffff",
+                    "text_color": "#ffffff",
+                    "star_text_2": "reseñas",
+                    "size": 19,
+                    "showcero": "2",
+                    "format": "1",
+                    "utm": "2"
+                  }
+                },
                 "text_wrwq77": {
                   "type": "text",
                   "name": "t:names.text",
@@ -226,6 +238,7 @@
               },
               "block_order": [
                 "custom_liquid_Raj3Jt",
+                "revie_reviews_por_whatsapp_app_block_whjHN9",
                 "text_wrwq77",
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
@@ -849,22 +862,22 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuál es el mejor momento para tomar Isolate Protein?",
-            "answer": "Se recomienda tomarla justo después de entrenar para apoyar la recuperación y el desarrollo muscular. También puedes usarla en ayunas o entre comidas como fuente de proteína pura."
+            "question": "<p>¿Cuál es el mejor momento para tomar Isolate Protein?</p>",
+            "answer": "<p>Se recomienda tomarla justo después de entrenar para apoyar la recuperación y el desarrollo muscular. También puedes usarla en ayunas o entre comidas como fuente de proteína pura.</p>"
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuánta proteína aporta por porción y cuántas porciones trae el envase?",
-            "answer": "Cada porción aporta 33 g de proteína. El número de porciones depende del tamaño del envase, con presentaciones de 30 y 60 porciones."
+            "question": "<p>¿Cuánta proteína aporta por porción y cuántas porciones trae el envase?</p>",
+            "answer": "<p>Cada porción aporta 33 g de proteína. El número de porciones depende del tamaño del envase, con presentaciones de 30 y 60 porciones.</p>"
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿En qué se diferencia Isolate Protein de Whey Protein?",
-            "answer": "Isolate Protein es una fórmula sin carbohidratos, ideal para quienes buscan definición muscular. Whey Protein, en cambio, tiene una formulación que incluye carbohidratos."
+            "question": "<p>¿En qué se diferencia Isolate Protein de Whey Protein?</p>",
+            "answer": "<p>Isolate Protein es una fórmula sin carbohidratos, ideal para quienes buscan definición muscular. Whey Protein, en cambio, tiene una formulación que incluye carbohidratos.</p>"
           }
         }
       },
