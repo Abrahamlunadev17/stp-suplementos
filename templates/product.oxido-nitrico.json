@@ -115,6 +115,18 @@
                   },
                   "blocks": {}
                 },
+                "revie_reviews_por_whatsapp_app_block_Jjy4P4": {
+                  "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+                  "settings": {
+                    "star_color": "#ffffff",
+                    "text_color": "#ffffff",
+                    "star_text_2": "reseñas",
+                    "size": 19,
+                    "showcero": "2",
+                    "format": "1",
+                    "utm": "2"
+                  }
+                },
                 "text_wrwq77": {
                   "type": "text",
                   "name": "t:names.text",
@@ -226,6 +238,7 @@
               },
               "block_order": [
                 "custom_liquid_WpwgzC",
+                "revie_reviews_por_whatsapp_app_block_Jjy4P4",
                 "text_wrwq77",
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
@@ -464,6 +477,64 @@
         "limit_details_width": false,
         "gap": 48,
         "color_scheme": "scheme-2",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "blocks_GY3m6U": {
+      "type": "_blocks",
+      "blocks": {
+        "revie_reviews_por_whatsapp_app_block_2_EWHFx4": {
+          "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block-2/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+          "settings": {
+            "title": "RESEÑAS",
+            "format": "1",
+            "max_width": 1500,
+            "content_padding": 22,
+            "star_color": "#f8f8f8",
+            "show_comment": "yes",
+            "max_count": 10,
+            "star_text": "Estrellas",
+            "subtitle": "OPINIONES",
+            "buyer": "Comprador verificado",
+            "based": "Basado en",
+            "opinions": "opiniones",
+            "no_reviews": "SIN OPINIONES",
+            "show_summary": "No"
+          }
+        }
+      },
+      "block_order": [
+        "revie_reviews_por_whatsapp_app_block_2_EWHFx4"
+      ],
+      "custom_css": [
+        ".shopify-app-block {width: 100%;}"
+      ],
+      "name": "RESEÑAS",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "full-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -849,29 +920,29 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿Para qué sirve el óxido nítrico en el entrenamiento?",
-            "answer": "Favorece la vasodilatación, lo que mejora el flujo sanguíneo hacia los músculos. Esto se traduce en mayor oxigenación, mejor rendimiento y un bombeo muscular más intenso."
+            "question": "<p>¿Para qué sirve el óxido nítrico en el entrenamiento?</p>",
+            "answer": "<p>Favorece la vasodilatación, lo que mejora el flujo sanguíneo hacia los músculos. Esto se traduce en mayor oxigenación, mejor rendimiento y un bombeo muscular más intenso.</p>"
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿Qué ingredientes contiene esta fórmula?",
-            "answer": "Incluye l-arginina, l-citrulina, cafeína, l-glutamina, y vitaminas. Esta combinación está diseñada para optimizar el rendimiento físico."
+            "question": "<p>¿Qué ingredientes contiene esta fórmula?</p>",
+            "answer": "<p>Incluye l-arginina, l-citrulina, cafeína, l-glutamina, y vitaminas. Esta combinación está diseñada para optimizar el rendimiento físico.</p>"
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuándo es el mejor momento para tomarlo?",
-            "answer": "Tómalo 30 minutos antes del entrenamiento para maximizar sus efectos de vasodilatación, energía y resistencia."
+            "question": "<p>¿Cuándo es el mejor momento para tomarlo?</p>",
+            "answer": "<p>Tómalo 30 minutos antes del entrenamiento para maximizar sus efectos de vasodilatación, energía y resistencia.</p>"
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿Me ayuda a mejorar el bombeo muscular?",
-            "answer": "Sí. Está formulado para potenciar el flujo sanguíneo, lo que se traduce en un bombeo muscular más notorio durante la rutina."
+            "question": "<p>¿Me ayuda a mejorar el bombeo muscular?</p>",
+            "answer": "<p>Sí. Está formulado para potenciar el flujo sanguíneo, lo que se traduce en un bombeo muscular más notorio durante la rutina.</p>"
           }
         }
       },
@@ -889,6 +960,7 @@
   },
   "order": [
     "main",
+    "blocks_GY3m6U",
     "blocks_hdbwUj",
     "product_recommendations_qggXJq",
     "pdp_slider_y6Xixh",
