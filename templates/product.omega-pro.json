@@ -115,6 +115,18 @@
                   },
                   "blocks": {}
                 },
+                "revie_reviews_por_whatsapp_app_block_n7QRCp": {
+                  "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+                  "settings": {
+                    "star_color": "#ffffff",
+                    "text_color": "#ffffff",
+                    "star_text_2": "reseñas",
+                    "size": 19,
+                    "showcero": "2",
+                    "format": "1",
+                    "utm": "2"
+                  }
+                },
                 "text_wrwq77": {
                   "type": "text",
                   "name": "t:names.text",
@@ -226,6 +238,7 @@
               },
               "block_order": [
                 "custom_liquid_P9MV88",
+                "revie_reviews_por_whatsapp_app_block_n7QRCp",
                 "text_wrwq77",
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
@@ -849,29 +862,29 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿Qué beneficios ofrece Omega Pro frente a otras proteínas?",
-            "answer": "Su fórmula combina proteína de suero con péptidos bioactivos, colágeno hidrolizado e isoflavonas. Esto la hace ideal no solo para ganar masa muscular, sino también para fortalecer articulaciones, tejidos conectivos y mejorar la recuperación."
+            "question": "<p>¿Qué beneficios ofrece Omega Pro frente a otras proteínas?</p>",
+            "answer": "<p>Su fórmula combina proteína de suero con péptidos bioactivos, colágeno hidrolizado e isoflavonas. Esto la hace ideal no solo para ganar masa muscular, sino también para fortalecer articulaciones, tejidos conectivos y mejorar la recuperación.</p>"
           }
         },
         "faq_MpReHe": {
           "type": "faq",
           "settings": {
-            "question": "¿Contiene colágeno en su fórmula?",
-            "answer": "Sí. Cada porción aporta 4 g de péptidos de colágeno hidrolizado, que contribuyen a la salud de músculos, tendones y cartílagos."
+            "question": "<p>¿Contiene colágeno en su fórmula?</p>",
+            "answer": "<p>Sí. Cada porción aporta 4 g de péptidos de colágeno hidrolizado, que contribuyen a la salud de músculos, tendones y cartílagos.</p>"
           }
         },
         "faq_pjDnJT": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuánta proteína aporta por porción y cuántas porciones tiene el envase?",
-            "answer": "Cada porción aporta 27 g de proteína. El número de porciones depende del tamaño del envase, con presentaciones de 30 y 60 porciones."
+            "question": "<p>¿Cuánta proteína aporta por porción y cuántas porciones tiene el envase?</p>",
+            "answer": "<p>Cada porción aporta 27 g de proteína. El número de porciones depende del tamaño del envase, con presentaciones de 30 y 60 porciones.</p>"
           }
         },
         "faq_De4ePK": {
           "type": "faq",
           "settings": {
-            "question": "¿Cuál es el mejor momento para tomar Omega Pro?",
-            "answer": "Después de entrenar es el mejor momento para aprovechar su aporte de proteína y colágeno. También puedes tomarla por la mañana como parte de tu nutrición diaria."
+            "question": "<p>¿Cuál es el mejor momento para tomar Omega Pro?</p>",
+            "answer": "<p>Después de entrenar es el mejor momento para aprovechar su aporte de proteína y colágeno. También puedes tomarla por la mañana como parte de tu nutrición diaria.</p>"
           }
         }
       },
