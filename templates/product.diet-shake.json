@@ -115,6 +115,18 @@
                   },
                   "blocks": {}
                 },
+                "revie_reviews_por_whatsapp_app_block_zKExYb": {
+                  "type": "shopify://apps/revie-reviews-por-whatsapp/blocks/app-block/32a49769-cfbe-4f29-8b19-1ae20fdb2abe",
+                  "settings": {
+                    "star_color": "#ffffff",
+                    "text_color": "#ffffff",
+                    "star_text_2": "reseñas",
+                    "size": 19,
+                    "showcero": "2",
+                    "format": "1",
+                    "utm": "2"
+                  }
+                },
                 "text_wrwq77": {
                   "type": "text",
                   "name": "t:names.text",
@@ -226,6 +238,7 @@
               },
               "block_order": [
                 "custom_liquid_R7YJth",
+                "revie_reviews_por_whatsapp_app_block_zKExYb",
                 "text_wrwq77",
                 "slide_pdp_X4yRMd",
                 "price_tVjtKg",
@@ -849,29 +862,29 @@
         "faq_Vw4nEQ": {
           "type": "faq",
           "settings": {
-            "question": "¿Para qué sirve Diet Shake y qué beneficios ofrece?",
-            "answer": "Es una fórmula diseñada para apoyar el control de peso, mejorar la digestión y mantener la masa muscular. Aporta proteína de alto valor biológico junto con ingredientes funcionales que complementan tu nutrición diaria."
+            "question": "<p>¿Para qué sirve Diet Shake y qué beneficios ofrece?</p>",
+            "answer": "<p>Es una fórmula diseñada para apoyar el control de peso, mejorar la digestión y mantener la masa muscular. Aporta proteína de alto valor biológico junto con ingredientes funcionales que complementan tu nutrición diaria.</p>"
           }
         },
         "faq_WTxEH8": {
           "type": "faq",
           "settings": {
-            "question": "¿Qué función tienen los probióticos y prebióticos en esta fórmula?",
-            "answer": "Los probióticos promueven una microbiota intestinal saludable, mientras que los prebióticos alimentan esas bacterias buenas. Juntos favorecen una mejor digestión, absorción de nutrientes y bienestar general."
+            "question": "<p>¿Qué función tienen los probióticos y prebióticos en esta fórmula?</p>",
+            "answer": "<p>Los probióticos promueven una microbiota intestinal saludable, mientras que los prebióticos alimentan esas bacterias buenas. Juntos favorecen una mejor digestión, absorción de nutrientes y bienestar general.</p>"
           }
         },
         "faq_yirYLa": {
           "type": "faq",
           "settings": {
-            "question": "¿Ayuda a mantener la masa muscular mientras se baja de peso?",
-            "answer": "Sí. Cada porción contiene 20 g de proteína que ayudan a conservar la masa muscular, especialmente útil en planes de reducción calórica o entrenamiento enfocado en recomposición corporal."
+            "question": "<p>¿Ayuda a mantener la masa muscular mientras se baja de peso?</p>",
+            "answer": "<p>Sí. Cada porción contiene 20 g de proteína que ayudan a conservar la masa muscular, especialmente útil en planes de reducción calórica o entrenamiento enfocado en recomposición corporal.</p>"
           }
         },
         "faq_BybiXw": {
           "type": "faq",
           "settings": {
-            "question": "¿Qué contiene la fórmula y para qué sirve cada componente funcional?",
-            "answer": "Incluye probióticos (salud intestinal), prebióticos (nutrición para la microbiota), colágeno hidrolizado (soporte estructural y piel) y enzimas digestivas (mejor absorción y menor inflamación post-ingesta), junto con otros ingredientes que complementan sus beneficios digestivos y metabólicos."
+            "question": "<p>¿Qué contiene la fórmula y para qué sirve cada componente funcional?</p>",
+            "answer": "<p>Incluye probióticos (salud intestinal), prebióticos (nutrición para la microbiota), colágeno hidrolizado (soporte estructural y piel) y enzimas digestivas (mejor absorción y menor inflamación post-ingesta), junto con otros ingredientes que complementan sus beneficios digestivos y metabólicos.</p>"
           }
         }
       },
