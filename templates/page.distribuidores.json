@@ -64,7 +64,7 @@
         "img": "shopify://shop_images/Banner-deskto-distribuidores.png",
         "img2": "shopify://shop_images/FNTmobile.png",
         "boton-name1": "EMPIEZA A DISTRIBUIR",
-        "url1": "shopify://collections/all",
+        "url1": "https://api.whatsapp.com/send?phone=5213322397487",
         "boton-name2": "",
         "url2": "shopify://pages/quiz",
         "top_mobile": 36,
