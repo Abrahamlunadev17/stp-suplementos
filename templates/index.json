@@ -602,6 +602,7 @@
         "card_MbRRAU",
         "card_FnmVyc"
       ],
+      "disabled": true,
       "name": "Ciencia Detrás",
       "settings": {
         "image_desktop": "shopify://shop_images/Diseno_sin_titulo_4.png",
