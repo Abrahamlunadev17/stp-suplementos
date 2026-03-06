@@ -4,7 +4,7 @@
   Colocar dentro del cart-drawer o cart-notification de Horizon
 {% endcomment %}
 
-{%- assign shipping_threshold = 150000 -%} {% comment %} $999 en centavos — ajusta este valor {% endcomment %}
+{%- assign shipping_threshold = 150000 -%}{% comment %} $999 en centavos — ajusta este valor {% endcomment %}
 {%- assign cart_total = cart.total_price -%}
 {%- assign pct = cart_total | times: 100 | divided_by: shipping_threshold -%}
 {%- if pct > 100 -%}{%- assign pct = 100 -%}{%- endif -%}
