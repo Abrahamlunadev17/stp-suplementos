@@ -1,465 +1,87 @@
 {% comment %}
-  Snippet: discount-urgency-banner
-  Uso: {% render 'discount-urgency-banner' %}
+  Snippet: discount-reminder-bar
+  Uso: {% render 'discount-reminder-bar' %}
 {% endcomment %}
 
-<div class="dub-overlay" id="dub-overlay"></div>
-
-<div class="dub-banner" id="dub-banner">
-  <button class="dub-close" id="dub-close" aria-label="Cerrar">✕</button>
-
-  <div class="dub-left">
-    <div class="dub-tag">OFERTA EXCLUSIVA</div>
-    <h2 class="dub-title">¡Solo para ti!</h2>
-    <p class="dub-desc">Obtén un <strong>10% de descuento</strong> en tu próxima compra. ¡Esta oferta es por tiempo limitado!</p>
-
-    <div class="dub-code-wrapper">
-      <span class="dub-label">Tu código:</span>
-      <div class="dub-code-row">
-        <span class="dub-code" id="dub-code">DESCUENTO10</span>
-        <button class="dub-copy-btn" id="dub-copy-btn">Copiar</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="dub-right">
-    <div class="dub-percent">10<span>%</span></div>
-    <p class="dub-off">DE DESCUENTO</p>
-
-    <div class="dub-timer-label">La oferta expira en:</div>
-    <div class="dub-timer" id="dub-timer">
-      <div class="dub-time-block">
-        <span class="dub-time-num" id="dub-minutes">15</span>
-        <span class="dub-time-unit">MIN</span>
-      </div>
-      <span class="dub-separator">:</span>
-      <div class="dub-time-block">
-        <span class="dub-time-num" id="dub-seconds">00</span>
-        <span class="dub-time-unit">SEG</span>
-      </div>
-    </div>
-
-    <div class="dub-progress-bar">
-      <div class="dub-progress-fill" id="dub-progress-fill"></div>
-    </div>
+<div class="drb-bar">
+  <p class="drb-text">
+    🎁 Obtén un <strong>10% de descuento</strong> en tu compra &mdash; usa el código:
+  </p>
+  <div class="drb-code-wrap">
+    <span class="drb-code">DESCUENTO10</span>
+    <button class="drb-copy" id="drb-copy">Copiar</button>
   </div>
 </div>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap');
-
-  .dub-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    z-index: 9998;
-    backdrop-filter: blur(3px);
-    animation: dub-fade-in 0.4s ease;
-  }
-
-  .dub-overlay.active {
-    display: block;
-  }
-
-  .dub-banner {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -48%) scale(0.95);
-    z-index: 9999;
-    width: min(760px, 94vw);
-    background: #fff;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 0 32px 80px rgba(0,0,0,0.25);
-    flex-direction: row;
-    opacity: 0;
-    transition: opacity 0.4s ease, transform 0.4s ease;
-  }
-
-  .dub-banner.active {
-    display: flex;
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    animation: dub-pop-in 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-  }
-
-  .dub-banner.expired {
-    animation: dub-pop-out 0.35s ease forwards;
-  }
-
-  @keyframes dub-pop-in {
-    from { opacity: 0; transform: translate(-50%, -46%) scale(0.92); }
-    to   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-  }
-
-  @keyframes dub-pop-out {
-    from { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-    to   { opacity: 0; transform: translate(-50%, -54%) scale(0.9); }
-  }
-
-  @keyframes dub-fade-in {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-
-  /* LEFT */
-  .dub-left {
-    flex: 1;
-    padding: 40px 36px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 14px;
-    font-family: 'DM Sans', sans-serif;
-  }
-
-  .dub-tag {
-    display: inline-block;
-    background: #365E28;
-    color: #fff;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    padding: 4px 10px;
-    border-radius: 2px;
-    width: fit-content;
-  }
-
-  .dub-title {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 42px;
-    color: #111;
-    margin: 0;
-    line-height: 1;
-    letter-spacing: 1px;
-  }
-
-  .dub-desc {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.6;
-    margin: 0;
-  }
-
-  .dub-desc strong {
-    color: #365E28;
-    font-weight: 700;
-  }
-
-  .dub-label {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    color: #999;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 6px;
-  }
-
-  .dub-code-row {
+  .drb-bar {
+    background: #111;
+    border-bottom: 2px solid #e00;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
   }
 
-  .dub-code {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 26px;
-    letter-spacing: 3px;
-    color: #365E28;
-    background: #f1f6ee;
-    border: 1.5px dashed #365E28;
-    padding: 8px 18px;
-    border-radius: 2px;
-    flex: 1;
-    text-align: center;
-  }
-
-  .dub-copy-btn {
-    background: #365E28;
-    color: #fff;
-    border: none;
-    padding: 10px 16px;
+  .drb-text {
+    margin: 0;
     font-size: 13px;
-    font-weight: 600;
-    font-family: 'DM Sans', sans-serif;
-    cursor: pointer;
-    border-radius: 2px;
-    transition: background 0.2s;
+    color: #ccc;
+    font-family: sans-serif;
     white-space: nowrap;
   }
 
-  .dub-copy-btn:hover {
-    background: #2a4a1f;
+  .drb-text strong {
+    color: #e00;
   }
 
-  .dub-copy-btn.copied {
-    background: #4CAF50;
-  }
-
-  /* RIGHT */
-  .dub-right {
-    width: 220px;
-    background: #365E28;
-    padding: 36px 24px;
+  .drb-code-wrap {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 8px;
-    flex-shrink: 0;
   }
 
-  .dub-percent {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 86px;
-    color: #fff;
-    line-height: 1;
-    margin: 0;
-  }
-
-  .dub-percent span {
-    font-size: 48px;
-    vertical-align: super;
-  }
-
-  .dub-off {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    color: rgba(255,255,255,0.7);
-    margin: 0 0 16px;
-  }
-
-  .dub-timer-label {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 11px;
-    color: rgba(255,255,255,0.6);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 4px;
-    text-align: center;
-  }
-
-  .dub-timer {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .dub-time-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(0,0,0,0.2);
-    border-radius: 4px;
-    padding: 8px 14px;
-    min-width: 60px;
-  }
-
-  .dub-time-num {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 36px;
-    color: #fff;
-    line-height: 1;
-    transition: transform 0.15s ease;
-  }
-
-  .dub-time-num.tick {
-    transform: scale(1.2);
-    color: #b8f0a0;
-  }
-
-  .dub-time-unit {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 9px;
-    letter-spacing: 2px;
-    color: rgba(255,255,255,0.5);
-    font-weight: 600;
-  }
-
-  .dub-separator {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 32px;
-    color: rgba(255,255,255,0.5);
-    margin-bottom: 14px;
-  }
-
-  .dub-progress-bar {
-    width: 100%;
-    height: 4px;
-    background: rgba(255,255,255,0.15);
-    border-radius: 2px;
-    margin-top: 14px;
-    overflow: hidden;
-  }
-
-  .dub-progress-fill {
-    height: 100%;
-    width: 100%;
-    background: #b8f0a0;
-    border-radius: 2px;
-    transition: width 1s linear;
-  }
-
-  /* CLOSE BUTTON */
-  .dub-close {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background: transparent;
-    border: none;
-    font-size: 18px;
-    color: #aaa;
-    cursor: pointer;
-    line-height: 1;
-    padding: 4px 8px;
-    transition: color 0.2s;
-    z-index: 10;
-  }
-
-  .dub-close:hover {
-    color: #333;
-  }
-
-  /* EXPIRED STATE */
-  .dub-expired-msg {
-    display: none;
-    position: fixed;
-    bottom: 24px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #333;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 4px;
-    font-family: 'DM Sans', sans-serif;
+  .drb-code {
+    font-family: monospace;
     font-size: 14px;
-    z-index: 9999;
-    animation: dub-fade-in 0.3s ease;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    background: #222;
+    border: 1px dashed #e00;
+    padding: 4px 12px;
+    border-radius: 2px;
   }
 
-  @media (max-width: 560px) {
-    .dub-banner {
-      flex-direction: column;
-    }
-    .dub-right {
-      width: 100%;
-      padding: 24px;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .dub-percent {
-      font-size: 56px;
-    }
-    .dub-left {
-      padding: 28px 24px;
-    }
-    .dub-title {
-      font-size: 34px;
-    }
+  .drb-copy {
+    background: #e00;
+    color: #fff;
+    border: none;
+    padding: 5px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background 0.2s;
+    letter-spacing: 0.5px;
   }
+
+  .drb-copy:hover { background: #c00; }
+  .drb-copy.copied { background: #2a7a2a; }
 </style>
 
 <script>
-  (function () {
-    const DURATION = 15 * 60; // 15 minutos en segundos
-    const STORAGE_KEY = 'dub_timer_end';
-
-    const banner   = document.getElementById('dub-banner');
-    const overlay  = document.getElementById('dub-overlay');
-    const closeBtn = document.getElementById('dub-close');
-    const minEl    = document.getElementById('dub-minutes');
-    const secEl    = document.getElementById('dub-seconds');
-    const fill     = document.getElementById('dub-progress-fill');
-    const copyBtn  = document.getElementById('dub-copy-btn');
-    const codeEl   = document.getElementById('dub-code');
-
-    // Iniciar o recuperar timer
-    let endTime = parseInt(sessionStorage.getItem(STORAGE_KEY));
-    if (!endTime || endTime <= Date.now()) {
-      endTime = Date.now() + DURATION * 1000;
-      sessionStorage.setItem(STORAGE_KEY, endTime);
-    }
-
-    // Mostrar banner después de 1.5s
-    setTimeout(() => {
-      banner.classList.add('active');
-      overlay.classList.add('active');
-    }, 1500);
-
-    // Cerrar manualmente
-    closeBtn.addEventListener('click', closeBanner);
-    overlay.addEventListener('click', closeBanner);
-
-    function closeBanner() {
-      banner.classList.remove('active');
-      overlay.classList.remove('active');
-    }
-
-    // Copiar código
-    copyBtn.addEventListener('click', () => {
-      navigator.clipboard.writeText(codeEl.textContent.trim()).then(() => {
-        copyBtn.textContent = '¡Copiado!';
-        copyBtn.classList.add('copied');
-        setTimeout(() => {
-          copyBtn.textContent = 'Copiar';
-          copyBtn.classList.remove('copied');
-        }, 2000);
-      });
-    });
-
-    // Tick animation helper
-    function animateTick(el) {
-      el.classList.add('tick');
-      setTimeout(() => el.classList.remove('tick'), 150);
-    }
-
-    // Countdown
-    function updateTimer() {
-      const remaining = Math.max(0, Math.floor((endTime - Date.now()) / 1000));
-      const mins = Math.floor(remaining / 60);
-      const secs = remaining % 60;
-
-      const newMin = String(mins).padStart(2, '0');
-      const newSec = String(secs).padStart(2, '0');
-
-      if (minEl.textContent !== newMin) { minEl.textContent = newMin; animateTick(minEl); }
-      if (secEl.textContent !== newSec) { secEl.textContent = newSec; animateTick(secEl); }
-
-      // Progress bar
-      const pct = (remaining / DURATION) * 100;
-      fill.style.width = pct + '%';
-
-      // Urgencia: si quedan menos de 2 min, parpadea
-      if (remaining <= 120) {
-        fill.style.background = '#ff6b6b';
-        codeEl.style.borderColor = '#ff6b6b';
-        codeEl.style.color = '#cc0000';
-      }
-
-      if (remaining <= 0) {
-        expireBanner();
-        return;
-      }
-
-      setTimeout(updateTimer, 1000);
-    }
-
-    function expireBanner() {
-      sessionStorage.removeItem(STORAGE_KEY);
-      banner.classList.add('expired');
-      overlay.classList.remove('active');
+  document.getElementById('drb-copy').addEventListener('click', function () {
+    navigator.clipboard.writeText('DESCUENTO10').then(() => {
+      this.textContent = '¡Copiado!';
+      this.classList.add('copied');
       setTimeout(() => {
-        banner.style.display = 'none';
-      }, 400);
-    }
-
-    updateTimer();
-  })();
+        this.textContent = 'Copiar';
+        this.classList.remove('copied');
+      }, 2000);
+    });
+  });
 </script>
