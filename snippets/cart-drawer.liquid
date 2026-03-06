@@ -61,9 +61,10 @@
               {{ 'content.your_cart_is_empty' | t }}
             </span>
 
-            {% render 'discount-urgency-banner' %}
+ 
 
             <div class="cart-drawer__items">
+                         {% render 'discount-urgency-banner' %}
               {% render 'cart-products' %}
             </div>
           </div>
