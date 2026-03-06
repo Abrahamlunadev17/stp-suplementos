@@ -602,7 +602,6 @@
         "card_MbRRAU",
         "card_FnmVyc"
       ],
-      "disabled": true,
       "name": "Ciencia Detrás",
       "settings": {
         "image_desktop": "shopify://shop_images/Diseno_sin_titulo_4.png",
@@ -676,6 +675,7 @@
     },
     "stp_benefits_FRbmz9": {
       "type": "stp-benefits",
+      "disabled": true,
       "name": "Beneficios",
       "settings": {
         "text-wrapper": "¿POR QUÉ ELEGIRNOS?",
