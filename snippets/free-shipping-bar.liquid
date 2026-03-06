@@ -1,0 +1,198 @@
+{% comment %}
+  Snippet: shipping-progress-bar
+  Uso: {% render 'free-shipping-bar' %}
+  Colocar dentro del cart-drawer o cart-notification de Horizon
+{% endcomment %}
+
+{%- assign shipping_threshold = 99900 -%} {% comment %} $999 en centavos — ajusta este valor {% endcomment %}
+{%- assign cart_total = cart.total_price -%}
+{%- assign pct = cart_total | times: 100 | divided_by: shipping_threshold -%}
+{%- if pct > 100 -%}{%- assign pct = 100 -%}{%- endif -%}
+
+<div
+  class="spb-wrapper"
+  id="spb-wrapper"
+  data-threshold="{{ shipping_threshold }}"
+>
+  {%- if cart_total >= shipping_threshold -%}
+    <p class="spb-message spb-reached">
+      🎉 ¡Tienes <strong>envío gratis</strong> en tu pedido!
+    </p>
+  {%- else -%}
+    {%- assign falta = shipping_threshold | minus: cart_total | money -%}
+    <p class="spb-message">
+      Agrega <strong>{{ falta }}</strong> más para obtener <strong>envío gratis</strong> 🚚
+    </p>
+  {%- endif -%}
+
+  <div class="spb-track">
+    <div
+      class="spb-fill {% if cart_total >= shipping_threshold %}spb-fill--complete{% endif %}"
+      id="spb-fill"
+      style="width: {{ pct }}%"
+    ></div>
+    <div class="spb-truck" id="spb-truck" style="left: calc({{ pct }}% - 14px)">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M1 3h15v13H1zm15 4h3l3 3v6h-6V7zM5.5 18a1.5 1.5 0 100 3 1.5 1.5 0 000-3zm13 0a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="spb-labels">
+    <span>$0</span>
+    <span>{{ shipping_threshold | money }}</span>
+  </div>
+</div>
+
+<style>
+  .spb-wrapper {
+    padding: 14px 0 6px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #222;
+  }
+
+  .spb-message {
+    font-size: 12px;
+    color: #aaa;
+    text-align: center;
+    margin: 0 0 10px;
+    font-family: inherit;
+    line-height: 1.5;
+  }
+
+  .spb-message strong {
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .spb-message.spb-reached {
+    color: #fff;
+  }
+
+  .spb-message.spb-reached strong {
+    color: #e00;
+  }
+
+  /* TRACK */
+  .spb-track {
+    position: relative;
+    height: 6px;
+    background: #2a2a2a;
+    border-radius: 3px;
+    margin: 0 4px;
+  }
+
+  .spb-fill {
+    height: 100%;
+    background: #e00;
+    border-radius: 3px;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 100%;
+  }
+
+  .spb-fill--complete {
+    background: #fff;
+  }
+
+  /* TRUCK ICON */
+  .spb-truck {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    background: #e00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1), background 0.4s ease;
+    box-shadow: 0 0 10px rgba(238,0,0,0.5);
+  }
+
+  .spb-truck svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .spb-truck.complete {
+    background: #fff;
+    color: #e00;
+    box-shadow: 0 0 12px rgba(255,255,255,0.4);
+  }
+
+  /* LABELS */
+  .spb-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    font-size: 10px;
+    color: #555;
+    font-family: inherit;
+    padding: 0 4px;
+  }
+</style>
+
+<script>
+(function () {
+  // Actualiza la barra cuando Horizon emite el evento de carrito actualizado
+  function updateBar(cartData) {
+    const wrapper  = document.getElementById('spb-wrapper');
+    if (!wrapper) return;
+
+    const threshold = parseInt(wrapper.dataset.threshold);
+    const total     = cartData.total_price;
+    const pct       = Math.min((total / threshold) * 100, 100);
+
+    // Barra de progreso
+    const fill  = document.getElementById('spb-fill');
+    const truck = document.getElementById('spb-truck');
+
+    if (fill)  fill.style.width = pct + '%';
+    if (truck) truck.style.left = `calc(${pct}% - 14px)`;
+
+    // Colores al completar
+    if (total >= threshold) {
+      fill?.classList.add('spb-fill--complete');
+      truck?.classList.add('complete');
+    } else {
+      fill?.classList.remove('spb-fill--complete');
+      truck?.classList.remove('complete');
+    }
+
+    // Mensaje
+    const msgEl = wrapper.querySelector('.spb-message');
+    if (!msgEl) return;
+
+    if (total >= threshold) {
+      msgEl.classList.add('spb-reached');
+      msgEl.innerHTML = '🎉 ¡Tienes <strong>envío gratis</strong> en tu pedido!';
+    } else {
+      msgEl.classList.remove('spb-reached');
+      // Formatea con el locale de Shopify
+      fetch('/cart.js')
+        .then(r => r.json())
+        .then(cart => {
+          const falta = ((threshold - cart.total_price) / 100).toLocaleString('es-MX', {
+            style: 'currency',
+            currency: 'MXN'
+          });
+          msgEl.innerHTML = `Agrega <strong>${falta}</strong> más para obtener <strong>envío gratis</strong> 🚚`;
+        });
+    }
+  }
+
+  // Horizon usa el evento nativo 'cart:updated' en el documento
+  document.addEventListener('cart:updated', (e) => {
+    if (e.detail?.cart) updateBar(e.detail.cart);
+  });
+
+  // También escucha fetch responses del carrito (por si Horizon usa otro mecanismo)
+  document.addEventListener('cart:refresh', () => {
+    fetch('/cart.js')
+      .then(r => r.json())
+      .then(cart => updateBar(cart));
+  });
+})();
+</script>

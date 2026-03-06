@@ -96,6 +96,7 @@
             aria-label="{{ 'accessibility.cart' | t }}"
             style="--header-height: 60px;"
           >
+            {% render 'free-shipping-bar' %}
              {% render 'discount-urgency-banner' %}
             <scroll-hint
               class="cart-drawer__items"
