@@ -73,7 +73,7 @@
             class="cart-drawer__header"
             id="cart-drawer-header"
           >
-            {% render 'discount-urgency-banner' %}
+            
             <span class="cart-drawer__heading h3">
               {{ 'content.cart_title' | t }}
               {% render 'cart-bubble' %}
@@ -101,7 +101,7 @@
             >
               {% render 'cart-products' %}
             </scroll-hint>
-
+            {% render 'discount-urgency-banner' %}
             <div
               class="cart-drawer__summary"
             >
