@@ -96,12 +96,13 @@
             aria-label="{{ 'accessibility.cart' | t }}"
             style="--header-height: 60px;"
           >
+             {% render 'discount-urgency-banner' %}
             <scroll-hint
               class="cart-drawer__items"
             >
               {% render 'cart-products' %}
             </scroll-hint>
-            {% render 'discount-urgency-banner' %}
+           
             <div
               class="cart-drawer__summary"
             >
