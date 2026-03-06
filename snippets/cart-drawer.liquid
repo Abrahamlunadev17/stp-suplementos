@@ -64,7 +64,7 @@
  
 
             <div class="cart-drawer__items">
-              test
+              
               {% render 'cart-products' %}
             </div>
           </div>
@@ -73,6 +73,7 @@
             class="cart-drawer__header"
             id="cart-drawer-header"
           >
+            {% render 'discount-urgency-banner' %}
             <span class="cart-drawer__heading h3">
               {{ 'content.cart_title' | t }}
               {% render 'cart-bubble' %}
