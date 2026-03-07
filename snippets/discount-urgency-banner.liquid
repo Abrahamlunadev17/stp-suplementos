@@ -75,13 +75,51 @@
 
 <script>
   document.getElementById('drb-copy').addEventListener('click', function () {
-    navigator.clipboard.writeText('FNT10').then(() => {
-      this.textContent = '¡Copiado!';
-      this.classList.add('copied');
-      setTimeout(() => {
-        this.textContent = 'Copiar';
-        this.classList.remove('copied');
-      }, 2000);
-    });
+    const btn = this;
+    const code = 'FNT10';
+
+    // Método moderno (Chrome, Firefox, Android)
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(code).then(() => {
+        showCopied(btn);
+      }).catch(() => {
+        fallbackCopy(code, btn);
+      });
+    } else {
+      // Fallback para Safari/iPhone
+      fallbackCopy(code, btn);
+    }
   });
+
+  function fallbackCopy(text, btn) {
+    // Crea un input temporal, lo selecciona y ejecuta copy
+    const input = document.createElement('input');
+    input.setAttribute('value', text);
+    input.setAttribute('readonly', '');
+    input.style.cssText = 'position:fixed;top:0;left:0;opacity:0;';
+    document.body.appendChild(input);
+
+    // En iOS hay que usar setSelectionRange
+    input.focus();
+    input.setSelectionRange(0, 999);
+    
+    try {
+      document.execCommand('copy');
+      showCopied(btn);
+    } catch (e) {
+      // Si todo falla, al menos muestra el código para copiar manualmente
+      btn.textContent = 'FNT10';
+    }
+
+    document.body.removeChild(input);
+  }
+
+  function showCopied(btn) {
+    btn.textContent = '¡Copiado!';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = 'Copiar';
+      btn.classList.remove('copied');
+    }, 2000);
+  }
 </script>
