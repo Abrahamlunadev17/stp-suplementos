@@ -9,8 +9,27 @@
  */
 {
   "sections": {
+    "slideshow_xgM3j7": {
+      "type": "slideshow-",
+      "blocks": {
+        "slide_4PgV8y": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/KITS-Desktop.webp",
+            "image_mobile": "shopify://shop_images/KITS-Mobile.webp",
+            "link": "shopify://collections/kits"
+          }
+        }
+      },
+      "block_order": [
+        "slide_4PgV8y"
+      ],
+      "name": "Slideshow con Swiper",
+      "settings": {}
+    },
     "banner_home_iJN86z": {
       "type": "banner-home",
+      "disabled": true,
       "name": "Banner general",
       "settings": {
         "img": "shopify://shop_images/TRANSFORMA_TU_META_EN_RESULTADO_REALES.png",
@@ -850,6 +869,7 @@
     }
   },
   "order": [
+    "slideshow_xgM3j7",
     "banner_home_iJN86z",
     "stpmarquee_image_w3nw4e",
     "tabs_collection_aLQGCf",
