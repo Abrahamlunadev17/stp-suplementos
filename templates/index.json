@@ -15,8 +15,8 @@
         "slide_4PgV8y": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify://shop_images/KITS-Desktop.webp",
-            "image_mobile": "shopify://shop_images/KITS-Mobile.webp",
+            "image_desktop": "shopify://shop_images/DESK_1.webp",
+            "image_mobile": "shopify://shop_images/Mobile.webp",
             "link": "shopify://collections/kits"
           }
         }
